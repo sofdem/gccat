@@ -1,0 +1,3005 @@
+\begin{thebibliography}{100}
+
+\bibitem{AggounBeldiceanu93}
+A.~Aggoun and N.~Beldiceanu.
+\newblock {E}xtending {CHIP} in order to {S}olve {C}omplex {S}cheduling and
+  {P}lacement {P}roblems.
+\newblock {\em Mathl. Comput. Modelling}, 17(7):57--73, 1993.
+
+\bibitem{AgrenCarlssonBeldiceanuSbihiTruchetZampelli09a}
+M.~{\r{A}}gren, M.~Carlsson, N.~Beldiceanu, M.~Sbihi, C.~Truchet, and
+  S.~Zampelli.
+\newblock {S}ix {W}ays of {I}ntegrating {S}ymmetries within {N}on-{O}verlapping
+  {C}onstraints.
+\newblock In W.-J. van Hoeve and J.~N. Hooker, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'09)}, volume 5547 of {\em
+  LNCS}, pages 11--25, Pittsburgh, PA, USA, 2009. Springer\nobreakdash-Verlag.
+
+\bibitem{AgrenCarlssonBeldiceanuSbihiTruchetZampelli09}
+M.~{\r{A}}gren, M.~Carlsson, N.~Beldiceanu, M.~Sbihi, C.~Truchet, and
+  S.~Zampelli.
+\newblock {S}ix {W}ays of {I}ntegrating {S}ymmetries within {N}on-{O}verlapping
+  {C}onstraints.
+\newblock Technical Report T2009-01, Swedish Institute of Computer Science,
+  2009.
+
+\bibitem{AhoSagivSzymanskiUllman81}
+A.~V. Aho, Y.~Sagiv, T.~Szymanski, and J.~D. Ullman.
+\newblock Inferring a tree from lowest common ancestor with an application to
+  the optimization of relational expressions.
+\newblock {\em SIAM Journal of Computing}, 10(3):405--421, 1981.
+
+\bibitem{AlthausBockmayrElfKasperJungerMehlhorn02}
+E.~Althaus, A.~Bockmayr, M.~Elf, T.~Kasper, M.~J{\"u}nger, and K.~Mehlhorn.
+\newblock {SCIL}---{S}ymbolic {C}onstraints in {I}nteger {L}inear
+  {P}rogramming.
+\newblock In {\em 10th European Symposium on Algorithms (ESA'02)}, volume 2461
+  of {\em LNCS}, pages 75--87. Springer\nobreakdash-Verlag, September 2002.
+
+\bibitem{AlvarezValdesParrenoTamarit05}
+R.~Alvarez-Valdes, F.~Parreno, and J.~M. Tamarit.
+\newblock A tabu search algorithm for the pallet loading problem.
+\newblock {\em OR Spectrum}, 27(1):43--61, 2005.
+
+\bibitem{Amilhastre99}
+J.~Amilhastre.
+\newblock {\em Repr{\'e}sentation par automate d'ensemble de solutions de
+  probl{\`e}mes de satisfaction de contraintes}.
+\newblock PhD thesis, Montpellier II University, France, 1999.
+\newblock In French.
+
+\bibitem{AppaMagosMourtos04}
+G.~Appa, D.~Magos, and I.~Mourtos.
+\newblock {L}{P} {R}elaxations of {M}ultiple \emph{alldifferent} {P}redicates.
+\newblock In J.-C. R\'egin and M.~Rueher, editors, {\em First International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'04)}, volume 3011 of {\em
+  LNCS}, pages 364--369, Nice, France, April 2004. Springer\nobreakdash-Verlag.
+
+\bibitem{AppaMagosMourtos05}
+G.~Appa, D.~Magos, and L.~Mourtos.
+\newblock On the system of two \emph{alldifferent} predicates.
+\newblock {\em Information Processing Letters}, 94(3):99--105, 2005.
+
+\bibitem{AptWallace07}
+K.~R. Apt and M.~G. Wallace.
+\newblock {\em Constraint Logic Programming using {ECLiPSe}}.
+\newblock Cambridge University Press, New York, NY, USA, 2007.
+
+\bibitem{ArtiouchineBaptiste05}
+K.~Artiouchine and P.~Baptiste.
+\newblock {I}nter-{D}istance {C}onstraint: {A}n {E}xtension of the
+  {A}ll-{D}ifferent {C}onstraint for {S}cheduling {E}qual {L}ength {J}obs.
+\newblock In P~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 62--76.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{ArtiouchineBaptiste07}
+K.~Artiouchine and P.~Baptiste.
+\newblock {A}rc-{B}-{C}onsistency of the {I}nter-{D}istance {C}onstraint.
+\newblock {\em Constraints (Special Issue on Global Constraints)}, 12(1):3--19,
+  2007.
+
+\bibitem{AsafEranRichterConnorsGreshOrtegaMcinnis10}
+S.~Asaf, H.~Eran, Y.~Richter, D.~P. Connors, D.~L. Gresh, J.~Ortega, and M.~J.
+  Mcinnis.
+\newblock {A}pplying {C}onstraint {P}rogramming to {I}dentification and
+  {A}ssignment of {S}ervice {P}rofessionals.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 24--37, St Andrews,
+  Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{AsratianDenleyHaggkvist98}
+A.~S. Asratian, T.~M.~J. Denley, and R.~H\"aggkvist.
+\newblock {\em {B}ipartite {G}raphs and their {A}pplications}.
+\newblock Cambridge University Press, 1998.
+
+\bibitem{Bacchus07}
+F.~Bacchus.
+\newblock {GAC} {V}ia {U}nit {P}ropagation.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 133--147.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{BaptisteDemassey04}
+P.~Baptiste and S.~Demassey.
+\newblock {T}ight {LP} {B}ounds for {R}esource {C}onstrained {P}roject
+  {S}cheduling.
+\newblock {\em OR Spectrum}, 26:251--262, 2004.
+
+\bibitem{BaptisteLePape00}
+P.~Baptiste and C.~Le Pape.
+\newblock {C}onstraint {P}ropagation and {D}ecomposition {T}echniques for
+  {H}ighly {D}isjunctive and {H}ighly {C}umulative {P}roject {S}cheduling
+  {P}roblems.
+\newblock {\em Constraints}, 5(1--2):119--139, 2000.
+
+\bibitem{BaptisteLePapePeridy98}
+P.~Baptiste, C.~Le Pape, and L.~Peridy.
+\newblock {G}lobal {C}onstraints for {P}artial {CSP}s: {A} {C}ase-{S}tudy of
+  {R}esource and {D}ue {D}ate {C}onstraints.
+\newblock In M.~J. Maher and J.-F. Puget, editors, {\em Principles and Practice
+  of Constraint Programming (CP'98)}, volume 1520 of {\em LNCS}, pages 87--101.
+  Springer\nobreakdash-Verlag, 1998.
+
+\bibitem{Barnes79}
+F.~W. Barnes.
+\newblock Packing the maximum number of $m \times n$ tiles in a $p \times q$
+  rectangle.
+\newblock {\em Discrete Mathematics}, 26:93--100, 1979.
+
+\bibitem{BarnierBrisset02}
+N.~Barnier and P.~Brisset.
+\newblock {G}raph {C}oloring for {A}ir {T}raffic {F}low {M}anagement.
+\newblock In {\em 4th Int. Workshop on Integration of AI and OR Techniques in
+  Constraint Programming for Combinatorial Optimization Problems (CPAIOR'02)},
+  pages 133--147, Le Croisic, France, 2002.
+
+\bibitem{Bartak03}
+R.~Bart{\'a}k.
+\newblock {D}ynamic {G}lobal {C}onstraints in {B}acktracking {B}ased
+  {E}nvironments.
+\newblock {\em Annals of Operations Research}, 118(1--4):101--119, 2003.
+
+\bibitem{DiBattistaEadesTamassiaTollis99}
+G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
+\newblock {\em {G}raph {D}rawing: {A}lgorithms for the {V}isualization of
+  {G}raphs}.
+\newblock Prentice-Hall, Englewood Cliffs, NJ, 1999.
+
+\bibitem{BeeriFaginMaierYannakakis83}
+C.~Beeri, R.~Fagin, D.~Maier, and M.~Yannakakis.
+\newblock On the desirability of acyclic database schemes.
+\newblock {\em JACM}, 30:479--513, 1983.
+
+\bibitem{Beldiceanu98}
+N.~Beldiceanu.
+\newblock {P}arallel {M}achine {S}cheduling with {C}alendar {R}ules.
+\newblock In {\em 6th International Workshop on Project Management and
+  Scheduling (PMS'98)}, Istanbul, Turkey, 1998.
+
+\bibitem{Beldiceanu00}
+N.~Beldiceanu.
+\newblock {G}lobal {C}onstraints as {G}raph {P}roperties on a {S}tructured
+  {N}etwork of {E}lementary {C}onstraints of the {S}ame {T}ype.
+\newblock In R.~Dechter, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2000)}, volume 1894 of {\em LNCS}, pages 52--66.
+  Springer\nobreakdash-Verlag, 2000.
+\newblock Preprint available as SICS Tech Report T2000-01.
+
+\bibitem{BeldiceanuR00}
+N.~Beldiceanu.
+\newblock {G}lobal {C}onstraints as {G}raph {P}roperties on {S}tructured
+  {N}etwork of {E}lementary {C}onstraints of the {S}ame {T}ype.
+\newblock Technical Report T2000-01, Swedish Institute of Computer Science,
+  2000.
+
+\bibitem{Beldiceanu01}
+N.~Beldiceanu.
+\newblock {P}runing for the {\it minimum} {C}onstraint {F}amily and for the
+  {\it number of distinct values} {C}onstraint {F}amily.
+\newblock In T.~Walsh, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2001)}, volume 2239 of {\em LNCS}, pages 211--224.
+  Springer\nobreakdash-Verlag, 2001.
+\newblock Preprint available as SICS Tech Report T2000-10.
+
+\bibitem{Beldiceanu04}
+N.~Beldiceanu.
+\newblock {D}eriving {F}iltering {A}lgorithms from {C}onstraints {C}heckers.
+\newblock Slides presented at the Principles and Practice of Constraint
+  Programming (CP'2004) Conference, September 2004.
+
+\bibitem{BeldiceanuBourreauChanRivreau97}
+N.~Beldiceanu, \'E. Bourreau, P.~Chan, and D.~Rivreau.
+\newblock {P}artial {S}earch {S}trategy in {C}{H}{I}{P}.
+\newblock In {\em 2nd international conference on metaheuristics - MIC97},
+  pages 1--8. INRIA \& PRiSM-Versailles, July 1997.
+
+\bibitem{BeldiceanuCarlsson01}
+N.~Beldiceanu and M.~Carlsson.
+\newblock {R}evisiting the {\it cardinality} {O}perator and {I}ntroducing the
+  {\it cardinality-path} {C}onstraint {F}amily.
+\newblock In P.~Codognet, editor, {\em Int. Conf. on Logic Programming
+  (ICLP'2001)}, volume 2237 of {\em LNCS}, pages 59--73.
+  Springer\nobreakdash-Verlag, 2001.
+\newblock Preprint available as SICS Tech Report T2000-11A.
+
+\bibitem{BeldiceanuCarlssonSoftSweep01}
+N.~Beldiceanu and M.~Carlsson.
+\newblock {S}weep as a {G}eneric {P}runing {T}echnique {A}pplied to
+  {C}onstraint {R}elaxation.
+\newblock In {\em CP'01 3rd Workshop on Soft Constraints (Soft'01)}, pages
+  43--55, Paphos, Cyprus, 2001.
+
+\bibitem{BeldiceanuCarlsson01sweep}
+N.~Beldiceanu and M.~Carlsson.
+\newblock {S}weep as a {G}eneric {P}runing {T}echnique {A}pplied to the
+  {N}on-{O}verlapping {R}ectangles {C}onstraints.
+\newblock In T.~Walsh, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2001)}, volume 2239 of {\em LNCS}, pages 377--391.
+  Springer\nobreakdash-Verlag, 2001.
+\newblock Preprint available as SICS Tech Report T2001-13.
+
+\bibitem{BeldiceanuCarlsson02a}
+N.~Beldiceanu and M.~Carlsson.
+\newblock {A} {N}ew {M}ulti-{R}esource {\it cumulatives} {C}onstraint with
+  {N}egative {H}eights.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 63--79.
+  Springer\nobreakdash-Verlag, 2002.
+\newblock Preprint available as SICS Tech Report T2001-11.
+
+\bibitem{BeldiceanuCarlssonFlenerPearson12}
+N.~Beldiceanu, M.~Carlsson, P.~Flener, and J.~Pearson.
+\newblock {O}n the {R}eification of {G}lobal {C}onstraints.
+\newblock Technical Report T2012-02, Swedish Institute of Computer Science,
+  2012.
+
+\bibitem{BeldiceanuCarlssonFlenerPearson13}
+N.~Beldiceanu, M.~Carlsson, P.~Flener, and J.~Pearson.
+\newblock On the reification of global constraints.
+\newblock {\em Constraints}, 18(1):1--6, 2013.
+
+\bibitem{BeldiceanuCarlssonPetit04}
+N.~Beldiceanu, M.~Carlsson, and T.~Petit.
+\newblock {D}eriving {F}iltering {A}lgorithms from {C}onstraint {C}heckers.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 107--122.
+  Springer\nobreakdash-Verlag, 2004.
+\newblock Preprint available as SICS Tech Report T2004-08.
+
+\bibitem{BeldiceanuCarlssonPoder08}
+N.~Beldiceanu, M.~Carlsson, and E.~Poder.
+\newblock {N}ew {F}iltering for the \emph{cumulative} {C}onstraint in the
+  {C}ontext of {N}on-{O}verlapping {R}ectangles.
+\newblock In L.~Perron and M.~A. Trick, editors, {\em International Conference
+  on Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CPAIOR'08)}, volume 5015 of {\em LNCS},
+  pages 21--35, Paris, France, May 2008. Springer\nobreakdash-Verlag.
+
+\bibitem{BeldiceanuCarlssonPoderSadekTruchet07}
+N.~Beldiceanu, M.~Carlsson, E.~Poder, R.~Sadek, and C.~Truchet.
+\newblock {A} {G}eneric {G}eometrical {C}onstraint {K}ernel in {S}pace and
+  {T}ime for {H}andling {P}olymorphic \emph{k}-{D}imensional {O}bjects.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 180--194.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{BeldiceanuCarlssonRampon05}
+N.~Beldiceanu, M.~Carlsson, and J.-X. Rampon.
+\newblock {G}lobal {C}onstraint {C}atalog.
+\newblock Technical Report T2005-08, Swedish Institute of Computer Science,
+  2005.
+\newblock Available at {\footnotesize
+  \url{ftp://ftp.sics.se/pub/SICS-reports/Reports/SICS-T--2005-08--SE.pdf}}.
+
+\bibitem{BeldiceanuCarlssonThiel02}
+N.~Beldiceanu, M.~Carlsson, and S.~Thiel.
+\newblock {C}ost-{F}iltering {A}lgorithms for the two {S}ides of the {\it sum
+  of weights of distinct values} {C}onstraint.
+\newblock Technical Report T2002-14, Swedish Institute of Computer Science,
+  2002.
+
+\bibitem{BeldiceanuContejean94}
+N.~Beldiceanu and E.~Contejean.
+\newblock {I}ntroducing {G}lobal {C}onstraints in {CHIP}.
+\newblock {\em Mathl. Comput. Modelling}, 20(12):97--123, 1994.
+
+\bibitem{BeldiceanuFlenerLorca05}
+N.~Beldiceanu, P.~Flener, and X.~Lorca.
+\newblock {T}he {\it tree} {C}onstraint.
+\newblock In R.~Bart{\'a}k and M.~Milano, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CP-AI-OR'05)}, volume 3524 of {\em
+  LNCS}, pages 64--78, Prague, Czech Republic, May 2005.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{BeldiceanuFlenerLorca06}
+N.~Beldiceanu, P.~Flener, and X.~Lorca.
+\newblock Combining tree partitioning, precedence, incomparability, and degree
+  constraints, with an application to phylogenetic and ordered-path problems.
+\newblock Technical Report Technical Report 2006-020, Department of Information
+  Technology, Uppsala University, Sweden, 2006.
+\newblock Available at {\footnotesize
+  \url{http://www.it.uu.se/research/publications/reports/2006-020}}.
+
+\bibitem{BeldiceanuGuoThiel01}
+N.~Beldiceanu, Q.~Guo, and S.~Thiel.
+\newblock {N}on-overlapping {C}onstraints between {C}onvex {P}olytopes.
+\newblock In T.~Walsh, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2001)}, volume 2239 of {\em LNCS}, pages 392--407.
+  Springer\nobreakdash-Verlag, 2001.
+\newblock Preprint available as SICS Tech Report T2001-12.
+
+\bibitem{BeldiceanuHermenierLorcaPetit10}
+N.~Beldiceanu, F.~Hermenier, X.~Lorca, and T.~Petit.
+\newblock {T}he {\it increasing\_nvalue} {C}onstraint.
+\newblock In A.~Lodi, M.~Milano, and P.~Toth, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'10)}, volume 6140 of {\em
+  LNCS}, pages 25--39, Bologna, Italy, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{BeldiceanuKatrielLorca06}
+N.~Beldiceanu, I.~Katriel, and X.~Lorca.
+\newblock {U}ndirected {F}orest {C}onstraints.
+\newblock In J.~C. Beck and B.~Smith, editors, {\em International Conference on
+  Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CPAIOR'06)}, volume 3990 of {\em LNCS},
+  pages 29--43, Cork, Ireland, May/June 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{BeldiceanuKatrielThiel04a}
+N.~Beldiceanu, I.~Katriel, and S.~Thiel.
+\newblock {F}iltering {A}lgorithms for the {\it same} and {\it usedby}
+  {C}onstraints.
+\newblock Technical Report 2004/1/001, MPI, 2004.
+
+\bibitem{BeldiceanuKatrielThiel04b}
+N.~Beldiceanu, I.~Katriel, and S.~Thiel.
+\newblock {F}iltering {A}lgorithms for the {\it same} {C}onstraint.
+\newblock In J.-C. R\'egin and M.~Rueher, editors, {\em Integration of AI and
+  OR Techniques in Constraint Programming for Combinatorial Optimisation
+  Problems (CP-AI-OR'04)}, volume 3011 of {\em LNCS}, pages 65--79.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{BeldiceanuKatrielThiel05}
+N.~Beldiceanu, I.~Katriel, and S.~Thiel.
+\newblock {F}iltering {A}lgorithms for the {\it same} and {\it usedby}
+  {C}onstraints.
+\newblock {\em Archives of Control Sciences, Special Issue on constraint
+  programming for decision and control}, 2005.
+\newblock To appear.
+
+\bibitem{BeldiceanuKatrielThiel05b}
+N.~Beldiceanu, I.~Katriel, and S.~Thiel.
+\newblock {GCC}-like {R}estrictions on the {\it same} {C}onstraint.
+\newblock In B.~Faltings, A.~Petcu, F.~Fages, and F.~Rossi, editors, {\em
+  Recent Advances in Constraints, Joint ERCIM/CoLogNet International Workshop
+  on Constraint Solving and Constraint Logic Programming, CSCLP 2004; Lausanne,
+  Switzerland, June 23-25, 2004, Revised Selected and Invited Papers}, volume
+  3419 of {\em LNCS}, pages 1--11. Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{BeldiceanuPetit04}
+N.~Beldiceanu and T.~Petit.
+\newblock {C}ost {E}valuation of {S}oft {G}lobal {C}onstraints.
+\newblock In J.-C. R{\'e}gin and M.~Rueher, editors, {\em Integration of AI and
+  OR Techniques in Constraint Programming for Combinatorial Optimization
+  Problems}, volume 3011 of {\em LNCS}, pages 80--95.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{BeldiceanuPetitRochart06}
+N.~Beldiceanu, T.~Petit, and G.~Rochart.
+\newblock Bounds of parameters for global constraints.
+\newblock {\em RAIRO Operations Research}, 40(4):327--353, 2006.
+
+\bibitem{BeldiceanuPoderPMS04}
+N.~Beldiceanu and E.~Poder.
+\newblock {C}umulated {P}rofiles of {M}inimum and {M}aximum {R}esource
+  {U}tilisation.
+\newblock In {\em Ninth Int. Conf. on Project Management and Scheduling},
+  Nancy, France, April 2004.
+
+\bibitem{BeldiceanuPoder04}
+N.~Beldiceanu and E.~Poder.
+\newblock {T}he {\it period} {C}onstraint.
+\newblock In B.~Demoen, editor, {\em Int. Conf. on Logic Programming
+  (ICLP'2004)}, LNCS. Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{BeldiceanuSimonis11}
+N.~Beldiceanu and H.~Simonis.
+\newblock {A} {C}onstraint {S}eeker: {F}inding and {R}anking {G}lobal
+  {C}onstraints from {E}xamples.
+\newblock In J.~H.M. Lee, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2011)}, volume 6876 of {\em LNCS}, pages 12--25, Perugia,
+  Italy, 2011. Springer\nobreakdash-Verlag.
+
+\bibitem{BeldiceanuSimonis12}
+N.~Beldiceanu and H.~Simonis.
+\newblock {A} {M}odel {S}eeker: {E}xtracting {G}lobal {C}onstraint {M}odels
+  from {P}ositive {E}xamples.
+\newblock In M.~Milano, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2012)}, volume 7514 of {\em LNCS}, pages 141--157, Quebec
+  City, Canada, 2012. Springer\nobreakdash-Verlag.
+
+\bibitem{Berge70}
+C.~Berge.
+\newblock {\em Graphes}.
+\newblock Dunod, 1970.
+\newblock In French.
+
+\bibitem{Berge87}
+C.~Berge.
+\newblock {\em {H}ypergraphes, {C}ombinatoire des ensembles finis}.
+\newblock Gauthier-Villars, 1987.
+\newblock In French.
+
+\bibitem{Bessiere06}
+C.~Bessi\`ere.
+\newblock {C}onstraint {P}ropagation.
+\newblock In F.~Rossi, P.~van Beek, and T.~Walsh, editors, {\em Handbook of
+  Constraint Programming}, chapter~3. Elsevier, 2006.
+
+\bibitem{BessiereColettaPetit05}
+C.~Bessi\`ere, R.~Coletta, and T.~Petit.
+\newblock {A}cquiring {P}arameters of {I}mplied {G}lobal {C}onstraints.
+\newblock In P.~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 747--751.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh05ERCIM}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {\it Among}, {\it common} and {\it disjoint} {C}onstraints.
+\newblock In M.~Carlsson, F.~Fages, B.~Hnich, and F.~Rossi, editors, {\em Joint
+  ERCIM/CoLogNET International Workshop on Constraint Solving and Constraint
+  Logic Programming (CSCLP 2005)}, pages 223--235, June 2005.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh05}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {F}iltering {A}lgorithms for the {\it nvalue} {C}onstraint.
+\newblock In R.~Bart{\'a}k and M.~Milano, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CP-AI-OR'05)}, volume 3524 of {\em
+  LNCS}, pages 79--93, Prague, Czech Republic, May 2005.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh05IJCAI}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {T}he {\it range} and {\it roots} {C}onstraints: {S}pecifying
+  {C}ounting and {O}ccurrence {P}roblems.
+\newblock In {\em 19th Int. Joint Conf. on Artificial Intelligence (IJCAI-05)},
+  pages 60--65, 2005.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh06ERCIM}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {\it Among}, {\it common} and {\it disjoint} {C}onstraints.
+\newblock In B.~Hnich, M.~Carlsson, F.~Fages, and F.~Rossi, editors, {\em
+  Recent Advances in Constraints, Joint ERCIM/Colognet International Workshop
+  on Constraint Solving and Constraint Logic Programming, CSCLP05; Uppsala,
+  Sweden, June 2005; Revised Selected and Invited Papers}, volume 3978 of {\em
+  LNAI}, pages 28--43. Springer\nobreakdash-Verlag, 2006.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh06}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {T}he {R}ange {C}onstraint: {A}lgorithms and {I}mplementation.
+\newblock In J.~C. Beck and B.~Smith, editors, {\em International Conference on
+  Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CPAIOR'06)}, volume 3990 of {\em LNCS},
+  pages 59--73, Cork, Ireland, May/June 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh06CP}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {T}he {R}oots {C}onstraint.
+\newblock In F.~Benhamou, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2006)}, volume 4204 of {\em LNCS}, pages 75--90, Nantes,
+  France, 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{BessiereHebrardHnichKiziltanWalsh09}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, Z.~K{\i}z{\i}ltan, and T.~Walsh.
+\newblock {R}ange and {R}oots: {T}wo {C}ommon {P}atterns for {S}pecifying and
+  {P}ropagating {C}ounting and {O}ccurrence {C}onstraints.
+\newblock {\em Artificial Intelligence}, 173(11):1054--1078, 2009.
+
+\bibitem{BessiereHebrardHnichWalsh04}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, and T.~Walsh.
+\newblock {\it Disjoint}, {\it partition} and {\it intersection} {C}onstraints
+  for {S}et and {M}ultiset {V}ariables.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 138--152.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{BessiereHebrardHnichWalshO4}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, and T.~Walsh.
+\newblock {T}he {C}omplexity of {G}lobal {C}onstraints.
+\newblock In D.~L. McGuinness and G.~Ferguson, editors, {\em 19th National
+  Conference on Artificial Intelligence (AAAI'04)}, pages 112--117. AAAI Press,
+  2004.
+
+\bibitem{BessiereHebrardHnichWalsh04a}
+C.~Bessi\`ere, E.~Hebrard, B.~Hnich, and T.~Walsh.
+\newblock {T}he {T}ractability of {G}lobal {C}onstraints.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 716--720.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{BessiereKatsirelosNarodytskaQuimperWalsh09IJCAI}
+C.~Bessi\`ere, G.~Katsirelos, N.~Narodytska, C.-G. Quimper, and T.~Walsh.
+\newblock Decompositions of \emph{all different}, \emph{global cardinality} and
+  related constraints.
+\newblock In {\em 21th Int. Joint Conf. on Artificial Intelligence (IJCAI-09)},
+  2009.
+
+\bibitem{BessiereKatsirelosNarodytskaQuimperWalsh10CP}
+C.~Bessi\`ere, G.~Katsirelos, N.~Narodytska, C.-G. Quimper, and T.~Walsh.
+\newblock {D}ecomposition of the \emph{nvalue} {C}onstraint.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 114--128, St
+  Andrews, Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{BessiereKatsirelosNarodytskaQuimperWalsh10}
+C.~Bessi\`ere, G.~Katsirelos, N.~Narodytska, C.-G. Quimper, and T.~Walsh.
+\newblock {P}ropagating {C}onjunctions of \emph{alldifferent} {C}onstraints.
+\newblock In {\em 25th National Conference on Artificial Intelligence
+  (AAAI'10)}, pages 1--6. AAAI Press, July 2010.
+
+\bibitem{BessiereKatsirelosNarodytskaWalsh09}
+C.~Bessi\`ere, G.~Katsirelos, N.~Narodytska, and T.~Walsh.
+\newblock {C}ircuit {C}omplexity and {D}ecompositions of {G}lobal
+  {C}onstraints.
+\newblock In {\em 21th Int. Joint Conf. on Artificial Intelligence (IJCAI-09)},
+  pages 412--418, 2009.
+
+\bibitem{BessiereNarodytskaQuimperWalsh11}
+C.~Bessi\`ere, N.~Narodytska, C.-G. Quimper, and T.~Walsh.
+\newblock {T}he \emph{alldifferent} {C}onstraint with {P}recedences.
+\newblock In T.~Achterberg and J.~C. Beck, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'11)}, volume 6697 of {\em
+  LNCS}, pages 36--52, Berlin, Germany, 2011. Springer\nobreakdash-Verlag.
+
+\bibitem{BinindaEmondsGittlemanSteel02}
+O.~R. Bininda-Emonds, J.~L. Gittleman, and M.~A. Steel.
+\newblock The (super)tree of life: {P}rocedures, problems, and prospects.
+\newblock {\em Annual Reviews of Ecological Systems}, 33:265--289, 2002.
+
+\bibitem{Biro90}
+M.~Bir\'o.
+\newblock Object-oriented interaction in resource constrained scheduling.
+\newblock {\em Information Processing Letters}, 36(2):65--67, 1990.
+
+\bibitem{GuernalecColmerauer97}
+N.~Bleuzen-Guernalec and A.~Colmerauer.
+\newblock {N}arrowing a {B}lock of {S}ortings in {Q}uadratic {T}ime.
+\newblock In G.~Smolka, editor, {\em Principles and Practice of Constraint
+  Programming (CP'97)}, volume 1330 of {\em LNCS}, pages 2--16.
+  Springer\nobreakdash-Verlag, 1997.
+
+\bibitem{BodirskyKutz07}
+M.~Bodirsky and M.~Kutz.
+\newblock {D}etermining the {C}onsistency of {P}artial {T}ree {D}escriptions.
+\newblock {\em Artificial Intelligence}, 171(2--3):185--196, 2007.
+
+\bibitem{Bohlin04}
+M.~Bohlin.
+\newblock {D}esign and {I}mplementation of a {G}raph-{B}ased {C}onstraint
+  {M}odel for {L}ocal {S}earch.
+\newblock Licentiate Thesis~27, M\"alardalen University, 2004.
+
+\bibitem{DuBoisberrangerGardyLorcaTruchet13}
+J.~Du Boisberranger, D.~Gardy, X.~Lorca, and C.~Truchet.
+\newblock When is it worthwhile to propagate a constraint? {A} probabilistic
+  analysis of \emph{AllDifferent}.
+\newblock In M.~E. Nebel and W.~Szpankowski, editors, {\em Proceedings of the
+  10th Meeting on Analytic Algorithmics and Combinatorics, ANALCO 2013}, pages
+  80--90. SIAM, 2013.
+
+\bibitem{BordeauxMonfroy03}
+L.~Bordeaux and \'E. Monfroy.
+\newblock Extraction de programmes \`a partir de sp\'ecifications en logique
+  existentielle du second ordre par compilation de connaissances.
+\newblock In {\em Programmation en logique avec contraintes, JFPLC 2003}, Revue
+  des sciences et technologies de l'information, pages 189--202. Lavoisier,
+  June 2003.
+\newblock In French.
+
+\bibitem{BourdaisGalinierPesant03}
+S.~Bourdais, P.~Galinier, and G.~Pesant.
+\newblock {HIBISCUS}: {A} {C}onstraint {P}rogramming {A}pplication to {S}taff
+  {S}cheduling in {H}ealth {C}are.
+\newblock In F.~Rossi, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2003)}, volume 2833 of {\em LNCS}, pages 153--167.
+  Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{Bourreau99}
+\'E. Bourreau.
+\newblock {\em Traitement de contraintes sur les graphes en programmation par
+  contraintes}.
+\newblock PhD thesis, Paris 13 University, France, March 1999.
+\newblock In French.
+
+\bibitem{BouwkampDuijvestijn92}
+C.~J. Bouwkamp and A.~J.~W. Duijvestijn.
+\newblock {C}atalogue of {S}imple {P}erfect {S}quared {S}quares of orders 21
+  through 25.
+\newblock Technical Report EUT Report 92-WSK-03, Eindhoven University of
+  Technology, Faculty of Mathematics and Computing Science, The Netherlands,
+  November 1992.
+
+\bibitem{Brand09}
+S.~Brand.
+\newblock {T}he {S}um-of-{I}ncrements {C}onstraint in the {C}onsecutive-{O}nes
+  {M}atrix {D}ecomposition {P}roblem.
+\newblock In S.~Y. Shin and S.~Ossowski, editors, {\em Proceedings of the 2009
+  ACM Symposium on Applied Computing (SAC)}, pages 1417--1418, Honolulu,
+  Hawaii, USA, 2009.
+
+\bibitem{BrandNarodytskaQuimperStuckeyWalsh07}
+S.~Brand, N.~Narodytska, C.-G. Quimper, P.~J. Stuckey, and T.~Walsh.
+\newblock {E}ncodings of the \emph{sequence} {C}onstraint.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 210--224.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{BronKerbosch73}
+C.~Bron and J.~Kerbosch.
+\newblock {F}inding {A}ll {C}liques of an {U}ndirected {G}raph.
+\newblock {\em Communications of the ACM}, 16(9):575--577, September 1973.
+
+\bibitem{CambazardSullivan10}
+H.~Cambazard and B.~O'Sullivan.
+\newblock {P}ropagating the {B}in {P}acking {C}onstraint {U}sing {L}inear
+  {P}rogramming.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 129--136, St
+  Andrews, Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{CapraraLodiMartelloMonaci06}
+A.~Caprara, A.~Lodi, S.~Martello, and M.~Monaci.
+\newblock {P}acking into the smallest square: {W}orst-case analysis of lower
+  bounds.
+\newblock {\em Discrete Optimization}, 3:317--326, 2006.
+
+\bibitem{Carlier82}
+J.~Carlier.
+\newblock The one-machine sequencing problem.
+\newblock {\em European Journal of Operational Research}, 11:42--47, 1982.
+
+\bibitem{CarlierPinson88}
+J.~Carlier and E.~Pinson.
+\newblock Une m\'ethode arborescente pour optimiser la dur\'ee d'un job-shop.
+\newblock Technical Report ISSN/0294-2755, Institut de Math\'ematiques
+  Appliqu\'ees, UCO, Angers, 1988.
+\newblock Les Cahiers de L'I.M.A., In French.
+
+\bibitem{CarlierPinson90}
+J.~Carlier and E.~Pinson.
+\newblock {A} {P}ractical {U}se of {J}ackson's {P}reemptive {S}chedule for
+  {S}olving the job-shop {P}roblem.
+\newblock {\em Annals of Operations Research}, 26:269--287, 1990.
+
+\bibitem{Carlsson06}
+M.~Carlsson.
+\newblock {F}iltering for the \emph{case} constraint. {T}alk given at
+  {A}dvanced {S}chool on {G}lobal {C}onstraints. {S}amos, {G}reece, 2006.
+
+\bibitem{BeldiceanuCarlsson02c}
+M.~Carlsson and N.~Beldiceanu.
+\newblock {A}rc-{C}onsistency for a {\it chain of lexicographic ordering}
+  {C}onstraints.
+\newblock Technical Report T2002-18, Swedish Institute of Computer Science,
+  2002.
+
+\bibitem{BeldiceanuCarlsson02b}
+M.~Carlsson and N.~Beldiceanu.
+\newblock {R}evisiting the {\it lexicographic ordering} {C}onstraint.
+\newblock Technical Report T2002-17, Swedish Institute of Computer Science,
+  2002.
+
+\bibitem{CarlssonBeldiceanu04}
+M.~Carlsson and N.~Beldiceanu.
+\newblock {D}ispensation {O}rder {G}eneration for {P}yrosequencing.
+\newblock In Yi-Ping~Phoebe Chen, editor, {\em Proceedings of Proceedings of
+  the Second Asia Pacific Bioinformatics Conference (APBC2004)}, volume~29,
+  pages 327--332, Dunedin, New Zealand, January 2004. Australian Computer
+  Society.
+
+\bibitem{CarlssonBeldiceanuMartin08}
+M.~Carlsson, N.~Beldiceanu, and J.~Martin.
+\newblock {A} {G}eometric {C}onstraint over $k$-{D}imensional {O}bjects and
+  {S}hapes {S}ubject to {B}usiness {R}ules.
+\newblock In P.~J. Stuckey, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2008)}, volume 5202 of {\em LNCS}, pages 220--234.
+  Springer\nobreakdash-Verlag, 2008.
+
+\bibitem{Sicstus95}
+M.~Carlsson et~al.
+\newblock {\em {SICStus} {Prolog} {U}ser's {M}anual}.
+\newblock Swedish Institute of Computer Science, 3.10 edition, January 2003.
+\newblock Available at {\footnotesize \url{http://www.sics.se/sicstus/}}.
+
+\bibitem{CarlssonOttossonCarlson97}
+M.~Carlsson, G.~Ottosson, and B.~Carlson.
+\newblock {A}n {O}pen-{E}nded {F}inite {D}omain {C}onstraint {S}olver.
+\newblock In H.~Glaser, P.~Hartel, and H.~Kuchen, editors, {\em Programming
+  Languages: Implementations, Logics, and Programming (PLILP'97)}, volume 1292
+  of {\em LNCS}, pages 191--206, Southampton, 1997.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{Carvalho99}
+J.~M.~V. Carvalho.
+\newblock Exact solution of bin-packing problems using column generation and
+  branch-and-bound.
+\newblock {\em Annals of Operations Research}, 86:629--659, 1999.
+
+\bibitem{Carvalho02}
+J.~M.~V. Carvalho.
+\newblock {L}{P} models for bin packing and cutting stock problems.
+\newblock {\em European Journal of Operational Research}, 141(2):253--273,
+  2002.
+
+\bibitem{CaseauLaburthe96b}
+Y.~Caseau and F.~Laburthe.
+\newblock {C}umulative {S}cheduling with {T}ask {I}ntervals.
+\newblock In {\em Joint International Conference and Symposium on Logic
+  Programming (JICSLP'96)}. MIT Press, 1996.
+
+\bibitem{CaseauLaburthe97}
+Y.~Caseau and F.~Laburthe.
+\newblock {S}olving {S}mall {TSP}s with {C}onstraints.
+\newblock In Lee Naish, editor, {\em Fourteenth International Conference on
+  Logic Programming (ICLP'97)}, pages 316--330. MIT Press, 1997.
+
+\bibitem{Cayley89}
+A.~Cayley.
+\newblock A theorem on trees.
+\newblock {\em Quart. J. Math.}, 23:376--378, 1889.
+
+\bibitem{ChabertBeldiceanu10}
+G.~Chabert and N.~Beldiceanu.
+\newblock {S}weeping with {C}ontinous {D}omains.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 137--151, St
+  Andrews, Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{ChabertDemassey12}
+G.~Chabert and S.~Demassey.
+\newblock {T}he {C}onjunction of {I}nterval {A}mong {C}onstraints.
+\newblock In N.~Beldiceanu, N.~Jussien, and \'E. Pinson, editors, {\em
+  International Conference on Integration of AI and OR Techniques in Constraint
+  Programming for Combinatorial Optimization Problems (CPAIOR'12)}, volume 7298
+  of {\em LNCS}, pages 113--128, Nantes, France, 2012.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{ChabertJaulinLorca09}
+G.~Chabert, L.~Jaulin, and X.~Lorca.
+\newblock {A} {C}onstraint on the {N}umber of {D}istinct {V}ectors with
+  {A}pplication to {L}ocalization.
+\newblock In I.~P. Gent, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2009)}, volume 5732 of {\em LNCS}, pages 196--210.
+  Springer\nobreakdash-Verlag, 2009.
+
+\bibitem{ChabertLorca09}
+G.~Chabert and X.~Lorca.
+\newblock {O}n the {C}lique {P}artition of {R}ectangle {G}raphs.
+\newblock Technical Report 09-03-INFO, \'Ecole des Mines de Nantes, 2009.
+
+\bibitem{Chang87}
+W.~Chang.
+\newblock {A} {R}emark on the {D}efinition of {C}ostas {A}rrays.
+\newblock {\em Proceedings of the IEEE}, 75(4):522--523, April 1987.
+
+\bibitem{Charman95}
+P.~Charman.
+\newblock {\em Gestion des contraintes g{\'e}om{\'e}triques pour l'aide \`a
+  l'am{\'e}nagement spatial}.
+\newblock PhD thesis, {\'E}cole Nationale des Ponts et Chauss{\'e}es, France,
+  November 1995.
+\newblock In French.
+
+\bibitem{ECLiPSe03}
+A.~M. Cheadle, W.~Harvey, A.~J. Sadler, J.~Schimpf, K.~Shen, and M.~G. Wallace.
+\newblock {ECLiPSe}: {A}n {I}ntroduction.
+\newblock Technical Report 03-1, IC-Parc, Imperial College London, 2003.
+
+\bibitem{ChengYap05}
+K.~C.~K. Cheng and R.~H.~C. Yap.
+\newblock {A}d-hoc {G}lobal {C}onstraints for {L}ife.
+\newblock In P.~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 182--195.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{ChengYap06}
+K.~C.~K. Cheng and R.~H.~C. Yap.
+\newblock {A}pplying {A}d-hoc {G}lobal {C}onstraints with the \emph{case}
+  {C}onstraint to {S}till-{L}ife.
+\newblock {\em Constraints}, 11(2--3):91--114, 2006.
+
+\bibitem{ChuGarciadelaBandaStuckey10}
+G.~Chu, M.~J.~Garc{\'i}a de~la Banda, and P.~J. Stuckey.
+\newblock {A}utomatically {E}xploiting {S}ubproblem {E}quivalence in
+  {C}onstraint {P}rogramming.
+\newblock In A.~Lodi, M.~Milano, and P.~Toth, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'10)}, volume 6140 of {\em
+  LNCS}, pages 71--86, Bologna, Italy, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{Chvatal73}
+V.~Chv\'atal.
+\newblock Tough graphs and hamiltonian circuits.
+\newblock {\em Discrete Mathematics}, 5:215--228, 1973.
+
+\bibitem{ClautiauxCarlierMoukrim06}
+F.~Clautiaux, J.~Carlier, and A.~Moukrim.
+\newblock {A} {N}ew {E}xact {M}ethod for the {O}rthogonal {P}acking {P}roblem.
+\newblock {\em European Journal of Operational Research}, 183(3):1196--1211,
+  2007.
+
+\bibitem{DeClercq12}
+A.~De Clercq.
+\newblock {\em Ordonnancement cumulatif avec d\'epassements de capacit\'es:
+  Contrainte globale et d\'ecompositions}.
+\newblock PhD thesis, \'Ecole des Mines de Nantes, France, 2012.
+\newblock In French.
+
+\bibitem{CoffmanGareyJohnson84}
+E.~G. Coffman, M.~R. Garey, and D.~S. Johnson.
+\newblock Approximation algorithms for bin packing - an updated survey.
+\newblock In G.~Ausiello, M.~Lucertini, and P.~Serafini, editors, {\em
+  {A}lgorithms {D}esign for {C}omputer {S}ystem {D}esign}, pages 49--106.
+  Springer\nobreakdash-Verlag, New York, 1984.
+
+\bibitem{CohenJeavonsJeffersonPetrieSmith06}
+D.~Cohen, P.~Jeavons, C.~Jefferson, K.~E. Petrie, and B.~Smith.
+\newblock {S}ymmetry {D}efinitions for {C}onstraint {S}atisfaction {P}roblems.
+\newblock {\em Constraints}, 11(2-3):115--137, 2006.
+
+\bibitem{Mozart06}
+Mozart Consortium.
+\newblock {T}he {M}ozart {P}rogramming {S}ystem, version 1.3.2, 2006.
+\newblock Available at {\footnotesize \url{http://www.mozart-oz.org}}.
+
+\bibitem{CormenLeisersonRivest90}
+T.~H. Cormen, C.~E. Leiserson, and R.~L. Rivest.
+\newblock {\em Introduction to algorithms}.
+\newblock MIT Press, fifteenth edition, 1990.
+
+\bibitem{Costa94}
+M.-C. Costa.
+\newblock Persistency in maximum cardinality bipartite matchings.
+\newblock {\em Operation Research Letters}, 15:143--149, 1994.
+
+\bibitem{Cosytec97}
+COSYTEC.
+\newblock {\em {CHIP} {R}eference {M}anual}, release 5.1 edition, 1997.
+
+\bibitem{CoteGendronRousseau07}
+M.-C. Cot\'e, B.~Gendron, and L.-M. Rousseau.
+\newblock {M}odeling the {R}egular {C}onstraint with {I}nteger {P}rogramming.
+\newblock In P.~Van~Hentenryck and L.~Wolsey, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'07)}, volume 4150 of {\em
+  LNCS}, pages 29--43, Brussels, Belgium, May 2007.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{Cousin93}
+X.~Cousin.
+\newblock {\em {A}pplication of {C}onstraint {L}ogic {P}rogramming on
+  {T}imetable {P}roblem}.
+\newblock PhD thesis, Rennes I University, France, June 1993.
+\newblock In French.
+
+\bibitem{CousotCousot77}
+P.~Cousot and R.~Cousot.
+\newblock {A}bstract interpretation: {A} unified lattice model for static
+  analysis of programs by construction or approximation of fixpoints.
+\newblock In {\em Proceedings of Symposium on Principles of Programming
+  Languages (POPL'77)}, pages 238--252. ACM Press, 1977.
+
+\bibitem{CroftFalconerGuy91}
+H.~T. Croft, K.~J. Falconer, and R.~K. Guy.
+\newblock {\em Unsolved Problems in Geometry}.
+\newblock Springer\nobreakdash-Verlag, New York, Berlin, 1991.
+
+\bibitem{Cymer12}
+R.~Cymer.
+\newblock Dulmage-{M}endelsohn canonical decomposition as a generic pruning
+  technique.
+\newblock {\em Constraints}, 17(3):234--272, 2012.
+
+\bibitem{CymerPhD13}
+R.~Cymer.
+\newblock {\em Applications of Matching Theory in Constraint Programming}.
+\newblock PhD thesis, Hannover University, Germany, 2013.
+
+\bibitem{Cymer13}
+R.~Cymer.
+\newblock Gallai-{E}dmonds decomposition as a pruning technique.
+\newblock {\em Central European Journal of Operations Research}, 2013.
+
+\bibitem{DawandeKalagnanamSethuraman98}
+M.~Dawande, J.~Kalagnanam, and J.~Sethuraman.
+\newblock {V}ariable {S}ized {B}in {P}acking with {C}olor {C}onstraints.
+\newblock Technical Report RC21350, IBM Research Report, 1998.
+
+\bibitem{DechterPearl87}
+R.~Dechter and J.~Pearl.
+\newblock {N}etwork-{B}ased {H}euristics for {C}onstraint-{S}atisfaction
+  {P}roblems.
+\newblock {\em Artificial Intelligence}, 34(1):1--38, 1987.
+
+\bibitem{DechterPearl88}
+R.~Dechter and J.~Pearl.
+\newblock {N}etwork-{B}ased {H}euristics for {C}onstraint-{S}atisfaction
+  {P}roblems.
+\newblock {\em Artificial Intelligence}, 34:1--38, 1988.
+
+\bibitem{Dechter89}
+R.~Dechter and J.~Pearl.
+\newblock {T}ree {C}lustering for {C}onstraint {N}etworks.
+\newblock {\em Artificial Intelligence}, 38(3):353--366, 1989.
+
+\bibitem{DemasseyPesantRousseau06}
+S.~Demassey, G.~Pesant, and L.-M. Rousseau.
+\newblock A {\it cost-regular} based hybrid column generation approach.
+\newblock {\em Constraints}, 11(4), 2006.
+\newblock Special issue following CPAIOR'05.
+
+\bibitem{DenmatGotliebDucasse07}
+T.~Denmat, A.~Gotlieb, and M.~Ducass\'e.
+\newblock {A}n {A}bstract {I}nterpretation {M}odel {B}ased {C}ombinator for
+  {M}odelling {W}hile {L}oops in {C}onstraint {P}rogramming.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 241--255.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{Deo76}
+N.~Deo.
+\newblock {N}ote on {H}opcroft and {T}arjan's {P}lanarity {A}lgorithm.
+\newblock {\em Journal of the Association for Computing Machinery},
+  23(1):74--75, January 1976.
+
+\bibitem{DiedrichJansenSchwarzTrystram09}
+F.~Diedrich, K.~Jansen, U.~M. Schwarz, and D.~Trystram.
+\newblock {A} {S}urvey on {A}pproximation {A}lgorithms for {S}cheduling with
+  {M}achine {U}navailability.
+\newblock In J.~Lerner, D.~Wagner, and K.~A. Zweig, editors, {\em
+  Algorithmics}, volume 5515 of {\em LNCS}, pages 50--64.
+  Springer\nobreakdash-Verlag, 2009.
+
+\bibitem{DincbasSimonis91}
+M.~Dincbas and H.~Simonis.
+\newblock {APACHE} - {A} {C}onstraint {B}ased, {A}utomated {S}tand {A}llocation
+  {S}ystem.
+\newblock In {\em {A}dvanced {S}oftware {T}echnology in {A}ir {T}ransport
+  ({ASTAIR'91})}, pages 267--282, London, UK, 1991. Royal Aeronautical Society.
+
+\bibitem{DincbasVanHentenryckSimonisAggounGrafBerthier88}
+M.~Dincbas, P.~Van~Hentenryck, H.~Simonis, T.~Graf A.~Aggoun, and F.~Berthier.
+\newblock {T}he {C}onstraint {L}ogic {P}rogramming {L}anguage {CHIP}.
+\newblock In {\em Int. Conf. on Fifth Generation Computer Systems (FGCS'88)},
+  pages 693--702, Tokyo, Japan, 1988.
+
+\bibitem{Dooms06}
+G.~Dooms.
+\newblock {\em {T}he {CP}({G}raph) {C}omputation {D}omain in {C}onstraint
+  {P}rogramming}.
+\newblock PhD thesis, University Catholic of Louvain, Belgium, September 2006.
+
+\bibitem{DoomsKatriel06}
+G.~Dooms and I.~Katriel.
+\newblock {T}he {\it minimum spanning tree} {C}onstraint.
+\newblock In F.~Benhamou, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2006)}, volume 4204 of {\em LNCS}, pages 152--166, Nantes,
+  France, 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{Dowsland84}
+K.~A. Dowsland.
+\newblock The three-dimensional pallet chart: {A}n analysis of the factors
+  affecting the set of feasible layouts for a class of two-dimensional packing
+  problems.
+\newblock {\em Journal of the Operational Research Society}, 35:895--905, 1984.
+
+\bibitem{Dowsland85}
+K.~A. Dowsland.
+\newblock Determining an upper bound for a class of rectangular packing
+  problems.
+\newblock {\em Computers \& operations research}, 12(22):201--205, 1985.
+
+\bibitem{Dudeney19}
+H.~E. Dudeney.
+\newblock {\em {T}he {C}anterbury {P}uzzles}.
+\newblock Thomas Nelson \& Sons, New York, 1919.
+
+\bibitem{Duijvestijn78}
+A.~J.~W. Duijvestijn.
+\newblock {S}imple {P}erfect {S}quared {S}quare of {L}owest {O}rder.
+\newblock {\em Journal of Combinatorial Theory}, Series B 25:555--558, 1978.
+
+\bibitem{DulmageMendelsohn58}
+A.~L. Dulmage and N.~S. Mendelsohn.
+\newblock Coverings of bipartite graphs.
+\newblock {\em Canadian Journal of Mathematics}, 10(4):517--534, 1958.
+
+\bibitem{HebrardMarxSullivanRazgon09}
+B.~O'Sullivan E.~Hebrard, D.~Marx and I.~Razgon.
+\newblock {C}onstraints of {D}ifference and {E}quality: {A} {C}omplete
+  {T}axonomic {C}haracterisation.
+\newblock In I.~P. Gent, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2009)}, volume 5732 of {\em LNCS}, pages 424--438.
+  Springer\nobreakdash-Verlag, 2009.
+
+\bibitem{Edmonds65}
+J.~Edmonds.
+\newblock Paths, trees and flowers.
+\newblock {\em Canadian Journal of Mathematics}, 17:449--467, 1965.
+
+\bibitem{ElbassioniKatrielKutzMahajan05}
+K.~M. Elbassioni, M.~Kutz I.~Katriel, and M.~Mahajan.
+\newblock {O}n {S}ystems of {\it alldifferent} {C}onstraints.
+\newblock Unpublished, Max-Planck-Institut f\"{u}r Informatik, 2005.
+
+\bibitem{ElbassioniKatrielKutzMahajan05b}
+K.~M. Elbassioni, I.~Katriel, M.~Kutz, and M.~Mahajan.
+\newblock {S}imultaneous {M}atchings.
+\newblock In Xiaotie Deng and Ding-Zhu Du, editors, {\em Algorithms and
+  Computation, 16th International Symposium, (ISAAC 2005)}, volume 3827 of {\em
+  LNCS}, pages 106--115. Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{EppsteinStrash11}
+D.~Eppstein and D.~Strash.
+\newblock {L}isting {A}ll {M}aximal {C}liques in {L}arge {S}parse
+  {R}eal-{W}orld {G}raphs.
+\newblock In P.~M. Pardalos and S.~Rebennack, editors, {\em 10th International
+  Symposium on Experimental Algorithms (SEA 2011)}, volume 6630 of {\em LNCS},
+  pages 364--375, Kolimpari, Chania, Crete, Greece, 2011.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{ErschlerLopez90}
+J.~Erschler and P.~Lopez.
+\newblock {E}nergy-{B}ased {A}pproach for {T}ask {S}cheduling under {T}ime and
+  {R}esources {C}onstraints.
+\newblock In {\em 2nd International Workshop on Project Management and
+  Scheduling}, pages 115--121, Compi\'egne, France, June 1990.
+
+\bibitem{Euler59}
+L.~Euler.
+\newblock Solution d'une question curieuse qui ne parait soumise \`a aucune
+  analyse.
+\newblock {\em Mém. Acad. Sci. Berlin}, 15:310--337, 1759.
+
+\bibitem{FagesLal03}
+F.~Fages and A.~Lal.
+\newblock {A} {G}lobal {C}onstraint for {C}utset {P}roblems.
+\newblock In {\em 5th Int. Workshop on Integration of AI and OR Techniques in
+  Constraint Programming for Combinatorial Optimization Problems (CPAIOR'03)},
+  Montr\'eal, Canada, 2003.
+
+\bibitem{FagesLorca11}
+J.-G. Fages and X.~Lorca.
+\newblock {R}evisiting the \emph{tree} {C}onstraint.
+\newblock In J.~H.M. Lee, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2011)}, volume 6876 of {\em LNCS}, pages 271--285, Perugia,
+  Italy, 2011. Springer\nobreakdash-Verlag.
+
+\bibitem{Fagin83}
+R.~Fagin.
+\newblock Degrees of acyclicity for hypergraphs and relational database
+  schemes.
+\newblock {\em JACM}, 30:514--550, July 1983.
+
+\bibitem{Fahle02}
+T.~Fahle.
+\newblock {C}ost {B}ased {F}iltering vs. {U}pper {B}ounds for {M}aximum
+  {C}lique.
+\newblock In {\em 4th Int. Workshop on Integration of AI and OR Techniques in
+  Constraint Programming for Combinatorial Optimization Problems (CPAIOR'02)},
+  Le Croisic, France, 2002.
+
+\bibitem{FalkowskiSchmitz86}
+B.-J. Falkowski and L.~Schmitz.
+\newblock A note on the queens' problem.
+\newblock {\em Information Processing Letters}, 23(1):39--46, 1986.
+
+\bibitem{FaltingsMachoGonzalez02}
+B.~Faltings and S.~Macho-Gonzalez.
+\newblock {O}pen {C}onstraint {S}atisfaction.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 356--370.
+  Springer\nobreakdash-Verlag, 2002.
+
+\bibitem{FaltingsMachoGonzalez05}
+B.~Faltings and S.~Macho-Gonzalez.
+\newblock {O}pen {C}onstraint {P}rogramming.
+\newblock {\em Artificial Intelligence}, 161(1--2):181--208, 2005.
+
+\bibitem{FavaronMaheoSacle88}
+O.~Favaron, M.~Mah\'eo, and J.-F. Sacl\'e.
+\newblock On the residue of a graph.
+\newblock {\em J. Graph Theory}, 15:39--64, 1991.
+
+\bibitem{FeketeSchepersVeen07}
+S.~P. Fekete, J.~Schepers, and J.~van~der Veen.
+\newblock {A}n {E}xact {A}lgorithm for {H}igher-{D}imensional {O}rthogonal
+  {P}acking.
+\newblock {\em Operations Research}, 55(3):569--587, 2007.
+
+\bibitem{FestaPardalosResende99}
+P.~Festa, P.~M. Pardalos, and M.~G.~C. Resende.
+\newblock Feedback set problems.
+\newblock In DingZhu Du and Panos~M. Pardalos, editors, {\em Handbook of
+  Combinatorial Optimization, Supplement Vol. A}, pages 209--258. Kluwer
+  Academic Publishers, 1999.
+
+\bibitem{FinkVoss99}
+A.~Fink and S.~Voss.
+\newblock Applications of modern heuristic search methods to pattern sequencing
+  problems.
+\newblock {\em Computers and Operations Research}, 26:17--34, 1999.
+
+\bibitem{FlammHofackerStadler99}
+C.~Flamm, I.~L. Hofacker, and P.~F. Stadler.
+\newblock {RNA} in silico: The computational biology of {RNA} secondary
+  structures.
+\newblock {\em Adv. Complex Syst.}, 2:5--90, 1999.
+
+\bibitem{FlenerFrischHnichKiziltanMiguelPearsonWalsh02}
+P.~Flener, A.~M. Frisch, B.~Hnich, Z.~K{\i}z{\i}ltan, I.~Miguel, J.~Pearson,
+  and T.~Walsh.
+\newblock {B}reaking {R}ow and {C}olumn {S}ymmetries in {M}atrix {M}odels.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 462--476.
+  Springer\nobreakdash-Verlag, 2002.
+
+\bibitem{FlenerPearsonSellmannVanHentenryckAgren09}
+P.~Flener, J.~Pearson, M.~Sellmann, P.~Van~Hentenryck, and M.~{\r{A}}gren.
+\newblock Dynamic structural symmetry breaking for constraint satisfaction
+  problems.
+\newblock {\em Constraints}, 14(4):506--538, 2009.
+
+\bibitem{Focacci01}
+F.~Focacci.
+\newblock {\em {S}olving {C}ombinatorial {O}ptimization {P}roblems in
+  {C}onstraint {P}rogramming}.
+\newblock PhD thesis, Ferrara University, Italy, 2001.
+
+\bibitem{FocacciLodiMilano99}
+F.~Focacci, A.~Lodi, and M.~Milano.
+\newblock {C}ost-{B}ased {D}omain {F}iltering.
+\newblock In {\em Principles and Practice of Constraint Programming (CP'99)},
+  volume 1713 of {\em LNCS}, pages 189--203. Springer\nobreakdash-Verlag, 1999.
+
+\bibitem{Freuder82}
+E.~C. Freuder.
+\newblock {A} {S}ufficient {C}ondition for {B}acktrack-{F}ree {S}earch.
+\newblock {\em J. ACM}, 29(1):24--32, 1982.
+
+\bibitem{FrischHnichKiziltanMiguelWalsh02}
+A.~M. Frisch, B.~Hnich, Z.~K{\i}z{\i}ltan, I.~Miguel, and T.~Walsh.
+\newblock {G}lobal {C}onstraints for {L}exicographic {O}rderings.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 93--108.
+  Springer\nobreakdash-Verlag, 2002.
+
+\bibitem{FriHniKizMigWal03}
+A.~M. Frisch, B.~Hnich, Z.~K{\i}z{\i}ltan, I.~Miguel, and T.~Walsh.
+\newblock {M}ultiset {O}rdering {C}onstraints.
+\newblock In {\em 18th Int. Joint Conf. on Artificial Intelligence
+  (IJCAI-2003)}, 2003.
+
+\bibitem{Fruhwirth98}
+T.~Fr{\"u}hwirth.
+\newblock {T}heory and {P}ractice of {C}onstraint {H}andling {R}ules, {S}pecial
+  {I}ssue on {C}onstraint {L}ogic {P}rogramming.
+\newblock {\em Journal of Logic Programming}, 37(1--3):95--138, October 1998.
+
+\bibitem{Fruhwirth06}
+T.~Fr{\"u}hwirth.
+\newblock {C}omplete {P}ropagation {R}ules for {L}exicographic {O}rder
+  {C}onstraints over {A}rbitrary {D}omains.
+\newblock In B.~Hnich, M.~Carlsson, F.~Fages, and F.~Rossi, editors, {\em
+  Recent Advances in Constraints, Joint ERCIM/Colognet International Workshop
+  on Constraint Solving and Constraint Logic Programming, CSCLP05; Uppsala,
+  Sweden, June 2005; Revised Selected and Invited Papers}, volume 3978 of {\em
+  LNAI}, pages 14--28. Springer\nobreakdash-Verlag, 2006.
+
+\bibitem{Frutos97}
+A.~G. Frutos, Q.~Liu, A.~J. Thiel, A.~M.~W. Sanner, A.~E. Condon, L.~M. Smith,
+  and R.~M. Corn.
+\newblock Demonstration of a word design strategy for {DNA} computing on
+  surfaces.
+\newblock {\em Nucleic Acids Research}, 25:4748--4757, 1997.
+
+\bibitem{Gale57}
+D.~Gale.
+\newblock A theorem on flows in networks.
+\newblock {\em Pacific J. Math.}, 7:1073--1082, 1957.
+
+\bibitem{Gallai63}
+T.~Gallai.
+\newblock Kritische graphen {I}{I}.
+\newblock {\em Publ. Math. Inst. Hungar. Acad. Sci.}, 8:373--395, 1963.
+
+\bibitem{Gambini99b}
+I.~Gambini.
+\newblock {A} {M}ethod for {C}utting {S}quares into {D}istinct {S}quares.
+\newblock {\em Discrete Applied Mathematics}, 98(1--2):65--80, 1999.
+
+\bibitem{Gambini99a}
+I.~Gambini.
+\newblock {\em Quant aux carr\'es carrel\'es}.
+\newblock PhD thesis, Aix-Marseille II University, France, December 1999.
+\newblock In French.
+
+\bibitem{GansnerNorth00}
+E.~R. Gansner and S.~C. North.
+\newblock An open graph visualization system and its applications to software
+  engineering.
+\newblock {\em Softw., Pract. Exper.}, 30(11):1203--1233, 2000.
+
+\bibitem{GareyJohnson79}
+M.~R. Garey and D.~S. Johnson.
+\newblock {\em {C}omputers and {I}ntractability. {A} {G}uide to the {T}heory of
+  {NP}-{C}ompleteness}.
+\newblock W.H.Freeman and co., San Francisco, 1979.
+
+\bibitem{GareyJohnson83}
+M.~R. Garey and D.~S. Johnson.
+\newblock {C}rossing number is {NP}-complete.
+\newblock {\em SIAM Journal on Algebraic Discrete Methods}, 4:312--316, 1983.
+
+\bibitem{GareyJohnsonSimonsTarjan81}
+M.~R. Garey, D.~S. Johnson, B.~B. Simons, and R.~E. Tarjan.
+\newblock Scheduling unit\nobreakdash-time tasks with arbitrary release times
+  and deadlines.
+\newblock {\em SIAM Journal on Computing}, 10(2):256--269, 1981.
+
+\bibitem{GarganiRefalo07}
+A.~Gargani and P.~Refalo.
+\newblock {A}n {E}fficient {M}odel and {S}trategy for the {S}teel {M}ill {S}lab
+  {D}esign {P}roblem.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 77--89.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{GehringMenschnerMeyer90}
+H.~Gehring, K.~Menschner, and M.~Meyer.
+\newblock A computer-based heuristic for packing pooled shipment containers.
+\newblock {\em European Journal of Operational Research}, 44:277--288, 1990.
+
+\bibitem{GentJeffersonMiguel06}
+I.~P. Gent, C.~Jefferson, and I.~Miguel.
+\newblock {M}inion: {A} {F}ast {S}calable {C}onstraint {S}olver.
+\newblock In {\em ECAI 2006, 17th European Conference on Artificial
+  Intelligence, August 29 - September 1, 2006, Riva del Garda, Italy, Including
+  Prestigious Applications of Intelligent Systems (PAIS 2006), Proceedings},
+  pages 98--102. IOS Press, 2006.
+
+\bibitem{GentMiguelNightingale08}
+I.~P. Gent, I.~Miguel, and P.~Nightingale.
+\newblock {G}eneralised arc consistency for the {A}lldifferent constraint: {A}n
+  empirical survey.
+\newblock {\em Artificial Intelligence}, 172(18):1973--2000, 2008.
+
+\bibitem{GentNightingale04}
+I.~P. Gent and P.~Nightingale.
+\newblock A new encoding of the \emph{alldifferent} constraint into {SAT}.
+\newblock In A.~Frisch and I.~Miguel, editors, {\em CP'2004 Third International
+  Workshop on Modelling and Reformulating Constraint Satisfaction Problems},
+  pages 95--110, Toronto, Canada, September 2004.
+
+\bibitem{GentProsserSmithWei03}
+I.~P. Gent, P.~Prosser, B.~M. Smith, and W.~Wei.
+\newblock {S}upertree {C}onstruction with {C}onstraint {P}rogramming.
+\newblock In F.~Rossi, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2003)}, volume 2833 of {\em LNCS}, pages 837--841.
+  Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{Georgiadis05}
+L.~Georgiadis.
+\newblock {\em {L}inear-{T}ime {A}lgorithms for {D}ominators and {R}elated
+  {P}roblems}.
+\newblock PhD thesis, Princeton University, USA, 2005.
+
+\bibitem{GinsbergHarvey95}
+M.~L. Ginsberg and W.~D. Harvey.
+\newblock {L}imited {D}iscrepancy {S}earch.
+\newblock In C.~S. Mellish, editor, {\em 14th Int. Joint Conf. on Artificial
+  Intelligence (IJCAI-95)}, volume~1, pages 607--615. Morgan Kaufmann, 1995.
+
+\bibitem{Glover67}
+F.~Glover.
+\newblock Maximum matchings in convex bipartite graphs.
+\newblock {\em Naval Res. Logist. Quart.}, 14:313--316, 1967.
+
+\bibitem{Golomb65}
+S.~W. Golomb.
+\newblock {\em Polyominoes}.
+\newblock Scribners, New York, 1965.
+
+\bibitem{Golomb72}
+S.~W. Golomb.
+\newblock {H}ow to {N}umber a {G}raph.
+\newblock In R.~C. Read, editor, {\em Graph Theory and Computing}, pages
+  23--37. Academic Press, New York, 1972.
+
+\bibitem{GondranMinoux84}
+M.~Gondran and M.~Minoux.
+\newblock {\em {G}raphs and {A}lgorithms}.
+\newblock Wiley, New York, 2nd revised edition, 1984.
+
+\bibitem{GrandcolasPinto10}
+S.~Grandcolas and C.~Pinto.
+\newblock {A} {SAT} {E}ncoding for {M}ulti-dimensional {P}acking {P}roblems.
+\newblock In A.~Lodi, M.~Milano, and P.~Toth, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'10)}, volume 6140 of {\em
+  LNCS}, pages 141--146, Bologna, Italy, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{Grinberg68}
+E.~Ya. Grinberg.
+\newblock Plane homogeneous graphs of degree three without hamiltonian
+  circuits.
+\newblock {\em Latv. Mat. Ezhegodnik}, 4:51--58, 1968.
+\newblock In Russian.
+
+\bibitem{Hansen75}
+P.~Hansen.
+\newblock Degr\'es et nombre de stabilit\'e d'un graphe.
+\newblock {\em Cahiers du Centre d'\'Etudes de Recherche Op\'erationnelle},
+  17:213--220, 1975.
+
+\bibitem{HararySchwenk72}
+F.~Harary and A.~J. Schwenk.
+\newblock A new crossing number for bipartite graphs.
+\newblock {\em Utilitas Math.}, 1:203--209, 1972.
+
+\bibitem{HardyWright75}
+G.~H. Hardy and E.~M. Wright.
+\newblock {\em Theory of numbers}.
+\newblock Oxford Univ. Press, Oxford, 1975.
+
+\bibitem{HarveySchimpf02}
+W.~Harvey and J.~Schimpf.
+\newblock {B}ounds {C}onsistency {T}echniques for {L}ong {L}inear
+  {C}onstraints.
+\newblock In {\em CP'02 Workshop on Techniques foR Implementing Constraint
+  programming Systems (TRICS)}, pages 39--46, 2002.
+
+\bibitem{HebrardHnichSullivanWalsh05}
+E.~Hebrard, B.~Hnich, B.~O'Sullivan, and T.~Walsh.
+\newblock Finding diverse and similar solutions in constraint programming.
+\newblock In M.~Veloso and S.~Kambhampati, editors, {\em 20th National
+  Conference on Artificial Intelligence (AAAI'05)}, pages 372--377. AAAI Press,
+  July 2005.
+
+\bibitem{HebrardSullivanRazgon08}
+E.~Hebrard, B.~O'Sullivan, and I.~Razgon.
+\newblock {A} {S}oft {C}onstraint of {E}quality: {C}omplexity and
+  {A}pproximability.
+\newblock In P.~J. Stuckey, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2008)}, volume 5202 of {\em LNCS}, pages 358--371.
+  Springer\nobreakdash-Verlag, 2008.
+
+\bibitem{HeinzSchlechteStephanWinkler12}
+S.~Heinz, T.~Schlechte, R.~Stephan, and M.~Winkler.
+\newblock Solving steel mill slab design problems.
+\newblock {\em Constraints}, 17(1):39--50, 2012.
+
+\bibitem{HellRosa72}
+P.~Hell and A.~Rosa.
+\newblock Graph decomposition, handcuffed prisoners and balanced
+  \emph{p}-designs.
+\newblock {\em Discrete Mathematic}, 2(3):229--252, 1972.
+
+\bibitem{Hellsten04}
+L.~Hellsten.
+\newblock Consistency propagation for {\it stretch} constraints.
+\newblock Master's thesis, Waterloo University, 2004.
+
+\bibitem{HellstenPesantBeek04}
+L.~Hellsten, G.~Pesant, and P.~van Beek.
+\newblock {A} {D}omain {C}onsistency {A}lgorithm for the {\it stretch}
+  {C}onstraint.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 290--304.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{HenriksenJensenJorgensenKlarlundPaigeRauheSandholm95}
+J.~G. Henriksen, J.~L. Jensen, M.~E. J{\o}rgensen, N.~Klarlund, R.~Paige,
+  T.~Rauhe, and A.~Sandholm.
+\newblock {M}ona: {M}onadic {S}econd-{O}rder {L}ogic in {P}ractice.
+\newblock In E.~Brinksma, R.~Cleaveland, K.~G. Larsen, T.~Margaria, and
+  B.~Steffen, editors, {\em Tools and Algorithms for Construction and Analysis
+  of Systems, First International Workshop, TACAS'95, Aarhus, Denmark}, volume
+  1019 of {\em LNCS}, pages 89--110. Springer\nobreakdash-Verlag, May 1995.
+
+\bibitem{HenzMullerThiel02}
+M.~Henz, T.~M{\"u}ller, and S.~Thiel.
+\newblock {G}lobal {C}onstraints for {R}ound {R}obin {T}ournament {S}cheduling.
+\newblock {\em European Journal of Operations Research}, 153(1):92--101, Feb
+  2004.
+
+\bibitem{Hernandez07}
+B.~M. Hern\'andez.
+\newblock {\em The Systematic Generation of Channelled Models in Constraint
+  Satisfaction}.
+\newblock PhD thesis, University of York, York, YO10 5DD, UK, Department of
+  Computer Science, 2007.
+
+\bibitem{HodaHoeveHooker10}
+S.~Hoda, W.-J. van Hoeve, and J.~N. Hooker.
+\newblock {A} {S}ystematic {A}pproach to {M}{D}{D}-{B}ased {C}onstraint
+  {P}rogramming.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 266--280, St
+  Andrews, Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{Hooker07}
+J.~N. Hooker.
+\newblock {G}ood and {B}ad {F}utures for {C}onstraint {P}rogramming (and
+  {O}perations {R}esearch).
+\newblock {\em Constraint Programming Letters}, 1:21--32, November 2007.
+
+\bibitem{Hooker07book}
+J.~N. Hooker.
+\newblock {\em {I}ntegrated {M}ethods for {O}ptimization}.
+\newblock Springer Science + Business Media, LLC, New York, 2007.
+
+\bibitem{HookerYan02}
+J.~N. Hooker and H.~Yan.
+\newblock {A} {R}elaxation for the {\it cumulative} {C}onstraint.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 686--690.
+  Springer\nobreakdash-Verlag, 2002.
+\newblock Available at {\footnotesize
+  \url{http://ba.gsia.cmu.edu/jnh/papers.html}}.
+
+\bibitem{HopcroftTarjan74}
+J.~Hopcroft and R.~E. Tarjan.
+\newblock {E}fficient {P}lanarity {T}esting.
+\newblock {\em Journal of the Association for Computing Machinery},
+  21(4):549--568, October 1974.
+
+\bibitem{Hopper00}
+E.~Hopper.
+\newblock {\em Two-dimensional packing utilising evolutionary algorithms and
+  other meta-heuristic methods}.
+\newblock PhD thesis, Cardiff University, UK, 2000.
+
+\bibitem{Hougardy12}
+S.~Hougardy.
+\newblock Personal communication, June 8, 2012.
+
+\bibitem{LeHuedeGrabischLabreucheSaveant06}
+F.~Le Hu\'ed\'e, M.~Grabisch, C.~Labreuche, and P.~Sav\'eant.
+\newblock Integration and propagation of a multi-criteria decision making model
+  in constraint programming.
+\newblock {\em Journal of Heuristics}, 12(4--5):329--346, September 2006.
+
+\bibitem{Hujter90}
+M.~Hujter.
+\newblock On the dynamic storage allocation problem.
+\newblock Technical report, Manuscript, Computer and Automation Institute,
+  Hungarian Acad. Sci., 1990.
+
+\bibitem{Isermann91}
+H.~Isermann.
+\newblock {O}bere {S}chranken f{\"u}r die {L}{\"o}sung des zweidimensionalen
+  {P}ackproblems auf der {B}asis struktureller {I}dentit{\"a}ten.
+\newblock In Fandel and Gehring, editors, {\em Operations Research --
+  Beitr{\"a}ge zur quantitativen Wirtschaftforschung}, pages 341--348.
+  Springer\nobreakdash-Verlag, 1991.
+
+\bibitem{ItalianoLauraSantaroni10}
+G.~F. Italiano, L.~Laura, and F.~Santaroni.
+\newblock {F}inding {S}trong {B}ridges and {S}trong {A}rticulation {P}oints in
+  {L}inear {T}ime.
+\newblock In W.~Wu and O.~Daescu, editors, {\em Combinatorial Optimization and
+  Applications - 4th International Conference, COCOA 2010, Proceedings, Part
+  I}, volume 6508 of {\em LNCS}, pages 157--169, Kailua-Kona, Hawaii, USA,
+  2010. Springer\nobreakdash-Verlag.
+
+\bibitem{Jackson1821}
+J.~Jackson.
+\newblock {R}ational {A}musements for {W}inter {E}venings.
+\newblock Longman, London, 1821.
+
+\bibitem{Jackson55}
+J.~R. Jackson.
+\newblock {S}cheduling a {P}roduction {L}ine to {M}inimize {M}aximum
+  {T}ardiness.
+\newblock Technical Report~43, University of California, Los Angeles, 1955.
+\newblock Management Science Research Project.
+
+\bibitem{Jaulin06}
+L.~Jaulin.
+\newblock {L}ocalization of an {U}nderwater {R}obot using {I}nterval
+  {C}onstraint {P}rogramming.
+\newblock In F.~Benhamou, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2006)}, volume 4204 of {\em LNCS}, pages 244--255, Nantes,
+  France, 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{FordFulkerson62}
+L.~R.~Ford Jr. and D.~R. Fulkerson.
+\newblock {\em {F}lows in {N}etworks}.
+\newblock Princeton University Press, 1962.
+
+\bibitem{JussienBarichard00}
+N.~Jussien and V.~Barichard.
+\newblock The {P}{A}{L}{M} system: explanation-based constraint programming.
+\newblock In {\em CP'00 Workshop on Techniques foR Implementing Constraint
+  programming Systems (TRICS)}, pages 118--133, 2000.
+
+\bibitem{Kale90}
+L.~V. Kal{\`e}.
+\newblock {A}n {A}lmost {P}erfect {H}euristic for the {N}-queens {P}roblem.
+\newblock {\em Information Processing Letters}, 34(4):173--178, April 1990.
+
+\bibitem{KameugneFotsoScottNgoKateu11}
+R.~Kameugne, L.~P. Fotso, J.~Scott, and Y.~Ngo-Kateu.
+\newblock {A} {Q}uadratic {E}dge-{F}inding {F}iltering {A}lgorithm for
+  {C}umulative {R}esource {C}onstraints.
+\newblock In J.~H.M. Lee, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2011)}, volume 6876 of {\em LNCS}, pages 478--492, Perugia,
+  Italy, 2011. Springer\nobreakdash-Verlag.
+
+\bibitem{Katriel05}
+I.~Katriel.
+\newblock {\em {C}onstraints and {C}hanges}.
+\newblock PhD thesis, Saarlandes University, Germany, 2005.
+
+\bibitem{Katriel06}
+I.~Katriel.
+\newblock {E}xpected-{C}ase {A}nalysis for {D}elayed {F}iltering.
+\newblock In J.~C. Beck and B.~Smith, editors, {\em International Conference on
+  Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CPAIOR'06)}, volume 3990 of {\em LNCS},
+  pages 119--125, Cork, Ireland, May/June 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{KatrielThiel03}
+I.~Katriel and S.~Thiel.
+\newblock {F}ast {B}ound {C}onsistency for the {\it global cardinality}
+  {C}onstraint.
+\newblock In F.~Rossi, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2003)}, volume 2833 of {\em LNCS}, pages 437--451.
+  Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{KatrielThielConstraints05}
+I.~Katriel and S.~Thiel.
+\newblock {C}omplete {B}ound {C}onsistency for the {G}lobal {C}ardinality
+  {C}onstraint.
+\newblock {\em Constraints}, 10(3), 2005.
+
+\bibitem{KatrielVanHentenryck06}
+I.~Katriel and P.~Van~Hentenryck.
+\newblock {R}andomized {F}iltering {A}lgorithms.
+\newblock Technical Report CS-06-09, Department of Computer Science, Brown
+  University, 2006.
+
+\bibitem{KayaHooker06}
+L.~G. Kaya and J.~N. Hooker.
+\newblock {A} {F}ilter for the \emph{circuit} {C}onstraint.
+\newblock In F.~Benhamou, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2006)}, volume 4204 of {\em LNCS}, pages 706--710, Nantes,
+  France, 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{Keber85}
+R.~Keber.
+\newblock {S}tauraumprobleme bei {S}t{\"u}ckguttransporten.
+\newblock Technical Report Heft 17, Wissenschaftliche Berichte des Institutes
+  f{\"u}r F{\"o}rdertechnik der Universit{\"a}t Karlsruhe, 1985.
+
+\bibitem{Kirkman1847}
+T.~P. Kirkman.
+\newblock {O}n a {P}roblem in {C}ombinatorics.
+\newblock {\em Cambridge and Dublin Math. J.}, 2:191--204, 1847.
+
+\bibitem{Kiziltan04}
+Z.~K{\i}z{\i}ltan.
+\newblock {\em {S}ymmetry {B}reaking {O}rdering {C}onstraints}.
+\newblock PhD thesis, Uppsala University, Sweden, March 2004.
+
+\bibitem{KiziltanWalsh02}
+Z.~K{\i}z{\i}ltan and T.~Walsh.
+\newblock {C}onstraint {P}rogramming with {M}ultisets.
+\newblock In {\em Second International Workshop on Symmetry on Constraint
+  Satisfaction Problems (SymCon-02)}, 2002.
+\newblock held along CP-2002.
+
+\bibitem{KocjanKreuger04}
+W.~Kocjan and P.~Kreuger.
+\newblock {F}iltering {M}ethods for {\it symmetric cardinality} {C}onstraint.
+\newblock In J.-C. R\'egin and M.~Rueher, editors, {\em Integration of AI and
+  OR Techniques in Constraint Programming for Combinatorial Optimisation
+  Problems (CP-AI-OR'04)}, volume 3011 of {\em LNCS}, pages 200--208.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{Korf04}
+R.~E. Korf.
+\newblock {O}ptimal {R}ectangle {P}acking: {N}ew {R}esults.
+\newblock In {\em Proceedings of the 14th International Conference on Automated
+  Planning and Scheduling (ICAPS-2004)}, pages 142--149, 2004.
+
+\bibitem{Kuhn55}
+H.~W. Kuhn.
+\newblock {T}he {H}ungarian {M}ethod for the {A}ssignment {P}roblem.
+\newblock {\em Naval Research Logistics Quaterly}, 2(1--2):83--97, March--June
+  1955.
+
+\bibitem{LabbeLaporteRodriguezMartin98}
+M.~Labb\'e, G.~Laporte, and I.~Rodr{\'\i}guez-Mart{\'\i}n.
+\newblock Path, tree and cycle location.
+\newblock In {\em Fleet Management and Logistics}, pages 187--204. Kluwer
+  Academic Publishers, 1998.
+
+\bibitem{Laburthe00}
+F.~Laburthe.
+\newblock {C}hoco: {I}mplementing a {CP} {K}ernel.
+\newblock In {\em CP'00 Workshop on Techniques foR Implementing Constraint
+  programming Systems (TRICS)}, 2000.
+
+\bibitem{LagerkvistPesant08}
+M.~Z. Lagerkvist and G.~Pesant.
+\newblock {M}odeling {I}rregular {S}hape {P}lacement {P}roblems with {R}egular
+  {C}onstraints.
+\newblock In {\em First Workshop on Bin Packing and Placement Constraints
+  BPPC'08, associated to CPAIOR08}, 2008.
+
+\bibitem{LagerkvistSchulte09}
+M.~Z. Lagerkvist and C.~Schulte.
+\newblock {P}ropagator {G}roups.
+\newblock In I.~P. Gent, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2009)}, volume 5732 of {\em LNCS}, pages 524--538.
+  Springer\nobreakdash-Verlag, 2009.
+
+\bibitem{Lahrichi79}
+A.~Lahrichi.
+\newblock {\em Ordonnancements: la notion de partie obligatoire et son
+  application aux probl{\`e}mes cumulatifs}.
+\newblock PhD thesis, Paris 6 University, France, May 1979.
+\newblock In French.
+
+\bibitem{Lahrichi82a}
+A.~Lahrichi.
+\newblock Ordonnancements: la notion de partie obligatoire et son application
+  aux probl{\`e}mes cumulatifs.
+\newblock {\em RAIRO-Recherche Op{\'e}rationnelle}, 16(3):241--262, 1982.
+\newblock In French.
+
+\bibitem{Lahrichi82}
+A.~Lahrichi.
+\newblock {S}cheduling: the {N}otions of {H}ump, {C}ompulsory {P}arts and their
+  {U}se in {C}umulative {P}roblems.
+\newblock {\em C.R. Acad. Sci., Paris}, 294:209--211, February 1982.
+
+\bibitem{LahrichiGondran84}
+A.~Lahrichi and M.~Gondran.
+\newblock Th\'eorie des parties obligatoires et d\'ecoupes \`a deux dimensions.
+\newblock Technical Report HI/4762-02, \'Electricit\'e de France (EDF), January
+  1984.
+\newblock In French.
+
+\bibitem{LaporteAsefVaziriSriskandarajah96}
+G.~Laporte, A.~Asef-Vaziri, and C.~Sriskandarajah.
+\newblock {S}ome {A}pplications of the {G}eneralized {T}ravelling {S}alesman
+  {P}roblem.
+\newblock {\em J. of the Operational Research Society}, 47:1461--1467, 1996.
+
+\bibitem{LardeuxMonfroySaubion08}
+F.~Lardeux, E.~Monfroy, and F.~Saubion.
+\newblock {I}nterleaved \emph{alldifferent} {C}onstraints: {CSP} vs. {SAT}
+  {A}pproaches.
+\newblock In D.~Dochev, M.~Pistore, and P.~Traverso, editors, {\em Artificial
+  Intelligence: Methodology, Systems, and Applications, 13th International
+  Conference, AIMSA 2008}, volume 5253 of {\em LNCS}, pages 380--384.
+  Springer\nobreakdash-Verlag, 2008.
+
+\bibitem{LarrosaValiente02}
+J.~Larrosa and G.~Valiente.
+\newblock Constraint satisfaction algorithms for graph pattern matching.
+\newblock {\em Mathematical Structures in Computer Science}, 12(4):403--422,
+  August 2002.
+
+\bibitem{Lauriere76}
+J.-L. Lauri\`ere.
+\newblock {\em Un langage et un programme pour \'enoncer et r\'esoudre des
+  probl\`emes combinatoires}.
+\newblock Th\`ese de doctorat d'\'etat, Paris 6 University, France, May 1976.
+\newblock In French.
+
+\bibitem{Lauriere78}
+J.-L. Lauri\`ere.
+\newblock {A} {L}anguage and a {P}rogram for {S}tating and {S}olving
+  {C}ombinatorial {P}roblems.
+\newblock {\em Artificial Intelligence}, 10(1):29--127, 1978.
+
+\bibitem{Law05}
+Y.~C. Law.
+\newblock {\em {U}sing {C}onstraints to {B}reak {V}alue {S}ymmetries in
+  {C}onstraint {S}atisfaction {P}roblems}.
+\newblock PhD thesis, The Chinese University of Hong Kong, September 2005.
+
+\bibitem{YatChiuLawJimmyLee04}
+Y.~C. Law and J.~H.M. Lee.
+\newblock {G}lobal {C}onstraints for {I}nteger and {S}et {V}alue {P}recedence.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 362--376.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{Leconte96}
+M.~Leconte.
+\newblock {A} {B}ounds-{B}ased {R}eduction {S}cheme for {C}onstraints of
+  {D}ifference.
+\newblock In {\em CP'96, Second International Workshop on Constraint-based
+  Reasoning}, pages 19--28, Key West, FL, USA, 1996.
+
+\bibitem{LevyLow88}
+H.~Levy and D.~W. Low.
+\newblock A contraction algorithm for finding small cycle cutsets.
+\newblock {\em J. of Algorithms}, 9:470--493, 1988.
+
+\bibitem{LiCheng90}
+K.~Li and K.-H. Cheng.
+\newblock {O}n {T}hree-{D}imensional {P}acking.
+\newblock {\em SIAM Journal on Computing}, 19(5):847--867, 1990.
+
+\bibitem{LindnerRosa80}
+C.~C. Lindner and A.~Rosa.
+\newblock Topics on steiner systems.
+\newblock {\em Annals of Discrete Mathematic}, 7, 1980.
+
+\bibitem{LinharesYanasse02}
+A.~Linhares and H.~H. Yanasse.
+\newblock Connections between cutting-pattern sequencing, {VLSI} design and
+  flexible machines.
+\newblock {\em Computers and Operations Research}, 29:1759--1772, 2002.
+
+\bibitem{LloydSoffaWang88}
+E.~L. Lloyd, M.~L. Soffa, and C.~C. Wang.
+\newblock On locating minimum feedback vertex sets.
+\newblock {\em J. of Computer and System Science}, 37:292--311, 1988.
+
+\bibitem{Lock96}
+H.~C.~R. Lock.
+\newblock {A}n {I}mplementation of the {\it cumulatives} {C}onstraint.
+\newblock Technical report, University of Karlsruhe, 1996.
+\newblock Working paper.
+
+\bibitem{LopezOrtizQuimperTrompBeek03}
+A.~Lopez-Ortiz, C.-G. Quimper, J.~Tromp, and P.~van Beek.
+\newblock {A} {F}ast and {S}imple {A}lgorithm for {B}ounds {C}onsistency of the
+  {\it alldifferent} {C}onstraint.
+\newblock In {\em Proceedings of the 18th International Joint Conference on
+  Artificial Intelligence (IJCAI'2003)}, pages 245--250, 2003.
+
+\bibitem{Lubiw85}
+A.~Lubiw.
+\newblock {D}oubly {L}exical {O}rderings of {M}atrices.
+\newblock In {\em Proceedings of the 17th Annual Association for Computing
+  Machinery Symposium on Theory of Computing (STOC-85)}, pages 396--404. ACM
+  Press, 1985.
+
+\bibitem{Lubiw87}
+A.~Lubiw.
+\newblock {D}oubly {L}exical {O}rderings of {M}atrices.
+\newblock {\em SIAM Journal on Computing}, 16(5):854--879, October 1987.
+
+\bibitem{Lucas1882}
+E.~Lucas.
+\newblock {\em R\'ecr\'eations math\'ematiques}, volume 1-2.
+\newblock Gauthier-Villars, 1882.
+
+\bibitem{Maculet91}
+R.~Maculet.
+\newblock {\em Repr{\'e}sentation des connaissances spatiales (alg{\`e}bre de
+  {M}anhattan et raisonnement spatial avec contraintes}.
+\newblock PhD thesis, Paris VI University, France, 1991.
+\newblock In French.
+
+\bibitem{Maher02}
+M.~J. Maher.
+\newblock {A}nalysis of a {\it global contiguity} {C}onstraint.
+\newblock In {\em Workshop on Rule-Based Constraint Reasoning and Programming},
+  2002.
+\newblock held along CP-2002.
+
+\bibitem{Maher09c}
+M.~J. Maher.
+\newblock {O}pen {C}ontractible {G}lobal {C}onstraints.
+\newblock In {\em 21th Int. Joint Conf. on Artificial Intelligence (IJCAI-09)},
+  pages 578--583, 2009.
+
+\bibitem{MaherNarodytskaQuimperWalsh08}
+M.~J. Maher, N.~Narodytska, C.-G. Quimper, and T.~Walsh.
+\newblock {F}low-{B}ased {P}ropagators for the \emph{sequence} and {R}elated
+  {G}lobal {C}onstraints.
+\newblock In P.~J. Stuckey, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2008)}, volume 5202 of {\em LNCS}, pages 159--174.
+  Springer\nobreakdash-Verlag, 2008.
+
+\bibitem{Marte01}
+M.~Marte.
+\newblock {A} {G}lobal {C}onstraint for {P}arallelizing the {E}xecution of
+  {T}ask {S}ets in {N}on-{P}reemptive {S}cheduling.
+\newblock In {\em CP'2001 Doctoral Programme}, 2001.
+
+\bibitem{MartelloToth90}
+S.~Martello and P.~Toth.
+\newblock {\em {K}napsack problems. {A}lgorithms and {C}omputer
+  {I}mplementations}.
+\newblock Interscience Series in Discrete Mathematics and Optimization. Wiley,
+  1990.
+
+\bibitem{MartinShmoys96}
+P.~Martin and D.~B. Shmoys.
+\newblock {A} {N}ew {A}pproach to {C}omputing {O}ptimal {S}chedules for the
+  {J}ob-{S}hop {S}cheduling {P}roblem.
+\newblock In W.~H. Cunningham, S.~T. McCormick, and M.~Queyranne, editors, {\em
+  Integer Programming and Combinatorial Optimization, 5th International IPCO
+  Conference, Vancouver, British Columbia, Canada, June 3-5, 1996,
+  Proceedings}, volume 1084 of {\em LNCS}, pages 389--403.
+  Springer\nobreakdash-Verlag, 1996.
+
+\bibitem{Gregor79}
+J.~J. McGregor.
+\newblock Relational consistency algorithms and their application in finding
+  subgraph and graph isomorphism.
+\newblock {\em Inf. Sci.}, 19(3):229--250, 1979.
+
+\bibitem{Medjdoub96}
+B.~Medjdoub.
+\newblock {\em M{\'e}thodes de conception fonctionnelle en architecture: une
+  approche {CAO} bas{\'e}e sur des contraintes: {ARCHiPLAN}}.
+\newblock PhD thesis, {\'E}cole Centrale de Paris, France, May 1996.
+\newblock In French.
+
+\bibitem{MedjdoubYannou00}
+B.~Medjdoub and B.~Yannou.
+\newblock Separating topology and geometry in space planning.
+\newblock {\em Computer-aided design}, 32(1):39--61, 2000.
+
+\bibitem{Mehlhorn00}
+K.~Mehlhorn.
+\newblock {C}onstraint {P}rogramming and {G}raph {A}lgorithms.
+\newblock In U.~Montanari, J.~D.~P. Rolim, and E.~Welzl, editors, {\em 27th
+  International Colloquium on Automata, Languages and Programming
+  (ICALP'2000)}, volume 1853 of {\em LNCS}, pages 571--575.
+  Springer\nobreakdash-Verlag, 2000.
+
+\bibitem{MehlhornThiel00}
+K.~Mehlhorn and S.~Thiel.
+\newblock {F}aster {A}lgorithms for {B}ound-{C}onsistency of the {\it
+  sortedness} and the {\it alldifferent} {C}onstraint.
+\newblock In {\em Principles and Practice of Constraint Programming (CP'2000)},
+  volume 1894 of {\em LNCS}, pages 306--319. Springer\nobreakdash-Verlag, 2000.
+
+\bibitem{MenanaDemassey09}
+J.~Menana and S.~Demassey.
+\newblock {S}equencing and {C}ounting with the \emph{multicost-regular}
+  {C}onstraint.
+\newblock In W.-J. van Hoeve and J.~N. Hooker, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'09)}, volume 5547 of {\em
+  LNCS}, pages 178--192, Pittsburgh, PA, USA, 2009.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{MercierVanHentenryck08}
+L.~Mercier and P.~Van~Hentenryck.
+\newblock Edge finding for cumulative scheduling.
+\newblock {\em Informs Journal of Computing}, 20:143--153, 2008.
+
+\bibitem{Metivier10}
+J.-P. M\'etivier.
+\newblock {\em Relaxation de contraintes globales : Mise en oeuvre et
+  Application}.
+\newblock PhD thesis, Caen University, France, 2010.
+\newblock In French.
+
+\bibitem{MittalFalkenhainer90}
+S.~Mittal and B.~Falkenhainer.
+\newblock {D}ynamic {C}onstraint {S}atisfaction {P}roblems.
+\newblock In {\em 8th National Conference on Artificial Intelligence
+  (AAAI-90)}, pages 25--32. AAAI Press, 1990.
+
+\bibitem{Mohri2009}
+M.~Mohri.
+\newblock Weighted automata algorithms.
+\newblock In M.~Droste, W.~Kuich, and H.~Vogler, editors, {\em Handbook of
+  Weighted Automata}, Monographs in Theoretical Computer Science, pages
+  213--254. Springer, 2009.
+
+\bibitem{MonetteDevilleDupont07}
+J.-N. Monette, Y.~Deville, and P.~Dupont.
+\newblock {A} {P}osition-{B}ased {P}ropagator for the {O}pen-{S}hop {P}roblem.
+\newblock In P.~Van~Hentenryck and L.~Wolsey, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'07)}, volume 4150 of {\em
+  LNCS}, pages 186--199, Brussels, Belgium, May 2007.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{MullerHannemannStilleWeihe03b}
+M.~M{\"u}ller-Hannemann, W.~Stille, and K.~Weihe.
+\newblock {E}valuating the {B}in-{P}acking {C}onstraint, {P}art i: {O}verview
+  of the {A}lgorithmic {A}pproach.
+\newblock Technical report, TU Darmstadt, 2003.
+
+\bibitem{MullerHannemannStilleWeihe03c}
+M.~M{\"u}ller-Hannemann, W.~Stille, and K.~Weihe.
+\newblock {E}valuating the {B}in-{P}acking {C}onstraint, {P}art ii: {A}n
+  {A}daptive {R}ounding {P}roblem.
+\newblock Technical report, TU Darmstadt, 2003.
+
+\bibitem{MullerHannemannStilleWeihe03d}
+M.~M{\"u}ller-Hannemann, W.~Stille, and K.~Weihe.
+\newblock {E}valuating the {B}in-{P}acking {C}onstraint, {P}art iii: {J}oint
+  {E}valuation with {C}oncave {C}onstraints.
+\newblock Technical report, TU Darmstadt, 2003.
+
+\bibitem{MullerHannemannStilleWeihe03a}
+M.~M{\"u}ller-Hannemann, W.~Stille, and K.~Weihe.
+\newblock {P}atterns of {U}sage for {G}lobal {C}onstraints: {A} {C}ase {S}tudy
+  {B}ased on the {B}in-{P}acking {C}onstraint.
+\newblock Technical report, TU Darmstadt, 2003.
+
+\bibitem{Nelissen94}
+J.~Nelissen.
+\newblock {\em {N}eue {A}ns{\"a}tze zur {L}{\"o}sung des
+  {P}alettenbeladungsproblems}.
+\newblock PhD thesis, RWTH Aachen, Germany, 1994.
+\newblock In German.
+
+\bibitem{NethercoteStuckeyBecketBrandDuckTack07}
+N.~Nethercote, P.~J. Stuckey, R.~Becket, S.~Brand, G.~J. Duck, and G.~Tack.
+\newblock {M}ini{Z}inc: {T}owards a {S}tandard {CP} {M}odelling {L}anguage.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 529--543.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{NgWormald96}
+M.~P. Ng and N.~C. Wormald.
+\newblock Reconstruction of rooted trees from subtrees.
+\newblock {\em Discrete Applied Mathematics}, 69:19--31, 1996.
+
+\bibitem{Nieuwenhuis10}
+R.~Nieuwenhuis.
+\newblock {S}{A}{T} {M}odulo {T}heories: {G}etting the {B}est of {S}{A}{T} and
+  {G}lobal {C}onstraint {F}iltering.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 1--2, St Andrews,
+  Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{XCSP2008}
+Organizing~Committee of~the Third International Competition~of CSP~Solvers.
+\newblock {XML} representation of constraint networks format {XCSP} 2.1.
+\newblock Available at {\footnotesize
+  \url{http://www.cril.univ-artois.fr/CPAI08/XCSP2_1.pdf}}, 2008.
+
+\bibitem{OlderSwinkelsEmden95}
+W.~J. Older, G.~M. Swinkels, and M.~H. van Emden.
+\newblock {G}etting to the {R}eal {P}roblem: {E}xperience with {BNR} {P}rolog
+  in {OR}.
+\newblock In {\em 3rd Int. Conf. on the Practical Application of Prolog
+  (PAP'95)}, pages 465--478. Alinmead Software Ltd., 1995.
+
+\bibitem{OplobeduMarcovitchTourbier89}
+A.~Oplobedu, J.~Marcovitch, and Y.~Tourbier.
+\newblock {CHARME}: {U}n langage industriel de programmation par contraintes,
+  illustr\'e par une application chez {R}enault.
+\newblock In {\em Proceedings of the Ninth International Workshop on Expert
+  Systems and their Applications: General Conference}, volume~1, pages 55--70,
+  1989.
+
+\bibitem{OstergardWeakley01}
+P.~{\"O}sterg{\r{a}}rd and W.~Weakley.
+\newblock Values of domination numbers of the queen's graph.
+\newblock {\em The Electronic Journal of Combinatorics}, 8(1), 2001.
+
+\bibitem{OttossonThorsteinsson00}
+G.~Ottosson and E.~S. Thorsteinsson.
+\newblock {L}inear {R}elaxations and {R}educed-cost {B}ased {P}ropagation of
+  {C}ontinuous {V}ariable {S}ubscripts.
+\newblock In {\em Second International Workshop on Integration of AI and OR
+  Techniques in Constraint Programming for Combinatorial Optimization
+  Problems}, March 2000.
+
+\bibitem{OttossonThorsteinssonHooker99}
+G.~Ottosson, E.~S. Thorsteinsson, and J.~N. Hooker.
+\newblock {M}ixed {G}lobal {C}onstraints and {I}nference in {H}ybrid {IP-CLP}
+  {S}olvers.
+\newblock In {\em CP'99 Post-Conference Workshop on Large-Scale Combinatorial
+  Optimization and Constraints}, pages 57--78, 1999.
+
+\bibitem{OuelletQuimper11}
+P.~Ouellet and C.-G. Quimper.
+\newblock {T}he {M}ulti-{I}nter-{D}istance {C}onstraint.
+\newblock In {\em 22th Int. Joint Conf. on Artificial Intelligence (IJCAI-11)},
+  2011.
+
+\bibitem{PachetRoy99}
+F.~Pachet and P.~Roy.
+\newblock {A}utomatic {G}eneration of {M}usic {P}rograms.
+\newblock In {\em Principles and Practice of Constraint Programming (CP'99)},
+  volume 1713 of {\em LNCS}, pages 331--345. Springer\nobreakdash-Verlag, 1999.
+
+\bibitem{PeridyRivreau05}
+L.~P{\'e}ridy and D.~Rivreau.
+\newblock {A}n ${O}(n \log n)$ {S}table {A}lgorithm for {I}mmediate
+  {S}elections {A}djustments.
+\newblock In G.~Kendall, E.~K. Burke, S.~Petrovic, and M.~Gendreau, editors,
+  {\em Multidisciplinary Scheduling: Theory and Applications, 1st International
+  Conference Selected Papers}, pages 205--222. Springer\nobreakdash-Verlag,
+  2005.
+
+\bibitem{Pesant01}
+G.~Pesant.
+\newblock {A} {F}iltering {A}lgorithm for the {\it stretch} {C}onstraint.
+\newblock In T.~Walsh, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2001)}, volume 2239 of {\em LNCS}, pages 183--195.
+  Springer\nobreakdash-Verlag, 2001.
+
+\bibitem{Pesant04}
+G.~Pesant.
+\newblock {A} {R}egular {L}anguage {M}embership {C}onstraint for {F}inite
+  {S}equences of {V}ariables.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 482--495.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{PesantRegin05}
+G.~Pesant and J.-C. R\'egin.
+\newblock {\small S\normalsize P\large R\large E\normalsize A\small D}: {A}
+  {B}alancing {C}onstraint {B}ased on {S}tatistics.
+\newblock In P.~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 460--474.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{PesantSoriano98}
+G.~Pesant and P.~Soriano.
+\newblock {A}n {O}ptimal {S}trategy for the {C}onstrained {C}ycle {C}over
+  {P}roblem.
+\newblock CRT Pub. 98-45, CRT, Montr\'eal, December 1998.
+
+\bibitem{Petersen1891}
+J.~Petersen.
+\newblock {D}ie {T}heorie der {R}egularen {G}raphs.
+\newblock {\em Acta Mathematica}, 15:193--220, 1891.
+
+\bibitem{PetitBeldiceanuLorca11}
+T.~Petit, N.~Beldiceanu, and X.~Lorca.
+\newblock {A} {G}eneralized {A}rc-{C}onsistency {A}lgorithm for a {C}lass of
+  {C}ounting {C}onstraints.
+\newblock In {\em 22th Int. Joint Conf. on Artificial Intelligence (IJCAI-11)},
+  2011.
+
+\bibitem{PetitPoder09}
+T.~Petit and E.~Poder.
+\newblock {T}he {S}oft {C}umulative {C}onstraint.
+\newblock {\em CoRR}, abs/0907.0939, 2009.
+
+\bibitem{PetitRegin09}
+T.~Petit and J.-C. R\'egin.
+\newblock {T}he {O}rdered {G}lobal {C}ardinality {C}onstraint.
+\newblock Technical Report 09-07-INFO, \'Ecole des Mines de Nantes, 2009.
+
+\bibitem{PetitReginBeldiceanu11}
+T.~Petit, J.-C. R\'egin, and N.~Beldiceanu.
+\newblock {A} $\theta(n)$ {B}ound-{C}onsistency {A}lgorithm for the
+  \emph{increasing sum} {C}onstraint.
+\newblock In J.~H.M. Lee, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2011)}, volume 6876 of {\em LNCS}, pages 721--728, Perugia,
+  Italy, 2011. Springer\nobreakdash-Verlag.
+
+\bibitem{PetitReginBessiere01}
+T.~Petit, J.-C. R\'egin, and C.~Bessi\`ere.
+\newblock {S}pecific {F}iltering {A}lgorithms for {O}ver-{C}onstrained
+  {P}roblems.
+\newblock In T.~Walsh, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2001)}, volume 2239 of {\em LNCS}, pages 451--463.
+  Springer\nobreakdash-Verlag, 2001.
+
+\bibitem{Pfefferkorn75}
+C.~E. Pfefferkorn.
+\newblock {A} {H}euristic {P}roblem {S}olving {D}esign {S}ystem for {E}quipment
+  or {F}urniture {L}ayouts.
+\newblock {\em Communications of the ACM}, 18(5):286--297, May 1975.
+
+\bibitem{Pitrat01}
+J.~Pitrat.
+\newblock {MALICE}, notre coll{\`e}gue.
+\newblock In {\em Colloque M{\'e}taconnaissance de Berder}, pages 4--19,
+  September 2001.
+\newblock In French.
+
+\bibitem{Pitrat08}
+J.~Pitrat.
+\newblock {A} {S}tep toward an {A}rtificial {A}rtificial {I}ntelligence
+  {S}cientist.
+\newblock Technical report, Paris VI University, France, 2008.
+
+\bibitem{Pitrat09}
+J.~Pitrat.
+\newblock {\em {A}rtificial {B}eings}.
+\newblock Wiley InterScience, April 2009.
+
+\bibitem{Poder02}
+E.~Poder.
+\newblock {\em Programmation par contraintes et ordonnancement de t\^{a}ches
+  avec consommation variable de ressource}.
+\newblock PhD thesis, Blaise-Pascal - Clermont II University, France, October
+  2002.
+\newblock In French.
+
+\bibitem{PoderBeldiceanuSanlaville04}
+E.~Poder, N.~Beldiceanu, and E.~Sanlaville.
+\newblock {C}omputing a {L}ower {A}pproximation of the {C}ompulsory {P}art of a
+  {T}ask with {V}arying {D}uration and {V}arying {R}esource {C}onsumption.
+\newblock {\em European Journal of Operational Research}, 153:239--254, 2004.
+
+\bibitem{PraletVerfaillie09}
+C.~Pralet and G.~Verfaillie.
+\newblock {S}lice {E}ncoding for {C}onstraint-based {P}lanning.
+\newblock In I.~P. Gent, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2009)}, volume 5732 of {\em LNCS}, pages 669--683.
+  Springer\nobreakdash-Verlag, 2009.
+
+\bibitem{PreparataShamos85}
+F.~P. Preparata and M.~I. Shamos.
+\newblock {\em Computational Geometry. An Introduction.}
+\newblock Springer\nobreakdash-Verlag, New York, Berlin, 1985.
+\newblock Corrected and Expanded Second Printing.
+
+\bibitem{Puget94}
+J.-F. Puget.
+\newblock {A} {C}++ {I}mplementation of {CLP}.
+\newblock In {\em Second Singapore International Conference on Intelligent
+  Systems (SPICIS)}, pages 256--261, Singapore, November 1994.
+
+\bibitem{Puget98}
+J.-F. Puget.
+\newblock {A} {F}ast {A}lgorithm for the {B}ound {C}onsistency of {\it alldiff}
+  {C}onstraints.
+\newblock In {\em 15th National Conference on Artificial Intelligence
+  (AAAI-98)}, pages 359--366. AAAI Press, 1998.
+
+\bibitem{Puget03}
+J.-F. Puget.
+\newblock {U}sing {C}onstraint {P}rogramming to {C}ompute {S}ymmetries.
+\newblock In {\em Third International Workshop on Symmetry in Constraint
+  Satisfaction Problems (SymCon-03)}, 2003.
+\newblock held along CP-2003.
+
+\bibitem{Puget05b}
+J.-F. Puget.
+\newblock {A}utomatic {D}etection of {V}ariable and {V}alue {S}ymmetries.
+\newblock In P.~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 477--489.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{Puget05a}
+J.-F. Puget.
+\newblock {S}ymmetry {B}reaking {R}evisited.
+\newblock {\em Constraints}, 10(1):23--46, 2005.
+
+\bibitem{Quesada06}
+L.~O. Quesada.
+\newblock {\em {S}olving {C}onstrained {G}raph {P}roblems using {R}eachability
+  {C}onstraints based on {T}ransitive {C}losure and {D}ominators}.
+\newblock PhD thesis, University catholic of Louvain, Belgium, November 2006.
+
+\bibitem{QuesadaVanRoyDeville05}
+L.~O. Quesada, P.~Van~Roy, and Y.~Deville.
+\newblock Reachability: a constrained path propagator implemented as a
+  multi-agent system.
+\newblock In {\em CLEI2005}, 2005.
+
+\bibitem{QuesadaVanRoyDevilleCollet06}
+L.~O. Quesada, P.~Van~Roy, Y.~Deville, and R.~Collet.
+\newblock {U}sing {D}ominators for {S}olving {C}onstrained {P}ath {P}roblems.
+\newblock In P.~Van~Hentenryck, editor, {\em Practical Aspects of Declarative
+  Languages, 8th International Symposium}, volume 3819 of {\em LNCS}, pages
+  73--87, Charleston, SC, USA, January 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{Quimper03}
+C.~Quimper.
+\newblock Enforcing domain consistency on the extended global cardinality
+  constraint is {NP}-hard.
+\newblock Technical Report TR CS-2003-39, School of Computer Science,
+  University of Waterloo, 2003.
+
+\bibitem{QuimperOrtizPesant06}
+C.-G. Quimper, A.~L\'opez-Ortiz, and G.~Pesant.
+\newblock {A} {Q}uadratic {P}ropagator for the {I}nter-{D}istance {C}onstraint.
+\newblock In {\em 21th National Conference on Artificial Intelligence
+  (AAAI'06)}. AAAI Press, 2006.
+
+\bibitem{QuimperLopezOrtizBeekGolynski04}
+C.-G. Quimper, A.~L\'opez-Ortiz, P.~van Beek, and A.~Golynski.
+\newblock {I}mproved {A}lgorithms for the {\it global cardinality}
+  {C}onstraint.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 542--556.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{QuimperBeekOrtizGolynskiSadjad03}
+C.-G. Quimper, P.~van Beek, A.~L\'opez-Ortiz, A.~Golynski, and S.~B. Sadjad.
+\newblock {A}n {E}fficient {B}ounds {C}onsistency {A}lgorithm for the {\it
+  global cardinality} {C}onstraint.
+\newblock In F.~Rossi, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2003)}, volume 2833 of {\em LNCS}, pages 600--614.
+  Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{QuimperWalsh05}
+C.-G. Quimper and T.~Walsh.
+\newblock {B}eyond {F}inite {D}omains: {T}he {A}ll {D}ifferent and {G}lobal
+  {C}ardinality {C}onstraints.
+\newblock In P.~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 812--816.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{QuimperWalshReport05}
+C.-G. Quimper and T.~Walsh.
+\newblock {B}eyond {F}inite {D}omains: the {A}ll {D}ifferent and {G}lobal
+  {C}ardinality {C}onstraints.
+\newblock In F.~Azevedo, C.~Gervet, and E.~Pontelli, editors, {\em Constraint
+  Programming Beyond Finite Integer Domains (CP'2005)}, pages 5--17, October
+  2005.
+
+\bibitem{QuimperWalsh06}
+C.-G. Quimper and T.~Walsh.
+\newblock {T}he {A}ll {D}ifferent and {G}lobal {C}ardinality {C}onstraints on
+  {S}et, {M}ultiset and {T}uple {V}ariables.
+\newblock In B.~Hnich, M.~Carlsson, F.~Fages, and F.~Rossi, editors, {\em
+  Recent Advances in Constraints, Joint ERCIM/Colognet International Workshop
+  on Constraint Solving and Constraint Logic Programming, CSCLP05; Uppsala,
+  Sweden, June 2005; Revised Selected and Invited Papers}, volume 3978 of {\em
+  LNAI}, pages 1--13. Springer\nobreakdash-Verlag, 2006.
+
+\bibitem{RandellCuiCohn92}
+D.~A. Randell, Z.~Cui, and A.~G. Cohn.
+\newblock A spatial logic based on regions and connection.
+\newblock In B.~Nebel, C.~Rich, and W.~R. Swartout, editors, {\em Proc. of 2nd
+  International Conference on Principles of Knowledge Representation and
+  Reasoning (KR'92)}, pages 165--176. Morgan Kaufmann, 1992.
+
+\bibitem{Refalo00}
+P.~Refalo.
+\newblock {L}inear {F}ormulation of {C}onstraint {P}rogramming {M}odels and
+  {H}ybrid {S}olvers.
+\newblock In {\em Principles and Practice of Constraint Programming (CP'2000)},
+  volume 1894 of {\em LNCS}. Springer\nobreakdash-Verlag, 2000.
+
+\bibitem{Regin94}
+J.-C. R{\'e}gin.
+\newblock {A} {F}iltering {A}lgorithm for {C}onstraints of {D}ifference in
+  {CSP}.
+\newblock In {\em 12th National Conference on Artificial Intelligence
+  (AAAI-94)}, pages 362--367, 1994.
+
+\bibitem{Regin95}
+J.-C. R{\'e}gin.
+\newblock {\em D{\'e}veloppement d'outils algorithmiques pour l'{I}ntelligence
+  {A}rtificielle}.
+\newblock PhD thesis, Montpellier II University, France, 1995.
+\newblock In French.
+
+\bibitem{Regin96}
+J.-C. R\'egin.
+\newblock {G}eneralized {A}rc {C}onsistency for {\it global cardinality}
+  {C}onstraint.
+\newblock In {\em 14th National Conference on Artificial Intelligence
+  (AAAI-96)}, pages 209--215, 1996.
+
+\bibitem{Regin97}
+J.-C. R{\'e}gin.
+\newblock {T}he {G}lobal {\it minimum distance} {C}onstraint.
+\newblock Technical report, ILOG, 1997.
+
+\bibitem{Regin99a}
+J.-C. R\'egin.
+\newblock {A}rc {C}onsistency for {G}lobal {C}ardinality {C}onstraints with
+  {C}osts.
+\newblock In J.~Jaffar, editor, {\em Principles and Practice of Constraint
+  Programming (CP'99)}, volume 1713 of {\em LNCS}, pages 390--404.
+  Springer\nobreakdash-Verlag, 1999.
+
+\bibitem{Regin99}
+J.-C. R\'egin.
+\newblock {T}he {S}ymmetric {\it alldiff} {C}onstraint.
+\newblock In {\em 16th Int. Joint Conf. on Artificial Intelligence (IJCAI-99)},
+  pages 420--425, 1999.
+
+\bibitem{Regin02}
+J.-C. R{\'e}gin.
+\newblock {C}ost-{B}ased {A}rc {C}onsistency for {G}lobal {C}ardinality
+  {C}onstraints.
+\newblock {\em Constraints}, 7(3--4):387--405, 2002.
+
+\bibitem{Regin03CPAIOR}
+J.-C. R{\'e}gin.
+\newblock {S}olving the {M}aximum {C}lique {P}roblem with {C}onstraint
+  {P}rogramming.
+\newblock In {\em Fifth International Workshop on Integration of AI and OR
+  Techniques in Constraint Programming for Combinatorial Optimization Problems
+  (CP-AI-OR'03)}, pages 166--179, Montr\'eal, Canada, May 2003.
+
+\bibitem{Regin03}
+J.-C. R\'egin.
+\newblock {U}sing {C}onstraint {P}rogramming to {S}olve the {M}aximum {C}lique
+  {P}roblem.
+\newblock In F.~Rossi, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2003)}, volume 2833 of {\em LNCS}, pages 634--648.
+  Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{Regin08}
+J.-C. R\'egin.
+\newblock {S}impler and {I}ncremental {C}onsistency {C}hecking and {A}rc
+  {C}onsistency {F}iltering {A}lgorithms for the {\it {w}eighted {s}panning
+  {t}ree} {C}onstraint.
+\newblock In L.~Perron and M.~A. Trick, editors, {\em International Conference
+  on Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CPAIOR'08)}, volume 5015 of {\em LNCS},
+  pages 233--247, Paris, France, 2008. Springer\nobreakdash-Verlag.
+
+\bibitem{ReginGomes04}
+J.-C. R\'egin and C.~Gomes.
+\newblock {T}he {\it cardinality matrix} {C}onstraint.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 572--587.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{ReginPuget97}
+J.-C. R\'egin and J.-F. Puget.
+\newblock {A} {F}iltering {A}lgorithm for {G}lobal {S}equencing {C}onstraints.
+\newblock In G.~Smolka, editor, {\em Principles and Practice of Constraint
+  Programming (CP'97)}, volume 1330 of {\em LNCS}, pages 32--46.
+  Springer\nobreakdash-Verlag, 1997.
+
+\bibitem{ReginRousseauRueherHoeve10}
+J.-C. R\'egin, L.-M. Rousseau, M.~Rueher, and W.-J. van Hoeve.
+\newblock {T}he {W}eighted {S}panning {T}ree {C}onstraint {R}evisited.
+\newblock In A.~Lodi, M.~Milano, and P.~Toth, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'10)}, volume 6140 of {\em
+  LNCS}, pages 287--291, Bologna, Italy, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{ReginRueher99}
+J.-C. R\'egin and M.~Rueher.
+\newblock {A} {G}lobal {C}onstraint {C}ombining a {\it sum} {C}onstraint and
+  {B}inary {I}nequalities.
+\newblock In {\em IJCAI-99 Workshop on Non Binary Constraints}, 1999.
+
+\bibitem{ReginRueher00}
+J.-C. R{\'e}gin and M.~Rueher.
+\newblock {A} {G}lobal {C}onstraint {C}ombining a {S}um {C}onstraint and
+  {D}ifference {C}onstraints.
+\newblock In R.~Dechter, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2000)}, volume 1894 of {\em LNCS}, pages 384--395.
+  Springer\nobreakdash-Verlag, 2000.
+
+\bibitem{ReginRueher05}
+J.-C. R{\'e}gin and M.~Rueher.
+\newblock {\it inequality-sum}: {A} {G}lobal {C}onstraint {C}apturing the
+  {O}bjective {F}unction.
+\newblock {\em RAIRO Operations Research}, 39(2):123--139, 2005.
+
+\bibitem{RibeiroCarravilla04}
+C.~Ribeiro and M.~A. Carravilla.
+\newblock {A} {G}lobal {C}onstraint for {N}esting {P}roblems.
+\newblock In J.-C. R\'egin and M.~Rueher, editors, {\em Integration of AI and
+  OR Techniques in Constraint Programming for Combinatorial Optimisation
+  Problems (CP-AI-OR'04)}, volume 3011 of {\em LNCS}, pages 256--270.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{RichterFreundNaveh06}
+Y.~Richter, A.~Freund, and Y.~Naveh.
+\newblock {G}eneralizing {\it alldifferent}: the {\it somedifferent}
+  {C}onstraint.
+\newblock In F.~Benhamou, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2006)}, volume 4204 of {\em LNCS}, pages 468--483, Nantes,
+  France, 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{Roach84}
+J.~A. Roach.
+\newblock {T}he {R}ectangle {P}lacement {L}anguage.
+\newblock Technical Report 08903, Laboratory for Computer Science Research,
+  Hill Center for the Mathematical Sciences, Busch Campus, Rutgers University,
+  New Brunswick, New Jersey, September 1985.
+
+\bibitem{Rochart05}
+G.~Rochart.
+\newblock {\em Explications et programmation par contraintes avanc\'ee}.
+\newblock PhD thesis, Nantes University, France, 2005.
+\newblock In French.
+
+\bibitem{RochartJussien03}
+G.~Rochart and N.~Jussien.
+\newblock Explanations for global constraints: instrumenting the {\it stretch}
+  constraint.
+\newblock Technical Report 03-01-INFO, \'Ecole des Mines de Nantes, 2003.
+
+\bibitem{RochonDuVerdier92}
+F.~{Rochon du Verdier}.
+\newblock {\em R{\'e}solution de probl{\`e}mes d'am{\'e}nagement spatial
+  fond{\'e}e sur la satisfaction de contraintes. {V}alidation sur
+  l'implantation d'{\'e}quipements {\'e}lectroniques hyperfr{\'e}quences}.
+\newblock PhD thesis, Lyon I University, France, July 1992.
+\newblock In French.
+
+\bibitem{Roditty03}
+L.~Roditty.
+\newblock A faster and simpler fully dynamic transitive closure algorithm.
+\newblock In {\em SODA'03: Proceedings of the fourteenth anuual ACM-SIAM
+  symposium on Discrete algorithms}, pages 404--412.
+  Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{RosaHuang71}
+A.~Rosa and C.~Huang.
+\newblock {C}omplete {C}lassification of {S}olutions to the {P}roblem of 9
+  {P}risoners.
+\newblock In {\em Proceedings of the 25th Summer Meeting of Canadiant
+  Mathematical Congress}, 1971.
+
+\bibitem{Roy06}
+B.~Roy.
+\newblock Regard historique sur la place de la recherche op\'erationnelle et de
+  l'aide \`a la d\'ecision en {F}rance.
+\newblock {\em Math\'ematiques et sciences humaines}, 175:25--40, 2006.
+\newblock In French, available at {\footnotesize
+  \url{http://msh.revues.org/3570}}.
+
+\bibitem{SadlerGervet01}
+A.~J. Sadler and C.~Gervet.
+\newblock Global reasoning on sets.
+\newblock In {\em CP'00 Workshop on Modelling and Problem Formulation
+  (FORMUL'01)}, 2001.
+
+\bibitem{SaidyTaghaviFard08}
+H.~R.~D. Saidy and M.~T. Taghavi-Fard.
+\newblock {S}tudy of {S}cheduling {P}roblems with {M}achine {A}vailability
+  {C}onstraint.
+\newblock {\em Journal of Industrial and Systems Engineering}, 1(4):360--383,
+  2008.
+
+\bibitem{Samet89}
+H.~Samet.
+\newblock {\em The design and analysis of spatial data structures}.
+\newblock Addison-Wesley, 1989.
+
+\bibitem{SchausDevilleDupont07a}
+P.~Schaus, Y.~Deville, and P.~Dupont.
+\newblock {B}ound-{C}onsistent {D}eviation.
+\newblock Slides presented at the Principles and Practice of Constraint
+  Programming (CP'2007) Conference, 2007.
+
+\bibitem{SchausDevilleDupont07}
+P.~Schaus, Y.~Deville, and P.~Dupont.
+\newblock {B}ound-{C}onsistent {D}eviation {C}onstraint.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 620--634.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{SchausDevilleDupontRegin06}
+P.~Schaus, Y.~Deville, P.~Dupont, and J.-C. R\'egin.
+\newblock Simplification and extension of \emph{spread}.
+\newblock In {\em 3th Workshop on Constraint Propagation and Implementation},
+  2006.
+
+\bibitem{SchausDevilleDupontRegin07}
+P.~Schaus, Y.~Deville, P.~Dupont, and J.-C. R\'egin.
+\newblock {T}he \emph{deviation} {C}onstraint.
+\newblock In P.~Van~Hentenryck and L.~Wolsey, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'07)}, volume 4150 of {\em
+  LNCS}, pages 260--274, Brussels, Belgium, May 2007.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{SchausVanHentenryckZanarini10}
+P.~Schaus, P.~Van~Hentenryck, and A.~Zanarini.
+\newblock {R}evisiting the {S}oft {G}lobal {C}ardinality {C}onstraint.
+\newblock In A.~Lodi, M.~Milano, and P.~Toth, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'10)}, volume 6140 of {\em
+  LNCS}, pages 307--312, Bologna, Italy, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{ScheithauerTerno96}
+G.~Scheithauer and J.~Terno.
+\newblock The {G}4-{H}euristic for the {P}allet {L}oading {P}roblem.
+\newblock {\em European Journal of Operational Research}, 46:511--522, 1996.
+
+\bibitem{Gecode06}
+C.~Schulte, M.~Lagerkvist, and G.~Tack.
+\newblock Gecode, 2006.
+\newblock Available at {\footnotesize \url{http://www.gecode.org}}.
+
+\bibitem{SchuttWolf10}
+A.~Schutt and A.~Wolf.
+\newblock {A} {N}ew ${O}(n^2 \log n)$ {N}ot-{F}irst/{N}ot-{L}ast {P}runing
+  {A}lgorithm for {C}umulative {R}esource {C}onstraints.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 445--459, St
+  Andrews, Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{SedgewickFlajolet96}
+R.~Sedgewick and O.~Flajolet.
+\newblock {\em An introduction to the analysis of algorithms}.
+\newblock Addison-Wesley, 1996.
+
+\bibitem{Sellmann02}
+M.~Sellmann.
+\newblock An arc consistency algorithm for the {\it minimum weight all
+  different} constraint.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 744--749.
+  Springer\nobreakdash-Verlag, 2002.
+
+\bibitem{SellmannKadioglu08}
+M.~Sellmann and S.~Kadioglu.
+\newblock {D}ichotomic {S}earch {P}rotocols for {C}onstrained {O}ptimization.
+\newblock In P.~J. Stuckey, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2008)}, volume 5202 of {\em LNCS}, pages 251--265.
+  Springer\nobreakdash-Verlag, 2008.
+
+\bibitem{Shaw04}
+P.~Shaw.
+\newblock {A} {C}onstraint for {B}in {P}acking.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 648--662.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{Shearer96}
+J.~B. Shearer.
+\newblock Golomb rulers.
+\newblock Available at {\footnotesize
+  \url{http://www.research.ibm.com/people/s/shearer/grule.html}}.
+
+\bibitem{ShufetBerliner94}
+J.~A. Shufet and H.~J. Berliner.
+\newblock Generating hamiltonian circuits without backtracking from errors.
+\newblock {\em Theoretical Computer Science}, 132:347--375, 1994.
+
+\bibitem{Simonis90}
+H.~Simonis.
+\newblock {C}hannel {R}outing {S}een as a {C}onstraint {P}roblem.
+\newblock Technical Report TR-LP-51, ECRC, 1990.
+
+\bibitem{Simonis01}
+H.~Simonis.
+\newblock {B}uilding {I}ndustrial {A}pplication with {C}onstraint
+  {P}rogramming.
+\newblock In H.~Common, C.~March{\'e}, and R.~Treinen, editors, {\em
+  {C}onstraints in {C}omputational {L}ogics - {T}heory and {A}pplications,
+  International Summer School, CCL'99 Gif sur Yvette September 5-8, 1999,
+  France, Revised Lectures}, pages 271--309. Springer\nobreakdash-Verlag, 2001.
+
+\bibitem{Simonis05}
+H.~Simonis.
+\newblock {S}udoku as a {C}onstraint {P}roblem.
+\newblock In B.~Hnich, P.~Prosser, and B.~Smith, editors, {\em {M}odelling and
+  {R}eformulating {C}onstraint {S}atisfaction {P}roblems, Fourth International
+  Workshop, Sitges (Barcelona), Spain}, pages 13--27, 2005.
+
+\bibitem{Simonis13}
+H.~Simonis.
+\newblock Personal communication, June 2013.
+
+\bibitem{SimonisAggounBeldiceanuBourreau00}
+H.~Simonis, A.~Aggoun, N.~Beldiceanu, and \'E. Bourreau.
+\newblock {C}omplex {C}onstraint {A}bstraction: {G}lobal {C}onstraint
+  {V}isualization.
+\newblock In P.~Deransart, M.~V. Hermenegildo, and J.~Ma{\l}uszy\'nski,
+  editors, {\em Analysis and Vizualisation Tools for Constraint Programming},
+  volume 1870 of {\em LNCS}, pages 299--317. Springer\nobreakdash-Verlag, 2000.
+
+\bibitem{SimonisBourreauBeldiceanu99}
+H.~Simonis, \'E. Bourreau, and N.~Beldiceanu.
+\newblock {A} {N}ote on {P}erfect {S}quare {P}lacement.
+\newblock Technical report, Cosytec, 1999.
+
+\bibitem{SimonisCornelissens95}
+H.~Simonis and T.~Cornelissens.
+\newblock {M}odelling {P}roducer/{C}onsumer {C}onstraints.
+\newblock In U.~Montanari and F.~Rossi, editors, {\em Principles and Practice
+  of Constraint Programming (CP'95)}, volume 976 of {\em LNCS}, pages 449--462.
+  Springer\nobreakdash-Verlag, 1995.
+
+\bibitem{SimonisDavernFeldmanMehtaQuesadaCarlsson10}
+H.~Simonis, P.~Davern, J.~Feldman, D.~Mehta, L.~Quesada, and M.~Carlsson.
+\newblock {A} {G}eneric {V}isualization {P}latform for {C}{P}.
+\newblock In D.~Cohen, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2010)}, volume 6308 of {\em LNCS}, pages 460--474, St
+  Andrews, Scotland, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{SimonisSullivan08}
+H.~Simonis and B.~O'Sullivan.
+\newblock {S}earch {S}trategies for {R}ectangle {P}acking.
+\newblock In P.~J. Stuckey, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2008)}, volume 5202 of {\em LNCS}, pages 52--66.
+  Springer\nobreakdash-Verlag, 2008.
+
+\bibitem{Skiena90}
+S.~Skiena.
+\newblock {\em {I}mplementing {D}iscrete {M}athematics. {C}ombinatoric and
+  {G}raph {T}heory with {M}athematica}.
+\newblock Addison-Wesley, 1990.
+
+\bibitem{Sloane10}
+N.~J.~A. Sloane.
+\newblock {T}he {O}n-{L}ine {E}ncyclopedia of {I}nteger {S}equences.
+\newblock Published electronically at {\footnotesize \url{http://oeis.org}},
+  2010.
+
+\bibitem{SmithStergiouWalsh99}
+B.~M. Smith, K.~Stergiou, and T.~Walsh.
+\newblock {M}odelling the {G}olomb {R}uler {P}roblem.
+\newblock In {\em IJCAI-99 Workshop on Non Binary Constraints}, 1999.
+
+\bibitem{Smolka96}
+G.~Smolka.
+\newblock Constraints in {Oz}.
+\newblock {\em ACM Computing Surveys}, 28(4), 1996.
+
+\bibitem{SorlinSolnon08}
+S.~Sorlin and C.~Solnon.
+\newblock {A} {P}arametric {F}iltering {A}lgorithm for the {G}raph
+  {I}somorphism {P}roblem.
+\newblock {\em Constraints}, 13(4), December 2008.
+
+\bibitem{Stanley01}
+R.~P. Stanley.
+\newblock {\em {E}numerative {C}ombinatorics}, volume~2.
+\newblock Cambridge University Press, New York, 2001.
+
+\bibitem{Stanley11}
+R.~P. Stanley.
+\newblock {\em {E}numerative {C}ombinatorics}, volume~1.
+\newblock Cambridge University Press, New York, 2nd edition, 2011.
+
+\bibitem{Steel92}
+M.~Steel.
+\newblock The complexity of reconstructing trees from qualitative characters
+  and subtrees.
+\newblock {\em Journal of Classification}, 9:91--116, 1992.
+
+\bibitem{StuckeyGarciadelaBandaMaherMarriottSlaneySomogyiWallaceWalsh05}
+P.~J. Stuckey, M.~J.~Garc{\'i}a de~la Banda, M.~J. Maher, K.~Marriott, J.~K.
+  Slaney, Z.~Somogyi, M.~G. Wallace, and T.~Walsh.
+\newblock The {G12} {P}roject: {M}apping {S}olver {I}ndependent {M}odels to
+  {E}fficient {S}olutions.
+\newblock In P.~van Beek, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2005)}, volume 3709 of {\em LNCS}, pages 13--16.
+  Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{Subbarayan05}
+S.~Subbarayan.
+\newblock {I}ntegrating {C}{S}{P} {D}ecomposition {T}echniques and {B}{D}{D}s
+  for {C}ompiling {C}onfiguration {P}roblems.
+\newblock In R.~Bart{\'a}k and M.~Milano, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'05)}, volume 3524 of {\em
+  LNCS}, pages 351--365, Prague, Czech Republic, May/June 2005.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{Szczygiel01}
+T.~Szczygiel.
+\newblock {CLP} {A}pproaches to 2{D} {A}ngle {P}lacements.
+\newblock In {\em Proceedings of the 6th Annual Workshop of the ERCIM Working
+  Group on Constraints}, Prague, Czech Republic, June 2001.
+\newblock Available at {\footnotesize \url{http://arxiv.org/html/cs/0110012}}.
+
+\bibitem{Szymanek04}
+R.~Szymanek.
+\newblock {\em {C}onstraint-{D}riven {D}esign {S}pace {E}xploration for
+  {M}emory-{D}ominated {E}mbedded {S}ystems}.
+\newblock PhD thesis, Lund University, Sweden, June 2004.
+
+\bibitem{SzymanekKuchcinski01}
+R.~Szymanek and K.~Kuchcinski.
+\newblock {A} {C}onstructive {A}lgorithm for {M}emory-{A}ware {T}ask
+  {A}ssignment and {S}cheduling.
+\newblock In {\em Proceedings of the Ninth International Symposium on
+  Hardware/Software Codesign}, Copenhagen, 2001.
+
+\bibitem{Tantau12}
+T.~Tantau.
+\newblock {\em {T}he \emph{{T}i\emph{k}{Z}} \& \emph{{P}{G}{F}} {P}ackages:
+  {M}anual for version 2.10-cvs}, 2.10 edition, 2012.
+
+\bibitem{Platon03}
+{PLATON} team.
+\newblock {\em {E}clair}.
+\newblock Thales R \& T, Orsay, France, v8.0 edition, 2003.
+\newblock Technical report 61 364.
+
+\bibitem{Thiel04}
+S.~Thiel.
+\newblock {\em {E}fficient {A}lgorithms for {C}onstraint {P}ropagation and for
+  {P}rocessing {T}ree {D}escriptions}.
+\newblock PhD thesis, Saarlandes University, Germany, 2004.
+
+\bibitem{Tong87}
+C.~Tong.
+\newblock Toward and engineering science of knowledge-based design.
+\newblock {\em Artificial Intelligence in Engineering}, 2(3):133--166, July
+  1987.
+
+\bibitem{Trick03}
+M.~A. Trick.
+\newblock {A} {D}ynamic {P}rogramming {A}pproach for {C}onsistency and
+  {P}ropagation for {K}napsack {C}onstraints.
+\newblock {\em Annals of Operations Research}, 118(1--4):73--84, 2003.
+
+\bibitem{Trick02}
+M.~A. Trick.
+\newblock {I}nteger and {C}onstraint {P}rogramming {A}pproaches for {R}ound
+  {R}obin {T}ournament {S}cheduling.
+\newblock In E.~K. Burke and P.~De Causmaecker, editors, {\em Practice and
+  Theory of Automated Timetabling IV, 4th International Conference, PATAT 2002,
+  Gent, Belgium, August 21-23, 2002, Selected Revised Papers}, volume 2740 of
+  {\em LNCS}, pages 63--77. Springer\nobreakdash-Verlag, 2003.
+
+\bibitem{Turan41}
+P.~Tur\'an.
+\newblock {O}n an {E}xtremal {P}roblem in {G}raph {T}heory.
+\newblock {\em Mat. Fiz. Lapok}, 48:436--452, 1941.
+\newblock In Hungarian.
+
+\bibitem{UedaNagao96}
+N.~Ueda and T.~Nagao.
+\newblock {N}{P}-completeness {R}esults for {N}{O}{N}{O}{G}{R}{A}{M} via
+  {P}arsimonious {R}eductions.
+\newblock Technical Report TR96-0008, Department of Computer Science, Tokyo
+  Institute of Technology, May 1996.
+
+\bibitem{Ullmann76}
+J.~R. Ullmann.
+\newblock An algorithm for subgraph isomorphism.
+\newblock {\em J. ACM}, 23(1):31--42, January 1976.
+
+\bibitem{Valiant79}
+L.~G. Valiant.
+\newblock The complexity of computing the permanent.
+\newblock {\em Theoretical Computer Science}, 8:189--201, 1979.
+
+\bibitem{DongenLecoutreRoussel08}
+M.~R.~C. van Dongen, C.~Lecoutre, and O.~Roussel.
+\newblock {R}esults of the {S}econd {CSP} {S}olver {C}ompetition.
+\newblock In M.~R.~C. van Dongen, C.~Lecoutre, and O.~Roussel, editors, {\em
+  Proceedings of the Second International {CSP} Solver Competition}, pages
+  1--10, 2008.
+
+\bibitem{VanHentenryck89}
+P.~Van~Hentenryck.
+\newblock {\em {C}onstraint {S}atisfaction in {L}ogic {P}rogramming}.
+\newblock MIT Press, 1989.
+
+\bibitem{VanHentenryck94}
+P.~Van~Hentenryck.
+\newblock {S}cheduling and {P}acking in the {C}onstraint {L}anguage {cc(FD)}.
+\newblock In M.~Zweben and M.~Fox, editors, {\em Intelligent Scheduling}.
+  Morgan Kaufmann Publishers, 1994.
+
+\bibitem{VanHentenryck99}
+P.~Van~Hentenryck.
+\newblock {\em {T}he {OPL} {O}ptimization {P}rogramming {L}anguage}.
+\newblock MIT Press, 1999.
+
+\bibitem{VanHentenryckCarillon88}
+P.~Van~Hentenryck and J.-P. Carillon.
+\newblock {G}enerality vs. {S}pecificity: an {E}xperience with {AI} and {OR}
+  {T}echniques.
+\newblock In {\em National Conference on Artificial Intelligence (AAAI-88)},
+  1988.
+
+\bibitem{VanHentenryckDeville91}
+P.~Van~Hentenryck and Y.~Deville.
+\newblock {T}he {\it cardinality} {O}perator: a {N}ew {L}ogical {C}onnective in
+  {C}onstraint {L}ogic {P}rogramming.
+\newblock In {\em Int. Conf. on Logic Programming (ICLP'91)}. MIT Press, 1991.
+
+\bibitem{VanHentenryckSaraswatDeville95}
+P.~Van~Hentenryck, V.~Saraswat, and Y.~Deville.
+\newblock {D}esign, {I}mplementation and {E}valuation of the {C}onstraint
+  {L}anguage {cc(FD)}.
+\newblock In A.~Podelski, editor, {\em Constraints: Basics and Trends}, volume
+  910 of {\em LNCS}, pages 293--316. Springer\nobreakdash-Verlag, 1995.
+
+\bibitem{Hoeve01}
+W.-J. van Hoeve.
+\newblock {T}he {\it alldifferent} {C}onstraint: {A} {S}urvey.
+\newblock In {\em Proceedings of the 6th Annual Workshop of the ERCIM Working
+  Group on Constraints}, Prague, Czech Republic, June 2001.
+\newblock Available at {\footnotesize \url{http://arxiv.org/html/cs/0110012}}.
+
+\bibitem{Hoeve04}
+W.-J. van Hoeve.
+\newblock {A} {H}yper-{A}rc {C}onsistency {A}lgorithm for the {\it soft
+  alldifferent} {C}onstraint.
+\newblock In M.~G. Wallace, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2004)}, volume 3258 of {\em LNCS}, pages 679--689.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{vanHoeve05}
+W.-J. van Hoeve.
+\newblock {\em {O}perations {R}esearch {T}echniques in {C}onstraint
+  {P}rogramming}.
+\newblock PhD thesis, Amsterdam University, CWI, Netherlands, 2005.
+
+\bibitem{HoevePesantRousseau04}
+W.-J. van Hoeve, G.~Pesant, and L.-M. Rousseau.
+\newblock {O}n {G}lobal {W}arming ({S}oftening {G}lobal {C}onstraints).
+\newblock In {\em Workshop on Soft Constraints}, Toronto, Canada, September
+  2004.
+
+\bibitem{HoevePesantRousseau06}
+W.-J. van Hoeve, G.~Pesant, and L.-M. Rousseau.
+\newblock {O}n global warming: {F}low-based soft global constraints.
+\newblock {\em Journal of Heuristics}, 12(4--5):347--373, 2006.
+
+\bibitem{HoevePesantRousseauSabharwal06}
+W.-J. van Hoeve, G.~Pesant, L.-M. Rousseau, and A.~Sabharwal.
+\newblock {R}evisiting the {\it sequence} {C}onstraint.
+\newblock In F.~Benhamou, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2006)}, volume 4204 of {\em LNCS}, pages 620--634, Nantes,
+  France, 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{HoeveRegin06}
+W.-J. van Hoeve and J.-C. R\'egin.
+\newblock {O}pen {C}onstraints in a {C}losed {W}orld.
+\newblock In J.~C. Beck and B.~Smith, editors, {\em International Conference on
+  Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CPAIOR'06)}, volume 3990 of {\em LNCS},
+  pages 244--257, Cork, Ireland, May/June 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{HoeveSabharwal07}
+W.-J. van Hoeve and A.~Sabharwal.
+\newblock {T}wo {S}et-{C}onstraints for {M}odeling and {E}fficiency.
+\newblock In {\em Sixth International Workshop on Constraint Modelling and
+  Reformulation (ModRef'07), Providence, USA}, 2007.
+
+\bibitem{LintWilson92}
+J.~H. van Lint and R.~M. Wilson.
+\newblock {\em A Course in Combinatorics}.
+\newblock Cambridge University Press, 1992.
+
+\bibitem{Vellino90}
+A.~Vellino.
+\newblock {C}ostas {A}rrays.
+\newblock Technical Report 90079, Computing Research Laboratory, Bell-Northern
+  Research, 1990.
+
+\bibitem{Vempaty92}
+N.~R. Vempaty.
+\newblock {S}olving {C}onstraint {S}atisfaction {P}roblems using {F}inite
+  {S}tate {A}utomata.
+\newblock In {\em National Conference on Artificial Intelligence (AAAI-92)},
+  pages 453--458. AAAI Press, 1992.
+
+\bibitem{Vilim04}
+P.~Vil\'im.
+\newblock ${O}(n \log n)$ {F}iltering {A}lgorithms for {U}nary {R}esource
+  {C}onstraint.
+\newblock In J.-C. R\'egin and M.~Rueher, editors, {\em Integration of AI and
+  OR Techniques in Constraint Programming for Combinatorial Optimisation
+  Problems (CP-AI-OR'04)}, volume 3011 of {\em LNCS}, pages 335--347.
+  Springer\nobreakdash-Verlag, 2004.
+
+\bibitem{Vilim07}
+P.~Vil\'im.
+\newblock {\em {G}lobal {C}onstraints in {S}cheduling}.
+\newblock PhD thesis, Charles University, Prague, Department of Theoretical
+  Computer Science and Mathematical Logic, Czech Republic, 2007.
+
+\bibitem{Vilim09b}
+P.~Vil\'im.
+\newblock {E}dge {F}inding {F}iltering {A}lgorithm for {D}iscrete {C}umulative
+  {R}esources in ${O}(k n \log n)$.
+\newblock In I.~P. Gent, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2009)}, volume 5732 of {\em LNCS}, pages 802--816.
+  Springer\nobreakdash-Verlag, 2009.
+
+\bibitem{Vilim09a}
+P.~Vil\'im.
+\newblock Max energy filtering algorithm for discrete cumulative resources.
+\newblock In W.-J. van Hoeve and J.~N. Hooker, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'09)}, volume 5547 of {\em
+  LNCS}, pages 294--308, Pittsburgh, PA, USA, 2009.
+  Springer\nobreakdash-Verlag.
+
+\bibitem{Voss07}
+H.~V{o\ss}.
+\newblock {\em {PST}ricks - {G}rafik f{\"u}r TeX und LaTeX}.
+\newblock Lehmanns Media, Berlin, 2007.
+\newblock Vierte Auflage.
+
+\bibitem{WallaceWilson06}
+R.~J. Wallace and N.~Wilson.
+\newblock {C}onditional {L}exicographic {O}rders in {C}onstraint {S}atisfaction
+  {P}roblems.
+\newblock In J.~C. Beck and B.~Smith, editors, {\em International Conference on
+  Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CP-AI-OR'06)}, volume 3990 of {\em
+  LNCS}, pages 258--272, Cork, Ireland, May 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{Walsh06}
+T.~Walsh.
+\newblock {S}ymmetry {B}reaking using {V}alue {P}recedence.
+\newblock In {\em ECAI 2006, 17th European Conference on Artificial
+  Intelligence, August 29 - September 1, 2006, Riva del Garda, Italy, Including
+  Prestigious Applications of Intelligent Systems (PAIS 2006), Proceedings},
+  pages 168--172. IOS Press, 2006.
+
+\bibitem{Walsh07}
+T.~Walsh.
+\newblock {B}reaking {V}alue {S}ymmetry.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 880--888.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{Watkins04}
+J.~J. Watkins.
+\newblock {\em Across the Board: The Mathematics of Chessboard Problems}.
+\newblock Princeton University Press, Princeton and Oxford, 2004.
+
+\bibitem{WilliamsYan01}
+H.~P. Williams and H.~Yan.
+\newblock {R}epresentations of the \emph{alldifferent} {P}redicate of
+  {C}onstraint {S}atisfaction in {I}nteger {P}rogramming.
+\newblock {\em INFORMS Journal on Computing}, 13(2):96--103, 2001.
+
+\bibitem{Wolf05}
+A.~Wolf.
+\newblock {B}etter {P}ropagation for {N}on-preemptive {S}ingle-{R}esource
+  {C}onstraint {P}roblems.
+\newblock In B.~Faltings, A.~Petcu, F.~Fages, and F.~Rossi, editors, {\em
+  Recent Advances in Constraints, Joint ERCIM/CoLogNet International Workshop
+  on Constraint Solving and Constraint Logic Programming, CSCLP 2004; Lausanne,
+  Switzerland, June 23-25, 2004, Revised Selected and Invited Papers}, volume
+  3419 of {\em LNCS}, pages 201--215. Springer\nobreakdash-Verlag, 2005.
+
+\bibitem{WurtzMuller96}
+J.~W{\"u}rtz and T.~M{\"u}ller.
+\newblock {C}onstructive {D}isjunction {R}evisited.
+\newblock In G.~G{\"o}rz and S.~H{\"o}lldobler, editors, {\em 20th German
+  Annual Conference on Artificial Intelligence}, volume 1137 of {\em LNAI},
+  pages 377--386, Dresden, Germany, 1996. Springer\nobreakdash-Verlag.
+
+\bibitem{Yunes02}
+Tallys~H. Yunes.
+\newblock {O}n the {\it sum} {C}onstraint: {R}elaxation and {A}pplications.
+\newblock In P.~Van~Hentenryck, editor, {\em Principles and Practice of
+  Constraint Programming (CP'2002)}, volume 2470 of {\em LNCS}, pages 80--92.
+  Springer\nobreakdash-Verlag, 2002.
+
+\bibitem{ZampelliDevilleSolnonSorlinDupont07}
+S.~Zampelli, Y.~Deville, C.~Solnon, S.~Sorlin, and P.~Dupont.
+\newblock {F}iltering for {S}ubgraph {I}somorphism.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 728--742.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{ZanariniMilanoPesant06}
+A.~Zanarini, M.~Milano, and G.~Pesant.
+\newblock {I}mproved {A}lgorithm for the {S}oft {G}lobal {C}ardinality
+  {C}onstraint.
+\newblock In J.~C. Beck and B.~Smith, editors, {\em International Conference on
+  Integration of AI and OR Techniques in Constraint Programming for
+  Combinatorial Optimization Problems (CP-AI-OR'06)}, volume 3990 of {\em
+  LNCS}, pages 288--299, Cork, Ireland, May 2006. Springer\nobreakdash-Verlag.
+
+\bibitem{ZanariniPesant07b}
+A.~Zanarini and G.~Pesant.
+\newblock {S}olution {C}ounting {A}lgorithms for {C}onstraint-{C}entered
+  {S}earch {H}euristics.
+\newblock In C.~Bessi\`ere, editor, {\em Principles and Practice of Constraint
+  Programming (CP'2007)}, volume 4741 of {\em LNCS}, pages 743--757.
+  Springer\nobreakdash-Verlag, 2007.
+
+\bibitem{ZanariniPesant10}
+A.~Zanarini and G.~Pesant.
+\newblock {M}ore {R}obust {C}ounting-{B}ased {H}euristics with {A}lldifferent
+  {C}onstraints.
+\newblock In A.~Lodi, M.~Milano, and P.~Toth, editors, {\em International
+  Conference on Integration of AI and OR Techniques in Constraint Programming
+  for Combinatorial Optimization Problems (CPAIOR'10)}, volume 6140 of {\em
+  LNCS}, pages 354--368, Bologna, Italy, 2010. Springer\nobreakdash-Verlag.
+
+\bibitem{Zhou97}
+J.~Zhou.
+\newblock {A} {P}ermutation-{B}ased {A}pproach for {S}olving the {J}ob-{S}hop
+  {P}roblem.
+\newblock {\em Constraints}, 2(2):185--213, 1997.
+
+\bibitem{Zhou96}
+N.-F. Zhou.
+\newblock {C}hannel {R}outing with {C}onstraint {L}ogic {P}rogramming and
+  {D}elay.
+\newblock In {\em 9th Int. Conf. on Industrial Applications of AI}, pages
+  217--231. Gordon and Breach Science Publishers, 1996.
+
+\bibitem{ZimmermannCunningham91}
+W.~Zimmermann and S.~Cunningham.
+\newblock {E}ditors' introduction: {W}hat is mathematical visualization?
+\newblock In {\em Visualization in teaching and learning mathematics}, pages
+  1--8. Mathematical Association of America, 1991.
+
+\end{thebibliography}

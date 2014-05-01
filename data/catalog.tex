@@ -1,0 +1,39 @@
+\documentclass[dvips]{book}
+
+\usepackage{makeidx}
+\usepackage{index}
+\usepackage[latin1]{inputenc}
+
+
+\newcommand*{\indexuse}[1]{\hyperpage{#1}}
+\newcommand*{\indexdef}[1]{\textbf{\hyperpage{#1}}}
+\newcommand*{\indexsyn}[1]{\textbf{\textit{\hyperpage{#1}}}}
+
+\begin{document}
+
+\pagestyle{headings}
+\input{titlepage.tex}
+
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+\input{preface.tex}
+
+\cleardoublepage
+\markboth{REFERENCES}{REFERENCES}
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{catalog}
+
+\cleardoublepage
+\markboth{INDEX}{INDEX}
+\phantomsection
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

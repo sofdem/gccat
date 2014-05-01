@@ -1,0 +1,31 @@
+digraph cumulative_final {
+  ratio=fill;
+  size="4.2,3";
+  subgraph "cluster1" {node [style=filled,fillcolor=white]; style=filled;color=lightgrey; fontsize=14; fontname=Helvetica; label="TASKS"; 1;2;3;4;5;}
+  subgraph "cluster2" {node [style=filled,fillcolor=white]; style=filled;color=lightgrey; fontsize=14; fontname=Helvetica; labelloc=b; label="TASKS"; 6;7;8;9;10;}
+  fontsize=16;
+  fontname=Helvetica;
+  1 -> 6;
+  2 -> 6;
+  2 -> 7;
+  3 -> 6;
+  3 -> 7;
+  3 -> 8;
+  4 -> 7;
+  4 -> 8;
+  4 -> 9;
+  5 -> 7;
+  5 -> 8;
+  5 -> 9;
+  5 -> 10;
+  1 [fontname=Helvetica,label="1:1,3,4,1"];
+  2 [fontname=Helvetica,label="2:2,9,11,2"];
+  3 [fontname=Helvetica,label="3:3,10,13,1"];
+  4 [fontname=Helvetica,label="4:6,6,12,1"];
+  5 [fontname=Helvetica,label="5:7,2,9,3"];
+  6 [fontname=Helvetica,label="1:1,3,4,1"];
+  7 [fontname=Helvetica,label="2:2,9,11,2"];
+  8 [fontname=Helvetica,label="3:3,10,13,1"];
+  9 [fontname=Helvetica,label="4:6,6,12,1"];
+  10 [fontname=Helvetica,label="5:7,2,9,3"];
+}

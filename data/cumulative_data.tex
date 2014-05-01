@@ -1,0 +1,111 @@
+\clearpage
+\section{cumulative}
+\hyperlink{Ccumulative}{$\diamondsuit$}\hspace{2mm}\textbf{ \large{M}\small{ETA}\large{-D}\small{ATA}:}
+\begin{verbatim}
+ctr_date(
+    cumulative,
+    ['20000128','20030820','20040530','20060806','20090923']).
+
+ctr_origin(cumulative,'\\cite{AggounBeldiceanu93}',[]).
+
+ctr_synonyms(cumulative,[cumulative_max]).
+
+ctr_arguments(
+    cumulative,
+    [TASKS-
+     collection(
+         origin-dvar,
+         duration-dvar,
+         end-dvar,
+         height-dvar),
+     'LIMIT'-int]).
+
+ctr_restrictions(
+    cumulative,
+    [require_at_least(2,'TASKS',[origin,duration,end]),
+     required('TASKS',height),
+     'TASKS'^duration>=0,
+     'TASKS'^origin=<'TASKS'^end,
+     'TASKS'^height>=0,
+     'LIMIT'>=0]).
+
+ctr_example(
+    cumulative,
+    cumulative(
+        [[origin-1,duration-3,end-4,height-1],
+         [origin-2,duration-9,end-11,height-2],
+         [origin-3,duration-10,end-13,height-1],
+         [origin-6,duration-6,end-12,height-1],
+         [origin-7,duration-2,end-9,height-3]],
+        8)).
+
+ctr_typical(
+    cumulative,
+    [size('TASKS')>1,
+     range('TASKS'^origin)>1,
+     range('TASKS'^duration)>1,
+     range('TASKS'^end)>1,
+     range('TASKS'^height)>1,
+     'TASKS'^duration>0,
+     'TASKS'^height>0,
+     'LIMIT'<sum('TASKS'^height)]).
+
+ctr_exchangeable(
+    cumulative,
+    [items('TASKS',all),
+     vals(['TASKS'^duration],int(>=(0)),>,dontcare,dontcare),
+     vals(['TASKS'^height],int(>=(0)),>,dontcare,dontcare),
+     translate(['TASKS'^origin,'TASKS'^end]),
+     vals(['LIMIT'],int,<,dontcare,dontcare)]).
+
+ctr_graph(
+    cumulative,
+    ['TASKS'],
+    1,
+    ['SELF'>>collection(tasks)],
+    [tasks^origin+tasks^duration=tasks^end],
+    ['NARC'=size('TASKS')],
+    []).
+
+ctr_graph(
+    cumulative,
+    ['TASKS','TASKS'],
+    2,
+    ['PRODUCT'>>collection(tasks1,tasks2)],
+    [tasks1^duration>0,
+     tasks2^origin=<tasks1^origin,
+     tasks1^origin<tasks2^end],
+    [],
+    ['ACYCLIC','BIPARTITE','NO_LOOP'],
+    [SUCC>>
+     [source,
+      variables-
+      col('VARIABLES'-collection(var-dvar),
+          [item(var-'TASKS'^height)])]],
+    [sum_ctr(variables,=<,'LIMIT')]).
+
+ctr_eval(cumulative,[builtin(cumulative_b)]).
+
+ctr_contractible(cumulative,[],'TASKS',any).
+
+ctr_cond_imply(
+    cumulative,
+    coloured_cumulative,
+    ['TASKS'^height>0],
+    [],
+    [same('TASKS'),same('LIMIT')]).
+
+ctr_application(cumulative,[1]).
+
+cumulative_b(TASKS,LIMIT) :-
+        collection(TASKS,[dvar,dvar_gteq(0),dvar,dvar_gteq(0)]),
+        integer(LIMIT),
+        LIMIT>=0,
+        get_attr1(TASKS,ORIGINS),
+        get_attr2(TASKS,DURATIONS),
+        get_attr3(TASKS,ENDS),
+        get_attr4(TASKS,HEIGHTS),
+        gen_cum_tasks(ORIGINS,DURATIONS,ENDS,HEIGHTS,1,Tasks),
+        cumulative(Tasks,[limit(LIMIT)]).
+
+\end{verbatim}

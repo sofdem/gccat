@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\dominitoc
+\makeatletter
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\renewcommand\l@section{\@dottedtocline{1}{1.1em}{3.6em}}
+\renewcommand\l@subsection{\@dottedtocline{2}{1.1em}{3.6em}}
+\renewcommand\l@subsubsection{\@dottedtocline{3}{1.1em}{3.6em}}
+\renewcommand\l@paragraph{\@dottedtocline{4}{1.1em}{3.6em}}
+\renewcommand\l@subparagraph{\@dottedtocline{5}{1.1em}{3.6em}}
+\makeatother
+\setcounter{minitocdepth}{5}
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frontmatter
+\chapter{Preface}
+
+\begin{chapquote}{Douglas Hofstadter, Emmanuel Sander, \textit{Surfaces and Essences}}
+``Although dictionaries give the impression of analyzing words all the way down to their very atoms, all they do in fact is graze their surfaces.''
+\end{chapquote}
+
+This catalogue presents a list of global constraints. Within this catalogue the term \emph{global constraint} should be understood as an \emph{expressive and concise condition involving a non\nobreakdash-fixed number of variables}. This informal definition does not make any assumption neither about the potential use of a global constraint nor about the techniques\footnote{As quoted by J.~N.~Hooker in\index{Hooker J. N.|indexuse}~\cite{Hooker07}, ``\emph{identifying a field with its techniques is an intellectually as well as practically unsatisfying}'' and has a lot of drawbacks.} associated with the development of global constraints. It contains about $423$ constraints, which are explicitly described in terms of graph properties and/or automata and/or first order logic formulae and/or conjunction of other constraints.
+
+This \emph{Global Constraint Catalogue} is an expanded version of the list of global constraints presented in\index{Beldiceanu N.|indexuse}~\cite{BeldiceanuR00} and an updated version of\index{Beldiceanu N.|indexuse}\index{Carlsson M.|indexuse}\index{Rampon J.-X.|indexuse}~\cite{BeldiceanuCarlssonRampon05}. The principle used for describing global constraints has been slightly modified in order to deal with a larger number of global constraints. Since $2003$, we try to provide an automaton that recognises the solutions associated with a global constraint. Since $2009$, we also try to provide a first order logic formula for defining the solutions accepted by a geometrical constraint.
+
+\paragraph{Use of the catalogue.}
+The catalogue is organised into five chapters:
+\begin{itemize}
+\item
+Chapter~\ref{chap:getting_started} provide a short overview of the main entries you may first consult when you are not familiar with the catalogue.
+
+\item
+Chapter~\ref{chap:describing_constraints} explains how the meaning of global constraints is described in terms of graph\nobreakdash-properties or in terms of automata. On the one hand, if one wants to consult the catalogue for getting the informal definition of a global constraint, examples of use of that constraint or pointers to filtering algorithms, then one only needs to read the first section of Chapter~\ref{chap:describing_constraints}: describing the arguments of a global constraint, page \pageref{sec:arguments}. On the other hand, if one wants to understand those entries describing explicitly the meaning of a constraint then all the material of Chapter~\ref{chap:describing_constraints} is required.
+
+\item
+Chapter~\ref{chap:describing_catalogue} describes the content of the catalogue as well as different ways for searching through the catalogue. This material is essential.
+
+\item
+Chapter~\ref{chap:further_topics} covers additional topics, such as the differences from the $2000$ report\index{Beldiceanu N.|indexuse}~\cite{BeldiceanuR00} on global constraints, the generation of implied constraints that are systematically linked to the graph\nobreakdash-based description of a global constraint, and the electronic version of the catalogue. The material describing the format of the entries of a global constraint is mandatory for those who want to exploit the electronic version in order to write pre\nobreakdash-processors for performing various tasks for a global constraint. 
+
+\item
+Finally, Chapter~\ref{chap:catalogue} corresponds to the catalogue itself, which gives the global constraints in alphabetical order.\\
+\end{itemize}
+
+\mainmatter
+\chapter{Getting started}\label{chap:getting_started}
+
+Within keywords and constraints, the icons
+\begin{description}
+\item[~~\bclampe] indicates a point of interest (e.g.,~a necessary condition, a typical use),
+\item[~~\bcdz] denotes a typical error or a common misunderstanding.
+\end{description}
+
+\chapter{Describing Global Constraints}\label{chap:describing_constraints}
+
+\minitoc
+
+We first introduce the notion of global constraint as well as the different facets attached to global constraints. We then motivate the need for an explicit description of global constraints and then present the \emph{graph\nobreakdash-based} as well as the \emph{automaton\nobreakdash-based} descriptions used throughout the catalogue. On the one hand, the graph\nobreakdash-based representation considers a global constraint as a subgraph of an initial given graph. This subgraph has to satisfy a set of required graph properties. On the other hand, the automaton\nobreakdash-based representation denotes a global constraint as a hypergraph constructed from a given constraint checker.\footnote{A \emph{constraint checker} is a program that takes an instance of a constraint for which all variables are fixed and tests whether the constraint is satisfied or not.} Both, the initial graph of the graph\nobreakdash-based representation, as well as the hypergraph of the automaton\nobreakdash-based representation have a very regular structure, which should give the opportunity for efficient filtering algorithms taking advantage of this structure.
+
+\chapter{Description of the Catalogue}\label{chap:describing_catalogue}
+
+\minitoc
+
+\section{Which global constraints are included?}
+
+The global constraints of this catalogue come from the following sources:
+\begin{itemize}
+\item
+Existing constraint systems like:
+  \begin{itemize}
+  \item
+  \index{ALICE|indexdef}ALICE\index{Lauri\`ere J.-L.|indexuse}~\cite{Lauriere78},
+  \item
+  \index{CHARME|indexdef}CHARME in C\index{Oplobedu A.|indexuse}\index{Marcovitch J.|indexuse}\index{Tourbier Y.|indexuse}~\cite{OplobeduMarcovitchTourbier89},
+  \item
+  \index{CHIP|indexdef}\href{http://www.cosytec.com}{{\bf CHIP}}\index{Dincbas M.|indexuse}\index{Van Hentenryck P.|indexuse}\index{Simonis H.|indexuse}\index{Aggoun A.|indexuse}\index{Graf T.|indexuse}\index{Berthier F.|indexuse}~\cite{DincbasVanHentenryckSimonisAggounGrafBerthier88} in Prolog, C and C++\ \
+  ({\footnotesize \url{http://www.cosytec.com}}),
+  \item
+  \index{Choco|indexdef}\href{http://choco.emn.fr/}{{\bf Choco}}\index{Laburthe F.|indexuse}~\cite{Laburthe00} in Java\ \
+  ({\footnotesize \url{http://choco.emn.fr/}}),
+  \item
+  \index{ECLAIR|indexdef}ECLAIR~\cite{Platon03} in Claire,
+  \item
+  \index{ECLiPSe|indexdef}\href{http://eclipseclp.org/}{{\bf ECLiPSe}}\index{Cheadle A. M.|indexuse}\index{Harvey W.|indexuse}\index{Sadler A. J.|indexuse}\index{Schimpf J.|indexuse}\index{Shen K.|indexuse}\index{Apt K. R.|indexuse}\index{Wallace M. G.|indexuse}~\cite{ECLiPSe03,AptWallace07} in Prolog\ \
+  ({\footnotesize \url{http://eclipseclp.org/}}),
+  \item
+  \index{FaCile|indexdef}\href{http://www.recherche.enac.fr/opti/facile/}{{\bf FaCile}} in OCaml\ \
+  ({\footnotesize \url{http://www.recherche.enac.fr/opti/facile/}}),
+  \item
+  \index{Gecode|indexdef}\href{http://www.gecode.org/}{{\bf Gecode}} in C++~\cite{Gecode06}\ \
+  ({\footnotesize \url{http://www.gecode.org/}}),
+  \item
+  \index{SICStus|indexdef}\href{http://www.sics.se/sicstus/}{{\bf SICStus}}\index{Carlsson M.|indexuse}\index{Ottosson G.|indexuse}\index{Carlson B.|indexuse}~\cite{CarlssonOttossonCarlson97} in Prolog\ \
+  ({\footnotesize \url{http://www.sics.se/sicstus/}}).
+  \end{itemize}
+  When available, the {\bf Systems} slot of a global constraint entry of the catalogue
+  provides the name of the corresponding global constraint
+  in the context of the
+  \index{Choco|indexuse}\href{http://choco.emn.fr/}{{\bf Choco}},
+  \index{Gecode|indexuse}\href{http://www.gecode.org/}{{\bf Gecode}},
+  \index{JaCoP|indexuse}\href{http://www.jacop.eu/}{{\bf JaCoP}},
+  \index{MiniZinc|indexuse}\href{http://www.minizinc.org/}{{\bf MiniZinc}}, and
+  \index{SICStus|indexuse}\href{http://www.sics.se/sicstus/}{{\bf SICStus}} systems.
+\item
+Constraint programming articles mostly from conferences like:
+  \begin{itemize}
+  \item
+  The Principles and Practice of Constraint Programming (CP)\\
+  ({\footnotesize \url{http://www.informatik.uni-trier.de/~ley/db/conf/cp/index.html}}),
+  \item
+  The International Joint Conference on Artificial Intelligence (IJCAI)\\
+  ({\footnotesize \url{http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/index.html}}),
+  \item
+  The National Conference on Artificial Intelligence (AAAI)\\
+  ({\footnotesize \url{http://www.informatik.uni-trier.de/~ley/db/conf/aaai/index.html}}),
+  \item
+  The International Conference on Logic Programming (ICLP)\\
+  ({\footnotesize \url{http://www.informatik.uni-trier.de/~ley/db/conf/iclp/index.html}}),
+  \item
+  The International Conference of AI and OR Techniques in Constraint Programming for Combinatorial Optimisation
+  Problems (CPAIOR)\\
+  ({\footnotesize \url{http://www.informatik.uni-trier.de/~ley/db/conf/cpaior/}}).
+  \end{itemize}
+
+\item
+Graph constraints from the CP(Graph) computation domain\index{Dooms G.|indexuse}~\cite{Dooms06}.
+
+\item
+New constraints inspired by variations of existing constraints, practical applications, combinatorial problems, puzzles or discussions with colleagues. 
+
+\end{itemize}
+
+
+\section{Which global constraints are missing?}
+
+Constraints with too many arguments (like for instance the original \hyperlink{Ccycle}{\ctrref{cycle}}~\cite{Cosytec97} constraint with $16$ arguments), which are in fact a combination of several constraints, were not directly put into the catalogue. Constraints that have complex arguments were also omitted. Beside this, the following constraints should be added in some future version of the catalogue:
+\ctrref{alldifferent\_on\_multisets}\index{Quimper C.-G.|indexuse}\index{Walsh T.|indexuse}~\cite{QuimperWalsh05}~\cite{QuimperWalshReport05},
+\ctrref{case}\index{Carlsson M.|indexuse}~\cite{Sicstus95,Carlsson06},\index{Cheng K. C.K.|indexuse}\index{Yap R. H.C.|indexuse}~\cite{ChengYap05,ChengYap06},
+\ctrref{choquet}\index{Le~Hu\'ed\'e F.|indexuse}\index{Grabisch M.|indexuse}\index{Labreuche C.|indexuse}\index{Sav\'eant P.|indexuse}~\cite{LeHuedeGrabischLabreucheSaveant06},
+\ctrref{cost\_regular}\index{Demassey S.|indexuse}\index{Pesant G.|indexuse}\index{Rousseau L.-M.|indexuse}~\cite{DemasseyPesantRousseau06},
+\ctrref{cumulative\_trapeze}\index{Poder E.|indexuse}\index{Beldiceanu N.|indexuse}\index{Sanlaville E.|indexuse}~\cite{PoderBeldiceanuSanlaville04,BeldiceanuPoderPMS04}.
+Finally we only consider a restricted number of constraints involving set variables since this is a relatively new area, which is currently growing rapidly since $2003$.
+
+\chapter{Further Topics}\label{chap:further_topics}
+
+\minitoc
+
+\section{Differences from the 2000 report}
+
+This section summarises the main differences with the SICS report\index{Beldiceanu N.|indexuse}~\cite{Beldiceanu00} as well as of the corresponding article\index{Beldiceanu N.|indexuse}~\cite{BeldiceanuR00}.
+
+\chapter{Global Constraint Catalogue}\label{chap:catalogue}
+\minitoc
+\pagestyle{myheadings}
+\input{alldifferent.tex}
+\input{cumulative.tex}
+
+\pagestyle{headings}
+\begin{appendix}
+\chapter{Legend for the Description}\label{chap:legend}
+
+This section provides the list of \emph{restrictions}, of \emph{arc generators}, of \emph{graph parameters} and of \emph{set generators} sorted in alphabetic order with the page where they are defined.
+
+\end{appendix}
+\backmatter
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "catalog"
+%%% End: 

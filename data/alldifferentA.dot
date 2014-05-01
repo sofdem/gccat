@@ -1,0 +1,21 @@
+digraph alldifferent_init {
+  ratio=fill;
+  size="2.145,2.145";
+  subgraph "cluster1" {node [style=filled,fillcolor=white]; style=filled;color=lightgrey; fontsize=14; fontname=Helvetica; label="VARIABLES"; 1;2;3;4;}
+  fontsize=16;
+  fontname=Helvetica;
+  1 -> 1;
+  1 -> 2 [dir=both];
+  1 -> 3 [dir=both];
+  1 -> 4 [dir=both];
+  2 -> 2;
+  2 -> 3 [dir=both];
+  2 -> 4 [dir=both];
+  3 -> 3;
+  3 -> 4 [dir=both];
+  4 -> 4;
+  1 [fontname=Helvetica,label="1"];
+  2 [fontname=Helvetica,label="2"];
+  3 [fontname=Helvetica,label="3"];
+  4 [fontname=Helvetica,label="4"];
+}
