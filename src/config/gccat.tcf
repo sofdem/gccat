@@ -1,0 +1,165 @@
+##	 Sophie Demassey/ EMN-LINA/ Global Constraint Catalog Project
+##	 configuration file for TRALICS
+##	 $Id: gccathtml.xsl,v 1.0 2006/04/03 16:10:59 demassey $
+##    Adapted from tralics_rc, v 2.15 Jose Grimm/ INRIA/ Apics Project
+
+
+xml_xtheorem_name = "theorem"		
+
+  DocType = gccat dtd/gccat.dtd
+  DocAttrib = date \today
+  DocAttrib = creator "Beldiceanu, Carlsson, Rampon / Demassey"
+
+BeginTitlePage
+  \maketitle <titlepage> "" ""
+  \title <ti> "No title"
+  \author + <authors> <author> "No authors"
+  \reference p<reference>  "no reference"
+  \abstract E<abstract> "no abstract"
+  \keywords <keywords> "no keywords"
+End
+
+BeginCommands
+		%%%\renewcommand{\toplevelsection}{\part}
+		\renewcommand\today{\the\year-\the\month-\the\day}
+
+		\newcommand\phantomsection{ }
+		\newenvironment{appendix}{ }{ }
+		\newcommand\needspace[1]{ }
+		\newcommand\addstarredchapter[1]{ }
+		\newcommand\cleardoublepageeven{ }
+		\renewcommand\cleardoublepage{ }
+		\renewcommand\pagestyle[1]{ }
+		\renewcommand\thispagestyle[1]{ }
+		\newcounter{minitocdepth}
+		\newcommand\minitoc{ }
+		\newcommand\dominitoc{ }
+		\newcommand\addcontentsline[3]{ }
+		\newcommand\adjustmtc{ }
+
+		\newcommand\toprule{\hline}
+		\newcommand\midrule{\hline}
+		\newcommand\bottomrule{\hline}
+
+		\makeatletter
+		\newcommand\l@section{\@dottedtocline{1}{1.1em}{3.6em}}
+		\newcommand\l@subsection{\@dottedtocline{2}{1.1em}{3.6em}}
+		\newcommand\l@subsubsection{\@dottedtocline{3}{1.1em}{3.6em}}
+		\newcommand\l@paragraph{\@dottedtocline{4}{1.1em}{3.6em}}
+		\newcommand\l@subparagraph{\@dottedtocline{5}{1.1em}{3.6em}}
+		\makeatother
+
+		\newcommand\resizebox[3]{ }
+		\definecolor{white}{cmyk}{0,0,0,0}
+		\newcommand\width{\textwidth}
+		\newcommand\mygreatbox[1]{#1}
+
+		\newcommand\ctrdatamenu[1]{\hyperlink{C#1}{description}, \href{src/#1.pl}{prolog source file}\par \par}
+		
+
+%%%%%%%%%% LINKS
+		\newcommand\hyperlink[2]{\href{#1}{#2\ref{#1}}}
+		\newcommand\hypertarget[2]{#2\label{#1}}
+		%\newcommand\ctrref[1]{$\constraint{#1}$}
+		%\newcommand\ctrrefself[1]{$\constraint{#1}$}
+		%\newcommand\ctrref[1]{\ensuremath{\texttt{#1}}}
+		\newcommand\ctrref[1]{\ensuremath{\constraint{#1}}\index{#1@\ensuremath{\constraint{#1}}|indexuse}}
+		\newcommand\ctrrefself[1]{\ensuremath{\texttt{#1}}}
+
+		\newcommand\pdfmarkup[3]{#2}
+
+%%%%%%%%%% MATH
+		%\input{GCmathcommand.sty}
+
+		\newcommand\nobreakdash{}
+		%removed \newcommand\Bbb[1]{\mathbb{#1}}
+		%removed \newcommand\mathds[1]{\mathbb{#1}}
+		\newcommand\lb{\left[}
+		\newcommand\rb{\right]}
+
+%%%%%%%%%%% FIGURES
+		\newcommand{\pspicture}{\centerline{\bf MISSING PICTURE}}
+		\newcommand{\insertPSTEXCenter}{\insertFigCenter}
+
+		\newcommand{\insertFigCenter}[4]{%
+				\begin{figure*}[htbp]
+				    \includegraphics[width=#2]{#1.eps}
+      				\caplab{#3}{#4}
+    			\end{figure*}
+		}
+
+		\newcommand{\examplefigiw}[4]{\insertFigCenter{#3}{#4}{#1}{#2}}
+		\newcommand{\figpreface}[4]{\insertFigCenter{#1}{#2}{#3}{#4}}
+		\newcommand{\figprefaceii}[6]{
+				\begin{figure*}[hbp]
+						\subfigure{\includegraphics[width=#2]{#1.eps}}
+						\subfigure{\includegraphics[width=#4]{#3.eps}}
+					\caplab{#5}{#6}
+				\end{figure*}
+		}
+
+		\newcommand{\figpstex}[4]{%
+				\begin{figure*}[htbp]%
+%%%				\resizebox{#2}{!}{\input{#1}}%	
+				    \includegraphics[width=#2]{#1.jpg}%	
+      				\caplab{#3}{#4}%
+    			\end{figure*}%
+		}				
+
+		\newcommand{\examplefigi}[3]{%
+				\begin{figure*}[hbp]
+					\includegraphics{#3.eps}\caplab{#1}{#2}
+				\end{figure*}
+		}
+
+		\newcommand{\examplefigii}{\examplefigiih}
+
+		\newcommand{\examplefigiih}[4]{
+				\begin{figure*}[hbp]
+						\subfigure{\includegraphics{#3.eps}}
+						\subfigure{\includegraphics{#4.eps}}
+					\caplab{#1}{#2}
+				\end{figure*}
+		}
+
+		\newcommand{\examplefigiiv}[4]{%
+				\begin{figure*}[hbp]
+					\subfigure{\includegraphics{#3.eps}} \par
+					\subfigure{\includegraphics{#4.eps}}
+					\caplab{#1}{#2}
+				\end{figure*}
+		}
+
+
+%%%%%%%%%%% TABLES
+		\newenvironment{smallTableCenterLabelCaption}[3]%
+				{\begin{table}\caplab{#2}{#3}\begin{tabular}{#1}}%
+				{\end{tabular}\end{table}}
+
+		\newenvironment{longtablelabelcaption}[3]%
+				{\begin{table}\caplab{#2}{#3}\begin{tabular}{#1}}%
+				{\end{tabular}\end{table}}
+
+		\newenvironment{longtable}[1]%
+				{\begin{table}\begin{tabular}{#1}}%
+				{\end{tabular}\end{table}}
+
+		\newenvironment{longTableScriptsize}[1]%		
+				{\scriptsize\begin{tabular}{#1}}%		
+				{\end{tabular}}				
+				
+%%%%%%%%%% ENVIRONMENTSs
+		\newenvironment{boxedverbatim}{\begin{verbatim}}{\end{verbatim}}
+		\newenvironment{ctrdesc}{\begin{description}}{\end{description}}
+		\newenvironment{boxedminipage}{\begin{minipage}}{\end{minipage}}
+		\newenvironment{Boxedminipage}{\begin{minipage}}{\end{minipage}}
+		\newenvironment{multicols}[1]{\begin{center}}{\end{center}}
+
+		\newtheorem{proof}{Proof}
+		\newcommand{\path}{\verb}
+
+%%%%%%%%%% Trouver une meilleure solution...
+		%\newenvironment{pspicture}[1]{\begin{center}\textbf{MISSING PICTURE}}{\end{center}}
+		\newcommand\Tree[1]{\textbf{MISSING PICTURE}} % OK replaced by picture
+
+EndCommands

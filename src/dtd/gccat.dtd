@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- dtd global constraint catalog -->
+<!-- $Id: gccat.dtd,v 0.1 2005/08/09 16:13:59 demassey $ -->
+
+<!-- 
+	 Sophie Demassey/ EMN-LINA/ Global Constraint Catalog Project
+	 Adapted from raweb3.dtd v 2.5 Jose Grimm/ INRIA/ Apics Project
+  -->
+
+<!ENTITY amp "&#x26;#x26;" >
+<!ENTITY lt  "&#x26;#x3C;" >
+
+<!ENTITY % list.qname  "m:list" >
+<!ENTITY % ident.qname "m:ident" >
+
+<!ENTITY % mathml PUBLIC "mathml" "mathml2/mathml2.dtd">
+%mathml;
+
+<!ENTITY % tei-aux "(p | hi | note | list | formula | table | theorem | figure | rule | anchor | zws | clearpage  | newpage)+" >
+<!ENTITY % texte-general "dotfill | rule | fbox | minipage | hi | ref | xref | formula | cit | label | list | note | figure | table | theorem | LaTeX | anchor | zws | hfil | hfill | mbox | line" >
+<!ENTITY % texte-restreint "hi | ref | xref | formula | LaTeX" >
+
+<!ELEMENT hfil EMPTY>
+<!ELEMENT hfill EMPTY>
+
+<!ENTITY % tei-common-atts 
+		 'id ID #IMPLIED
+		  id-text CDATA #IMPLIED
+		  rend CDATA #IMPLIED'>
+
+<!ENTITY % tei-req-common-atts 
+		 'id ID #REQUIRED
+		  id-text CDATA #IMPLIED
+		  rend CDATA #IMPLIED'>
+
+<!ELEMENT minipage (#PCDATA | %texte-general; | p )* >
+<!ATTLIST minipage
+		  pos CDATA #IMPLIED
+		  width CDATA #IMPLIED >
+
+<!ELEMENT theorem (#PCDATA | %texte-general; | p )* >
+<!ATTLIST theorem 
+		  id ID #REQUIRED
+		  id-text CDATA #IMPLIED >
+
+<!ELEMENT fbox (#PCDATA | %texte-general; | p )* >
+<!ATTLIST fbox %tei-common-atts; >
+
+<!ELEMENT cit (ref) >
+<!ATTLIST cit rend CDATA #IMPLIED >
+
+<!ELEMENT list ( head?, anchor?, (item* | (label, item)+)) >
+<!ATTLIST list %tei-common-atts; type (simple|gloss|ordered|description)  "simple" >
+
+<!ELEMENT item (#PCDATA | %texte-general; | clearpage | p )* >
+<!ATTLIST item 
+		  %tei-req-common-atts; 
+		  label CDATA #IMPLIED >
+
+<!ELEMENT label (#PCDATA | %texte-restreint; )* >
+<!ATTLIST label %tei-common-atts; >
+
+<!ENTITY % div0-textp "(div1|div2|div3|div4|div5)+">
+<!ENTITY % div0-texts "(div1|div2|div3|div4|div5)*">
+<!ENTITY % div1-textp "(div2|div3|div4|div5)+">
+<!ENTITY % div1-texts "(div2|div3|div4|div5)*">
+<!ENTITY % div2-textp "(div3|div4|div5)+">
+<!ENTITY % div2-texts "(div3|div4|div5)*">
+<!ENTITY % div3-textp "(div4|div5)+">
+<!ENTITY % div3-texts "(div4|div5)*">
+<!ENTITY % div4-textp "(div5)+">
+<!ENTITY % div4-texts "(div5)*">
+
+<!ENTITY % tei-div-atts 
+		 '%tei-common-atts;
+		  type CDATA #IMPLIED '>
+
+<!ELEMENT div1 (head, (%div1-textp; | (%tei-aux;, %div1-texts;))) >
+<!ATTLIST div1 %tei-div-atts; >
+<!ELEMENT div2 (head, (%div2-textp; | (%tei-aux;, %div2-texts;))) >
+<!ATTLIST div2 %tei-div-atts; >
+<!ELEMENT div3 (head, (%div3-textp; | (%tei-aux;, %div3-texts;))) >
+<!ATTLIST div3 %tei-div-atts; >
+<!ELEMENT div4 (head, (%div4-textp; | (%tei-aux;, %div4-texts;))) >
+<!ATTLIST div4 %tei-div-atts; >
+<!ELEMENT div5 (head, %tei-aux;) >
+<!ATTLIST div5 %tei-div-atts; >
+
+<!ELEMENT table (head?, row*) >
+<!ATTLIST table 
+		  %tei-common-atts;
+		  vpos NMTOKEN #IMPLIED
+		  rows NMTOKEN #IMPLIED
+		  place CDATA #IMPLIED
+		  cols NMTOKEN #IMPLIED >
+
+<!ELEMENT row (cell+) >
+<!ATTLIST row 
+		  %tei-common-atts;
+          top-border (true|false) "false"
+          bottom-border (true|false) "false"
+          space-before CDATA #IMPLIED
+		  role CDATA "data" >
+
+<!ELEMENT cell (#PCDATA | %texte-general;)* >
+<!ATTLIST cell 
+		  %tei-common-atts;
+		  role CDATA "data"
+		  rows NMTOKEN "1"
+		  cols NMTOKEN "1" 
+          right-border (true|false) "false"
+          left-border (true|false) "false"
+          halign CDATA #IMPLIED
+          top-border (true|false) "false"
+          bottom-border (true|false) "false"
+		  >
+
+<!ELEMENT figure (head?, p*)>
+<!ATTLIST figure 
+          id ID #IMPLIED
+		  rend (inline|float|array) "float"
+		  id-text CDATA #IMPLIED
+		  file CDATA #IMPLIED
+		  framed CDATA #IMPLIED
+		  width CDATA #IMPLIED
+		  height CDATA #IMPLIED
+		  scale CDATA #IMPLIED
+		  place CDATA #IMPLIED
+		  extension CDATA #IMPLIED
+		  starred CDATA #IMPLIED
+		  angle CDATA #IMPLIED >
+
+<!ELEMENT formula (math) >
+<!ATTLIST formula 
+		  %tei-common-atts;
+		  type (inline|display) "inline"
+		  textype CDATA #IMPLIED >
+
+<!-- ELEMENT keywords (term+) >
+<!ATTLIST keywords %tei-common-atts;
+          titre CDATA #FIXED "Keywords: " >
+
+<!ELEMENT term (#PCDATA | %texte-restreint;)* >
+<!ATTLIST term 
+		  %tei-common-atts;
+		  type CDATA #IMPLIED -->
+
+<!ELEMENT p (#PCDATA | clearpage | %texte-general; )* >
+<!ATTLIST p 
+		  %tei-common-atts; 
+		  spacebefore CDATA #IMPLIED
+		  noindent CDATA #IMPLIED>
+ 
+<!--ENTITY % texte-for-hi "minipage | fbox | rule | biblio" >
+<!ELEMENT hi (#PCDATA | %texte-general; | %texte-for-hi;)* -->
+<!ELEMENT hi (#PCDATA | %texte-general;)* >
+<!ATTLIST hi %tei-common-atts; >
+
+<!ELEMENT ref (#PCDATA | %texte-general; )* >
+<!ATTLIST ref 
+		  %tei-common-atts;
+		  type CDATA #IMPLIED
+		  target IDREF #IMPLIED >
+
+<!ELEMENT xref (#PCDATA | allowbreak | %texte-general; )* >
+<!ATTLIST xref 
+		  %tei-common-atts;
+		  type CDATA #IMPLIED
+		  url CDATA #IMPLIED > 
+
+<!ELEMENT head (#PCDATA | %texte-general; )* >
+<!ATTLIST head 
+		  %tei-common-atts;
+		  type CDATA #IMPLIED >
+
+<!ELEMENT note (#PCDATA | %texte-general; |  p )* >
+<!ATTLIST note 
+		  %tei-common-atts;
+		  type CDATA #IMPLIED
+		  place CDATA #IMPLIED
+		  anchored (yes | no) "yes"
+		  target IDREFS #IMPLIED >
+
+<!ELEMENT anchor EMPTY >
+<!ATTLIST anchor 
+		  %tei-req-common-atts;
+		  n CDATA #IMPLIED
+		  type CDATA #IMPLIED
+		  function CDATA #IMPLIED >
+
+<!ELEMENT gccat (error?, colorpool?, titlepage, tableofcontents, frontmatter, mainmatter, backmatter) >
+<!ATTLIST gccat 
+          part CDATA #IMPLIED
+		  date CDATA #REQUIRED
+		  language CDATA #IMPLIED
+		  creator CDATA #IMPLIED >
+
+<!ELEMENT titlepage (ti, authors, reference, abstract, keywords) >
+<!ELEMENT ti (#PCDATA|hi)* >
+<!ELEMENT authors (author+) >
+<!ELEMENT author (#PCDATA|note)* >
+<!ELEMENT abstract (p+) >
+<!ELEMENT reference (p+) >
+<!ELEMENT keywords (#PCDATA) >
+
+<!ELEMENT pagestyle EMPTY >
+<!ATTLIST pagestyle 
+		  this-style CDATA #IMPLIED
+		  style CDATA #IMPLIED >
+
+<!ELEMENT error EMPTY >
+<!ATTLIST error 
+		  n CDATA #IMPLIED
+		  l CDATA #IMPLIED
+		  c CDATA #IMPLIED >
+
+<!ELEMENT dotfill EMPTY >
+<!ELEMENT rule EMPTY >
+<!ATTLIST rule 
+		  depth CDATA #IMPLIED
+		  height CDATA #IMPLIED >
+
+<!ELEMENT tableofcontents EMPTY >
+<!ELEMENT frontmatter (div1+) >
+<!ELEMENT mainmatter (div1+) >
+<!ELEMENT backmatter (biblio, theindex) >
+
+<!ELEMENT theindex (index+) >
+<!ATTLIST theindex
+		  title CDATA #IMPLIED >
+<!ELEMENT index (#PCDATA | formula)* >
+<!ATTLIST index 
+		  target CDATA #REQUIRED
+		  level CDATA #REQUIRED
+		  encap CDATA #IMPLIED>
+
+<!ELEMENT biblio (citation+) >
+<!ATTLIST biblio 
+		  html CDATA #FIXED "bibliography"
+		  titre CDATA #FIXED "Bibliography"
+		  numero CDATA #FIXED "10">
+
+<!ENTITY % bibliostuff "bnote|bauteurs|bediteur|btitle|borganization|
+						bschool|byear|bmonth|xref|bseries|bnumber|bvolume|bedition|
+						binstitution|baddress|bpages|bhowpublished|bbooktitle
+						|bpublisher|bjournal|bchapter|btype|bdoi">
+
+<!ELEMENT citation (%bibliostuff;)*>
+<!ATTLIST citation
+		  key CDATA #REQUIRED
+          userid CDATA #IMPLIED
+          id ID #REQUIRED
+          type (book|booklet|proceedings|phdthesis|article|inbook|
+          incollection|inproceedings|conference|manual|techreport|coursenotes
+          |unpublished |misc|masterthesis|mastersthesis) #REQUIRED 
+          from (year|foot|refer) #REQUIRED >
+<!ELEMENT borganization (#PCDATA) >
+<!ATTLIST borganization bname CDATA #FIXED "organisation" >
+<!ELEMENT binstitution (#PCDATA|hi)* >
+<!ATTLIST binstitution bname CDATA #FIXED "institution" >
+<!ELEMENT baddress (#PCDATA) >
+<!ATTLIST baddress bname CDATA #FIXED "address" >
+<!ELEMENT bjournal (#PCDATA|hi)* >
+<!ATTLIST bjournal bname CDATA #FIXED "journal" >
+<!ELEMENT bseries (#PCDATA|hi)* >
+<!ATTLIST bseries bname CDATA #FIXED "series" >
+<!ELEMENT bbooktitle (#PCDATA|hi)* >
+<!ATTLIST bbooktitle bname CDATA #FIXED "booktitle" >
+<!ELEMENT bpublisher (#PCDATA |hi)* >
+<!ATTLIST bpublisher bname CDATA #FIXED "publisher" >
+<!ELEMENT bpages (#PCDATA) >
+<!ATTLIST bpages bname CDATA #FIXED "pages" >
+<!ELEMENT bchapter (#PCDATA) >
+<!ATTLIST bchapter bname CDATA #FIXED "chapter" >
+<!ELEMENT btype (#PCDATA|hi)* >
+<!ATTLIST btype bname CDATA #FIXED "type" >
+<!ELEMENT bhowpublished (#PCDATA|xref|hi)* >
+<!ATTLIST bhowpublished bname CDATA #FIXED "howpublished" >
+<!ELEMENT bedition (#PCDATA) >
+<!ATTLIST bedition bname CDATA #FIXED "edition" >
+<!ELEMENT bnumber (#PCDATA) >
+<!ATTLIST bnumber bname CDATA #FIXED "number" >
+<!ELEMENT bvolume (#PCDATA|hi)* >
+<!ATTLIST bvolume bname CDATA #FIXED "volume" >
+<!ELEMENT bmonth (#PCDATA) >
+<!ATTLIST bmonth bname CDATA #FIXED "month" >
+<!ELEMENT byear (#PCDATA|hi)* >
+<!ATTLIST byear bname CDATA #FIXED "year" >
+<!ELEMENT bdoi (#PCDATA)* >
+<!ATTLIST bdoi bname CDATA #FIXED "DOI" >
+<!ELEMENT bnote (#PCDATA|xref|hi|cit|formula)* >
+<!ATTLIST bnote bname CDATA #FIXED "note" >
+<!ELEMENT bschool (#PCDATA|hi)* >
+<!ATTLIST bschool bname CDATA #FIXED "school" >
+<!ELEMENT btitle (#PCDATA|hi|TeX|LaTeX|formula)* >
+<!ATTLIST btitle bname CDATA #FIXED "title" >
+<!ELEMENT bauteurs (bpers|etal)* >
+<!ATTLIST bauteurs bname CDATA #FIXED "authors" >
+<!ELEMENT bediteur (bpers|etal)* >
+<!ATTLIST bediteur bname CDATA #FIXED "editors" >
+<!ELEMENT bpers EMPTY>
+<!ATTLIST bpers
+		  prenom CDATA #REQUIRED
+          part CDATA #IMPLIED 
+          prenomcomplet CDATA #IMPLIED 
+          nom CDATA #REQUIRED
+          junior CDATA #IMPLIED>
+<!ELEMENT etal EMPTY>
+<!ATTLIST etal nom CDATA #FIXED "et al." >
+
+<!ELEMENT TeX EMPTY>
+<!ELEMENT LaTeX EMPTY>
+<!ELEMENT zws EMPTY>
+<!ELEMENT clearpage EMPTY>
+<!ELEMENT newpage EMPTY>
+<!ELEMENT allowbreak EMPTY>
+
+<!ELEMENT color EMPTY>
+<!ATTLIST color
+		  id CDATA #REQUIRED
+          value CDATA #IMPLIED 
+          model CDATA #IMPLIED 
+          name CDATA #IMPLIED>
+<!ELEMENT colorpool (color)*>
+
+<!ELEMENT line (#PCDATA | %texte-general; | p )*>
+<!ATTLIST line
+		  rend CDATA #REQUIRED>
+
+<!ELEMENT mbox (#PCDATA | %texte-general; | p )*>
+<!ATTLIST mbox
+		  color CDATA #REQUIRED
+		  color2 CDATA #IMPLIED>

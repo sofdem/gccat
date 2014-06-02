@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="gccat_systems.xslt" type="text/xsl"?>
+<catalog date="2009-12-10">
+<constraint name="all_equal">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="alldifferent">
+<system name="choco">
+<constraint name="allDifferent"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=alldifferent"/>
+</system>
+<system name="gecode">
+<constraint name="distinct"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntDistinct.html"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<constraint name="alldifferent"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Alldifferent.html"/>
+</system>
+<system name="jacop">
+<constraint name="alldiff"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Alldiff.html"/>
+</system>
+<system name="jacop">
+<constraint name="alldistinct"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Alldistinct.html"/>
+</system>
+<system name="sicstus">
+<constraint name="all_different"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="all_distinct"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="among">
+<system name="jacop">
+<constraint name="among"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Among.html"/>
+</system>
+</constraint>
+<constraint name="among_seq">
+<system name="jacop">
+<constraint name="sequence"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Sequence.html"/>
+</system>
+</constraint>
+<constraint name="among_var">
+<system name="jacop">
+<constraint name="amongvar"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/AmongVar.html"/>
+</system>
+</constraint>
+<constraint name="and">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<constraint name="andbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/AndBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#/\"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="arith">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#=&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&gt;="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#\="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="atleast">
+<system name="gecode">
+<constraint name="count"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<constraint name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="sicstus">
+<constraint name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="atmost">
+<system name="gecode">
+<constraint name="count"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<constraint name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="sicstus">
+<constraint name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="atmost_nvalue">
+<system name="choco">
+<constraint name="atMostNValue"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=atmostnvalue"/>
+</system>
+</constraint>
+<constraint name="bin_packing">
+<system name="choco">
+<constraint name="pack"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=pack"/>
+</system>
+</constraint>
+<constraint name="circuit">
+<system name="gecode">
+<constraint name="circuit"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntGraph.html"/>
+</system>
+<system name="jacop">
+<constraint name="circuit"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Circuit.html"/>
+</system>
+<system name="sicstus">
+<constraint name="circuit"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="clause_and">
+<system name="gecode">
+<constraint name="clause"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+</constraint>
+<constraint name="clause_or">
+<system name="gecode">
+<constraint name="clause"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+</constraint>
+<constraint name="count">
+<system name="choco">
+<constraint name="occurenceMax"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=ocurencemax"/>
+</system>
+<system name="choco">
+<constraint name="occurenceMin"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=ocurencemin"/>
+</system>
+<system name="choco">
+<constraint name="occurence"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=ocurence"/>
+</system>
+<system name="gecode">
+<constraint name="count"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<constraint name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="sicstus">
+<constraint name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="cumulative">
+<system name="choco">
+<constraint name="cumulativeMax"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=cumulative"/>
+</system>
+<system name="jacop">
+<constraint name="cumulative"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Cumulative.html"/>
+</system>
+<system name="sicstus">
+<constraint name="cumulative"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="cumulatives">
+<system name="gecode">
+<constraint name="cumulatives"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntScheduling.html"/>
+</system>
+<system name="sicstus">
+<constraint name="cumulatives"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="decreasing">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="diffn">
+<system name="jacop">
+<constraint name="diff2"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Diff2.html"/>
+</system>
+<system name="jacop">
+<constraint name="diff"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Diff.html"/>
+</system>
+<system name="jacop">
+<constraint name="disjoint"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Disjoint.html"/>
+</system>
+<system name="jacop">
+<constraint name="disjointconditional"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/DisjointConditional.html"/>
+</system>
+</constraint>
+<constraint name="disjunctive">
+<system name="choco">
+<constraint name="disjunctive"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=disjunctive"/>
+</system>
+</constraint>
+<constraint name="distance">
+<system name="jacop">
+<constraint name="distance"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Distance.html"/>
+</system>
+<system name="jacop">
+<constraint name="distance2"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Distance2.html"/>
+</system>
+</constraint>
+<constraint name="domain">
+<system name="sicstus">
+<constraint name="domain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="domain_constraint">
+<system name="gecode">
+<constraint name="channel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntChannel.html"/>
+</system>
+<system name="sicstus">
+<constraint name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="in_set"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="elem">
+<system name="choco">
+<constraint name="nth"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=nth"/>
+</system>
+<system name="gecode">
+<constraint name="element"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntElement.html"/>
+</system>
+<system name="jacop">
+<constraint name="element"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Element.html"/>
+</system>
+<system name="sicstus">
+<constraint name="element"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="element">
+<system name="choco">
+<constraint name="nth"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=nth"/>
+</system>
+<system name="gecode">
+<constraint name="element"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntElement.html"/>
+</system>
+<system name="jacop">
+<constraint name="element"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Element.html"/>
+</system>
+<system name="sicstus">
+<constraint name="element"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="eq">
+<system name="choco">
+<constraint name="eq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=eq"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<constraint name="xeqy"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XeqY.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="eq_set">
+<system name="choco">
+<constraint name="eq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=eq"/>
+</system>
+</constraint>
+<constraint name="equivalent">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<constraint name="eqbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/EqBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&lt;=&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="exactly">
+<system name="gecode">
+<constraint name="count"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<constraint name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="sicstus">
+<constraint name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="geost">
+<system name="choco">
+<constraint name="geost"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=geost"/>
+</system>
+<system name="jacop">
+<constraint name="geost"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/geost/Geost.html"/>
+</system>
+</constraint>
+<constraint name="geost_time">
+<system name="jacop">
+<constraint name="geost"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/geost/Geost.html"/>
+</system>
+</constraint>
+<constraint name="geq">
+<system name="choco">
+<constraint name="geq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=geq"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<constraint name="xgteqy"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XgteqY.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&gt;="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="global_cardinality">
+<system name="choco">
+<constraint name="globalCardinality"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=globalcardinality"/>
+</system>
+<system name="gecode">
+<constraint name="count"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<constraint name="gcc"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/GCC.html"/>
+</system>
+<system name="sicstus">
+<constraint name="global_cardinality"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="global_cardinality_with_costs">
+<system name="sicstus">
+<constraint name="global_cardinality"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="gt">
+<system name="choco">
+<constraint name="gt"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=gt"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<constraint name="xgty"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XgtY.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="imply">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<constraint name="ifthenbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/IfThenBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#=&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in">
+<system name="jacop">
+<constraint name="in"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/In.html"/>
+</system>
+<system name="sicstus">
+<constraint name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="in_set"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_interval">
+<system name="jacop">
+<constraint name="in"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/In.html"/>
+</system>
+<system name="sicstus">
+<constraint name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_intervals">
+<system name="jacop">
+<constraint name="in"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/In.html"/>
+</system>
+<system name="sicstus">
+<constraint name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_relation">
+<system name="choco">
+<constraint name="feasTupleAC"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=feastupleac"/>
+</system>
+<system name="choco">
+<constraint name="feasTupleAC"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=feastupleac"/>
+</system>
+<system name="gecode">
+<constraint name="extensional"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntExt.html"/>
+</system>
+<system name="jacop">
+<constraint name="extensionalsupportVA"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/ExtensionalSupportVA.html"/>
+</system>
+<system name="jacop">
+<constraint name="extensionalsupportMDD"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/ExtensionalSupportMDD.html"/>
+</system>
+<system name="jacop">
+<constraint name="extensionalsupportSTR"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/ExtensionalSupportSTR.html"/>
+</system>
+<system name="sicstus">
+<constraint name="case"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="relation"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<constraint name="table"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_set">
+<system name="choco">
+<constraint name="member"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=member"/>
+</system>
+</constraint>
+<constraint name="increasing">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="inverse">
+<system name="choco">
+<constraint name="inverseChanneling"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=inversechanneling"/>
+</system>
+<system name="gecode">
+<constraint name="channel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntChannel.html"/>
+</system>
+<system name="sicstus">
+<constraint name="assignment"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="inverse_offset">
+<system name="gecode">
+<constraint name="channel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntChannel.html"/>
+</system>
+</constraint>
+<constraint name="leq">
+<system name="choco">
+<constraint name="leq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=leq"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<constraint name="xlteqy"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XlteqY.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#=&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_between">
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_chain_less">
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_chain_lesseq">
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_greater">
+<system name="choco">
+<constraint name="lex"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=lex"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_greatereq">
+<system name="choco">
+<constraint name="lexeq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=lexeq"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_less">
+<system name="choco">
+<constraint name="lex"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=lex"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_lesseq">
+<system name="choco">
+<constraint name="lexeq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=lexeq"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_lesseq_allperm">
+<system name="choco">
+<constraint name="leximin"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=leximin"/>
+</system>
+</constraint>
+<constraint name="lt">
+<system name="choco">
+<constraint name="lt"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=lt"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<constraint name="xlty"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XltY.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="maximum">
+<system name="choco">
+<constraint name="max"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=max"/>
+</system>
+<system name="gecode">
+<constraint name="max"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntArith.html"/>
+</system>
+<system name="jacop">
+<constraint name="max"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Max.html"/>
+</system>
+<system name="sicstus">
+<constraint name="maximum"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="minimum">
+<system name="choco">
+<constraint name="min"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=min"/>
+</system>
+<system name="gecode">
+<constraint name="min"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntArith.html"/>
+</system>
+<system name="jacop">
+<constraint name="min"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Min.html"/>
+</system>
+<system name="sicstus">
+<constraint name="minimum"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="minimum_weight_alldifferent">
+<system name="sicstus">
+<constraint name="assignment"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="nand">
+<system name="gecode">
+<constraint name="clause"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#/\"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="neq">
+<system name="choco">
+<constraint name="neq"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=neq"/>
+</system>
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#\="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="nor">
+<system name="gecode">
+<constraint name="clause"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#\/"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="nvalue">
+<system name="sicstus">
+<constraint name="nvalue"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="or">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<constraint name="orbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/OrBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#\/"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="power">
+<system name="jacop">
+<constraint name="xexpyeqz"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XexpYeqZ.html"/>
+</system>
+</constraint>
+<constraint name="scalar_product">
+<system name="jacop">
+<constraint name="sumweight"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/SumWeight.html"/>
+</system>
+<system name="sicstus">
+<constraint name="scalar_product"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="sort">
+<system name="gecode">
+<constraint name="sorted"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntSorted.html"/>
+</system>
+<system name="sicstus">
+<constraint name="sorting"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="sort_permutation">
+<system name="gecode">
+<constraint name="sorted"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntSorted.html"/>
+</system>
+<system name="sicstus">
+<constraint name="sorting"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="stretch_path">
+<system name="choco">
+<constraint name="stretchPath"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=stretchpath"/>
+</system>
+<system name="jacop">
+<constraint name="stretch"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/geost/Stretch.html"/>
+</system>
+</constraint>
+<constraint name="strictly_decreasing">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="strictly_increasing">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="sum_ctr">
+<system name="gecode">
+<constraint name="linear"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntLinearInt.html"/>
+</system>
+<system name="sicstus">
+<constraint name="scalar_product"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="tree">
+<system name="choco">
+<constraint name="tree"
+url="http://www.emn.fr/x-info/choco-solver/doku.php?id=tree"/>
+</system>
+</constraint>
+<constraint name="xor">
+<system name="gecode">
+<constraint name="rel"
+url="http://www.gecode.org/doc-latest/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<constraint name="xorbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XorBool.html"/>
+</system>
+<system name="sicstus">
+<constraint name="#\"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+</catalog>

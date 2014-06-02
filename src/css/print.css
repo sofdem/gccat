@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:500,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+body { font:9pt/1 "Lato", "Helvetica Neue", "Verdana", Helvetica, Arial, sans-serif; }
+#nav, #access, #menu, .download, #navbar, form { 
+  display: none !important;
+}
+
+#wrap, #main, #content, #mainbody {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+
+#header, #menu { 
+  background: white; 
+  color: black;
+  margin: 0; width: 100%;
+  font-size: 80%;
+}
+
+#menu li#here { border: solid 2px black; }
+/* h2 { border: solid 2px #333333; } */
+
+dl { clear: both !important; }
+dd { clear: both !important; margin: 0 0 0 50px !important; }
+
+#header {
+	padding: 50px 5px;
+}
+.entry {
+	padding: 10px 0;
+}
+.entry p, .entry dt, .entry dt ul {
+	padding: 0 20px 5px 20px;
+}
+.entry ul {
+	padding: 0 20px 5px 40px ;
+}
+.entry h2 { 
+	padding: 0 0 10px 0;
+}
