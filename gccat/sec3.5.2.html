@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec3.html">3. Description of the Catalogue</a></h1><ul><li>3.1. <a href="sec3.1.html">Which global constraints are included?</a></li><li>3.2. <a href="sec3.2.html">Which global constraints are missing?</a></li><li>3.3. <a href="sec3.3.html">Searching in the catalogue</a><ul><li>3.3.1. <a href="sec3.3.1.html">How to see if a global constraint is in the catalogue?</a></li><li>3.3.2. <a href="sec3.3.2.html">How to search for all global constraints sharing the same structure</a><ul><li>3.3.2.1. <a href="sec3.3.2.1.html">Searching from a graph property perspective</a></li><li>3.3.2.2. <a href="sec3.3.2.2.html">Searching from an automaton perspective</a></li><li>3.3.2.3. <a href="sec3.3.2.3.html">Searching from a first order logic perspective</a></li></ul></li><li>3.3.3. <a href="sec3.3.3.html">Searching all places where a global constraint is referenced</a></li><li>3.3.4. <a href="sec3.3.4.html">Searching the mapping with a constraint of a concrete system</a></li></ul></li><li>3.4. <a href="sec3.4.html">Figures of the catalogue</a></li><li>3.5. <a href="sec3.5.html">Constraints argument patterns</a><ul><li>3.5.1. <a href="sec3.5.1.html">Constraints with 1 argument</a></li><li>3.5.2. <a href="sec3.5.2.html">Constraints with 2 arguments</a></li><li>3.5.3. <a href="sec3.5.3.html">Constraints with 3 arguments</a></li><li>3.5.4. <a href="sec3.5.4.html">Constraints with 4 arguments</a></li><li>3.5.5. <a href="sec3.5.5.html">Constraints with 5 arguments</a></li><li>3.5.6. <a href="sec3.5.6.html">Constraints with 6 arguments</a></li><li>3.5.7. <a href="sec3.5.7.html">Constraints with 8 arguments</a></li><li>3.5.8. <a href="sec3.5.8.html">Constraints with 10 arguments</a></li></ul></li><li>3.6. <a href="sec3.6.html">Meta-keywords attached to the keywords</a><ul><li>3.6.1. <a href="sec3.6.1.html">Application area</a></li><li>3.6.2. <a href="sec3.6.2.html">Characteristic of a constraint</a></li><li>3.6.3. <a href="sec3.6.3.html">Combinatorial object</a></li><li>3.6.4. <a href="sec3.6.4.html">Complexity</a></li><li>3.6.5. <a href="sec3.6.5.html">Constraint network structure</a></li><li>3.6.6. <a href="sec3.6.6.html">Constraint type</a></li><li>3.6.7. <a href="sec3.6.7.html">Constraint arguments</a></li><li>3.6.8. <a href="sec3.6.8.html">Filtering</a></li><li>3.6.9. <a href="sec3.6.9.html">Final graph structure</a></li><li>3.6.10. <a href="sec3.6.10.html">Geometry</a></li><li>3.6.11. <a href="sec3.6.11.html">Heuristics</a></li><li>3.6.12. <a href="sec3.6.12.html">Miscellaneous</a></li><li>3.6.13. <a href="sec3.6.13.html">Modelling</a></li><li>3.6.14. <a href="sec3.6.14.html">Modelling exercises</a></li><li>3.6.15. <a href="sec3.6.15.html">Problems</a></li><li>3.6.16. <a href="sec3.6.16.html">Puzzles</a></li><li>3.6.17. <a href="sec3.6.17.html">Symmetry</a></li></ul></li><li>3.7. <a href="sec3.7.html">Keywords attached to the global constraints</a><ul><li>3.7.1. <a href="K3-dimensional-matching.html">3-dimensional-matching</a></li><li>3.7.2. <a href="K3-SAT.html">3-SAT</a></li><li>3.7.3. <a href="Kabstract_interpretation.html">Abstract interpretation</a></li><li>3.7.4. <a href="Kacyclic.html">Acyclic</a></li><li>3.7.5. <a href="Kair_traffic_management.html">Air traffic management</a></li><li>3.7.6. <a href="Kalignment.html">Alignment</a></li><li>3.7.7. <a href="Kall_different.html">All different</a></li><li>3.7.8. <a href="Kalpha-acyclic_constraint_networkNb2.html">Alpha-acyclic constraint network(2)</a></li><li>3.7.9. <a href="Kalpha-acyclic_constraint_networkNb3.html">Alpha-acyclic constraint network(3)</a></li><li>3.7.10. <a href="Kapartition.html">Apartition</a></li><li>3.7.11. <a href="Karc-consistency.html">Arc-consistency</a></li><li>3.7.12. <a href="Karithmetic_constraint.html">Arithmetic constraint</a></li><li>3.7.13. <a href="Karray_constraint.html">Array constraint</a></li><li>3.7.14. <a href="Kassigning_and_scheduling_tasks_that_run_in_parallel.html">Assigning and scheduling tasks that run in parallel</a></li><li>3.7.15. <a href="Kassignment.html">Assignment</a></li><li>3.7.16. <a href="Kassignment_dimension.html">Assignment dimension</a></li><li>3.7.17. <a href="Kassignment_to_the_same_set_of_values.html">Assignment to the same set of values</a></li><li>3.7.18. <a href="Kat_least.html">At least</a></li><li>3.7.19. <a href="Kat_most.html">At most</a></li><li>3.7.20. <a href="Kautomaton.html">Automaton</a></li><li>3.7.21. <a href="Kautomaton_with_array_of_counters.html">Automaton with array of counters</a></li><li>3.7.22. <a href="Kautomaton_with_counters.html">Automaton with counters</a></li><li>3.7.23. <a href="Kautomaton_without_counters.html">Automaton without counters</a></li><li>3.7.24. <a href="Kautoref.html">Autoref</a></li><li>3.7.25. <a href="Kbalanced_assignment.html">Balanced assignment</a></li><li>3.7.26. <a href="Kbalanced_tree.html">Balanced tree</a></li><li>3.7.27. <a href="KBerge-acyclic_constraint_network.html">Berge-acyclic constraint network</a></li><li>3.7.28. <a href="Kbinary_constraint.html">Binary constraint</a></li><li>3.7.29. <a href="Kbioinformatics.html">Bioinformatics</a></li><li>3.7.30. <a href="Kbipartite.html">Bipartite</a></li><li>3.7.31. <a href="Kbipartite_matching.html">Bipartite matching</a></li><li>3.7.32. <a href="Kbipartite_matching_in_convex_bipartite_graphs.html">Bipartite matching in convex bipartite graphs</a></li><li>3.7.33. <a href="KBoolean_channel.html">Boolean channel</a></li><li>3.7.34. <a href="KBoolean_constraint.html">Boolean constraint</a></li><li>3.7.35. <a href="Kborder.html">Border</a></li><li>3.7.36. <a href="Kbound-consistency.html">Bound-consistency</a></li><li>3.7.37. <a href="Kbusiness_rules.html">Business rules</a></li><li>3.7.38. <a href="Kcentered_cyclicNb1_constraint_networkNb1.html">Centered cyclic(1) constraint network(1)</a></li><li>3.7.39. <a href="Kcentered_cyclicNb2_constraint_networkNb1.html">Centered cyclic(2) constraint network(1)</a></li><li>3.7.40. <a href="Kcentered_cyclicNb3_constraint_networkNb1.html">Centered cyclic(3) constraint network(1)</a></li><li>3.7.41. <a href="Kchannel_routing.html">Channel routing</a></li><li>3.7.42. <a href="Kchannelling_constraint.html">Channelling constraint</a></li><li>3.7.43. <a href="Kcircuit.html">Circuit</a></li><li>3.7.44. <a href="Kcircular_sliding_cyclicNb1_constraint_networkNb2.html">Circular sliding cyclic(1) constraint network(2)</a></li><li>3.7.45. <a href="Kcluster.html">Cluster</a></li><li>3.7.46. <a href="Kcoloured.html">Coloured</a></li><li>3.7.47. <a href="Kcompulsory_part.html">Compulsory part</a></li><li>3.7.48. <a href="Kconditional_constraint.html">Conditional constraint</a></li><li>3.7.49. <a href="Kconfiguration_problem.html">Configuration problem</a></li><li>3.7.50. <a href="Kconnected_component.html">Connected component</a></li><li>3.7.51. <a href="Kconsecutive_loops_are_connected.html">Consecutive loops are connected</a></li><li>3.7.52. <a href="Kconsecutive_values.html">Consecutive values</a></li><li>3.7.53. <a href="Kconstraint_between_two_collections_of_variables.html">Constraint between two collections of variables</a></li><li>3.7.54. <a href="Kconstraint_between_three_collections_of_variables.html">Constraint between three collections of variables</a></li><li>3.7.55. <a href="Kconstraint_involving_set_variables.html">Constraint involving set variables</a></li><li>3.7.56. <a href="Kconstraint_on_the_intersection.html">Constraint on the intersection</a></li><li>3.7.57. <a href="sec3.7.57.html">Constructive disjunction</a></li><li>3.7.58. <a href="Kcontact.html">Contact</a></li><li>3.7.59. <a href="Kconvex.html">Convex</a></li><li>3.7.60. <a href="Kconvex_bipartite_graph.html">Convex bipartite graph</a></li><li>3.7.61. <a href="Kconvex_hull_relaxation.html">Convex hull relaxation</a></li><li>3.7.62. <a href="KConway_packing_problem.html">Conway packing problem</a></li><li>3.7.63. <a href="Kcore.html">Core</a></li><li>3.7.64. <a href="KCostas_arrays.html">Costas arrays</a></li><li>3.7.65. <a href="Kcost_filtering_constraint.html">Cost filtering constraint</a></li><li>3.7.66. <a href="Kcost_matrix.html">Cost matrix</a></li><li>3.7.67. <a href="Kcounting_constraint.html">Counting constraint</a></li><li>3.7.68. <a href="Kcumulative_longest_hole_problems.html">Cumulative longest hole problems</a></li><li>3.7.69. <a href="Kcycle.html">Cycle</a></li><li>3.7.70. <a href="Kcyclic.html">Cyclic</a></li><li>3.7.71. <a href="Kdata_constraint.html">Data constraint</a></li><li>3.7.72. <a href="Kdeadlock_breaking.html">Deadlock breaking</a></li><li>3.7.73. <a href="Kdecomposition.html">Decomposition</a></li><li>3.7.74. <a href="Kdecomposition-based_violation_measure.html">Decomposition-based violation measure</a></li><li>3.7.75. <a href="KDFS-bottleneck.html">DFS-bottleneck</a></li><li>3.7.76. <a href="Kdemand_profile.html">Demand profile</a></li><li>3.7.77. <a href="Kdegree_of_diversity_of_a_set_of_solutions.html">Degree of diversity of a set of solutions</a></li><li>3.7.78. <a href="Kderived_collection.html">Derived collection</a></li><li>3.7.79. <a href="Kdifference.html">Difference</a></li><li>3.7.80. <a href="Kdifference_between_pairs_of_variables.html">Difference between pairs of variables</a></li><li>3.7.81. <a href="Kdirected_acyclic_graph.html">Directed acyclic graph</a></li><li>3.7.82. <a href="Kdisequality.html">Disequality</a></li><li>3.7.83. <a href="sec3.7.83.html">Disjunction</a></li><li>3.7.84. <a href="Kdomain_channel.html">Domain channel</a></li><li>3.7.85. <a href="Kdomain_definition.html">Domain definition</a></li><li>3.7.86. <a href="Kdominating_queens.html">Dominating queens</a></li><li>3.7.87. <a href="Kdomination.html">Domination</a></li><li>3.7.88. <a href="Kdual_model.html">Dual model</a></li><li>3.7.89. <a href="Kduplicated_variables.html">Duplicated variables</a></li><li>3.7.90. <a href="Kdynamic_programming.html">Dynamic programming</a></li><li>3.7.91. <a href="Kempty_intersection.html">Empty intersection</a></li><li>3.7.92. <a href="Kentailment.html">Entailment</a></li><li>3.7.93. <a href="Kequality.html">Equality</a></li><li>3.7.94. <a href="Kequality_between_multisets.html">Equality between multisets</a></li><li>3.7.95. <a href="Kequivalence.html">Equivalence</a></li><li>3.7.96. <a href="KEuler_knight.html">Euler knight</a></li><li>3.7.97. <a href="Kexcluded.html">Excluded</a></li><li>3.7.98. <a href="Kextension.html">Extension</a></li><li>3.7.99. <a href="Kfacilities_location_problem.html">Facilities location problem</a></li><li>3.7.100. <a href="Kfloor_planning_problem.html">Floor planning problem</a></li><li>3.7.101. <a href="Kflow.html">Flow</a><ul><li>3.7.101.1. <a href="sec3.7.101.1.html">Flow models for <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid5418"/>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid5419"/></a></li><li>3.7.101.2. <a href="sec3.7.101.2.html">Flow models for <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi><mo>_</mo><mi>𝚕𝚘𝚠</mi><mo>_</mo><mi>𝚞𝚙</mi></mrow></math><span id="uid5437"/>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi><mo>_</mo><mi>𝚕𝚘𝚠</mi><mo>_</mo><mi>𝚞𝚙</mi><mo>_</mo><mi>𝚗𝚘</mi><mo>_</mo><mi>𝚕𝚘𝚘𝚙</mi></mrow></math><span id="uid5438"/></a></li><li>3.7.101.3. <a href="sec3.7.101.3.html">Flow models for <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi></mrow></math><span id="uid5455"/>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚊𝚖𝚎</mi></math><span id="uid5456"/></a></li><li>3.7.101.4. <a href="sec3.7.101.4.html">Flow model for <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚊𝚗𝚍</mi><mo>_</mo><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi><mo>_</mo><mi>𝚕𝚘𝚠</mi><mo>_</mo><mi>𝚞𝚙</mi></mrow></math><span id="uid5470"/></a></li></ul></li><li>3.7.102. <a href="Kfrequency_allocation_problem.html">Frequency allocation problem</a></li><li>3.7.103. <a href="sec3.7.103.html">Functional dependency</a></li><li>3.7.104. <a href="Kgeometrical_constraint.html">Geometrical constraint</a></li><li>3.7.105. <a href="KGolomb_ruler.html">Golomb ruler</a></li><li>3.7.106. <a href="Kgraph_colouring.html">Graph colouring</a></li><li>3.7.107. <a href="Kgraph_constraint.html">Graph constraint</a></li><li>3.7.108. <a href="Kgraph_partitioning_constraint.html">Graph partitioning constraint</a></li><li>3.7.109. <a href="Kguillotine_cut.html">Guillotine cut</a></li><li>3.7.110. <a href="KHall_interval.html">Hall interval</a></li><li>3.7.111. <a href="KHamiltonian.html">Hamiltonian</a></li><li>3.7.112. <a href="sec3.7.112.html">Heuristics</a></li><li>3.7.113. <a href="Kheuristics_and_berge_acyclic_contraint_network.html">Heuristics and Berge-acyclic constraint network</a></li><li>3.7.114. <a href="Kheuristics_and_lexicographical_ordering.html">Heuristics and lexicographical ordering</a></li><li>3.7.115. <a href="Kheuristics_for_two_dimensional_rectangle_placement_problems.html">Heuristics for two-dimensional rectangle placement problems</a><ul><li>3.7.115.1. <a href="sec3.7.115.1.html">Dual strategy for rectangle placement problems with no slack</a></li><li>3.7.115.2. <a href="sec3.7.115.2.html">Strategy that gradually creates a compulsory part</a></li></ul></li><li>3.7.116. <a href="KHungarian_method_for_the_assignment_problem.html">Hungarian method for the assignment problem</a></li><li>3.7.117. <a href="Khybrid-consistency.html">Hybrid-consistency</a></li><li>3.7.118. <a href="Khypergraph.html">Hypergraph</a></li><li>3.7.119. <a href="Kincluded.html">Included</a></li><li>3.7.120. <a href="Kinclusion.html">Inclusion</a></li><li>3.7.121. <a href="Kincompatible_pairs_of_values.html">Incompatible pairs of values</a></li><li>3.7.122. <a href="Kindistinguishable_values.html">Indistinguishable values</a></li><li>3.7.123. <a href="Kinterval.html">Interval</a></li><li>3.7.124. <a href="Kjoker_value.html">Joker value</a></li><li>3.7.125. <a href="KKlee_measure_problem.html">Klee's measure problem</a></li><li>3.7.126. <a href="Klatin_square.html">Latin square</a></li><li>3.7.127. <a href="Klexicographic_order.html">Lexicographic order</a></li><li>3.7.128. <a href="Klimited_discrepancy_search.html">Limited discrepancy search</a></li><li>3.7.129. <a href="Klinear_programming.html">Linear programming</a></li><li>3.7.130. <a href="Kline-segments_intersection.html">Line-segments intersection</a></li><li>3.7.131. <a href="Klogic.html">Logic</a></li><li>3.7.132. <a href="Klogigraphe.html">Logigraphe</a></li><li>3.7.133. <a href="Kmagic_hexagon.html">Magic hexagon</a></li><li>3.7.134. <a href="Kmagic_series.html">Magic series</a></li><li>3.7.135. <a href="Kmagic_square.html">Magic square</a></li><li>3.7.136. <a href="Kmatching.html">Matching</a></li><li>3.7.137. <a href="Kmatrix.html">Matrix</a></li><li>3.7.138. <a href="Kmatrix_model.html">Matrix model</a></li><li>3.7.139. <a href="Kmatrix_symmetry.html">Matrix symmetry</a></li><li>3.7.140. <a href="Kmaximum.html">Maximum</a></li><li>3.7.141. <a href="Kmaximum_clique.html">Maximum clique</a></li><li>3.7.142. <a href="Kmaximum_number_of_occurrences.html">Maximum number of occurrences</a></li><li>3.7.143. <a href="Kmaxint.html">maxint</a></li><li>3.7.144. <a href="Kmetro.html">Metro</a></li><li>3.7.145. <a href="Kminimum.html">Minimum</a></li><li>3.7.146. <a href="Kminimum_cost_flow.html">Minimum cost flow</a></li><li>3.7.147. <a href="Kminimum_feedback_vertex_set.html">Minimum feedback vertex set</a></li><li>3.7.148. <a href="Kminimum_hitting_set_cardinality.html">Minimum hitting set cardinality</a></li><li>3.7.149. <a href="Kminimum_number_of_occurrences.html">Minimum number of occurrences</a></li><li>3.7.150. <a href="Kmodulo.html">Modulo</a></li><li>3.7.151. <a href="Kmultiset.html">Multiset</a></li><li>3.7.152. <a href="Kmultiset_ordering.html">Multiset ordering</a></li><li>3.7.153. <a href="Kno_cycle.html">No cycle</a></li><li>3.7.154. <a href="Kno_loop.html">No loop</a></li><li>3.7.155. <a href="Kn-Amazon.html">n-Amazon</a></li><li>3.7.156. <a href="Kn-queen.html">n-queen</a></li><li>3.7.157. <a href="Knon-deterministic automaton.html">Non-deterministic automaton</a></li><li>3.7.158. <a href="Knon-overlapping.html">Non-overlapping</a></li><li>3.7.159. <a href="Knumber_of_changes.html">Number of changes</a></li><li>3.7.160. <a href="Knumber_of_distinct_equivalence_classes.html">Number of distinct equivalence classes</a></li><li>3.7.161. <a href="Knumber_of_distinct_values.html">Number of distinct values</a></li><li>3.7.162. <a href="Kobscure.html">Obscure</a></li><li>3.7.163. <a href="Kone_succ.html">One succ</a></li><li>3.7.164. <a href="Kopen_automaton_constraint.html">Open automaton constraint</a></li><li>3.7.165. <a href="Kopen_constraint.html">Open constraint</a></li><li>3.7.166. <a href="Korder_constraint.html">Order constraint</a></li><li>3.7.167. <a href="Korthotope.html">Orthotope</a></li><li>3.7.168. <a href="Koverlapping_alldifferent.html">Overlapping alldifferent</a></li><li>3.7.169. <a href="Kpair.html">Pair</a></li><li>3.7.170. <a href="Kpacking_almost_squares.html">Packing almost squares</a></li><li>3.7.171. <a href="Kpallet_loading.html">Pallet loading</a></li><li>3.7.172. <a href="Kpartition.html">Partition</a></li><li>3.7.173. <a href="Kpath.html">Path</a></li><li>3.7.174. <a href="KPartridge.html">Partridge</a></li><li>3.7.175. <a href="Kpattern_sequencing.html">Pattern sequencing</a></li><li>3.7.176. <a href="Kpentomino.html">Pentomino</a></li><li>3.7.177. <a href="Kperiodic.html">Periodic</a></li><li>3.7.178. <a href="Kpermutation.html">Permutation</a></li><li>3.7.179. <a href="Kpermutation_channel.html">Permutation channel</a></li><li>3.7.180. <a href="KPhi_tree.html">Phi-tree</a></li><li>3.7.181. <a href="Kphylogeny.html">Phylogeny</a></li><li>3.7.182. <a href="Kpick-up_delivery.html">Pick-up delivery</a></li><li>3.7.183. <a href="Kplanarity_test.html">Planarity test</a></li><li>3.7.184. <a href="Kpolygon.html">Polygon</a></li><li>3.7.185. <a href="Kpositioning_constraint.html">Positioning constraint</a></li><li>3.7.186. <a href="Kpredefined_constraint.html">Predefined constraint</a></li><li>3.7.187. <a href="Kpreferences.html">Preferences</a></li><li>3.7.188. <a href="Kproducer-consumer.html">Producer-consumer</a></li><li>3.7.189. <a href="Kproduct.html">Product</a></li><li>3.7.190. <a href="Kprogram_verification.html">Program verification</a></li><li>3.7.191. <a href="Kproximity_constraint.html">Proximity constraint</a></li><li>3.7.192. <a href="Kquadtree.html">Quadtree</a></li><li>3.7.193. <a href="Krange.html">Range</a></li><li>3.7.194. <a href="Krank.html">Rank</a></li><li>3.7.195. <a href="Krcc8.html">RCC8</a></li><li>3.7.196. <a href="Kreified_automaton_constraint.html">Reified automaton constraint</a></li><li>3.7.197. <a href="Kreified_constraint.html">Reified constraint</a></li><li>3.7.198. <a href="Krelation.html">Relation</a></li><li>3.7.199. <a href="Krelaxation.html">Relaxation</a></li><li>3.7.200. <a href="Krelaxation_dimension.html">Relaxation dimension</a></li><li>3.7.201. <a href="Krectangle_clique_partition.html">Rectangle clique partition</a></li><li>3.7.202. <a href="Kresource_constraint.html">Resource constraint</a></li><li>3.7.203. <a href="Krun_of_a_permutation.html">Run of a permutation</a></li><li>3.7.204. <a href="KSAT.html">SAT</a></li><li>3.7.205. <a href="Kscalar_product.html">Scalar product</a></li><li>3.7.206. <a href="Ksequence.html">Sequence</a></li><li>3.7.207. <a href="Ksequence_dependent_set-up.html">Sequence dependent set-up</a></li><li>3.7.208. <a href="Ksequencing_with_release_times_and_deadlines.html">Sequencing with release times and deadlines</a></li><li>3.7.209. <a href="Kset_channel.html">Set channel</a></li><li>3.7.210. <a href="Kset_packing.html">Set packing</a></li><li>3.7.211. <a href="KShikaku.html">Shikaku</a></li><li>3.7.212. <a href="Kscheduling_constraint.html">Scheduling constraint</a></li><li>3.7.213. <a href="Kscheduling_with_machine_choice_calendars_and_preemption.html">Scheduling with machine choice, calendars and preemption</a></li><li>3.7.214. <a href="sec3.7.214.html">Shared table</a></li><li>3.7.215. <a href="KSchur_number.html">Schur number</a></li><li>3.7.216. <a href="KSLAM_problem.html">SLAM problem</a></li><li>3.7.217. <a href="Ksliding_cyclicNb1_constraint_networkNb1.html">Sliding cyclic(1) constraint network(1)</a></li><li>3.7.218. <a href="Ksliding_cyclicNb1_constraint_networkNb2.html">Sliding cyclic(1) constraint network(2)</a></li><li>3.7.219. <a href="Ksliding_cyclicNb1_constraint_networkNb3.html">Sliding cyclic(1) constraint network(3)</a></li><li>3.7.220. <a href="Ksliding_cyclicNb2_constraint_networkNb2.html">Sliding cyclic(2) constraint network(2)</a></li><li>3.7.221. <a href="Ksliding_sequence_constraint.html">Sliding sequence constraint</a></li><li>3.7.222. <a href="Ksmallest_square_for_packing_consecutive_dominoes.html">Smallest square for packing consecutive dominoes</a></li><li>3.7.223. <a href="Ksmallest_rectangle_area.html">Smallest rectangle area</a></li><li>3.7.224. <a href="Ksmallest_square_for_packing_rectangles_with_distinct_sizes.html">Smallest square for packing rectangles with distinct sizes</a></li><li>3.7.225. <a href="Ksoft_constraint.html">Soft constraint</a></li><li>3.7.226. <a href="Ksort.html">Sort</a></li><li>3.7.227. <a href="sec3.7.227.html">Sparse functional dependency</a></li><li>3.7.228. <a href="Ksparse_table.html">Sparse table</a></li><li>3.7.229. <a href="Ksport_timetabling.html">Sport timetabling</a></li><li>3.7.230. <a href="Ksquared_squares.html">Squared squares</a></li><li>3.7.231. <a href="sec3.7.231.html">Statistics</a></li><li>3.7.232. <a href="Kstrip_packing.html">Strip packing</a></li><li>3.7.233. <a href="Kstrong_bridge.html">Strong bridge</a></li><li>3.7.234. <a href="Kstrong_articulation_point.html">Strong articulation point</a></li><li>3.7.235. <a href="Kstrongly_connected_component.html">Strongly connected component</a></li><li>3.7.236. <a href="Ksubset_sum.html">Subset sum</a></li><li>3.7.237. <a href="KSudoku.html">Sudoku</a></li><li>3.7.238. <a href="Ksum.html">Sum</a></li><li>3.7.239. <a href="Ksweep.html">Sweep</a></li><li>3.7.240. <a href="Ksymmetry.html">Symmetry</a></li><li>3.7.241. <a href="Ksymmetric.html">Symmetric</a></li><li>3.7.242. <a href="Ksystem_of_constraints.html">System of constraints</a></li><li>3.7.243. <a href="Ktable.html">Table</a></li><li>3.7.244. <a href="Ktemporal_constraint.html">Temporal constraint</a></li><li>3.7.245. <a href="Kternary_constraint.html">Ternary constraint</a></li><li>3.7.246. <a href="Ktimetabling_constraint.html">Timetabling constraint</a></li><li>3.7.247. <a href="Ktime_window.html">Time window</a></li><li>3.7.248. <a href="Ktouch.html">Touch</a></li><li>3.7.249. <a href="Ktree.html">Tree</a></li><li>3.7.250. <a href="Ktuple.html">Tuple</a></li><li>3.7.251. <a href="Ktwo_dimensional_orthogonal_packing.html">Two-dimensional orthogonal packing</a></li><li>3.7.252. <a href="Kunary_constraint.html">Unary constraint</a></li><li>3.7.253. <a href="Kundirected_graph.html">Undirected graph</a></li><li>3.7.254. <a href="Kvalue_constraint.html">Value constraint</a></li><li>3.7.255. <a href="Kvalue_partitioning_constraint.html">Value partitioning constraint</a></li><li>3.7.256. <a href="Kvalue_precedence.html">Value precedence</a></li><li>3.7.257. <a href="Kvariable-based_violation_measure.html">Variable-based violation measure</a></li><li>3.7.258. <a href="Kvariable_indexing.html">Variable indexing</a></li><li>3.7.259. <a href="Kvariable_subscript.html">Variable subscript</a></li><li>3.7.260. <a href="Kvector.html">Vector</a></li><li>3.7.261. <a href="Kvpartition.html">Vpartition</a></li><li>3.7.262. <a href="Kweighted_assignment.html">Weighted assignment</a></li><li>3.7.263. <a href="Kworkload_covering.html">Workload covering</a></li><li>3.7.264. <a href="Kzebra_puzzle.html">Zebra puzzle</a></li><li>3.7.265. <a href="Kzero_duration_task.html">Zero-duration task</a></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec3.5.1.html">&lt;&lt; 3.5.1. Constraints with 1 argument</a><a href="sec3.5.3.html">3.5.3. Constraints with 3 arguments &gt;&gt;</a></div><div id="main"><h3>3.5.2. Constraints with 2 arguments</h3><div class="table" id="uid1689"><table align="center"><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i2_y" src="../ctrs/fig_tree_a_x_i2_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1690"><p><span class="small"><a href="Cabs_value.html#uid9822"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚋𝚜</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid1691"/></a></span></p>
+</li>
+<li id="uid1692"><p><span class="small"><a href="Ceq.html#uid16705"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚎𝚚</mi></math><span id="uid1693"/></a></span></p>
+</li>
+<li id="uid1694"><p><span class="small"><a href="Cgeq.html#uid17093"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚐𝚎𝚚</mi></math><span id="uid1695"/></a></span></p>
+</li>
+<li id="uid1696"><p><span class="small"><a href="Cgt.html#uid17887"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚐𝚝</mi></math><span id="uid1697"/></a></span></p>
+</li>
+<li id="uid1698"><p><span class="small"><a href="Cleq.html#uid19866"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚕𝚎𝚚</mi></math><span id="uid1699"/></a></span></p>
+</li>
+<li id="uid1700"><p><span class="small"><a href="Clt.html#uid20804"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚕𝚝</mi></math><span id="uid1701"/></a></span></p>
+</li>
+<li id="uid1702"><p><span class="small"><a href="Cneq.html#uid21662"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚎𝚚</mi></math><span id="uid1703"/></a></span></p>
+</li>
+<li id="uid1704"><p><span class="small"><a href="Copposite_sign.html#uid22968"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚙𝚘𝚜𝚒𝚝𝚎</mi><mo>_</mo><mi>𝚜𝚒𝚐𝚗</mi></mrow></math><span id="uid1705"/></a></span></p>
+</li>
+<li id="uid1706"><p><span class="small"><a href="Csame_sign.html#uid24474"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚜𝚒𝚐𝚗</mi></mrow></math><span id="uid1707"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_i2_y_" src="../ctrs/fig_tree_a_x_i2_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_s_y" src="../ctrs/fig_tree_a_x_i_y_x_s_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1708"><p><span class="small"><a href="Cin_set.html#uid18309"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi></mrow></math><span id="uid1709"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i_y_y.png"/></td><td align="center" class="border">
+<span class="small"><ol>
+<li id="uid1710"><p><span class="small"><a href="Call_min_dist.html#uid9939"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕</mi><mo>_</mo><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚍𝚒𝚜𝚝</mi></mrow></math><span id="uid1711"/></a></span></p>
+</li>
+<li id="uid1712"><p><span class="small"><a href="Calldifferent_interval.html#uid10356"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></mrow></math><span id="uid1713"/></a></span></p>
+</li>
+<li id="uid1714"><p><span class="small"><a href="Calldifferent_modulo.html#uid10407"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚖𝚘𝚍𝚞𝚕𝚘</mi></mrow></math><span id="uid1715"/></a></span></p>
+</li>
+<li id="uid1716"><p><span class="small"><a href="Camong_diff_0.html#uid10774"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚖𝚘𝚗𝚐</mi><mo>_</mo><mi>𝚍𝚒𝚏𝚏</mi><mo>_</mo><mn mathvariant="monospace">0</mn></mrow></math><span id="uid1717"/></a></span></p>
+</li>
+<li id="uid1718"><p><span class="small"><a href="Cand.html#uid11065"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚗𝚍</mi></math><span id="uid1719"/></a></span></p>
+</li>
+<li id="uid1720"><p><span class="small"><a href="Catleast_nvalue.html#uid11426"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid1721"/></a></span></p>
+</li>
+<li id="uid1722"><p><span class="small"><a href="Catmost_nvalue.html#uid11608"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚝𝚖𝚘𝚜𝚝</mi><mo>_</mo><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid1723"/></a></span></p>
+</li>
+<li id="uid1724"><p><span class="small"><a href="Cbalance.html#uid11718"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚋𝚊𝚕𝚊𝚗𝚌𝚎</mi></math><span id="uid1725"/></a></span></p>
+</li>
+<li id="uid1726"><p><span class="small"><a href="Cbetween_min_max.html#uid11903"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚋𝚎𝚝𝚠𝚎𝚎𝚗</mi><mo>_</mo><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚖𝚊𝚡</mi></mrow></math><span id="uid1727"/></a></span></p>
+</li>
+<li id="uid1728"><p><span class="small"><a href="Cdeepest_valley.html#uid15034"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚎𝚎𝚙𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></mrow></math><span id="uid1729"/></a></span></p>
+</li>
+<li id="uid1730"><p><span class="small"><a href="Cequivalent.html#uid16830"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚎𝚚𝚞𝚒𝚟𝚊𝚕𝚎𝚗𝚝</mi></math><span id="uid1731"/></a></span></p>
+</li>
+<li id="uid1732"><p><span class="small"><a href="Chighest_peak.html#uid17918"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚑𝚒𝚐𝚑𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚙𝚎𝚊𝚔</mi></mrow></math><span id="uid1733"/></a></span></p>
+</li>
+<li id="uid1734"><p><span class="small"><a href="Cin.html#uid17982"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗</mi></math><span id="uid1735"/></a></span></p>
+</li>
+<li id="uid1736"><p><span class="small"><a href="Cincreasing_nvalue.html#uid18497"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid1737"/></a></span></p>
+</li>
+<li id="uid1738"><p><span class="small"><a href="Cinflexion.html#uid18678"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid1739"/></a></span></p>
+</li>
+<li id="uid1740"><p><span class="small"><a href="Cimply.html#uid17946"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚖𝚙𝚕𝚢</mi></math><span id="uid1741"/></a></span></p>
+</li>
+<li id="uid1742"><p><span class="small"><a href="Clength_first_sequence.html#uid19804"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚗𝚐𝚝𝚑</mi><mo>_</mo><mi>𝚏𝚒𝚛𝚜𝚝</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid1743"/></a></span></p>
+</li>
+<li id="uid1744"><p><span class="small"><a href="Clength_last_sequence.html#uid19835"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚗𝚐𝚝𝚑</mi><mo>_</mo><mi>𝚕𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid1745"/></a></span></p>
+</li>
+<li id="uid1746"><p><span class="small"><a href="Cmax_nvalue.html#uid20936"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid1747"/></a></span></p>
+</li>
+<li id="uid1748"><p><span class="small"><a href="Cmax_size_set_of_consecutive_var.html#uid20993"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi><mo>_</mo><mi>𝚘𝚏</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚜𝚎𝚌𝚞𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid1749"/></a></span></p>
+</li>
+<li id="uid1750"><p><span class="small"><a href="Cmaximum.html#uid21026"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚊𝚡𝚒𝚖𝚞𝚖</mi></math><span id="uid1751"/></a></span></p>
+</li>
+<li id="uid1752"><p><span class="small"><a href="Cmin_nvalue.html#uid21233"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid1753"/></a></span></p>
+</li>
+<li id="uid1754"><p><span class="small"><a href="Cmin_size_set_of_consecutive_var.html#uid21291"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi><mo>_</mo><mi>𝚘𝚏</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚜𝚎𝚌𝚞𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid1755"/></a></span></p>
+</li>
+<li id="uid1756"><p><span class="small"><a href="Cminimum.html#uid21326"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid1757"/></a></span></p>
+</li>
+<li id="uid1758"><p><span class="small"><a href="Cnand.html#uid21580"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚊𝚗𝚍</mi></math><span id="uid1759"/></a></span></p>
+</li>
+<li id="uid1760"><p><span class="small"><a href="Cnor.html#uid22026"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚘𝚛</mi></math><span id="uid1761"/></a></span></p>
+</li>
+<li id="uid1762"><p><span class="small"><a href="Cnot_in.html#uid22111"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚘𝚝</mi><mo>_</mo><mi>𝚒𝚗</mi></mrow></math><span id="uid1763"/></a></span></p>
+</li>
+<li id="uid1764"><p><span class="small"><a href="Cnset_of_consecutive_values.html#uid22205"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚜𝚎𝚝</mi><mo>_</mo><mi>𝚘𝚏</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚜𝚎𝚌𝚞𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi></mrow></math><span id="uid1765"/></a></span></p>
+</li>
+<li id="uid1766"><p><span class="small"><a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid1767"/></a></span></p>
+</li>
+<li id="uid1768"><p><span class="small"><a href="Cor.html#uid22988"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚘𝚛</mi></math><span id="uid1769"/></a></span></p>
+</li>
+<li id="uid1770"><p><span class="small"><a href="Cpeak.html#uid23636"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid1771"/></a></span></p>
+</li>
+<li id="uid1772"><p><span class="small"><a href="Csize_max_seq_alldifferent.html#uid24645"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚒𝚣𝚎</mi><mo>_</mo><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚜𝚎𝚚</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid1773"/></a></span></p>
+</li>
+<li id="uid1774"><p><span class="small"><a href="Csize_max_starting_seq_alldifferent.html#uid24692"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚒𝚣𝚎</mi><mo>_</mo><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚜𝚝𝚊𝚛𝚝𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid1775"/></a></span></p>
+</li>
+<li id="uid1776"><p><span class="small"><a href="Csoft_alldifferent_ctr.html#uid25246"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid1777"/></a></span></p>
+</li>
+<li id="uid1778"><p><span class="small"><a href="Csoft_alldifferent_var.html#uid25305"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid1779"/></a></span></p>
+</li>
+<li id="uid1780"><p><span class="small"><a href="Csoft_all_equal_max_var.html#uid25105"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚊𝚕𝚕</mi><mo>_</mo><mi>𝚎𝚚𝚞𝚊𝚕</mi><mo>_</mo><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid1781"/></a></span></p>
+</li>
+<li id="uid1782"><p><span class="small"><a href="Csoft_all_equal_min_ctr.html#uid25147"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚊𝚕𝚕</mi><mo>_</mo><mi>𝚎𝚚𝚞𝚊𝚕</mi><mo>_</mo><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid1783"/></a></span></p>
+</li>
+<li id="uid1784"><p><span class="small"><a href="Csoft_all_equal_min_var.html#uid25194"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚊𝚕𝚕</mi><mo>_</mo><mi>𝚎𝚚𝚞𝚊𝚕</mi><mo>_</mo><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid1785"/></a></span></p>
+</li>
+<li id="uid1786"><p><span class="small"><a href="Cvalley.html#uid27776"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid1787"/></a></span></p>
+</li>
+<li id="uid1788"><p><span class="small"><a href="Cxor.html#uid27980"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚡𝚘𝚛</mi></math><span id="uid1789"/></a></span></p>
+</li></ol>
+
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i_y_y_" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_c_x_i_y_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_c_x_i_y_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1790"><p><span class="small"><a href="Call_differ_from_at_least_k_pos.html#uid9847"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕</mi><mo>_</mo><mi>𝚍𝚒𝚏𝚏𝚎𝚛</mi><mo>_</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>_</mo><mi>𝚊𝚝</mi><mo>_</mo><mi>𝚕𝚎𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚔</mi><mo>_</mo><mi>𝚙𝚘𝚜</mi></mrow></math><span id="uid1791"/></a></span></p>
+</li>
+<li id="uid1792"><p><span class="small"><a href="Cnvector.html#uid22493"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚎𝚌𝚝𝚘𝚛</mi></math><span id="uid1793"/></a></span></p>
+</li>
+<li id="uid1794"><p><span class="small"><a href="Catleast_nvector.html#uid11476"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚗𝚟𝚎𝚌𝚝𝚘𝚛</mi></mrow></math><span id="uid1795"/></a></span></p>
+</li>
+<li id="uid1796"><p><span class="small"><a href="Catmost_nvector.html#uid11667"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚝𝚖𝚘𝚜𝚝</mi><mo>_</mo><mi>𝚗𝚟𝚎𝚌𝚝𝚘𝚛</mi></mrow></math><span id="uid1797"/></a></span></p>
+</li>
+<li id="uid1798"><p><span class="small"><a href="Ck_same_interval.html#uid19474"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></mrow></math><span id="uid1799"/></a></span></p>
+</li>
+<li id="uid1800"><p><span class="small"><a href="Ck_same_modulo.html#uid19520"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚖𝚘𝚍𝚞𝚕𝚘</mi></mrow></math><span id="uid1801"/></a></span></p>
+</li>
+<li id="uid1802"><p><span class="small"><a href="Ck_used_by_interval.html#uid19666"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></mrow></math><span id="uid1803"/></a></span></p>
+</li>
+<li id="uid1804"><p><span class="small"><a href="Ck_used_by_modulo.html#uid19711"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi><mo>_</mo><mi>𝚖𝚘𝚍𝚞𝚕𝚘</mi></mrow></math><span id="uid1805"/></a></span></p>
+</li>
+<li id="uid1806"><p><span class="small"><a href="Cordered_atleast_nvector.html#uid23056"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚍𝚎𝚛𝚎𝚍</mi><mo>_</mo><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚗𝚟𝚎𝚌𝚝𝚘𝚛</mi></mrow></math><span id="uid1807"/></a></span></p>
+</li>
+<li id="uid1808"><p><span class="small"><a href="Cordered_atmost_nvector.html#uid23114"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚍𝚎𝚛𝚎𝚍</mi><mo>_</mo><mi>𝚊𝚝𝚖𝚘𝚜𝚝</mi><mo>_</mo><mi>𝚗𝚟𝚎𝚌𝚝𝚘𝚛</mi></mrow></math><span id="uid1809"/></a></span></p>
+</li>
+<li id="uid1810"><p><span class="small"><a href="Cordered_nvector.html#uid23226"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚍𝚎𝚛𝚎𝚍</mi><mo>_</mo><mi>𝚗𝚟𝚎𝚌𝚝𝚘𝚛</mi></mrow></math><span id="uid1811"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_c_x_i_y_y_y_" src="../ctrs/fig_tree_a_x_i_y_x_c_x_c_x_i_y_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_c_x_i3_y_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_c_x_i3_y_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1812"><p><span class="small"><a href="Cdiffn_column.html#uid15327"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚒𝚏𝚏𝚗</mi><mo>_</mo><mi>𝚌𝚘𝚕𝚞𝚖𝚗</mi></mrow></math><span id="uid1813"/></a></span></p>
+</li>
+<li id="uid1814"><p><span class="small"><a href="Cdiffn_include.html#uid15376"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚒𝚏𝚏𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚕𝚞𝚍𝚎</mi></mrow></math><span id="uid1815"/></a></span></p>
+</li>
+<li id="uid1816"><p><span class="small"><a href="Cplace_in_pyramid.html#uid23728"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚕𝚊𝚌𝚎</mi><mo>_</mo><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚙𝚢𝚛𝚊𝚖𝚒𝚍</mi></mrow></math><span id="uid1817"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i2_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i2_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1818"><p><span class="small"><a href="Cbin_packing.html#uid11962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚋𝚒𝚗</mi><mo>_</mo><mi>𝚙𝚊𝚌𝚔𝚒𝚗𝚐</mi></mrow></math><span id="uid1819"/></a></span></p>
+</li>
+<li id="uid1820"><p><span class="small"><a href="Cbinary_tree.html#uid12060"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚋𝚒𝚗𝚊𝚛𝚢</mi><mo>_</mo><mi>𝚝𝚛𝚎𝚎</mi></mrow></math><span id="uid1821"/></a></span></p>
+</li>
+<li id="uid1822"><p><span class="small"><a href="Ccycle.html#uid14542"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid1823"/></a></span></p>
+</li>
+<li id="uid1824"><p><span class="small"><a href="Cdomain_constraint.html#uid15925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚘𝚖𝚊𝚒𝚗</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚜𝚝𝚛𝚊𝚒𝚗𝚝</mi></mrow></math><span id="uid1825"/></a></span></p>
+</li>
+<li id="uid1826"><p><span class="small"><a href="Cin_intervals.html#uid18148"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕𝚜</mi></mrow></math><span id="uid1827"/></a></span></p>
+</li>
+<li id="uid1828"><p><span class="small"><a href="Cincreasing_nvalue_chain.html#uid18566"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi><mo>_</mo><mi>𝚌𝚑𝚊𝚒𝚗</mi></mrow></math><span id="uid1829"/></a></span></p>
+</li>
+<li id="uid1830"><p><span class="small"><a href="Cmax_index.html#uid20872"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi></mrow></math><span id="uid1831"/></a></span></p>
+</li>
+<li id="uid1832"><p><span class="small"><a href="Cmin_index.html#uid21159"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi></mrow></math><span id="uid1833"/></a></span></p>
+</li>
+<li id="uid1834"><p><span class="small"><a href="Cnpair.html#uid22163"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚙𝚊𝚒𝚛</mi></math><span id="uid1835"/></a></span></p>
+</li>
+<li id="uid1836"><p><span class="small"><a href="Copen_maximum.html#uid22901"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚖𝚊𝚡𝚒𝚖𝚞𝚖</mi></mrow></math><span id="uid1837"/></a></span></p>
+</li>
+<li id="uid1838"><p><span class="small"><a href="Copen_minimum.html#uid22933"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></mrow></math><span id="uid1839"/></a></span></p>
+</li>
+<li id="uid1840"><p><span class="small"><a href="Cordered_global_cardinality.html#uid23172"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚍𝚎𝚛𝚎𝚍</mi><mo>_</mo><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid1841"/></a></span></p>
+</li>
+<li id="uid1842"><p><span class="small"><a href="Cpath.html#uid23490"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚊𝚝𝚑</mi></math><span id="uid1843"/></a></span></p>
+</li>
+<li id="uid1844"><p><span class="small"><a href="Ctree.html#uid27089"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚎𝚎</mi></math><span id="uid1845"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i2_y_y_" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i2_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i_y_x_s_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i_y_x_s_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1846"><p><span class="small"><a href="Cclique.html#uid12914"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚕𝚒𝚚𝚞𝚎</mi></math><span id="uid1847"/></a></span></p>
+</li>
+<li id="uid1848"><p><span class="small"><a href="Cdiscrepancy.html#uid15424"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚜𝚌𝚛𝚎𝚙𝚊𝚗𝚌𝚢</mi></math><span id="uid1849"/></a></span></p>
+</li>
+<li id="uid1850"><p><span class="small"><a href="Ck_cut.html#uid19339"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚌𝚞𝚝</mi></mrow></math><span id="uid1851"/></a></span></p>
+</li>
+<li id="uid1852"><p><span class="small"><a href="Cproper_forest.html#uid23863"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚛𝚘𝚙𝚎𝚛</mi><mo>_</mo><mi>𝚏𝚘𝚛𝚎𝚜𝚝</mi></mrow></math><span id="uid1853"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i_y_x_c_x_i_y_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i_y_x_c_x_i_y_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1854"><p><span class="small"><a href="Ccumulative_convex.html#uid14169"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚟𝚎𝚡</mi></mrow></math><span id="uid1855"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i3_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i3_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1856"><p><span class="small"><a href="Ccircuit_cluster.html#uid12727"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi><mo>_</mo><mi>𝚌𝚕𝚞𝚜𝚝𝚎𝚛</mi></mrow></math><span id="uid1857"/></a></span></p>
+</li>
+<li id="uid1858"><p><span class="small"><a href="Cgraph_crossing.html#uid17607"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚛𝚊𝚙𝚑</mi><mo>_</mo><mi>𝚌𝚛𝚘𝚜𝚜𝚒𝚗𝚐</mi></mrow></math><span id="uid1859"/></a></span></p>
+</li>
+<li id="uid1860"><p><span class="small"><a href="Corchard.html#uid23027"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚘𝚛𝚌𝚑𝚊𝚛𝚍</mi></math><span id="uid1861"/></a></span></p>
+</li>
+<li id="uid1862"><p><span class="small"><a href="Corth_on_the_ground.html#uid23325"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>_</mo><mi>𝚘𝚗</mi><mo>_</mo><mi>𝚝𝚑𝚎</mi><mo>_</mo><mi>𝚐𝚛𝚘𝚞𝚗𝚍</mi></mrow></math><span id="uid1863"/></a></span></p>
+</li>
+<li id="uid1864"><p><span class="small"><a href="Ctrack.html#uid26999"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚊𝚌𝚔</mi></math><span id="uid1865"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i2_y_x_s_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i2_y_x_s_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1866"><p><span class="small"><a href="Ccutset.html#uid14499"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚝𝚜𝚎𝚝</mi></math><span id="uid1867"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i4_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i4_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1868"><p><span class="small"><a href="Ccoloured_cumulative.html#uid12985"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚘𝚕𝚘𝚞𝚛𝚎𝚍</mi><mo>_</mo><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></mrow></math><span id="uid1869"/></a></span></p>
+</li>
+<li id="uid1870"><p><span class="small"><a href="Ccrossing.html#uid14014"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚛𝚘𝚜𝚜𝚒𝚗𝚐</mi></math><span id="uid1871"/></a></span></p>
+</li>
+<li id="uid1872"><p><span class="small"><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid1873"/></a></span></p>
+</li>
+<li id="uid1874"><p><span class="small"><a href="Ccumulative_product.html#uid14242"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚙𝚛𝚘𝚍𝚞𝚌𝚝</mi></mrow></math><span id="uid1875"/></a></span></p>
+</li>
+<li id="uid1876"><p><span class="small"><a href="Ctemporal_path.html#uid26862"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚝𝚎𝚖𝚙𝚘𝚛𝚊𝚕</mi><mo>_</mo><mi>𝚙𝚊𝚝𝚑</mi></mrow></math><span id="uid1877"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_i_y_x_c_x_i7_y_y" src="../ctrs/fig_tree_a_x_i_y_x_c_x_i7_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1878"><p><span class="small"><a href="Ccumulative_two_d.html#uid14308"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚝𝚠𝚘</mi><mo>_</mo><mi>𝚍</mi></mrow></math><span id="uid1879"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_s2_y" src="../ctrs/fig_tree_a_x_s2_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1880"><p><span class="small"><a href="Ceq_set.html#uid16766"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚚</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi></mrow></math><span id="uid1881"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_s_y_x_c_x_i_y_y" src="../ctrs/fig_tree_a_x_s_y_x_c_x_i_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1882"><p><span class="small"><a href="Copen_alldifferent.html#uid22602"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid1883"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_s_y_x_c_x_i2_y_y" src="../ctrs/fig_tree_a_x_s_y_x_c_x_i2_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1884"><p><span class="small"><a href="Clink_set_to_booleans.html#uid20711"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚒𝚗𝚔</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi><mo>_</mo><mi>𝚝𝚘</mi><mo>_</mo><mi>𝚋𝚘𝚘𝚕𝚎𝚊𝚗𝚜</mi></mrow></math><span id="uid1885"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_i_y_y" src="../ctrs/fig_tree_a_x_c2_x_i_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1886"><p><span class="small"><a href="Calldifferent_on_intersection.html#uid10455"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚘𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚜𝚎𝚌𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1887"/></a></span></p>
+</li>
+<li id="uid1888"><p><span class="small"><a href="Cconsecutive_groups_of_ones.html#uid13658"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚘𝚗𝚜𝚎𝚌𝚞𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚐𝚛𝚘𝚞𝚙𝚜</mi><mo>_</mo><mi>𝚘𝚏</mi><mo>_</mo><mi>𝚘𝚗𝚎𝚜</mi></mrow></math><span id="uid1889"/></a></span></p>
+</li>
+<li id="uid1890"><p><span class="small"><a href="Cdisjoint.html#uid15507"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚜𝚓𝚘𝚒𝚗𝚝</mi></math><span id="uid1891"/></a></span></p>
+</li>
+<li id="uid1892"><p><span class="small"><a href="Cint_value_precede_chain.html#uid18788"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚝</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚞𝚎</mi><mo>_</mo><mi>𝚙𝚛𝚎𝚌𝚎𝚍𝚎</mi><mo>_</mo><mi>𝚌𝚑𝚊𝚒𝚗</mi></mrow></math><span id="uid1893"/></a></span></p>
+</li>
+<li id="uid1894"><p><span class="small"><a href="Cinverse_within_range.html#uid19146"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚟𝚎𝚛𝚜𝚎</mi><mo>_</mo><mi>𝚠𝚒𝚝𝚑𝚒𝚗</mi><mo>_</mo><mi>𝚛𝚊𝚗𝚐𝚎</mi></mrow></math><span id="uid1895"/></a></span></p>
+</li>
+<li id="uid1896"><p><span class="small"><a href="Clex_different.html#uid20229"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid1897"/></a></span></p>
+</li>
+<li id="uid1898"><p><span class="small"><a href="Clex_equal.html#uid20282"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚎𝚚𝚞𝚊𝚕</mi></mrow></math><span id="uid1899"/></a></span></p>
+</li>
+<li id="uid1900"><p><span class="small"><a href="Clex_greater.html#uid20344"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚐𝚛𝚎𝚊𝚝𝚎𝚛</mi></mrow></math><span id="uid1901"/></a></span></p>
+</li>
+<li id="uid1902"><p><span class="small"><a href="Clex_greatereq.html#uid20420"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚐𝚛𝚎𝚊𝚝𝚎𝚛𝚎𝚚</mi></mrow></math><span id="uid1903"/></a></span></p>
+</li>
+<li id="uid1904"><p><span class="small"><a href="Clex_less.html#uid20501"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜</mi></mrow></math><span id="uid1905"/></a></span></p>
+</li>
+<li id="uid1906"><p><span class="small"><a href="Clex_lesseq.html#uid20581"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1907"/></a></span></p>
+</li>
+<li id="uid1908"><p><span class="small"><a href="Clex_lesseq_allperm.html#uid20677"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚙𝚎𝚛𝚖</mi></mrow></math><span id="uid1909"/></a></span></p>
+</li>
+<li id="uid1910"><p><span class="small"><a href="Csame.html#uid24056"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚊𝚖𝚎</mi></math><span id="uid1911"/></a></span></p>
+</li>
+<li id="uid1912"><p><span class="small"><a href="Csame_intersection.html#uid24282"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚜𝚎𝚌𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1913"/></a></span></p>
+</li>
+<li id="uid1914"><p><span class="small"><a href="Csort.html#uid25748"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚘𝚛𝚝</mi></math><span id="uid1915"/></a></span></p>
+</li>
+<li id="uid1916"><p><span class="small"><a href="Cused_by.html#uid27523"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi></mrow></math><span id="uid1917"/></a></span></p>
+</li>
+<li id="uid1918"><p><span class="small"><a href="Cuses.html#uid27732"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚞𝚜𝚎𝚜</mi></math><span id="uid1919"/></a></span></p>
+</li>
+<li id="uid1920"><p><span class="small"><a href="Cvec_eq_tuple.html#uid27810"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚎𝚌</mi><mo>_</mo><mi>𝚎𝚚</mi><mo>_</mo><mi>𝚝𝚞𝚙𝚕𝚎</mi></mrow></math><span id="uid1921"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_c2_x_i_y_y_" src="../ctrs/fig_tree_a_x_c2_x_i_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_c_x_i_y_y_y" src="../ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_c_x_i_y_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1922"><p><span class="small"><a href="Calldifferent_partition.html#uid10514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚙𝚊𝚛𝚝𝚒𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1923"/></a></span></p>
+</li>
+<li id="uid1924"><p><span class="small"><a href="Cin_relation.html#uid18180"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚛𝚎𝚕𝚊𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1925"/></a></span></p>
+</li>
+<li id="uid1926"><p><span class="small"><a href="Cpattern.html#uid23589"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚊𝚝𝚝𝚎𝚛𝚗</mi></math><span id="uid1927"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_i2_y_y" src="../ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_i2_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1928"><p><span class="small"><a href="Cglobal_cardinality.html#uid17155"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid1929"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_i3_y_y" src="../ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_i3_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1930"><p><span class="small"><a href="Cincreasing_global_cardinality.html#uid18414"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid1931"/></a></span></p>
+</li>
+<li id="uid1932"><p><span class="small"><a href="Cglobal_cardinality_low_up.html#uid17272"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi><mo>_</mo><mi>𝚕𝚘𝚠</mi><mo>_</mo><mi>𝚞𝚙</mi></mrow></math><span id="uid1933"/></a></span></p>
+</li>
+<li id="uid1934"><p><span class="small"><a href="Cstretch_circuit.html#uid25989"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi></mrow></math><span id="uid1935"/></a></span></p>
+</li>
+<li id="uid1936"><p><span class="small"><a href="Cstretch_path.html#uid26073"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚙𝚊𝚝𝚑</mi></mrow></math><span id="uid1937"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_i2_y_x_c_x_i_y_y_y" src="../ctrs/fig_tree_a_x_c_x_i_y_y_x_c_x_i2_y_x_c_x_i_y_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1938"><p><span class="small"><a href="Cstretch_path_partition.html#uid26174"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚙𝚊𝚝𝚑</mi><mo>_</mo><mi>𝚙𝚊𝚛𝚝𝚒𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1939"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_c_x_i_y_y_y" src="../ctrs/fig_tree_a_x_c2_x_c_x_i_y_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1940"><p><span class="small"><a href="Ck_same_partition.html#uid19566"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚙𝚊𝚛𝚝𝚒𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1941"/></a></span></p>
+</li>
+<li id="uid1942"><p><span class="small"><a href="Ck_used_by_partition.html#uid19757"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi><mo>_</mo><mi>𝚙𝚊𝚛𝚝𝚒𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid1943"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_c2_x_c_x_i_y_y_y_" src="../ctrs/fig_tree_a_x_c2_x_c_x_i_y_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_i2_y_y" src="../ctrs/fig_tree_a_x_c2_x_i2_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1944"><p><span class="small"><a href="Cbin_packing_capa.html#uid12027"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚋𝚒𝚗</mi><mo>_</mo><mi>𝚙𝚊𝚌𝚔𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚌𝚊𝚙𝚊</mi></mrow></math><span id="uid1945"/></a></span></p>
+</li>
+<li id="uid1946"><p><span class="small"><a href="Celem.html#uid15982"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚎𝚕𝚎𝚖</mi></math><span id="uid1947"/></a></span></p>
+</li>
+<li id="uid1948"><p><span class="small"><a href="Celement_greatereq.html#uid16208"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚐𝚛𝚎𝚊𝚝𝚎𝚛𝚎𝚚</mi></mrow></math><span id="uid1949"/></a></span></p>
+</li>
+<li id="uid1950"><p><span class="small"><a href="Celement_lesseq.html#uid16265"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1951"/></a></span></p>
+</li>
+<li id="uid1952"><p><span class="small"><a href="Celements.html#uid16535"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝𝚜</mi></math><span id="uid1953"/></a></span></p>
+</li>
+<li id="uid1954"><p><span class="small"><a href="Celements_alldifferent.html#uid16583"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝𝚜</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid1955"/></a></span></p>
+</li>
+<li id="uid1956"><p><span class="small"><a href="Cindexed_sum.html#uid18632"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡𝚎𝚍</mi><mo>_</mo><mi>𝚜𝚞𝚖</mi></mrow></math><span id="uid1957"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_c2_x_i2_y_y_" src="../ctrs/fig_tree_a_x_c2_x_i2_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c_x_i2_y_y_x_c_x_i3_y_y" src="../ctrs/fig_tree_a_x_c_x_i2_y_y_x_c_x_i3_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1958"><p><span class="small"><a href="Cstage_element.html#uid25928"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚊𝚐𝚎</mi><mo>_</mo><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi></mrow></math><span id="uid1959"/></a></span></p>
+</li>
+<li id="uid1960"><p><span class="small"><a href="Ctree_resource.html#uid27229"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚝𝚛𝚎𝚎</mi><mo>_</mo><mi>𝚛𝚎𝚜𝚘𝚞𝚛𝚌𝚎</mi></mrow></math><span id="uid1961"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_i_y_x_s_y_y" src="../ctrs/fig_tree_a_x_c2_x_i_y_x_s_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1962"><p><span class="small"><a href="Cinverse_set.html#uid19101"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚟𝚎𝚛𝚜𝚎</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi></mrow></math><span id="uid1963"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c_x_i2_y_y_x_c_x_i5_y_y" src="../ctrs/fig_tree_a_x_c_x_i2_y_y_x_c_x_i5_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1964"><p><span class="small"><a href="Ccoloured_cumulatives.html#uid13067"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚘𝚕𝚘𝚞𝚛𝚎𝚍</mi><mo>_</mo><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎𝚜</mi></mrow></math><span id="uid1965"/></a></span></p>
+</li>
+<li id="uid1966"><p><span class="small"><a href="Ccumulative_with_level_of_priority.html#uid14348"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi><mo>_</mo><mi>𝚠𝚒𝚝𝚑</mi><mo>_</mo><mi>𝚕𝚎𝚟𝚎𝚕</mi><mo>_</mo><mi>𝚘𝚏</mi><mo>_</mo><mi>𝚙𝚛𝚒𝚘𝚛𝚒𝚝𝚢</mi></mrow></math><span id="uid1967"/></a></span></p>
+</li>
+<li id="uid1968"><p><span class="small"><a href="Celem_from_to.html#uid16074"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖</mi><mo>_</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>_</mo><mi>𝚝𝚘</mi></mrow></math><span id="uid1969"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_i3_y_y" src="../ctrs/fig_tree_a_x_c2_x_i3_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1970"><p><span class="small"><a href="Ccycle_resource.html#uid14760"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚢𝚌𝚕𝚎</mi><mo>_</mo><mi>𝚛𝚎𝚜𝚘𝚞𝚛𝚌𝚎</mi></mrow></math><span id="uid1971"/></a></span></p>
+</li>
+<li id="uid1972"><p><span class="small"><a href="Cdisjoint_tasks.html#uid15602"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚒𝚜𝚓𝚘𝚒𝚗𝚝</mi><mo>_</mo><mi>𝚝𝚊𝚜𝚔𝚜</mi></mrow></math><span id="uid1973"/></a></span></p>
+</li>
+<li id="uid1974"><p><span class="small"><a href="Ctwo_orth_are_in_contact.html#uid27337"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚝𝚠𝚘</mi><mo>_</mo><mi>𝚘𝚛𝚝𝚑</mi><mo>_</mo><mi>𝚊𝚛𝚎</mi><mo>_</mo><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚝𝚊𝚌𝚝</mi></mrow></math><span id="uid1975"/></a></span></p>
+</li>
+<li id="uid1976"><p><span class="small"><a href="Ctwo_orth_do_not_overlap.html#uid27432"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚝𝚠𝚘</mi><mo>_</mo><mi>𝚘𝚛𝚝𝚑</mi><mo>_</mo><mi>𝚍𝚘</mi><mo>_</mo><mi>𝚗𝚘𝚝</mi><mo>_</mo><mi>𝚘𝚟𝚎𝚛𝚕𝚊𝚙</mi></mrow></math><span id="uid1977"/></a></span></p>
+</li></ol>
+</span>
+<hr/><img alt="ctrs/fig_tree_a_x_c2_x_i3_y_y_" src="../ctrs/fig_tree_a_x_c2_x_i3_y_y_.png"/></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_i2_y_x_s_y_y" src="../ctrs/fig_tree_a_x_c2_x_i2_y_x_s_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1978"><p><span class="small"><a href="Csymmetric_gcc.html#uid26792"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚢𝚖𝚖𝚎𝚝𝚛𝚒𝚌</mi><mo>_</mo><mi>𝚐𝚌𝚌</mi></mrow></math><span id="uid1979"/></a></span></p>
+</li></ol>
+</span></td></tr><tr class="border"><td align="center" class="border"><img alt="ctrs/fig_tree_a_x_c2_x_i3_y_x_s_y_y" src="../ctrs/fig_tree_a_x_c2_x_i3_y_x_s_y_y.png"/></td><td align="center" class="border"><span class="small"><ol>
+<li id="uid1980"><p><span class="small"><a href="Csymmetric_cardinality.html#uid26724"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚢𝚖𝚖𝚎𝚝𝚛𝚒𝚌</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid1981"/></a></span></p>
+</li></ol>
+</span></td></tr></table></div></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

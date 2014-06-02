@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec2.html">2. Describing Global Constraints</a></h1><ul><li>2.1. <a href="sec2.1.html">Describing the arguments of a global constraint</a><ul><li>2.1.1. <a href="sec2.1.1.html">Basic data types</a></li><li>2.1.2. <a href="sec2.1.2.html">Compound data types</a></li><li>2.1.3. <a href="sec2.1.3.html">Restrictions</a></li><li>2.1.4. <a href="sec2.1.4.html">Declaring a global constraint</a></li><li>2.1.5. <a href="sec2.1.5.html">Describing symmetries between arguments</a></li></ul></li><li>2.2. <a href="sec2.2.html">Describing global constraints in terms of graph properties</a><ul><li>2.2.1. <a href="sec2.2.1.html">Basic ideas and illustrative example</a></li><li>2.2.2. <a href="sec2.2.2.html">Ingredients used for describing global constraints</a><ul><li>2.2.2.1. <a href="sec2.2.2.1.html"><span id="uid646"/>Collection generators</a></li><li>2.2.2.2. <a href="sec2.2.2.2.html">Elementary constraints attached to the arcs</a></li><li>2.2.2.3. <a href="sec2.2.2.3.html">Graph generators</a></li><li>2.2.2.4. <a href="sec2.2.2.4.html">Graph properties</a></li></ul></li><li>2.2.3. <a href="sec2.2.3.html">Graph constraint</a><ul><li>2.2.3.1. <a href="sec2.2.3.1.html">Simple graph constraint</a></li><li>2.2.3.2. <a href="sec2.2.3.2.html">Dynamic graph constraint</a></li></ul></li></ul></li><li>2.3. <a href="sec2.3.html">Describing global constraints in terms of automata</a><ul><li>2.3.1. <a href="sec2.3.1.html">Selecting an appropriate description</a></li><li>2.3.2. <a href="sec2.3.2.html">Defining an automaton</a></li></ul></li><li>2.4. <a href="sec2.4.html">Reformulating global constraints as a conjunction</a></li><li>2.5. <a href="sec2.5.html">Semantic links between global constraints</a><ul><li>2.5.1. <a href="sec2.5.1.html">Assignment dimension added</a></li><li>2.5.2. <a href="sec2.5.2.html">Assignment dimension removed</a></li><li>2.5.3. <a href="sec2.5.3.html">Attached to cost variant</a></li><li>2.5.4. <a href="sec2.5.4.html">Common keyword</a></li><li>2.5.5. <a href="sec2.5.5.html">Comparison swapped</a></li><li>2.5.6. <a href="sec2.5.6.html">Cost variant</a></li><li>2.5.7. <a href="sec2.5.7.html">Generalisation</a></li><li>2.5.8. <a href="sec2.5.8.html">Hard version</a></li><li>2.5.9. <a href="sec2.5.9.html">Implied by</a></li><li>2.5.10. <a href="sec2.5.10.html">Implies</a></li><li>2.5.11. <a href="sec2.5.11.html">Implies if swap arguments</a></li><li>2.5.12. <a href="sec2.5.12.html">Negation</a></li><li>2.5.13. <a href="sec2.5.13.html">Part of system of constraints</a></li><li>2.5.14. <a href="sec2.5.14.html">Related</a></li><li>2.5.15. <a href="sec2.5.15.html">Related to a common problem</a></li><li>2.5.16. <a href="sec2.5.16.html">Root concept</a></li><li>2.5.17. <a href="sec2.5.17.html">Shift of concept</a></li><li>2.5.18. <a href="sec2.5.18.html">Soft variant</a></li><li>2.5.19. <a href="sec2.5.19.html">Specialisation</a></li><li>2.5.20. <a href="sec2.5.20.html">System of constraints</a></li><li>2.5.21. <a href="sec2.5.21.html">Used in graph description</a></li><li>2.5.22. <a href="sec2.5.22.html">Used in reformulation</a></li><li>2.5.23. <a href="sec2.5.23.html">Uses in its reformulation</a></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec2.1.2.html">&lt;&lt; 2.1.2. Compound data types</a><a href="sec2.1.4.html">2.1.4. Declaring a global constraint &gt;&gt;</a></div><div id="main"><h3>2.1.3. Restrictions</h3><p>When defining the arguments of a global constraint, it is often the
+case that one needs to express additional conditions that refine the
+type declarations of its arguments.
+For this purpose we provide <i>restrictions</i> that allow for specifying
+these additional conditions.
+Each restriction has a name and a set of arguments and is described by
+the following items:</p><ul>
+<li id="uid195"><p>A small paragraph first describes the effect of the restriction,</p>
+</li>
+<li id="uid196"><p>An example points to a constraint using the restriction,</p>
+</li>
+<li id="uid197"><p>Finally, a ground instance, preceded by the symbol
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math>, which satisfies the restriction is given.
+Similarly, a ground instance, preceded by the symbol <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math>,
+which violates the restriction is proposed.
+In this latter case, a bold font may be used for pointing to the source of
+the problem.</p>
+</li></ul><p>Currently the list of restrictions is:</p><ul>
+<li id="uid198"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚕𝚒𝚜𝚝</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙻𝚒𝚜𝚝𝙰𝚝𝚘𝚖𝚜</mi><mo>)</mo></mrow></math> <span id="uid199"/></p>
+<ul>
+<li id="uid200"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚘𝚖</mi></math>,</p>
+</li>
+<li id="uid201"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙻𝚒𝚜𝚝𝙰𝚝𝚘𝚖𝚜</mi></math> is a non-empty list of distinct atoms.</p>
+</li></ul>
+<p>This restriction forces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> to be one of the atoms
+specified in the list <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙻𝚒𝚜𝚝𝙰𝚝𝚘𝚖𝚜</mi></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Cchange.html#uid12369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚑𝚊𝚗𝚐𝚎</mi></math><span id="uid202"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝙲𝙷𝙰𝙽𝙶𝙴</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝙲𝚃𝚁</mi><mo>)</mo></mrow></math>
+constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚕𝚒𝚜𝚝</mi><mo>(</mo><mi>𝙲𝚃𝚁</mi><mo>,</mo><mo>[</mo><mo>=</mo><mo>,</mo><mo>≠</mo><mo>,</mo><mo>&lt;</mo><mo>,</mo><mo>≥</mo><mo>,</mo><mo>&gt;</mo><mo>,</mo><mo>≤</mo><mo>]</mo><mo>)</mo></mrow></math>
+forces the last argument <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚃𝚁</mi></math> of the <a href="Cchange.html#uid12369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚑𝚊𝚗𝚐𝚎</mi></math><span id="uid203"/></a> constraint
+to take its value in the list of atoms <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><mo>=</mo><mo>,</mo><mo>≠</mo><mo>,</mo><mo>&lt;</mo><mo>,</mo><mo>≥</mo><mo>,</mo><mo>&gt;</mo><mo>,</mo><mo>≤</mo><mo>]</mo></mrow></math>.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math> <a href="Cchange.html#uid12369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚑𝚊𝚗𝚐𝚎</mi></math><span id="uid204"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>6</mn><mo>〉</mo><mo>,</mo><mo>≠</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math> <a href="Cchange.html#uid12369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚑𝚊𝚗𝚐𝚎</mi></math><span id="uid205"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>6</mn><mo>〉</mo><mo>,</mo><mn mathvariant="bold">3</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid206"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚕𝚒𝚜𝚝</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛</mi><mo>,</mo><mi>𝙻𝚒𝚜𝚝𝙸𝚗𝚝</mi><mo>)</mo></mrow></math> <span id="uid207"/></p>
+<ul>
+<li id="uid208"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid209"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛</mi></math> is an attribute of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math> of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>,</p>
+</li>
+<li id="uid210"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙻𝚒𝚜𝚝𝙸𝚗𝚝</mi></math> is a non-empty list of integers.</p>
+</li></ul>
+<p>This restriction enforces for all items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>,
+the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛</mi></math> to take its value within the list of integers <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙻𝚒𝚜𝚝𝙸𝚗𝚝</mi></math>.</p>
+</li>
+<li id="uid211"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">1</mn><mo>,</mo><mi>𝙰𝚝𝚝𝚛</mi><mn mathvariant="monospace">1</mn><mo>,</mo><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">2</mn><mo>,</mo><mi>𝙰𝚝𝚝𝚛</mi><mn mathvariant="monospace">2</mn><mo>)</mo></mrow></math> <span id="uid212"/></p>
+<ul>
+<li id="uid213"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">1</mn></mrow></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid214"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚝𝚝𝚛</mi><mn mathvariant="monospace">1</mn></mrow></math> is an attribute of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚟𝚊𝚛</mi></math> of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">1</mn></mrow></math>,</p>
+</li>
+<li id="uid215"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">2</mn></mrow></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid216"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚝𝚝𝚛</mi><mn mathvariant="monospace">2</mn></mrow></math> is an attribute of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math> of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">2</mn></mrow></math>.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒮</mi> <mn>2</mn> </msub></math> denote the set of values assigned to the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚝𝚝𝚛</mi><mn mathvariant="monospace">2</mn></mrow></math> attributes
+of the items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">2</mn></mrow></math>.
+This restriction enforces the following condition:
+for all items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mn mathvariant="monospace">1</mn></mrow></math>,
+the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚝𝚝𝚛</mi><mn mathvariant="monospace">1</mn></mrow></math> takes its value in the set <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒮</mi> <mn>2</mn> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Ccumulatives.html#uid14415"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎𝚜</mi></math><span id="uid217"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo><mi>𝙼𝙰𝙲𝙷𝙸𝙽𝙴𝚂</mi><mo>,</mo><mi>𝙲𝚃𝚁</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>(</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙼𝙰𝙲𝙷𝙸𝙽𝙴𝚂</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚍</mi><mo>)</mo></mrow></math>
+enforces that the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi></math> attribute of each task of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝙰𝚂𝙺𝚂</mi></math>
+collection correspond to a machine identifier (i.e., an <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚍</mi></math> attribute of the
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝙲𝙷𝙸𝙽𝙴𝚂</mi></math> collection).</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Ccumulatives.html#uid14415"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎𝚜</mi></math><span id="uid218"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>1</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>1</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>2</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>1</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><mi>𝚒𝚍</mi><mo>-</mo><mn>1</mn> <mi>𝚌𝚊𝚙𝚊𝚌𝚒𝚝𝚢</mi><mo>-</mo><mn>9</mn><mo>,</mo> <mi>𝚒𝚍</mi><mo>-</mo><mn>2</mn> <mi>𝚌𝚊𝚙𝚊𝚌𝚒𝚝𝚢</mi><mo>-</mo><mn>8</mn><mo>〉</mo><mo>,</mo> <mo>≤</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Ccumulatives.html#uid14415"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎𝚜</mi></math><span id="uid219"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn mathvariant="bold">5</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>1</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>2</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚌𝚑𝚒𝚗𝚎</mi><mo>-</mo><mn>1</mn> <mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><mi>𝚒𝚍</mi><mo>-</mo><mn mathvariant="bold">1</mn> <mi>𝚌𝚊𝚙𝚊𝚌𝚒𝚝𝚢</mi><mo>-</mo><mn>9</mn><mo>,</mo> <mi>𝚒𝚍</mi><mo>-</mo><mn mathvariant="bold">2</mn> <mi>𝚌𝚊𝚙𝚊𝚌𝚒𝚝𝚢</mi><mo>-</mo><mn>8</mn><mo>〉</mo><mo>,</mo> <mo>≤</mo><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid220"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚒𝚜𝚝𝚒𝚗𝚌𝚝</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛𝚜</mi><mo>)</mo></mrow></math> <span id="uid221"/></p>
+<ul>
+<li id="uid222"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid223"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> is an attribute of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚟𝚊𝚛</mi></math>,
+or a list (possibly empty) of distinct attributes of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚟𝚊𝚛</mi></math>
+of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.</p>
+</li></ul>
+<p>For all pairs of distinct items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> this restriction enforces
+that there be at least one attribute specified by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> with two distinct values.
+When <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> is the empty list all items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> should be distinct.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Ccycle.html#uid14542"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid224"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝙲𝚈𝙲𝙻𝙴</mi><mo>,</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚒𝚜𝚝𝚒𝚗𝚌𝚝</mi><mo>(</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>,</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>)</mo></mrow></math>
+enforces that all <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚍𝚎𝚡</mi></math> attributes of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝙾𝙳𝙴𝚂</mi></math> collection take
+distinct values.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Ccycle.html#uid14542"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid225"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>1</mn> <mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mn>2</mn><mo>,</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>2</mn> <mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>3</mn> <mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mn>3</mn><mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Ccycle.html#uid14542"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid226"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn mathvariant="bold">1</mn> <mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mn>2</mn><mo>,</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn mathvariant="bold">1</mn> <mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>3</mn> <mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mn>3</mn><mo>〉</mo><mo>)</mo></mrow></math>
+</span></p></div>
+</li>
+<li id="uid227"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛𝚜</mi><mo>)</mo></mrow></math> <span id="uid228"/></p>
+<ul>
+<li id="uid229"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid230"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> is an attribute of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math> or a list
+of distinct attributes of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math>
+of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> respectively denote the number of items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>,
+and the number of attributes of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math>.
+For the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> item of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mi>i</mi> </msub></math> denote the tuple of values
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><msub><mi>v</mi> <mrow><mi>i</mi><mo>,</mo><mn>1</mn></mrow> </msub><mo>,</mo><msub><mi>v</mi> <mrow><mi>i</mi><mo>,</mo><mn>2</mn></mrow> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>v</mi> <mrow><mi>i</mi><mo>,</mo><mi>m</mi></mrow> </msub><mo>〉</mo></mrow></math> where <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi> <mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow> </msub></math> is the value of the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>j</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> attribute of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> of the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> item of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.
+The restriction enforces a strict lexicographical ordering on the tuples <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>t</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>t</mi> <mn>2</mn> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>t</mi> <mi>n</mi> </msub></mrow></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Celement_matrix.html#uid16322"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚖𝚊𝚝𝚛𝚒𝚡</mi></mrow></math><span id="uid231"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>_</mo><mi>𝙸</mi><mo>,</mo><mi>𝙼𝙰𝚇</mi><mo>_</mo><mi>𝙹</mi><mo>,</mo><mi>𝙸𝙽𝙳𝙴𝚇</mi><mo>_</mo><mi>𝙸</mi><mo>,</mo><mi>𝙸𝙽𝙳𝙴𝚇</mi><mo>_</mo><mi>𝙹</mi><mo>,</mo><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi><mo>,</mo><mi>𝚅𝙰𝙻𝚄𝙴</mi><mo>)</mo></mrow></math> constraint:</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚</mi><mo>(</mo><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi><mo>,</mo><mo>[</mo><mi>𝚒</mi><mo>,</mo><mi>𝚓</mi><mo>]</mo><mo>)</mo></mrow></math>
+enforces that all items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi></math> collection be sorted in strictly increasing
+lexicographic order on the pair <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚒</mi><mo>,</mo><mi>𝚓</mi><mo>)</mo></mrow></math>.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math>
+<a href="Celement_matrix.html#uid16322"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚖𝚊𝚝𝚛𝚒𝚡</mi></mrow></math><span id="uid232"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚒</mi><mo>-</mo><mn>1</mn> <mi>𝚓</mi><mo>-</mo><mn>1</mn> <mi>𝚟</mi><mo>-</mo><mn>4</mn><mo>,</mo>   <mi>𝚒</mi><mo>-</mo><mn>1</mn> <mi>𝚓</mi><mo>-</mo><mn>2</mn> <mi>𝚟</mi><mo>-</mo><mn>7</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒</mi><mo>-</mo><mn>2</mn> <mi>𝚓</mi><mo>-</mo><mn>1</mn> <mi>𝚟</mi><mo>-</mo><mn>1</mn><mo>,</mo>   <mi>𝚒</mi><mo>-</mo><mn>2</mn> <mi>𝚓</mi><mo>-</mo><mn>2</mn> <mi>𝚟</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo><mn>7</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math>
+<a href="Celement_matrix.html#uid16322"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚖𝚊𝚝𝚛𝚒𝚡</mi></mrow></math><span id="uid233"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚒</mi><mo>-</mo><mn mathvariant="bold">1</mn> <mi>𝚓</mi><mo>-</mo><mn mathvariant="bold">2</mn> <mi>𝚟</mi><mo>-</mo><mn>4</mn><mo>,</mo>   <mi>𝚒</mi><mo>-</mo><mn mathvariant="bold">1</mn> <mi>𝚓</mi><mo>-</mo><mn mathvariant="bold">1</mn> <mi>𝚟</mi><mo>-</mo><mn>7</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒</mi><mo>-</mo><mn>2</mn> <mi>𝚓</mi><mo>-</mo><mn>1</mn> <mi>𝚟</mi><mo>-</mo><mn>1</mn><mo>,</mo>   <mi>𝚒</mi><mo>-</mo><mn>2</mn> <mi>𝚓</mi><mo>-</mo><mn>2</mn> <mi>𝚟</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo><mn>7</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid234"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚘𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛</mi><mo>)</mo></mrow></math> <span id="uid235"/></p>
+<ul>
+<li id="uid236"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid237"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛</mi></math> is an attribute of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.
+This attribute should be of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>.</p>
+</li></ul>
+<p>This restriction enforces for each pair of consecutive items <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>,
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mo>[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>]</mo></mrow></math> that the number of items of the collection
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>.</mo><mi>𝙰𝚝𝚝𝚛</mi></mrow></math> is greater than or equal to the number
+of items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚛𝚐</mi><mo>[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>]</mo><mo>.</mo><mi>𝙰𝚝𝚝𝚛</mi></mrow></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Ck_used_by.html#uid19615"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi></mrow></math><span id="uid238"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚂𝙴𝚃𝚂</mi><mo>)</mo></mrow></math>
+constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚘𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>(</mo><mi>𝚂𝙴𝚃𝚂</mi><mo>,</mo><mi>𝚜𝚎𝚝</mi><mo>)</mo></mrow></math>
+enforces for all consecutive pairs of items <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚂𝙴𝚃𝚂</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚂𝙴𝚃𝚂</mi><mo>[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>]</mo></mrow></math>
+that the number of items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚂𝙴𝚃𝚂</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>.</mo><mi>𝚜𝚎𝚝</mi></mrow></math> is not greater than
+or equal to the number of items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚂𝙴𝚃𝚂</mi><mo>[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>]</mo><mo>.</mo><mi>𝚜𝚎𝚝</mi></mrow></math>.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Ck_used_by.html#uid19615"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi></mrow></math><span id="uid239"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚎𝚝</mi><mo>-</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚎𝚝</mi><mo>-</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚎𝚝</mi><mo>-</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>〉</mo> <mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Ck_used_by.html#uid19615"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚔</mi><mo>_</mo><mi>𝚞𝚜𝚎𝚍</mi><mo>_</mo><mi>𝚋𝚢</mi></mrow></math><span id="uid240"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚎𝚝</mi><mo>-</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚎𝚝</mi><mo>-</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚎𝚝</mi><mo>-</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>〉</mo> <mo>〉</mo><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid241"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚚𝚞𝚒𝚛𝚎𝚍</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛𝚜</mi><mo>)</mo></mrow></math> <span id="uid242"/></p>
+<ul>
+<li id="uid243"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid244"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> is an attribute or a list of distinct attributes of the collection
+denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.</p>
+</li></ul>
+<p>This restriction enforces that all attributes denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> be explicitly
+used within all items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid245"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo><mi>𝙻𝙸𝙼𝙸𝚃</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚚𝚞𝚒𝚛𝚎𝚍</mi><mo>(</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo><mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>)</mo></mrow></math>
+enforces that all items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝙰𝚂𝙺𝚂</mi></math> collection mention the
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi></math> attribute.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid246"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo> <mn>12</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid247"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐨𝐫𝐢𝐠𝐢𝐧</mi><mo>-</mo><mn>2</mn> <mi>𝐝𝐮𝐫𝐚𝐭𝐢𝐨𝐧</mi><mo>-</mo><mn>2</mn> <mi>𝐞𝐧𝐝</mi><mo>-</mo><mn>4</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo> <mn>12</mn><mo>)</mo></mrow></math></span></p>
+</div>
+<p>The <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚛𝚎𝚚𝚞𝚒𝚛𝚎𝚍</mi></math> restriction is usually systematically used for every attribute
+of a collection.
+It is not used when some attributes may be implicitly defined according to other attributes.
+In this context, we use the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚚𝚞𝚒𝚛𝚎</mi><mo>_</mo><mi>𝚊𝚝</mi><mo>_</mo><mi>𝚕𝚎𝚊𝚜𝚝</mi></mrow></math> restriction, which we now introduce.</p>
+</li>
+<li id="uid248"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚚𝚞𝚒𝚛𝚎</mi><mo>_</mo><mi>𝚊𝚝</mi><mo>_</mo><mi>𝚕𝚎𝚊𝚜𝚝</mi><mo>(</mo><mi>𝙰𝚝𝚕𝚎𝚊𝚜𝚝</mi><mo>,</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛𝚜</mi><mo>)</mo></mrow></math> <span id="uid249"/></p>
+<ul>
+<li id="uid250"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚕𝚎𝚊𝚜𝚝</mi></math> is a positive integer,</p>
+</li>
+<li id="uid251"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid252"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math> is a non-empty list of distinct attributes of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.
+The length of this list should be strictly greater than <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚕𝚎𝚊𝚜𝚝</mi></math>.</p>
+</li></ul>
+<p>This restriction enforces that at least <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚕𝚎𝚊𝚜𝚝</mi></math> attributes of the list <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛𝚜</mi></math>
+be explicitly used within all items of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid253"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo><mi>𝙻𝙸𝙼𝙸𝚃</mi><mo>)</mo></mrow></math> constraint:</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚚𝚞𝚒𝚛𝚎</mi><mo>_</mo><mi>𝚊𝚝</mi><mo>_</mo><mi>𝚕𝚎𝚊𝚜𝚝</mi><mo>(</mo><mn>2</mn><mo>,</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo><mo>[</mo><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>,</mo><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>,</mo><mi>𝚎𝚗𝚍</mi><mo>]</mo><mo>)</mo></mrow></math>
+enforces that all items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝙰𝚂𝙺𝚂</mi></math> collection mention at least two attributes
+from the list of attributes <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>,</mo><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>,</mo><mi>𝚎𝚗𝚍</mi><mo>]</mo></mrow></math>.
+In this context, this stems from the fact that we have the equality
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>+</mo><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>=</mo><mi>𝚎𝚗𝚍</mi></mrow></math>.
+This allows for retrieving the third attribute from the values of the two others.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid254"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo> <mn>12</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid255"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐨𝐫𝐢𝐠𝐢𝐧</mi><mo>-</mo><mn>2</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo> <mn>12</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid256"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>(</mo><mi>𝙰𝚛𝚐</mi><mo>,</mo><mi>𝙰𝚝𝚝𝚛</mi><mo>)</mo></mrow></math> <span id="uid257"/></p>
+<ul>
+<li id="uid258"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>,</p>
+</li>
+<li id="uid259"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛</mi></math> is an attribute of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚛𝚐</mi></math>.
+This attribute should be of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>.</p>
+</li></ul>
+<p>This restriction enforces that all collections denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚝𝚝𝚛</mi></math> have the same number of items.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Cdiffn.html#uid15152"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid260"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi><mo>)</mo></mrow></math>
+constraint<span class="note"><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi></math> corresponds to the third item of the example
+presented at page <a href="sec2.1.2.html#uid189">2.1.2</a>.</span></span>:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>(</mo><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi><mo>,</mo><mi>𝚘𝚛𝚝𝚑</mi><mo>)</mo></mrow></math>
+forces all the items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi></math> collection to be constituted from the same number
+of items (of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi></math>). From a practical point of view, this forces the <a href="Cdiffn.html#uid15152"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid262"/></a>
+constraint to take as its argument a set of points, a set of rectangles, ... , a set of <a href="Korthotope.html#uid6690">orthotopes</a>.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Cdiffn.html#uid15152"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid263"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mo>〈</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>2</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn><mo>,</mo>  <mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>1</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>3</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mo>〈</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>4</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>8</mn><mo>,</mo>  <mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>3</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>3</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>3</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mo>〈</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>9</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>11</mn><mo>,</mo>  <mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>4</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>3</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>7</mn><mo>〉</mo> <mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Cdiffn.html#uid15152"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid264"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mo>〈</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>2</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mo>〈</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>4</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>8</mn><mo>,</mo>  <mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>3</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>3</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>3</mn><mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mo>〈</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>9</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>11</mn><mo>,</mo>  <mi>𝚘𝚛𝚒</mi><mo>-</mo><mn>4</mn> <mi>𝚜𝚒𝚣</mi><mo>-</mo><mn>3</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>7</mn><mo>〉</mo> <mo>〉</mo><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid265"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>1</mn> </msub> <mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi> <msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>2</mn> </msub></mrow></math>
+<ul>
+<li id="uid266"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>1</mn> </msub></math> is a <i>term</i>.
+A <i>term</i> is an expression that can be evaluated to one or possibly several
+integer values.
+The expressions we allow for a <i>term</i> are defined in the next paragraph.</p>
+</li>
+<li id="uid267"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi></math> is one of the following comparison operators <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≤</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≥</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&gt;</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≠</mo></math>.</p>
+</li>
+<li id="uid268"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>2</mn> </msub></math> is a <i>term</i>.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>v</mi> <mrow><mn>1</mn><mo>,</mo><mn>1</mn></mrow> </msub><mo>,</mo><msub><mi>v</mi> <mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>v</mi> <mrow><mn>1</mn><mo>,</mo><msub><mi>n</mi> <mn>1</mn> </msub></mrow> </msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>v</mi> <mrow><mn>2</mn><mo>,</mo><mn>1</mn></mrow> </msub><mo>,</mo><msub><mi>v</mi> <mrow><mn>2</mn><mo>,</mo><mn>2</mn></mrow> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>v</mi> <mrow><mn>2</mn><mo>,</mo><msub><mi>n</mi> <mn>2</mn> </msub></mrow> </msub></mrow></math>
+be the values respectively associated with <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>1</mn> </msub></math> and with <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>2</mn> </msub></math>.
+The restriction <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>1</mn> </msub> <mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi> <msub><mi>𝚃𝚎𝚛𝚖</mi> <mn>2</mn> </msub></mrow></math>
+forces <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>v</mi> <mrow><mn>1</mn><mo>,</mo><mi>i</mi></mrow> </msub> <mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi> <msub><mi>v</mi> <mrow><mn>2</mn><mo>,</mo><mi>j</mi></mrow> </msub></mrow></math> to hold for every
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>i</mi><mo>∈</mo><mo>[</mo><mn>1</mn><mo>,</mo><msub><mi>n</mi> <mn>1</mn> </msub><mo>]</mo></mrow></math> and every <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>j</mi><mo>∈</mo><mo>[</mo><mn>1</mn><mo>,</mo><msub><mi>n</mi> <mn>2</mn> </msub><mo>]</mo></mrow></math>.</p>
+<p>A <i>term</i> is one of the following expressions:</p>
+<ul>
+<li id="uid269"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>e</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>e</mi></math> is an integer.
+The corresponding value is <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>e</mi></math>.</p>
+</li>
+<li id="uid270"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>c</mi><mo>|</mo></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math>.
+The value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>c</mi><mo>|</mo></mrow></math> is the number of items of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid271"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚅𝙰𝙻𝚄𝙴</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙽</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo></mrow></math> restricts <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽</mi></math>
+to be less than or equal to the number of items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid272"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>,</mo><mn>5</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid273"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn mathvariant="bold">4</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>,</mo><mn>5</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid274"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math>,
+<span id="uid275"/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math> denotes the sum of the values assigned to the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.</p>
+</li>
+<li id="uid276"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚊𝚗𝚐𝚎</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math>,
+<span id="uid277"/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚊𝚗𝚐𝚎</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math> denotes the difference between the maximum value and the minimum value plus one
+of the values assigned to the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.</p>
+</li>
+<li id="uid278"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡𝚟𝚊𝚕</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math>,
+<span id="uid279"/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡𝚟𝚊𝚕</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math> denotes the maximum over the values assigned to the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math>
+of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.</p>
+</li>
+<li id="uid280"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚟𝚊𝚕</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math>,
+<span id="uid281"/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚟𝚊𝚕</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math> denotes the number of distinct values over the values assigned to the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math>
+of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.</p>
+</li>
+<li id="uid282"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚛𝚘𝚍</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math>,
+<span id="uid283"/>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚛𝚘𝚍</mi><mo>(</mo><mi>c</mi><mo>.</mo><mi>a</mi><mo>)</mo></mrow></math> denotes the product of the values assigned to the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> of the collection denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.</p>
+</li>
+<li id="uid284"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math>.
+The value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi></math> is the value of the corresponding argument.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid285"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚅𝙰𝙻𝚄𝙴</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙽</mi><mo>≥</mo><mn>0</mn></mrow></math> forces the first argument of the <a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid286"/></a>
+constraint to be greater than or equal to 0.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid287"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>,</mo><mn>5</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Catleast.html#uid11369"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚕𝚎𝚊𝚜𝚝</mi></math><span id="uid288"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>-</mo><mn mathvariant="bold">1</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>,</mo><mn>5</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid289"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚟𝚊𝚛</mi></math>.
+The value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> will be the value assigned to variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>.<span class="note">This stems from
+the fact that restrictions are defined on the ground
+instance of a global constraint.</span></p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Camong.html#uid10677"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid291"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝚁</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙽𝚅𝙰𝚁</mi><mo>≥</mo><mn>0</mn></mrow></math> forces the first argument of the <a href="Camong.html#uid10677"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid292"/></a> constraint to be
+greater than or equal to 0.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Camong.html#uid10677"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid293"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚕</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚕</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Camong.html#uid10677"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid294"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>-</mo><mn mathvariant="bold">9</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚕</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚕</mi><mo>-</mo><mn>5</mn><mo>〉</mo><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid295"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚒𝚗𝚝</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚟𝚊𝚛</mi></math>.
+The values denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math> are all the values of the corresponding set.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Copen_alldifferent.html#uid22602"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid296"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚂</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚂</mi><mo>≥</mo><mn>1</mn></mrow></math> forces all elements of the set corresponding to the first argument of the
+<a href="Copen_alldifferent.html#uid22602"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid297"/></a> constraint to be greater than or equal to 1.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Copen_alldifferent.html#uid22602"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid298"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>}</mo><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>3</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>9</mn><mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Copen_alldifferent.html#uid22602"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚙𝚎𝚗</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid299"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>{</mo><mn mathvariant="bold">0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>}</mo><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>5</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>3</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>8</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>9</mn><mo>〉</mo><mo>)</mo></mrow></math>
+</span></p></div>
+</li>
+<li id="uid300"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>.</mo><mi>a</mi></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> an attribute
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚝</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚟𝚊𝚛</mi></math>.
+The values denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>.</mo><mi>a</mi></mrow></math> are all the values corresponding to attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math>
+for the different items of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.
+When <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>.</mo><mi>a</mi></mrow></math> designates a domain variable we consider the value assigned to that variable.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid301"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>,</mo><mi>𝙻𝙸𝙼𝙸𝚃</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>.</mo><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>≥</mo><mn>0</mn></mrow></math> enforces for all items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝙰𝚂𝙺𝚂</mi></math>
+collection that the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi></math> attribute be greater than or equal to 0.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid302"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo> <mn>12</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Ccumulative.html#uid14055"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid303"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mo>-</mo><mn mathvariant="bold">2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>4</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>2</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>1</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>5</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>5</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mn>4</mn> <mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mn>2</mn> <mi>𝚎𝚗𝚍</mi><mo>-</mo><mn>6</mn> <mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mn>1</mn><mo>〉</mo><mo>,</mo> <mn>12</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid304"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>.</mo><mi>a</mi></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> is an argument of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> an attribute
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚒𝚗𝚝</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚟𝚊𝚛</mi></math>.
+The values denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>.</mo><mi>a</mi></mrow></math> are all the values belonging to the sets corresponding to
+attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> for the different items of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>.
+When <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>c</mi><mo>.</mo><mi>a</mi></mrow></math> designates a set variable we consider the values that finally belong to
+that set.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Cinverse_set.html#uid19101"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚟𝚎𝚛𝚜𝚎</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi></mrow></math><span id="uid305"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚇</mi><mo>,</mo><mi>𝚈</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚇</mi><mo>.</mo><mi>𝚡</mi><mo>≥</mo><mn>1</mn></mrow></math> enforces for all items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚇</mi></math>
+collection that all the potential elements of the set variable associated with the
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚡</mi></math> attribute be greater than or equal to 1.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math><a href="Cinverse_set.html#uid19101"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚟𝚎𝚛𝚜𝚎</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi></mrow></math><span id="uid306"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>1</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>2</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>3</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>1</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>4</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>4</mn><mo>}</mo> <mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>〈</mo></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>1</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mn>3</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>2</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mn>1</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>3</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>4</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>5</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mo>}</mo> <mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math><a href="Cinverse_set.html#uid19101"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚟𝚎𝚛𝚜𝚎</mi><mo>_</mo><mi>𝚜𝚎𝚝</mi></mrow></math><span id="uid307"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>1</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn mathvariant="bold">0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>2</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>3</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>1</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>4</mn> <mi>𝚡</mi><mo>-</mo><mo>{</mo><mn>4</mn><mo>}</mo> <mo>〉</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>〈</mo></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>1</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mn>3</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>2</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mn>1</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>3</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>4</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mn>5</mn> <mi>𝚢</mi><mo>-</mo><mo>{</mo><mo>}</mo> <mo>〉</mo><mo>)</mo></mrow></math>
+</span></p></div>
+</li>
+<li id="uid308"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">min</mo><mo>(</mo><msub><mi>t</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>t</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><msub><mi>t</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>t</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>2</mn> </msub></math> are <i>terms</i>.
+Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒱</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒱</mi> <mn>2</mn> </msub></math> denote the sets of values respectively
+associated with the terms <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>2</mn> </msub></math>.
+Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">min</mo><mo>(</mo><msub><mi>𝒱</mi> <mn>1</mn> </msub><mo>)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><msub><mi>𝒱</mi> <mn>1</mn> </msub><mo>)</mo></mrow></math>
+and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">min</mo><mo>(</mo><msub><mi>𝒱</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><msub><mi>𝒱</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math> denote the minimum and maximum values
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒱</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒱</mi> <mn>2</mn> </msub></math>.
+The value associated with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">min</mo><mo>(</mo><msub><mi>t</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>t</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">min</mo><mo>(</mo><mo movablelimits="true" form="prefix">min</mo><mrow><mo>(</mo><msub><mi>𝒱</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>,</mo><mo movablelimits="true" form="prefix">min</mo><mrow><mo>(</mo><msub><mi>𝒱</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>)</mo></mrow></math>,
+while the value associated with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><msub><mi>t</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>t</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><msub><mi>𝒱</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>,</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><msub><mi>𝒱</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>)</mo></mrow></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Cninterval.html#uid21871"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></math><span id="uid309"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚂𝙸𝚉𝙴</mi><mo>_</mo><mi>𝙸𝙽𝚃𝙴𝚁𝚅𝙰𝙻</mi><mo>)</mo></mrow></math>
+constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙽𝚅𝙰𝙻</mi><mo>≥</mo><mo movablelimits="true" form="prefix">min</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>)</mo></mrow></math> forces
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝚅𝙰𝙻</mi></math> to be greater than or equal to the minimum of 1
+and the number of items of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math>
+<a href="Cninterval.html#uid21871"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></math><span id="uid310"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>2</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>3</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>9</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>9</mn><mo>〉</mo><mo>,</mo><mn>4</mn><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math>
+<a href="Cninterval.html#uid21871"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></math><span id="uid311"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn mathvariant="bold">0</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>3</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>9</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>1</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>9</mn><mo>〉</mo><mo>,</mo><mn>4</mn><mo>)</mo></mrow></math></span></p>
+</div>
+</li>
+<li id="uid312"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>t</mi> <mn>1</mn> </msub> <mi>𝚘𝚙</mi> <msub><mi>t</mi> <mn>2</mn> </msub></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>2</mn> </msub></math> are <i>terms</i> and
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚘𝚙</mi></math> one of the operators
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>+</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>*</mo></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>/</mo></math>.<span class="note"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>/</mo></math> denotes an integer division,
+a division in which the fractional part is discarded.</span>
+Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒱</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒱</mi> <mn>2</mn> </msub></math> denote the sets of values respectively
+associated with the terms <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi> <mn>2</mn> </msub></math>.
+The set of values associated with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>t</mi> <mn>1</mn> </msub> <mi>𝚘𝚙</mi> <msub><mi>t</mi> <mn>2</mn> </msub></mrow></math> is
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝒱</mi> <mn>12</mn> </msub><mo>=</mo><mrow><mo>{</mo><mi>v</mi><mo>:</mo><mi>v</mi><mo>=</mo><msub><mi>v</mi> <mn>1</mn> </msub> <mi>𝚘𝚙</mi> <msub><mi>v</mi> <mn>2</mn> </msub><mo>,</mo><msub><mi>v</mi> <mn>1</mn> </msub><mo>∈</mo><msub><mi>𝒱</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>v</mi> <mn>2</mn> </msub><mo>∈</mo><msub><mi>𝒱</mi> <mn>2</mn> </msub><mo>}</mo></mrow></mrow></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+This kind of expression is for instance used in the restrictions of the
+<a href="Crelaxed_sliding_sum.html#uid23951"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚕𝚊𝚡𝚎𝚍</mi><mo>_</mo><mi>𝚜𝚕𝚒𝚍𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚞𝚖</mi></mrow></math><span id="uid314"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙰𝚃𝙻𝙴𝙰𝚂𝚃</mi><mo>,</mo><mi>𝙰𝚃𝙼𝙾𝚂𝚃</mi><mo>,</mo><mi>𝙻𝙾𝚆</mi><mo>,</mo><mi>𝚄𝙿</mi><mo>,</mo><mi>𝚂𝙴𝚀</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> constraint:
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚃𝙼𝙾𝚂𝚃</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mi>𝚂𝙴𝚀</mi><mo>+</mo><mn>1</mn></mrow></math> forces
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚃𝙼𝙾𝚂𝚃</mi></math> to be less than or equal to an arithmetic expression
+that corresponds to the number of sequences of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝙴𝚀</mi></math> consecutive
+variables in a sequence of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo></mrow></math> variables.</span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>⊳</mo></math>
+<a href="Crelaxed_sliding_sum.html#uid23951"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚕𝚊𝚡𝚎𝚍</mi><mo>_</mo><mi>𝚜𝚕𝚒𝚍𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚞𝚖</mi></mrow></math><span id="uid315"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>2</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>2</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>0</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>0</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>3</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>〉</mo><mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>▸</mo></math>
+<a href="Crelaxed_sliding_sum.html#uid23951"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚎𝚕𝚊𝚡𝚎𝚍</mi><mo>_</mo><mi>𝚜𝚕𝚒𝚍𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚞𝚖</mi></mrow></math><span id="uid316"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>3</mn><mo>,</mo><mn mathvariant="bold">9</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>〈</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>2</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>2</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>0</mn><mo>,</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>0</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>3</mn><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mn>4</mn><mo>〉</mo><mo>)</mo></mrow></math></span></p>
+</div>
+</li></ul>
+</li>
+<li id="uid317"><p>Finally, we can also use a constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> of the catalogue for expressing a restriction
+as long as that constraint is not defined according to the constraint under consideration.
+The constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> should have a graph-based or an automaton-based description so that
+its meaning is explicitly defined.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+An example of use of such restriction can be found in the
+<a href="Csort_permutation.html#uid25808"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚛𝚝</mi><mo>_</mo><mi>𝚙𝚎𝚛𝚖𝚞𝚝𝚊𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid318"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙵𝚁𝙾𝙼</mi><mo>,</mo><mi>𝙿𝙴𝚁𝙼𝚄𝚃𝙰𝚃𝙸𝙾𝙽</mi><mo>,</mo><mi>𝚃𝙾</mi><mo>)</mo></mrow></math> constraint:
+<a href="Calldifferent.html#uid9995"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid319"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿𝙴𝚁𝙼𝚄𝚃𝙰</mi></mrow></math>- <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚃𝙸𝙾𝙽</mi><mo>)</mo></mrow></math> is used to express the fact that
+the variables of the second argument of the <a href="Csort_permutation.html#uid25808"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚛𝚝</mi><mo>_</mo><mi>𝚙𝚎𝚛𝚖𝚞𝚝𝚊𝚝𝚒𝚘𝚗</mi></mrow></math><span id="uid320"/></a> constraint should take
+distinct values.
+</span></p></div>
+</li></ul></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

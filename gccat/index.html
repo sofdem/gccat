@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Window-target" content="_parent" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Sophie Demassey" />
+<meta name="keywords" content="global constraint catalog, global constraints, constraint programming, contraintes globales" />
+<link href="../css/simple.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+<title>Global Constraint Catalog</title>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<h1>Global Constraint Catalog</h1>
+<h2>a dictionary for Constraint Programming - current version: <span class="zedate">2014-06-02</span></h2>
+<form method="get" action="http://www.google.com/search">
+  <input type="hidden"  name="sitesearch" value="sofdem.github.io/gccat" />
+  <input type="text"   name="q" size="31" maxlength="255" value="" />
+  <input type="submit" value="Google Search"/>
+</form>
+</div>
+
+<div id="access">
+<p><a href="titlepage.html">enter the catalog</a> or <a href="#nav">search constraints</a></p>
+</div>
+
+<div id="nav">
+<h2>search constraints by</h2>
+<ul><li class="more"><a href="sec5.html">NAME</a></li>
+<li><a href="sec3.7.html">Keyword</a></li>
+<li><a href="sec3.6.html">Meta-keyword</a></li>
+<li><a href="../aux/xml/gccat_systems.xml">System</a></li>
+<li><a href="biblio.html">Author</a></li>
+<li><a href="sec3.5.html">Argument</a></li>
+<li><a href="sec6.html">Graph</a></li>
+<li><a href="theindex.html">Index</a></li></ul>
+</div>
+</div>
+
+<div id="main">
+
+<div class="entry">
+<h2>about the catalog</h2>
+<p>The catalog presents a list of <span class="zenumber">     354</span> global constraints issued <a href="sec3.1.html">from the literature in constraint programming and from popular constraint systems</a>. The semantic of each constraint is given together with some typical usage and filtering algorithms, and with reformulations in terms of graph properties, automata, and/or logical formulae. When available, it also presents some typical usage as well as some pointers to existing filtering algorithms.</p>
+<p>The catalog is periodically updated by <a class="people" href="http://www.emn.fr/z-info/ppc/">Nicolas Beldiceanu</a> and <a class="people" href="http://www.sics.se/~matsc/">Mats Carlsson</a>. Feel free to contact the first author for any questions about the content of the catalog.</p> 
+<p>Download the Global Constraint Catalog in pdf format:</p>
+<ul>
+  <li><a href="../aux/doc/catalog.pdf" onclick="javascript: pageTracker._trackPageview('/downloads/pdf'); ">last working version (<span class="zedate">2014-06-02</span>)</a> (about 20 Mo)</li>
+  <li><a href="http://soda.swedish-ict.se/4041/">2nd edition (SICS Technical Report 2010-07)</a> (about 20 Mo)</li>
+  <li><a href="ftp://ftp.sics.se/pub/SICS-reports/Reports/SICS-T--2005-08--SE.pdf">1st edition (SICS Technical Report 2005-08)</a> (about 7 Mo)</li>
+</ul>
+
+</div>
+<div class="entry">
+<h2>about this website</h2>
+<p>This website provides the online version of the catalog. It is generated from the Prolog and LaTeX source files of the pdf document using, in particular, <a href="http://www-sop.inria.fr/apics/tralics/">Tralics</a>, a TeX-to-XML/MathML translator, and <a href="http://www.mathjax.org/">MathJax</a>, a javascript library for rendering maths from MathML.</p>
+<p>The online version is conceived to ease the search through the catalog and to make available its electronic counterpart. These are Prolog and XML files describing global constraints and combinatorial problems, which can be used in systematic ways.
+See the pages below for a description of these two formats:</p>
+<ul>
+<li><a href="sec4.4.1.html">Prolog format</a></li>
+<li><a href="sec4.4.2.html">XML format</a> (see also the <a href="../aux/xml/gccat_schema.xml">XML Schema + XSL</a>)</li>
+</ul> 
+<p>The table below sets side by side the constraints in the catalog with their analog in the systems <a href="http://choco.emn.fr/">Choco</a>, <a href="http://www.gecode.org/">Gecode</a>, <a href="http://jacop.osolpro.com/">Jacop</a>, and <a href="http://www.sics.se/sicstus/">SICStus</a>:</p>
+<ul><li><a href="../aux/xml/gccat_systems.xml">Catalog-Systems correspondence table</a></li></ul>
+
+<h3 id="browser"><span class="warning">Note on browser compatibility</span></h3>
+<p>This website is based on XHTML+MathML+CSS and on the <a href="http://www.mathjax.org/">MathJax</a> javascript library for rendering mathematics in any browser that does not support MathML natively, i.e. about any browser except Firefox.</p>
+<ul><li><b>Firefox</b> uses by default the native MathML (preferred) output but <a href="https://developer.mozilla.org/en/Mozilla_MathML_Project/Fonts">requires</a> to download math fonts such as the <a href="http://www.stixfonts.org/">STIX</a> open fonts. As an alternative, you may also turn off the MathML output mode by right-clicking or ctl-clicking a formula and selecting <i>Settings/Math Renderer/HTML-CSS</i> in the contextual menu.</li>
+<li><b>Chrome, Safari</b> use by default the HTML-CSS output mode of MathJax and web fonts. Consider to install the <a href="http://sourceforge.net/projects/stixfonts/files/STIXv1.1.0.zip/download">STIX General Fonts (v.1.1.0)</a> locally on your computer in order to improve the page loading speed.</li>
+<li>Old browsers (and perhaps <b>MSIE</b> ?) are not supported as pages are served as application/xhtml+xml instead of text/html. Some browsers are also <a href="http://www.mathjax.org/resources/browser-compatibility/">not compatible</a> with MathJax. In this case, consider the <a href="../aux/doc/catalog.pdf" onclick="javascript: pageTracker._trackPageview('/downloads/pdf'); ">current pdf</a> versions of the catalog.</li>
+</ul>
+</div>
+
+<div class="entry">
+<h2>contact</h2>
+<p>Corresponding author: <a class="people" href="http://www.emn.fr/z-info/ppc/">Nicolas Beldiceanu</a> nicolas.beldiceanu AT mines-nantes.fr<br/>
+Online version: <a class="people" href="http://sofdem.github.io/">Sophie Demassey</a> sophie.demassey AT mines-paristech.fr</p>
+</div>
+
+<div class="entry">
+<h2>see also</h2>
+<ul>
+<li>Helmut Simonis's <a href="http://hsimonis.wordpress.com/">constraint applications blog</a></li>
+<li>Hakan Kjellerstrand's <a href="http://www.hakank.org/constraint_programming_blog/">constraint programming blog</a> and its <a href="http://www.hakank.org/minizinc/">global constraint models</a></li>
+<li><a href="http://4c110.ucc.ie/cpstandards/index.php/en/home">constraint programming standardization site</a></li>
+</ul>
+</div>
+
+
+<div id="changelog" class="entry">
+<h2>change log</h2>
+<dl>
+<dt>2010-11-18 working version update: 354 constraints</dt><dd><ul>
+<li>new constraints: <a href="Cabs_value.html">abs_value</a>, <a href="Csame_sign.html">same_sign</a> and <a href="Copposite_sign.html">opposite_sign</a>; <a href="Cconsecutive_groups_of_ones.html">consecutive_groups_of_ones</a>, <a href="Cconsecutive_values.html">consecutive_values</a>; <a href="Cin_interval_reified.html">in_interval_reified</a>.</li>
+<li>electronic catalog, modified description field <b><a href="sec2.5.html">See also</a></b> providing links to semanticaly related global constraints: the related constraints are now grouped according to their relation type (e.g. <a href="sec2.5.9.html">is implied by</a> or <a href="sec2.5.18.html">is a soft variant of</a>).</li>
+<li>electronic catalog, new description field <b><a href="sec2.1.5.html">Symmetries</a></b> describing symmetries between the arguments of the constraint.</li>
+<li>electronic catalog, new description field <b>Typical</b> describing the conditions typically satisfied by the arguments of the constraint (e.g. <tt><a href="Calldifferent.html">alldifferent</a></tt> has at least 2 variables in argument) <i>in progress</i>.</li>
+<li>new <b><a href="sec3.6.14.html">exercices of modelisation</a></b> with global constraints.</li>
+<li>update of the <a href="../aux/xml/gccat_systems.xml">correspondence tables</a> with constraint systems.</li>
+<li>add <a href="http://www.mathjax.org/">MathJax+MathML</a> javascript library for rendering mathematics.</li>
+<li>change to the open serif font family <b>Fontin</b> by <a href="http://www.exljbris.com">Jos Buivenga</a>.</li>
+<li>extract all included images.</li>
+</ul></dd>
+<dt>2010-07-01 pdf version update</dt><dd><ul>
+<li><a href="http://soda.swedish-ict.se/4041/">SICS-T--2010-07--SE.pdf</a>: second technical report edition of the catalog.</li>
+</ul></dd>
+<dt>2010-01-29 pdf version update</dt><dd><ul>
+<li>new keyword <a href="Kreified_automaton_constraint.html">reified automaton</a> describing constraints for which the reified version can be mechanically constructed from the automaton.</li>
+</ul></dd>
+<dt>2009-12-16 working version update: 348 constraints</dt><dd><ul>
+<li>new constraints: <a href="Kgraph_constraint.html">graph</a>, <a href="Korder_constraint.html">order</a>, <a href="Kvector.html">vector</a>, <a href="Karithmetic_constraint.html">arithmetic</a> constraints...</li>
+<li>electronic catalog, new description field <b><a href="sec3.3.4.html">Systems</a></b>: synonyms in the constraint systems <a href="http://choco.emn.fr/">Choco</a>, <a href="http://www.gecode.org/">Gecode</a>, <a href="http://jacop.osolpro.com/">Jacop</a>, and <a href="http://www.sics.se/sicstus/">SICStus</a>(see also: <b><a href="../aux/xml/gccat_systems.xml">gccat_systems.xml</a></b>).</li>
+<li>electronic catalog, new description field <b><a href="Klogic.html">Logic</a></b> for geometrical constraints: reformulation as first order logical formulae (see e.g. <a href="Cmeet_sboxes.html">meet_sboxes</a>)</li>
+<li>new description field <b><a href="sec2.4.html">Reformulation</a></b>: decomposition as conjunctions of constraints (see e.g.: <a href="Ctree.html">tree</a>).</li>
+<li>automata: generation from constraint parameters (see e.g. <a href="Cstretch_path.html">stretch_path</a>, <a href="Cpattern.html">pattern</a>)</li>
+<li>automata: $ transitions removed (the few remaining will be also removed)</li>
+<li><a href="sec1.html">Getting Started</a> section</li>
+<li>alphabetical index of the <a href="sec5.html">constraints</a>, <a href="sec3.7.html">keywords</a>, <a href="theindex.html">global index</a></li>
+<li>convert all jpeg in png (firefox ?)</li>
+</ul></dd>
+<dt>2009-04-03 online version update</dt><dd><ul>
+<li><a href="../aux/xml/gccat_systems.xml">gccat_systems.xml</a>: references to global constraints implemented within the constraint systems <a href="http://choco.emn.fr/">Choco</a> and <a href="http://www.gecode.org/">Gecode</a></li>
+<li><a href="../aux/xml/gccat_schema.xml">gccat_schema.xml</a>: the XML Schema of the catalog <a href="../aux/xml/schema.xsd">schema.xsd</a> with a stylesheet</li>
+<li>navigation bar (prev/next) added</li>
+<li>google tools added: search and analytics</li>
+</ul></dd>
+<dt>2008-11-15 working version update: 313 constraints</dt><dd><ul>
+<li>new constraints: <a href="Call_equal.html">all_equal</a> and <a href="Csoft_all_equal_ctr.html">soft_all_equal_ctr</a>, hard and soft equality constraints.</li>
+<li>electronic catalog: <a href="Cgeost.html">geost</a>-based models of puzzle problem instances are provided in XML and Prolog format: <a href="Kpacking_almost_squares.html">packing almost squares</a>, <a href="KPartridge.html">Partridge</a>, <a href="Kpentomino.html">pentomino</a>, <a href="Ksmallest_square_for_packing_consecutive_dominoes.html">smallest square for packing consecutive dominoes</a>, <a href="Ksmallest_rectangle_area.html">smallest rectangle for packing rectangles</a>, <a href="Ksmallest_square_for_packing_rectangles_with_distinct_sizes.html">smallest square for packing rectangles</a>.</li>
+<li>graphical view of the resolution of <a href="Ksquared_squares.html">squared squares problems</a> using of the <a href="Cgeost.html">geost</a> constraint.</li>
+<li>permanent url of each keyword page: just add a "K" prefix and ".html" suffix to the keyword name (<em>see e.g.</em> <a href="Kcompulsory_part.html">Kcompulsory_part.html</a>)</li>
+</ul></dd>
+<dt>2008-09-18 working version update: 311 constraints</dt><dd><ul>
+<li>new constraints: <a href="Cgeost.html">geost</a>, a generic <a href="Kgeometrical_constraint.html">geometrical constraint</a> for a large variety of <a href="sec3.6.16.html">puzzles</a>, <a href="Kstrip_packing.html">packing</a> and <a href="Kpallet_loading.html">placement</a> problems; <a href="Cin_intervals.html">in_intervals</a>, <a href="Calldifferent_consecutive_values.html">alldifferent_consecutive_values</a></li>
+<li>electronic catalog: the example instance of each constraint is provided as an XML file, avalaible on the constraint page. <a class="people" href="http://4c.ucc.ie/~hsimonis/">Helmut Simonis</a> conceived the <a href="sec4.4.2.html">XML schema</a> of the catalog.</li>
+<li>permanent url of each constraint page: just add a "C" prefix and ".html" suffix to the constraint name (<em>see e.g.</em> <a href="Calldifferent.html">Calldifferent.html</a>)</li>
+</ul></dd>
+<dt>2008-02-03 working version update: 308 constraints</dt><dd><ul>
+<li>new constraints: <a href="Kgeometrical_constraint.html">geometric constraints</a>, <a href="Karithmetic_constraint.html">arithmetic constraints</a>,...</li>
+<li>electronic catalog: the <a href="sec4.4.1.html">prolog description files [.pl]</a> are now available on each constraint page, as well as the printable version of the page [.pdf] and the graphical specification of the constraint [.png]</li>
+<li><a href="theindex.html">index</a>: the general index of the catalog with back references</li>
+</ul></dd>
+<dt>2006-09-30 working version update: 276 constraints</dt><dd><ul>
+<li>new constraints: <a href="Kopen_constraint.html">open constraints</a></li>
+<li>electronic catalog: prolog source files available</li>
+<li><a href="biblio.html">biblio</a>: index of the bibliographic citations with back references</li>
+<li>new arrangement for the constraint descriptions</li>
+<li>scaled delimiters for the multi-line formulae</li>
+</ul></dd>
+<dt>2006-06-12 working version online: 270 constraints</dt><dd><ul>
+<li>introduction page</li>
+<li>figures automatically generated and resized</li>
+<li>page names = section numbers</li>
+</ul></dd>
+<dt>2006-05-12</dt><dd><ul>
+<li>constraints indexed on the elements (characteristics, restrictions, arc/set generators) of their graph description</li>
+<li>fix broken internal links / numbering / anchors</li>
+</ul></dd></dl>
+</div>
+
+
+<!-- div class="entry">
+<h2>resources for Latex-to-XHTML</h2>
+<p>This website is automatically generated from the LaTeX source files of the catalog using
+<a href="http://www-sop.inria.fr/apics/tralics/">Tralics</a>, a TeX-to-XML/MathML translator,
+<a href="http://www.mathjax.org/">MathJax</a>, a javascript library for rendering mathematics from MathML,
+ and several web formatting tools:
+<a href="http://www.w3.org/TR/REC-xml/">XML</a>,
+<a href="http://www.w3.org/TR/xsl/">XSL</a>,
+<a href="http://www.w3.org/TR/xslt">XSLT</a>,
+<a href="http://www.w3.org/TR/xpath">XPath</a>,
+and
+<a href="">xsltproc</a>,
+<a href="http://www.w3.org/TR/dtd">DTDs</a>,
+<a href="http://www.w3.org/TR/css">CSS</a>,
+<a href="http://www.w3.org/TR/xhtml1">XHTML</a>,
+<a href="http://www.w3.org/Math/">MathML</a>.</p> 
+<p>Other docs and resources:
+<a href="http://www.dpawson.co.uk/xsl/index.html">XSL FAQ</a>,
+<a href="http://www.w3schools.com">w3schools</a>,
+<a href="http://www.zipcon.net/~swhite/docs/math/math.html">math and css (1)</a>,
+<a href="http://www.cs.tut.fi/~jkorpela/math/">math and css (2)</a>,
+<a href="http://www.zvon.org/other/charSearch/PHP/search.php">character search</a>,
+<a href="http://www.cs.wisc.edu/~ghost/doc/cvs/Use.htm">ghostscript</a>.</p -->
+</div>
+
+<!-- div class="entry">
+<h2>ToDo</h2>
+<ul>
+  <li>interactive visualization of the relation graph (see also) between the constraints</li> 
+  <li>correspondence with constraint systems: consider the arguments and restrictions of the constraints</li> 
+  <li>automatic management of the keywords</li>
+  <li>new problem instances in the XML format (n-queen, sudoku, etc.) + XSL</li>
+  <li>search by synonyms (for now, see the <a href="theindex.html">general index</a>)</li>
+  <li>TESTS on MacOSX: Firefox/MathML+STIX (some <a href="sec4.3.4.3.html">formula</a> are not rendered),  Firefox/MathJax (ok but slow), Chrome-Safari/MathJax (no line breaks in table formula)</li>
+</ul>
+</div -->
+</div>
+
+
+<div id="footer">
+<p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fsimple.css&amp;profile=css3">CSS(s)</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fgccat_mathjax.css&amp;profile=css3">CSS(m)</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fprint.css&amp;profile=css3">CSS(p)</a> - last update&nbsp;: <span class="zedate">2014-06-02</span>. <a class="people" href="http://sofdem.github.io/">SD</a>.</p>
+</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3373473-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

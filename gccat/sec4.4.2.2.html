@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">The electronic version of the catalogue</a><ul><li>4.4.1. <a href="sec4.4.1.html">Prolog facts describing a constraint</a></li><li>4.4.2. <a href="sec4.4.2.html">XML schema associated with a global constraint</a><ul><li>4.4.2.1. <a href="sec4.4.2.1.html">Related work</a></li><li>4.4.2.2. <a href="sec4.4.2.2.html">Key features</a></li><li>4.4.2.3. <a href="sec4.4.2.3.html">Structure of schema</a></li><li>4.4.2.4. <a href="sec4.4.2.4.html">Generating schema from the catalogue</a></li><li>4.4.2.5. <a href="sec4.4.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.4.2.1.html">&lt;&lt; 4.4.2.1. Related work</a><a href="sec4.4.2.3.html">4.4.2.3. Structure of schema &gt;&gt;</a></div><div id="main"><h3>4.4.2.2. Key features</h3><p>The following list summarizes the core features of our XML format and the associated schema:</p><dl><dt id="uid9797">language independent</dt>
+<dd><p>The underlying description of the constraint in the catalogue is provided as Prolog facts.
+These may be difficult/tedious to read in other programming languages.
+The use of XML as an exchange format allows use with most programming languages via provided XML parsers.</p>
+</dd><dt id="uid9798">machine readable, precise format</dt>
+<dd><p>The format is precisely defined, using XML schema data types throughout,
+so that validity of a model can be checked with standard XML tools.</p>
+</dd><dt id="uid9799">one-to-one match with the data format used for the catalog</dt>
+<dd><p>The internal structure of the schema follows the data format for the constraints in the rest of the catalogue.
+This minimises the need for relearning, once the basic format of the catalogue description has been understood.</p>
+</dd><dt id="uid9800">detailed description of the allowed format for arguments</dt>
+<dd><p>For each global constraint, the allowed format of the argument is specified in great detail.
+As the complexity of global constraints increases,
+this becomes more and more important to simplify the generation of valid problem files.</p>
+</dd><dt id="uid9801">automated generation of schema from the catalogue data files</dt>
+<dd><p>The schema is automatically generated from the catalogue data files by the simple generator program.
+This keeps the schema up-to-date with changes of the catalogue, and reduces the task of schema maintenance.</p>
+</dd><dt id="uid9802">generation of examples for each constraint</dt>
+<dd><p>Example XML files based on the examples in the catalogue can be generated automatically,
+so that a link to these examples can be added to each catalogue entry.</p>
+</dd><dt id="uid9803">generation of diagrams describing schema for each constraint</dt>
+<dd><p>At the same time, graph structures of the schema for each constraint can be automatically generated
+using the <i>graphviz</i><span id="uid9804"/> <a class="cite" href="biblio.html#bid96">[GansnerNorth00]</a> tool.
+This can help a human user to produce XML data for a particular constraint without reading the details of the schema.</p>
+</dd></dl></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

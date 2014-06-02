@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="gccat_systems.xslt" type="text/xsl"?>
+<catalog date="2014-06-02">
+<constraint name="abs_value">
+<system name="choco">
+<ctr name="abs"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="abs"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntArith.html"/>
+</system>
+</constraint>
+<constraint name="all_equal">
+<system name="choco">
+<ctr name="atMostNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="all_equal"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#all_equal"/>
+</system>
+</constraint>
+<constraint name="alldifferent">
+<system name="choco">
+<ctr name="allDifferent"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="linear"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDistinct.html"/>
+</system>
+<system name="jacop">
+<ctr name="alldifferent"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Alldifferent.html"/>
+</system>
+<system name="jacop">
+<ctr name="alldiff"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Alldiff.html"/>
+</system>
+<system name="jacop">
+<ctr name="alldistinct"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Alldistinct.html"/>
+</system>
+<system name="minizinc">
+<ctr name="all_different"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#all_different"/>
+</system>
+<system name="sicstus">
+<ctr name="all_different"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="all_distinct"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="alldifferent_cst">
+<system name="gecode">
+<ctr name="linear"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDistinct.html"/>
+</system>
+</constraint>
+<constraint name="among">
+<system name="choco">
+<ctr name="among"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<ctr name="among"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Among.html"/>
+</system>
+<system name="minizinc">
+<ctr name="among"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#among"/>
+</system>
+</constraint>
+<constraint name="among_seq">
+<system name="gecode">
+<ctr name="sequence"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntSequence.html"/>
+</system>
+<system name="jacop">
+<ctr name="sequence"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Sequence.html"/>
+</system>
+</constraint>
+<constraint name="among_var">
+<system name="choco">
+<ctr name="among"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<ctr name="amongvar"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/AmongVar.html"/>
+</system>
+</constraint>
+<constraint name="and">
+<system name="choco">
+<ctr name="reifiedAnd"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<ctr name="andbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/AndBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#/\"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="arith">
+<system name="choco">
+<ctr name="eq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="neq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="geq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="gt"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="leq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="lt"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#=&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&gt;="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#\="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="atleast">
+<system name="choco">
+<ctr name="occurenceMin"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="gecode">
+<ctr name="atleast"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelMiniModelIntAlias.html"/>
+</system>
+<system name="jacop">
+<ctr name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="minizinc">
+<ctr name="at_least"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#at_least"/>
+</system>
+<system name="sicstus">
+<ctr name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="atmost">
+<system name="choco">
+<ctr name="occurenceMax"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="gecode">
+<ctr name="atmost"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelMiniModelIntAlias.html"/>
+</system>
+<system name="jacop">
+<ctr name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="minizinc">
+<ctr name="at_most"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#at_most"/>
+</system>
+<system name="sicstus">
+<ctr name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="atmost1">
+<system name="minizinc">
+<ctr name="at_most1"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#at_most1"/>
+</system>
+</constraint>
+<constraint name="atmost_nvalue">
+<system name="choco">
+<ctr name="atMostNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="bin_packing">
+<system name="choco">
+<ctr name="pack"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="binpacking"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntBinPacking.html"/>
+</system>
+<system name="minizinc">
+<ctr name="bin_packing"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#bin_packing"/>
+</system>
+</constraint>
+<constraint name="bin_packing_capa">
+<system name="choco">
+<ctr name="pack"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="binpacking"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntBinPacking.html"/>
+</system>
+<system name="minizinc">
+<ctr name="bin_packing_capa"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#bin_packing_capa"/>
+</system>
+</constraint>
+<constraint name="circuit">
+<system name="gecode">
+<ctr name="circuit"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntGraph.html"/>
+</system>
+<system name="jacop">
+<ctr name="circuit"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Circuit.html"/>
+</system>
+<system name="sicstus">
+<ctr name="circuit"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="clause_and">
+<system name="choco">
+<ctr name="reifiedAnd"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="clause"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="clause"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+</constraint>
+<constraint name="clause_or">
+<system name="choco">
+<ctr name="reifiedOr"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="clause"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="clause"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+</constraint>
+<constraint name="count">
+<system name="choco">
+<ctr name="occurence"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<ctr name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="minizinc">
+<ctr name="count"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#count"/>
+</system>
+<system name="sicstus">
+<ctr name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="counts">
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+</constraint>
+<constraint name="cumulative">
+<system name="choco">
+<ctr name="cumulativeMax"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="cumulative"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntScheduling.html"/>
+</system>
+<system name="jacop">
+<ctr name="cumulative"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Cumulative.html"/>
+</system>
+<system name="minizinc">
+<ctr name="cumulative"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#cumulative"/>
+</system>
+<system name="sicstus">
+<ctr name="cumulative"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="cumulative_two_d">
+<system name="choco">
+<ctr name="geost"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="cumulatives">
+<system name="gecode">
+<ctr name="cumulatives"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntScheduling.html"/>
+</system>
+<system name="sicstus">
+<ctr name="cumulatives"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="decreasing">
+<system name="choco">
+<ctr name="increasingNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="decreasing"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#decreasing"/>
+</system>
+</constraint>
+<constraint name="diffn">
+<system name="choco">
+<ctr name="geost"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="nooverlap"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntGeoPacking.html"/>
+</system>
+<system name="jacop">
+<ctr name="diff2"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Diff2.html"/>
+</system>
+<system name="jacop">
+<ctr name="diff"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Diff.html"/>
+</system>
+<system name="jacop">
+<ctr name="disjoint"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Disjoint.html"/>
+</system>
+<system name="jacop">
+<ctr name="disjointconditional"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/DisjointConditional.html"/>
+</system>
+<system name="minizinc">
+<ctr name="diffn"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#diffn"/>
+</system>
+</constraint>
+<constraint name="disjoint_tasks">
+<system name="choco">
+<ctr name="disjoint"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="disjunctive">
+<system name="choco">
+<ctr name="disjunctive"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="unary"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntScheduling.html"/>
+</system>
+</constraint>
+<constraint name="distance">
+<system name="choco">
+<ctr name="distanceEQ"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="jacop">
+<ctr name="distance"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Distance.html"/>
+</system>
+<system name="jacop">
+<ctr name="distance2"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Distance2.html"/>
+</system>
+</constraint>
+<constraint name="domain">
+<system name="choco">
+<ctr name="member"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="dom"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDomain.html"/>
+</system>
+<system name="sicstus">
+<ctr name="domain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="domain_constraint">
+<system name="choco">
+<ctr name="domainChanneling"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="channel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntChannel.html"/>
+</system>
+<system name="sicstus">
+<ctr name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="in_set"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="elem">
+<system name="choco">
+<ctr name="nth"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="element"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntElement.html"/>
+</system>
+<system name="jacop">
+<ctr name="element"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Element.html"/>
+</system>
+<system name="sicstus">
+<ctr name="element"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="element">
+<system name="choco">
+<ctr name="nth"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="element"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntElement.html"/>
+</system>
+<system name="jacop">
+<ctr name="element"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Element.html"/>
+</system>
+<system name="minizinc">
+<ctr name="element"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#element"/>
+</system>
+<system name="sicstus">
+<ctr name="element"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="element_matrix">
+<system name="choco">
+<ctr name="nth"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="element"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelMiniModel.html"/>
+</system>
+</constraint>
+<constraint name="eq">
+<system name="choco">
+<ctr name="eq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<ctr name="xeqy"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XeqY.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="eq_set">
+<system name="choco">
+<ctr name="eq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetRel.html"/>
+</system>
+</constraint>
+<constraint name="equivalent">
+<system name="choco">
+<ctr name="ifOnlyIf"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<ctr name="eqbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/EqBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&lt;=&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="exactly">
+<system name="choco">
+<ctr name="occurence"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="gecode">
+<ctr name="exactly"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelMiniModelIntAlias.html"/>
+</system>
+<system name="jacop">
+<ctr name="count"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Count.html"/>
+</system>
+<system name="minizinc">
+<ctr name="exactly"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#exactly"/>
+</system>
+<system name="sicstus">
+<ctr name="count"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="geost">
+<system name="choco">
+<ctr name="geost"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="jacop">
+<ctr name="geost"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/geost/Geost.html"/>
+</system>
+<system name="sicstus">
+<ctr name="geost"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="geost_time">
+<system name="choco">
+<ctr name="geost"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="jacop">
+<ctr name="geost"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/geost/Geost.html"/>
+</system>
+</constraint>
+<constraint name="geq">
+<system name="choco">
+<ctr name="geq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<ctr name="xgteqy"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XgteqY.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&gt;="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="global_cardinality">
+<system name="choco">
+<ctr name="globalCardinality"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="count"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntCount.html"/>
+</system>
+<system name="jacop">
+<ctr name="gcc"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/GCC.html"/>
+</system>
+<system name="minizinc">
+<ctr name="global_cardinality"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#global_cardinality"/>
+</system>
+<system name="sicstus">
+<ctr name="global_cardinality"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="global_cardinality_low_up">
+<system name="choco">
+<ctr name="globalCardinality"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="minizinc">
+<ctr name="global_cardinality_low_up"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#global_cardinality_low_up"/>
+</system>
+</constraint>
+<constraint name="global_cardinality_with_costs">
+<system name="sicstus">
+<ctr name="global_cardinality"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="gt">
+<system name="choco">
+<ctr name="gt"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<ctr name="xgty"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XgtY.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="imply">
+<system name="choco">
+<ctr name="reifiedLeftImp"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<ctr name="ifthenbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/IfThenBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#=&gt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in">
+<system name="choco">
+<ctr name="member"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetRel.html"/>
+</system>
+<system name="gecode">
+<ctr name="dom"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDomain.html"/>
+</system>
+<system name="jacop">
+<ctr name="in"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/In.html"/>
+</system>
+<system name="minizinc">
+<ctr name="member"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#member"/>
+</system>
+<system name="sicstus">
+<ctr name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="in_set"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_interval">
+<system name="choco">
+<ctr name="member"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="dom"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDomain.html"/>
+</system>
+<system name="jacop">
+<ctr name="in"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/In.html"/>
+</system>
+<system name="sicstus">
+<ctr name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_intervals">
+<system name="gecode">
+<ctr name="dom"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDomain.html"/>
+</system>
+<system name="jacop">
+<ctr name="in"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/In.html"/>
+</system>
+<system name="sicstus">
+<ctr name="in"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Membership-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_relation">
+<system name="choco">
+<ctr name="feasPairAC"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="infeasPairAC"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="relationPairAC"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="feasTupleAC"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="infeasTupleAC"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="choco">
+<ctr name="relationTupleAC"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="extensional"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntExt.html"/>
+</system>
+<system name="jacop">
+<ctr name="extensionalsupportVA"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/ExtensionalSupportVA.html"/>
+</system>
+<system name="jacop">
+<ctr name="extensionalsupportMDD"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/ExtensionalSupportMDD.html"/>
+</system>
+<system name="jacop">
+<ctr name="extensionalsupportSTR"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/ExtensionalSupportSTR.html"/>
+</system>
+<system name="minizinc">
+<ctr name="table"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#table"/>
+</system>
+<system name="sicstus">
+<ctr name="case"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="relation"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="table"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="in_set">
+<system name="choco">
+<ctr name="member"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetRel.html"/>
+</system>
+<system name="gecode">
+<ctr name="dom"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntDomain.html"/>
+</system>
+</constraint>
+<constraint name="increasing">
+<system name="choco">
+<ctr name="increasingNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="increasing"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#increasing"/>
+</system>
+</constraint>
+<constraint name="increasing_nvalue">
+<system name="choco">
+<ctr name="increasingNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="int_value_precede">
+<system name="gecode">
+<ctr name="precede"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntPrecede.html"/>
+</system>
+<system name="minizinc">
+<ctr name="value_precede"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#value_precede"/>
+</system>
+</constraint>
+<constraint name="int_value_precede_chain">
+<system name="gecode">
+<ctr name="precede"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntPrecede.html"/>
+</system>
+<system name="minizinc">
+<ctr name="value_precede_chain"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#value_precede_chain"/>
+</system>
+</constraint>
+<constraint name="inverse">
+<system name="choco">
+<ctr name="inverseChanneling"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="channel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntChannel.html"/>
+</system>
+<system name="minizinc">
+<ctr name="inverse"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#inverse"/>
+</system>
+<system name="sicstus">
+<ctr name="assignment"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="inverse_offset">
+<system name="choco">
+<ctr name="inverseChanneling"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="channel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntChannel.html"/>
+</system>
+</constraint>
+<constraint name="inverse_set">
+<system name="choco">
+<ctr name="inverseSet"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="minizinc">
+<ctr name="inverse_set"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#inverse_set"/>
+</system>
+</constraint>
+<constraint name="leq">
+<system name="choco">
+<ctr name="leq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<ctr name="xlteqy"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XlteqY.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#=&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex2">
+<system name="minizinc">
+<ctr name="lex2"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#lex2"/>
+</system>
+</constraint>
+<constraint name="lex_between">
+<system name="choco">
+<ctr name="lexChainEq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_chain_less">
+<system name="choco">
+<ctr name="lexChain"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_chain_lesseq">
+<system name="choco">
+<ctr name="lexChainEq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_greater">
+<system name="choco">
+<ctr name="lex"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="lex_greater"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#lex_greater"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_greatereq">
+<system name="choco">
+<ctr name="lexEq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="lex_greatereq"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#lex_greatereq"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_less">
+<system name="choco">
+<ctr name="lex"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="lex_less"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#lex_less"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_lesseq">
+<system name="choco">
+<ctr name="lexEq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="minizinc">
+<ctr name="lex_lesseq"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#lex_lesseq"/>
+</system>
+<system name="sicstus">
+<ctr name="lex_chain"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="lex_lesseq_allperm">
+<system name="choco">
+<ctr name="leximin"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="link_set_to_booleans">
+<system name="gecode">
+<ctr name="channel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetConnect.html"/>
+</system>
+<system name="minizinc">
+<ctr name="link_set_to_booleans"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#link_set_to_booleans"/>
+</system>
+</constraint>
+<constraint name="lt">
+<system name="choco">
+<ctr name="lt"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="jacop">
+<ctr name="xlty"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XltY.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#&lt;"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="maximum">
+<system name="choco">
+<ctr name="max"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="max"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntArith.html"/>
+</system>
+<system name="jacop">
+<ctr name="max"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Max.html"/>
+</system>
+<system name="minizinc">
+<ctr name="maximum"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#maximum"/>
+</system>
+<system name="sicstus">
+<ctr name="maximum"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="minimum">
+<system name="choco">
+<ctr name="min"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="min"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntArith.html"/>
+</system>
+<system name="jacop">
+<ctr name="min"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/Min.html"/>
+</system>
+<system name="minizinc">
+<ctr name="minimum"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#minimum"/>
+</system>
+<system name="sicstus">
+<ctr name="minimum"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="minimum_weight_alldifferent">
+<system name="sicstus">
+<ctr name="all_different"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+<system name="sicstus">
+<ctr name="all_distinct"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="nand">
+<system name="choco">
+<ctr name="clause"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="clause"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#/\"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="neq">
+<system name="choco">
+<ctr name="neq"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#\="
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="nor">
+<system name="choco">
+<ctr name="reifiedXnor"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="clause"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#\/"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="not_all_equal">
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="not_in">
+<system name="choco">
+<ctr name="notMember"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetRel.html"/>
+</system>
+</constraint>
+<constraint name="nvalue">
+<system name="gecode">
+<ctr name="nvalues"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntNValues.html"/>
+</system>
+<system name="minizinc">
+<ctr name="nvalue"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#nvalue"/>
+</system>
+<system name="sicstus">
+<ctr name="nvalue"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="nvalues">
+<system name="gecode">
+<ctr name="nvalues"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntNValues.html"/>
+</system>
+</constraint>
+<constraint name="or">
+<system name="choco">
+<ctr name="reifiedOr"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<ctr name="orbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/OrBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#\/"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="power">
+<system name="jacop">
+<ctr name="xexpyeqz"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XexpYeqZ.html"/>
+</system>
+</constraint>
+<constraint name="proper_forest">
+<system name="choco">
+<ctr name="tree"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="roots">
+<system name="gecode">
+<ctr name="roots"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelMiniModelSetAlias.html"/>
+</system>
+<system name="minizinc">
+<ctr name="roots"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#roots"/>
+</system>
+</constraint>
+<constraint name="scalar_product">
+<system name="choco">
+<ctr name="equation"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="linear"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntLI.html"/>
+</system>
+<system name="jacop">
+<ctr name="sumweight"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/SumWeight.html"/>
+</system>
+<system name="sicstus">
+<ctr name="scalar_product"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="set_value_precede">
+<system name="gecode">
+<ctr name="precede"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetPrecede.html"/>
+</system>
+</constraint>
+<constraint name="sliding_sum">
+<system name="minizinc">
+<ctr name="sliding_sum"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#sliding_sum"/>
+</system>
+</constraint>
+<constraint name="sort">
+<system name="choco">
+<ctr name="sorting"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="sorted"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntSorted.html"/>
+</system>
+<system name="minizinc">
+<ctr name="sort"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#sort"/>
+</system>
+<system name="sicstus">
+<ctr name="sorting"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="sort_permutation">
+<system name="gecode">
+<ctr name="sorted"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntSorted.html"/>
+</system>
+<system name="sicstus">
+<ctr name="sorting"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Combinatorial-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="stretch_path">
+<system name="choco">
+<ctr name="stretchPath"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="jacop">
+<ctr name="stretch"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/geost/Stretch.html"/>
+</system>
+</constraint>
+<constraint name="strict_lex2">
+<system name="minizinc">
+<ctr name="strict_lex2"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#strict_lex2"/>
+</system>
+</constraint>
+<constraint name="strictly_decreasing">
+<system name="choco">
+<ctr name="increasingNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="strictly_increasing">
+<system name="choco">
+<ctr name="increasingNValue"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelInt.html"/>
+</system>
+</constraint>
+<constraint name="sum">
+<system name="minizinc">
+<ctr name="sum_pred"
+url="http://www.g12.cs.mu.oz.au/minizinc/downloads/doc-1.4/mzn-globals.html#sum_pred"/>
+</system>
+</constraint>
+<constraint name="sum_ctr">
+<system name="choco">
+<ctr name="equation"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="linear"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntLI.html"/>
+</system>
+<system name="sicstus">
+<ctr name="scalar_product"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Arithmetic-Constraints.html"/>
+</system>
+</constraint>
+<constraint name="sum_set">
+<system name="gecode">
+<ctr name="weights"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelSetConnect.html"/>
+</system>
+</constraint>
+<constraint name="tree">
+<system name="choco">
+<ctr name="tree"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+</constraint>
+<constraint name="xor">
+<system name="choco">
+<ctr name="reifiedXor"
+url="http://www.emn.fr/z-info/choco-solver/tex/documentation/choco-doc.pdf"/>
+</system>
+<system name="gecode">
+<ctr name="rel"
+url="http://www.gecode.org/doc/3.7.0/reference/group__TaskModelIntRelBool.html"/>
+</system>
+<system name="jacop">
+<ctr name="xorbool"
+url="http://jacopapi.osolpro.com/JaCoP/constraints/XorBool.html"/>
+</system>
+<system name="sicstus">
+<ctr name="#\"
+url="http://www.sics.se/sicstus/docs/latest4/html/sicstus.html/Propositional-Constraints.html"/>
+</system>
+</constraint>
+</catalog>

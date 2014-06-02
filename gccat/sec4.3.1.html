@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">The electronic version of the catalogue</a><ul><li>4.4.1. <a href="sec4.4.1.html">Prolog facts describing a constraint</a></li><li>4.4.2. <a href="sec4.4.2.html">XML schema associated with a global constraint</a><ul><li>4.4.2.1. <a href="sec4.4.2.1.html">Related work</a></li><li>4.4.2.2. <a href="sec4.4.2.2.html">Key features</a></li><li>4.4.2.3. <a href="sec4.4.2.3.html">Structure of schema</a></li><li>4.4.2.4. <a href="sec4.4.2.4.html">Generating schema from the catalogue</a></li><li>4.4.2.5. <a href="sec4.4.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.3.2.html">4.3.2. Format of an invariant &gt;&gt;</a></div><div id="main"><h3>4.3.1. Graph classes</h3><p>By definition, a graph invariant has to hold for any digraph.
+For instance, we have the graph invariant <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐀𝐑𝐂</mi><mo>≤</mo><msup><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>2</mn> </msup></mrow></math>,
+which relates the number of arcs and the number of vertices of any digraph. This invariant is
+sharp since the equality is reached for a clique. However, by considering the
+structure of a digraph, we can get sharper invariants. For instance, if our
+digraph is a subset of an elementary path (e.g., we use the <a href="sec2.2.2.3.html#uid853"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑃𝐴𝑇𝐻</mi></math></a> arc generator
+depicted by Figure <a href="sec2.2.2.3.html#uid893">2.2.4</a>) we have that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐀𝐑𝐂</mi><mo>≤</mo><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi><mo>-</mo><mn>1</mn></mrow></math>,
+which is a tighter bound of the maximum number of arcs since <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi><mo>-</mo><mn>1</mn><mo>&lt;</mo><msup><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>2</mn> </msup></mrow></math>.
+For this reason, we consider recurring graph classes that show up for
+different global constraints of the catalogue.
+Beside the graph classes that were introduced in Section <a href="sec2.2.2.4.html#uid1039">2.2.2.4.3</a>
+we also have the following classes relating several graph constraints:</p><ul>
+<li id="uid8870"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚙𝚊𝚛𝚝𝚒𝚝𝚒𝚘𝚗</mi></math>: constraint defined by two graph constraints having the
+same initial graph, where each arc of the initial graph belongs to one of the
+final graph (but not to both).</p>
+</li>
+<li id="uid8871"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚙𝚊𝚛𝚝𝚒𝚝𝚒𝚘𝚗</mi></math>: constraint defined by two graph constraints having the
+same initial graph, where each vertex of the initial graph belongs to one of
+the final graph (but not to both).</p>
+</li></ul><p>In addition, we also consider graph constraints such that their final graphs is a subset of the
+graph generated by the arc generators:</p><ul>
+<li id="uid8872"><p><span class="small"><a href="sec2.2.2.3.html#uid826"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐶𝐻𝐴𝐼𝑁</mi></math></a>,</span></p>
+</li>
+<li id="uid8873"><p><span class="small"><a href="sec2.2.2.3.html#uid832"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐶𝐼𝑅𝐶𝑈𝐼𝑇</mi></math></a>,</span></p>
+</li>
+<li id="uid8874"><p><span class="small"><a href="sec2.2.2.3.html#uid837"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐶𝐿𝐼𝑄𝑈𝐸</mi></math></a>,</span></p>
+</li>
+<li id="uid8875"><p><span class="small"><a href="sec2.2.2.3.html#uid840"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐶𝐿𝐼𝑄𝑈𝐸</mi><mo>(</mo><mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi><mo>)</mo></mrow></math></a></span></p>
+</li>
+<li id="uid8876"><p><span class="small"><a href="sec2.2.2.3.html#uid847"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐺𝑅𝐼𝐷</mi></math></a>,</span></p>
+</li>
+<li id="uid8877"><p><span class="small"><a href="sec2.2.2.3.html#uid850"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐿𝑂𝑂𝑃</mi></math></a>,</span></p>
+</li>
+<li id="uid8878"><p><span class="small"><a href="sec2.2.2.3.html#uid853"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑃𝐴𝑇𝐻</mi></math></a>,</span></p>
+</li>
+<li id="uid8879"><p><span class="small"><a href="sec2.2.2.3.html#uid863"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑃𝑅𝑂𝐷𝑈𝐶𝑇</mi></math></a>,</span></p>
+</li>
+<li id="uid8880"><p><span class="small"><a href="sec2.2.2.3.html#uid866"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑃𝑅𝑂𝐷𝑈𝐶𝑇</mi></math></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid8881"><p><span class="small"><a href="sec2.2.2.3.html#uid873"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝑆𝑌𝑀𝑀𝐸𝑇𝑅𝐼𝐶</mi><mo>_</mo><mi>𝑃𝑅𝑂𝐷𝑈𝐶𝑇</mi></mrow></math></a>,</span></p>
+</li>
+<li id="uid8882"><p><span class="small"><a href="sec2.2.2.3.html#uid876"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝑆𝑌𝑀𝑀𝐸𝑇𝑅𝐼𝐶</mi><mo>_</mo><mi>𝑃𝑅𝑂𝐷𝑈𝐶𝑇</mi></mrow></math></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi><mo>)</mo></mrow></math>,</span></p>
+</li></ul><p>where <span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi></math></span> is one of the following
+comparison operators <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≤</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≥</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&gt;</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≠</mo></math>.</p></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

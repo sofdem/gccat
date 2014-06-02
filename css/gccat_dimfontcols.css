@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Dosis:500,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+@import url(webfonts/stylesheet.css);
+ 
+/* corps --------------------------------- */
+html, body, div, p, ul, li, h1, h2, h3, h4, h5, dl, dt, dd, td, tr { margin:0; padding:0; }
+body { width:100%; text-align: center; }
+
+/* main --------------------------------- */
+
+#wrap {
+	clear:both;
+	float:left;
+	position:relative;
+	overflows:hidden;
+	width:100%;
+}
+
+#mainbody {
+	margin-left: -270px;
+	float:left;
+	position:relative;
+	right:100%;	
+	width:200%;
+}
+
+#contentwrap {
+	float:left; 
+	position: relative;
+	left:50%;
+	width:50%;
+}
+
+#content {
+	margin: 0 0 0 270px;
+	overflow:hidden;
+}
+
+#main { 
+	padding-bottom: 150px;
+	text-align: left;
+}
+
+#toc {
+  padding: 50px 20px 100px 20px;
+  text-align: center;
+}
+
+/* aux --------------------------------- */
+
+#header { 
+	clear:both;
+	float:left;
+	width:100%;
+	text-align: center; 
+}
+
+#nav { 
+  margin:0; padding: 10px 0;
+  text-align: center;
+  clear:both;
+  float:left;
+  width:100%;
+}
+
+#menu { 
+	float: right;
+	position:relative;
+	left:268px;
+	width:265px;
+	text-align: left;
+}
+
+#footer {
+  clear: both;
+  float:left;
+  width:100%;
+}
+
+/* colors --------------------------------- */
+
+body { background:#eeeeee; color:#333333; }
+#wrap, #nav, #footer {	background: #333333; color: #cccccc; }
+#contentwrap { background:#ffffff; color: #000000; }
+#toc { background: #999999; }
+
+dl.ctrdesc { background: #ffffff; }
+dl.ctrgraph { background: #cccccc; }
+dl.ctrauto { background: #eeeeee; }
+dd.purpose { background: #cccccc; }
+.indalpha ul { background-color:#ffffff; }
+.indalpha li:hover { border: 2pt solid #333333; }
+span.large { background: #eeeeee; }
+div.formula, div.formulanumbered, div#include, #main ul.legend li ul { background: #999999; }
+div.fbox, div.minipage { background: #dddddd; }
+div.theorem { border-color: #666666; }
+span.error { background: #660000; }
+
+a, #header h1, div.entry h2 { color:#006699; }
+#nav a, #menu a, #footer a { color:#0099CC; }
+a:hover, #nav a:hover, #menu a:hover, #footer a:hover   { color:#00CCCC; }
+#download a:hover, #navbar a:hover { background: #333333; }
+
+
+/* fonts --------------------------------- */
+body {  font:12pt/1.2 "Lato", "Helvetica Neue", "Verdana", Helvetica, Arial, sans-serif; font-weight: 300; }
+h1, h2, h3, h4, #nav, #menu, dt, #toc { font: 12pt/1.2 'Dosis', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+#download, #navbar { font: 12pt/1.2 'Yanone Kaffeesatz', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+math{ font-family: TeXGyrePagella,"URW Palladio L","STIXGeneral","FreeSerif","Nimbus Roman No9 L","Cambria Math","Lucida Sans Unicode",monospace;}
+span.monospace { font-family: "Monaco", monospace; }
+tt { font: 90% "Monaco", monospace; }
+span.script { font-family: "Lucida Handwriting", "Brush Script MT", cursive; }
+span.sansserif { font-family: sans-serif; }
+span.serif { font-family: serif; }
+

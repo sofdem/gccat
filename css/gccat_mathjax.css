@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Dosis:500,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+@import url(webfonts/stylesheet.css);
+@import url(gccat_dimfontcols.css);
+ 
+
+/* corps --------------------------------- */
+#body { text-align: center; }
+#wrap { text-align: justify; }
+#menu { text-align: left; font-size: 90%; line-height: 1.5em; }
+#content { text-align: right; }
+#main, #index { text-align: left; }
+#toc { text-align: center; line-height: 1.5em; }
+
+/* header, nav, footer --------------------------------- */
+#nav { text-align: center; line-height: 2.5em; }
+#nav ul { padding: 0 200px; list-style:none; }
+#nav li { padding:5px .5em; display:inline; font-size:130%; white-space: nowrap; }
+#header { text-align: center; }
+#header h1 {  padding: 50px; font-weight: bold; font-size: 2.5em; letter-spacing:-.05em; }
+#footer p { margin: 10px 10px 70px; text-align:left; font-size:70%; font-style:italic; }
+
+/* menu --------------------------------- */
+#menu h1 { padding: 0 0 20px 3px; font-size:140%; }
+#menu h2, #menu h3 { padding: 0 0 20px 3px; }
+#menu ul { padding:10px 0; list-style: none; }
+#menu li {padding: 0 0 0 5px; font-size: 80%; }
+#menu li a {padding: 0 0 0 5px; font-size: 140%; }
+#menu ul li ul { padding:5px 0 0 10px; }
+
+/* pre-content  --------------------------------- */
+#navbar { display:inline; text-align: left; padding: .9em 0; }
+#download { display:inline; text-align: right; padding:.9em 0; }
+#download ul { display:inline; list-style:none; }
+#download li { display:inline; white-space: nowrap; }
+#download a, #navbar a { padding: 1em; }
+#download a { cursor: help; }
+
+/* content --------------------------------- */
+#main h1, #mainbody h1 {
+  font-size:3em;
+  font-weight:bold;
+  padding: 20px 5px;
+}
+#main h2, h3 {
+  font-size: 2em;
+  font-weight:bold;
+  padding: 15px 5px;
+}
+#main h4 {
+  margin:20px 0 0 10px;
+  font-size:1.2em;
+  font-weight:bold;
+}
+#main h5 {
+  margin:10px 0 0 10px;
+  font-size:1em;
+  font-weight:bold;
+}
+#main p { padding: 0 10px 15px 20px; text-align: justify; }
+#main ul, #main dl { padding: 10px 10px 20px 40px; }
+#main dl.ctrdesc { padding: 10px 0 20px 0; }
+#main dl.ctrdesc p { padding: 0 10px 10px 5px; }
+#main dl.ctrdesc ul { padding: 10px 10px 20px 25px; }
+#main dl.ctrdesc { padding: 20px 0 20px 10px; }
+#main li>p { padding: 0; }
+#main dt { float: left; padding: 10px 0; font-weight:bold; clear:left; }
+#main dd { margin:0 0 0 9em; padding: 10px 0; }
+#main p.code { margin:0 20px; }
+#main ul.air li { margin-bottom:5px; }
+#main ul.legend { margin:20px 0px; }
+#main ul.legend li { margin:10px 0px; }
+#main ul.legend li ul { 
+  font-size: 110%;
+  margin:2px 5px 5px 5px; padding:5px;
+  list-style:none;
+  width: 80%;
+  border: 1px solid;
+}
+#main ul.legend li ul li {
+  display:inline;
+  margin-right:1em;
+  white-space: nowrap; 
+}
+#main ul.legend li ul li p {
+  font-size: 90%;
+  display:inline;
+}
+
+/* text --------------------------------- */
+a, a:hover { text-decoration: none; }
+a.cite { font-size: 95%; }
+b { font-weight: bold; }
+span.large { font-size: 110%; }
+span.small { font-size: 98%; }
+span.underline { border-bottom: 1px solid; }
+span.sc { font-variant: small-caps; }
+span.bold { font-weight: bolder; }
+span.error { font-weight: bold; }
+#main span.small ol { font-size: 100%; line-height: 1.2; text-align: left; }
+#main span.small ol li { font-size: 100%; }
+span.note { font-size: 90%; font-style: italic; }
+span.note:before { content: " ["; }
+span.note:after { content: "] "; }
+p.center { text-align: center; }
+div.minipage { margin: 5px 0 10px 0; padding: 10px; }
+
+/* toc --------------------------------- */
+#toc ul { padding:0 0 5px 20px; text-align: left; list-style: none; }
+.alpha { padding: 20px 10px; clear: left; text-align:left; }
+.alpha ul { padding:0 30px; list-style:none; }
+.alpha li { display: block; width: 20em; float: left; }
+.indalpha { margin:40px; font-size: 120%; }
+#toc .indalpha ul { list-style:none; display: inline; padding: 5px 20px; }
+#toc .indalpha li { display: inline; padding:5px 10px; }
+
+/* publis --------------------------------- */
+span.authors { font-weight:bold; margin-right:2px; }
+span.journal { margin-right:2px; }
+span.title, span.livre, span.ref { display: block; font-style:italic; }
+span.title:after, span.pages:after, span.volume:after, span.publisher:after { content:", "; }
+span.year:after { content:"."; }
+span.number:after { content:":"; }
+dl#biblio { padding: 20px 100px 50px 10px; }
+dl#biblio dt { padding: 0 20px 0 5px; float:left; }
+dl#biblio dd { margin: 0 74px; padding: 0 0 10px 0; }
+#biblio .ghost { visibility:hidden; display:none; }
+#index dt { float:left; padding: 5px 20px 5px 30px; font-weight:bold; white-space: nowrap;  clear:left; }
+#index dd { padding: 5px 0; }
+#index dt.indexdef { font-style: bold; }
+#index dt.indexsyn { font-style: italic; }
+#index dl.idxlev2 { clear:both; margin: 5px 0 1em 100px; border-left: 1px solid; }
+#index dl.idxlev2 dt { float: none; display: inline; }
+#index dl.idxlev2 dd { display: inline; }
+
+
+/* maths */
+div.theorem { margin: 1em 5px; border-left: 2px solid; }
+div.theorem>p>b { font-size: 110%; }
+div.theorem>p>b:after { content: ". "; }
+div.formula { margin: 0px 10px 15px 20px; text-align: center; padding: 5px; }
+div.fbox { padding: 7px; border: 2px solid; text-align: center; }
+
+/* figure */
+div.figure { text-align: center; width: 100%; }
+div.figure table { text-align: center; width: 100%; }
+div.figure>img { max-width: 100%; }
+/*div.figure td>img {width: 100%; }*/
+
+
+/* table */
+div.table { text-align: center; width: 100%; }
+div.table>table { text-align: center; width: 100%; }
+div.tablesmall { text-align: center; width: 100%; }
+div.tablesmall td { font-size: 80%; }
+#main table { border-collapse: collapse; font-size: 100%; }
+table>caption { font-size: 90%; }
+#main table td { padding: 0 5px; }
+#main table tr { padding: 0; }
+td.border { border-left: 1px solid; border-right: 1px solid; }
+tr.border td { border-bottom: 1px solid; border-top: 1px solid; }
+

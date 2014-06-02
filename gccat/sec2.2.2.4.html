@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec2.html">2. Describing Global Constraints</a></h1><ul><li>2.1. <a href="sec2.1.html">Describing the arguments of a global constraint</a><ul><li>2.1.1. <a href="sec2.1.1.html">Basic data types</a></li><li>2.1.2. <a href="sec2.1.2.html">Compound data types</a></li><li>2.1.3. <a href="sec2.1.3.html">Restrictions</a></li><li>2.1.4. <a href="sec2.1.4.html">Declaring a global constraint</a></li><li>2.1.5. <a href="sec2.1.5.html">Describing symmetries between arguments</a></li></ul></li><li>2.2. <a href="sec2.2.html">Describing global constraints in terms of graph properties</a><ul><li>2.2.1. <a href="sec2.2.1.html">Basic ideas and illustrative example</a></li><li>2.2.2. <a href="sec2.2.2.html">Ingredients used for describing global constraints</a><ul><li>2.2.2.1. <a href="sec2.2.2.1.html"><span id="uid646"/>Collection generators</a></li><li>2.2.2.2. <a href="sec2.2.2.2.html">Elementary constraints attached to the arcs</a></li><li>2.2.2.3. <a href="sec2.2.2.3.html">Graph generators</a></li><li>2.2.2.4. <a href="sec2.2.2.4.html">Graph properties</a></li></ul></li><li>2.2.3. <a href="sec2.2.3.html">Graph constraint</a><ul><li>2.2.3.1. <a href="sec2.2.3.1.html">Simple graph constraint</a></li><li>2.2.3.2. <a href="sec2.2.3.2.html">Dynamic graph constraint</a></li></ul></li></ul></li><li>2.3. <a href="sec2.3.html">Describing global constraints in terms of automata</a><ul><li>2.3.1. <a href="sec2.3.1.html">Selecting an appropriate description</a></li><li>2.3.2. <a href="sec2.3.2.html">Defining an automaton</a></li></ul></li><li>2.4. <a href="sec2.4.html">Reformulating global constraints as a conjunction</a></li><li>2.5. <a href="sec2.5.html">Semantic links between global constraints</a><ul><li>2.5.1. <a href="sec2.5.1.html">Assignment dimension added</a></li><li>2.5.2. <a href="sec2.5.2.html">Assignment dimension removed</a></li><li>2.5.3. <a href="sec2.5.3.html">Attached to cost variant</a></li><li>2.5.4. <a href="sec2.5.4.html">Common keyword</a></li><li>2.5.5. <a href="sec2.5.5.html">Comparison swapped</a></li><li>2.5.6. <a href="sec2.5.6.html">Cost variant</a></li><li>2.5.7. <a href="sec2.5.7.html">Generalisation</a></li><li>2.5.8. <a href="sec2.5.8.html">Hard version</a></li><li>2.5.9. <a href="sec2.5.9.html">Implied by</a></li><li>2.5.10. <a href="sec2.5.10.html">Implies</a></li><li>2.5.11. <a href="sec2.5.11.html">Implies if swap arguments</a></li><li>2.5.12. <a href="sec2.5.12.html">Negation</a></li><li>2.5.13. <a href="sec2.5.13.html">Part of system of constraints</a></li><li>2.5.14. <a href="sec2.5.14.html">Related</a></li><li>2.5.15. <a href="sec2.5.15.html">Related to a common problem</a></li><li>2.5.16. <a href="sec2.5.16.html">Root concept</a></li><li>2.5.17. <a href="sec2.5.17.html">Shift of concept</a></li><li>2.5.18. <a href="sec2.5.18.html">Soft variant</a></li><li>2.5.19. <a href="sec2.5.19.html">Specialisation</a></li><li>2.5.20. <a href="sec2.5.20.html">System of constraints</a></li><li>2.5.21. <a href="sec2.5.21.html">Used in graph description</a></li><li>2.5.22. <a href="sec2.5.22.html">Used in reformulation</a></li><li>2.5.23. <a href="sec2.5.23.html">Uses in its reformulation</a></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec2.2.2.3.html">&lt;&lt; 2.2.2.3. Graph generators</a></div><div id="main"><h3>2.2.2.4. Graph properties</h3><p>We represent a global constraint as the search of a subgraph
+(i.e., a final graph) of a known initial graph, so that this
+final graph satisfies a given set of graph properties and
+eventually belongs to a specific graph class.
+Most graph properties have the form
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙿𝚊𝚛𝚊𝚖𝚎𝚝𝚎𝚛</mi> <mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi> <mi>𝙴𝚡𝚙</mi></mrow></math>
+or the form
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙿𝚊𝚛𝚊𝚖𝚎𝚝𝚎𝚛</mi> <mo>∉</mo> <mo>[</mo><msub><mi>𝙴𝚡𝚙</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>𝙴𝚡𝚙</mi> <mn>2</mn> </msub><mo>]</mo></mrow></math>,
+where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙿𝚊𝚛𝚊𝚖𝚎𝚝𝚎𝚛</mi></math> is a graph
+parameter<span id="uid895"/> <a class="cite" href="biblio.html#bid33">[Berge70]</a>,<span id="uid896"/> <a class="cite" href="biblio.html#bid50">[GondranMinoux84]</a>,
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚘𝚖𝚙𝚊𝚛𝚒𝚜𝚘𝚗</mi></math> is one of the comparison operators
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≥</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&gt;</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≤</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≠</mo></math>,
+and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙴𝚡𝚙</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝙴𝚡𝚙</mi> <mn>1</mn> </msub></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝙴𝚡𝚙</mi> <mn>2</mn> </msub></math>
+are expressions that can be evaluated to an integer.
+Before defining each graph parameter,
+let's first introduce some basic vocabulary on graphs.</p><div id="uid897"><h4>Graph terminology and notations</h4>
+<p>A <i>digraph</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>G</mi><mo>=</mo><mo>(</mo><mi>V</mi><mo>(</mo><mi>G</mi><mo>)</mo><mo>,</mo><mi>E</mi><mo>(</mo><mi>G</mi><mo>)</mo><mo>)</mo></mrow></math> is a pair where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math> is a finite set, called the set of <i>vertices</i>,
+and where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math> is a set of ordered pairs of vertices, called the set of <i>arcs</i>.
+The <i>arc</i>, <i>path</i>, <i>circuit</i> and <i>strongly connected component</i>
+of a graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> correspond to oriented concepts,
+while the <i>edge</i>, <i>chain</i>, <i>cycle</i> and <i>connected component</i>
+are non-oriented concepts.
+However, as reported in<span id="uid898"/> <a class="cite" href="biblio.html#bid33">[Berge70]</a> an undirected graph can be
+seen as a digraph where to each edge we associate the corresponding two arcs.
+Parts (A) and (B) of Figure <a href="sec2.2.2.4.html#uid899">2.2.5</a> respectively illustrate
+the terms for undirected graphs and digraphs.</p>
+<div class="figure" id="uid899"><h5><b>Figure 2.2.5. </b>Graph terminology for an undirected graph and a digraph</h5><img alt="ctrs/graph_terminology" src="../ctrs/graph_terminology.png"/></div>
+<ul>
+<li id="uid900"><p>We say that <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>2</mn> </msub></math> is a <i>successor</i> of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>1</mn> </msub></math> if there exists an arc that starts from
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>1</mn> </msub></math> and ends at <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>2</mn> </msub></math>.
+In the same way, we say that <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>2</mn> </msub></math> is a <i>predecessor</i> of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>1</mn> </msub></math> if there exists an arc
+that starts from <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>2</mn> </msub></math> and ends at <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>1</mn> </msub></math>.</p>
+</li>
+<li id="uid901"><p>A vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> that does not have any predecessor is called a <i>source</i>.
+A vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> that does not have any successor is called a <i>sink</i>.</p>
+</li>
+<li id="uid902"><p>A sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>e</mi> <mi>k</mi> </msub><mo>)</mo></mrow></math> of edges of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> such that each edge has a common vertex
+with the previous edge, and the other vertex common to the next edge is called a <i>chain</i>
+of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math>.
+A chain where all vertices are distinct is called an <i>elementary chain</i>.
+Each equivalence class of the relation “<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>j</mi> </msub></math> or there exists a chain between
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>j</mi> </msub></math>” is a <i>connected component</i> of the graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math>.</p>
+</li>
+<li id="uid903"><p>A sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>e</mi> <mi>k</mi> </msub><mo>)</mo></mrow></math> of arcs of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> such that, for each arc <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>1</mn><mo>≤</mo><mi>i</mi><mo>&lt;</mo><mi>k</mi><mo>)</mo></mrow></math>
+the end of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> is equal to the start of the arc <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow> </msub></math>, is called a <i>path</i> of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math>.
+A path where all vertices are distinct is called an <i>elementary path</i>.
+Each equivalence class of the relation “<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>j</mi> </msub></math> or there exists a path between
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>j</mi> </msub></math>” is a <i>strongly connected component</i> of the graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math>.</p>
+</li>
+<li id="uid904"><p>A chain <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>e</mi> <mi>k</mi> </msub><mo>)</mo></mrow></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> is called a <i>cycle</i> if the same edge does not occur
+more than once in the chain and if the two extremities of the chain coincide.
+A cycle <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo><mo>...</mo><mo>,</mo><msub><mi>e</mi> <mi>k</mi> </msub><mo>)</mo></mrow></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> is called a <i>circuit</i> if for each edge
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>1</mn><mo>≤</mo><mi>i</mi><mo>&lt;</mo><mi>k</mi><mo>)</mo></mrow></math>, the end of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>i</mi> </msub></math> is equal to the start of the edge <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow> </msub></math>.</p>
+</li>
+<li id="uid905"><p>Given a graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math>, we define the <i>reduced graph</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> as follows:
+to each strongly connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> corresponds a vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math>;
+to each arc of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> that connects different strongly connected components
+corresponds an arc in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>R</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math> (multiple arcs between the same pair of vertices
+are merged).</p>
+</li>
+<li id="uid906"><p>The <i>rank</i> function associated with the vertices <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math> of a graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math>
+that does not contain any circuit is defined in the following way:</p>
+<ul>
+<li id="uid907"><p>The rank of the vertices that do not have any predecessor (i.e., the sources) is equal to 0,</p>
+</li>
+<li id="uid908"><p>The rank <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math> of a vertex <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> that is not a source is the length of longest path
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>...</mo><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>e</mi> <mi>r</mi> </msub><mrow><mo>)</mo></mrow></mrow></math> such that the start of the arc <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mn>1</mn> </msub></math> is a source and the
+end of arc <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>e</mi> <mi>r</mi> </msub></math> is the vertex <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>.</p>
+</li></ul>
+</li></ul>
+<p>We now present the different notations used in the catalogue:</p>
+<ul>
+<li id="uid909"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><mi>k</mi><mo>]</mo></mrow></math> corresponds to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>k</mi><mo>}</mo></mrow></math> for <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math> any positive integer.</p>
+</li>
+<li id="uid910"><p>Given a set <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>X</mi><mo>|</mo></mrow></math> is the number of its elements.</p>
+</li>
+<li id="uid911"><p>Given two sets <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>X</mi><mo>⊎</mo><mi>Y</mi></mrow></math> denotes the union of the two sets when they are disjoint.</p>
+</li>
+<li id="uid912"><p>Given a digraph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>∈</mo><mi>V</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>d</mi> <mi>G</mi> <mo>+</mo> </msubsup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mo>{</mo><mi>y</mi><mo>:</mo><mi>y</mi><mo>∈</mo><mi>V</mi><mrow><mo>(</mo><mi>G</mi><mo>)</mo></mrow><mo>:</mo><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow><mo>∈</mo><mi>E</mi><mrow><mo>(</mo><mi>G</mi><mo>)</mo></mrow><mo>}</mo></mrow><mo>|</mo></mrow></mrow></math> and
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mi>d</mi> <mi>G</mi> <mo>-</mo> </msubsup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mo>{</mo><mi>y</mi><mo>:</mo><mi>y</mi><mo>∈</mo><mi>V</mi><mrow><mo>(</mo><mi>G</mi><mo>)</mo></mrow><mo>:</mo><mrow><mo>(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo>)</mo></mrow><mo>∈</mo><mi>E</mi><mrow><mo>(</mo><mi>G</mi><mo>)</mo></mrow><mo>}</mo></mrow><mo>|</mo></mrow></mrow></math>.</p>
+</li>
+<li id="uid913"><p>Given a digraph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math> a subset of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math>, the subdigraph of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> induced by
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math> is the digraph <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>G</mi><mo>[</mo><mi>X</mi><mo>]</mo></mrow></math> where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>(</mo><mi>G</mi><mo>[</mo><mi>X</mi><mo>]</mo><mo>)</mo><mo>=</mo><mi>X</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mrow><mo>(</mo><mi>G</mi><mrow><mo>[</mo><mi>X</mi><mo>]</mo></mrow><mo>)</mo></mrow><mo>=</mo><msup><mi>X</mi> <mn>2</mn> </msup><mo>∩</mo><mi>E</mi><mrow><mo>(</mo><mi>G</mi><mo>)</mo></mrow></mrow></math>.
+By aim of simplicity, we denote <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>G</mi><mo>[</mo><mi>V</mi><mo>(</mo><mi>G</mi><mo>)</mo><mo>-</mo><mi>X</mi><mo>]</mo></mrow></math> by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>G</mi><mo>-</mo><mi>X</mi></mrow></math>.
+Moreover, if <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>X</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>}</mo></mrow></math>, we use <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>G</mi><mo>-</mo><mi>x</mi></mrow></math> instead of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>G</mi><mo>-</mo><mo>{</mo><mi>x</mi><mo>}</mo></mrow></math>.</p>
+</li>
+<li id="uid914"><p>Given two digraph <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mn>2</mn> </msub></math> such that <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>∩</mo><mi>V</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>=</mo><mi>∅</mi></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>G</mi> <mn>1</mn> </msub><mo>⊕</mo><msub><mi>G</mi> <mn>2</mn> </msub></mrow></math> denotes
+the graph whose vertices set is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>∪</mo><mi>V</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math> and whose arcs set is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>∪</mo><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow></mrow></math>.</p>
+</li>
+<li id="uid915"><p>Given a graph parameter <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏</mi><mo>∈</mo><mo>{</mo><mi>𝐍𝐂𝐂</mi><mo>,</mo><mi>𝐍𝐒𝐂𝐂</mi><mo>}</mo></mrow></math>,
+a digraph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math> and an integer <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐂𝐇</mi><mo>(</mo><mi>G</mi><mo>,</mo><mi>k</mi><mo>)</mo></mrow></math> is the
+number of connected components (respectively strongly connected components) of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math>
+with cardinal <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math>.</p>
+</li></ul>
+<p>Given a graph parameter, for instance the number of connected components,
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mi>𝙸𝙽𝙸𝚃𝙸𝙰𝙻</mi> </msub></math> will denote the number of connected components of the initial graph
+(i.e., the graph induced by the constraint under consideration),
+<a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a> will denote the number of connected components of the final graph
+(i.e., a subgraph of the initial graph).
+The use of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐂𝐂</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math> will denote the number of connected components of the digraph <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi></math>.</p>
+<p>Given a global constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math>, and a graph parameter <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐏</mi></math>
+used in the description of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mi>𝐏</mi> <mo> ̲</mo></munder></math>
+(respectively <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>𝐏</mi> <mo>¯</mo></mover></math>)
+denotes a lower bound (respectively upper bound) of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐏</mi></math>
+among all possible final graphs compatible with the current status of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math>.</p>
+</div><div id="uid916"><h4>Graph parameters</h4>
+<p>We list in alphabetic order the different <i>graph parameters</i> we consider for a
+final graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>G</mi> <mi>f</mi> </msub><mo>=</mo><mrow><mo>(</mo><mi>V</mi><mrow><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow><mo>,</mo><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow><mo>)</mo></mrow></mrow></math> associated with a global constraint and give an example
+of constraint where they are used:</p>
+<ul>
+<li id="uid917"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐃𝐑𝐆</mi></mrow></math> <span id="uid918"/> 
+: largest distance between sources and sinks in the reduced graph associated with
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> (adjacent vertices are at a distance of 1).</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+We do not provide any example since <a href="sec2.2.2.4.html#uid917"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐃𝐑𝐆</mi></mrow></math></a> is currently not used.
+</span></p></div>
+</li>
+<li id="uid919"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐈𝐃</mi></mrow></math> <span id="uid920"/> 
+: number of predecessors of the vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that has the maximum number of
+predecessors without counting an arc from a vertex to itself.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ccircuit.html#uid12658"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi></math><span id="uid921"/></a> constraint uses the graph property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐈𝐃</mi><mo>=</mo><mn>1</mn></mrow></math>
+in order to force each vertex of the final graph to have at most one predecessor.
+</span></p></div>
+</li>
+<li id="uid922"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math> <span id="uid923"/> 
+: number of vertices of the largest connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Clongest_change.html#uid20767"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚘𝚗𝚐𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚌𝚑𝚊𝚗𝚐𝚎</mi></mrow></math><span id="uid924"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚂𝙸𝚉𝙴</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝙲𝚃𝚁</mi><mo>)</mo></mrow></math>
+constraint uses the graph property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi><mo>=</mo><mi>𝚂𝙸𝚉𝙴</mi></mrow></math> in order to catch in
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝙸𝚉𝙴</mi></math> the maximum number of consecutive variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>
+collection for which constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚃𝚁</mi></math> holds.
+</span></p></div>
+</li>
+<li id="uid925"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math> <span id="uid926"/> 
+: number of vertices of the largest strongly connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ctree.html#uid27089"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚎𝚎</mi></math><span id="uid927"/></a> constraint covers a digraph by a set of trees
+in such a way that each vertex belongs to a distinct tree.
+It uses the graph-property <a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≤</mo></math> 1 in order to avoid to have any circuit
+involving more than one vertex.
+</span></p></div>
+</li>
+<li id="uid928"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐎𝐃</mi></mrow></math> <span id="uid929"/> 
+: number of successors of the vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that has the maximum number of
+successors without counting an arc from a vertex to itself.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ctour.html#uid26938"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘𝚞𝚛</mi></math><span id="uid930"/></a> constraint enforces to cover a graph with a Hamiltonian cycle.
+It uses the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐎𝐃</mi><mo>=</mo><mn>2</mn></mrow></math> to enforce that each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>
+have at most two<span class="note"><span class="small">Since the <a href="Ctour.html#uid26938"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘𝚞𝚛</mi></math><span id="uid932"/></a> constraint uses the <a href="sec2.2.2.3.html#uid840"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐶𝐿𝐼𝑄𝑈𝐸</mi><mo>(</mo><mo>≠</mo><mo>)</mo></mrow></math></a>
+arc generator the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> do not have any loop.</span></span> successors.
+</span></p></div>
+</li>
+<li id="uid933"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐃𝐑𝐆</mi></mrow></math> <span id="uid934"/> 
+: smallest distance between sources and sinks in the reduced graph associated with
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> (adjacent vertices are at a distance of 1).</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+We do not provide any example since <a href="sec2.2.2.4.html#uid933"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐃𝐑𝐆</mi></mrow></math></a> is currently not used by any constraint.
+</span></p></div>
+</li>
+<li id="uid935"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐈𝐃</mi></mrow></math> <span id="uid936"/> 
+: number of predecessors of the vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that has the minimum number
+of predecessors without counting an arc from a vertex to itself.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ctour.html#uid26938"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘𝚞𝚛</mi></math><span id="uid937"/></a> constraint enforces to cover a graph with a Hamiltonian cycle.
+It uses the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐈𝐃</mi><mo>=</mo><mn>2</mn></mrow></math> to enforce that each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>
+have at most two<span class="note"><span class="small">Since the <a href="Ctour.html#uid26938"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘𝚞𝚛</mi></math><span id="uid939"/></a> constraint uses the <a href="sec2.2.2.3.html#uid840"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐶𝐿𝐼𝑄𝑈𝐸</mi><mo>(</mo><mo>≠</mo><mo>)</mo></mrow></math></a>
+arc generator the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> do not have any loop.</span></span> predecessors.
+</span></p></div>
+</li>
+<li id="uid940"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math> <span id="uid941"/> 
+: number of vertices of the smallest connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+Within the <a href="Cgroup.html#uid17691"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚐𝚛𝚘𝚞𝚙</mi></math><span id="uid942"/></a> constraint, each connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>
+corresponds to a maximum sequence of consecutive variables that take their value
+in a given set of values.
+Therefore, the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi><mo>=</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚂𝙸𝚉𝙴</mi></mrow></math>
+enforces that the smallest sequence of such variables consist of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚂𝙸𝚉𝙴</mi></mrow></math> variables.
+</span></p></div>
+</li>
+<li id="uid943"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math> <span id="uid944"/> 
+: number of vertices of the smallest strongly connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ccircuit.html#uid12658"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi></math><span id="uid945"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>N</mi><mi>O</mi><mi>D</mi><mi>E</mi><mi>S</mi><mo>)</mo></mrow></math> constraint enforces covering a digraph
+with one circuit visiting once all its vertices.
+The graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi><mo>=</mo><mo>|</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>|</mo></mrow></math> enforces that the smallest
+strongly connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> contain <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>|</mo></mrow></math> vertices.
+Since <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>|</mo></mrow></math> also corresponds to the number of vertices of the initial
+graph this means that <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> is a strongly connected component involving all the vertices.
+This is clearly a necessary condition<span class="note"><span class="small">Of course, this is not enough,
+and the description of the <a href="Ccircuit.html#uid12658"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi></math><span id="uid947"/></a> constraint asks for some other properties.</span></span>
+for having a circuit visiting once all vertices.
+</span></p></div>
+</li>
+<li id="uid948"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐎𝐃</mi></mrow></math> <span id="uid949"/> 
+: number of successors of the vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that has the minimum number of
+successors without counting an arc from a vertex to itself.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ctour.html#uid26938"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘𝚞𝚛</mi></math><span id="uid950"/></a> constraint enforces to cover a graph with a Hamiltonian cycle.
+It uses the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐎𝐃</mi><mo>=</mo><mn>2</mn></mrow></math> to enforce that each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>
+have at most two<span class="note"><span class="small">Since the <a href="Ctour.html#uid26938"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘𝚞𝚛</mi></math><span id="uid952"/></a> constraint uses the <a href="sec2.2.2.3.html#uid840"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐶𝐿𝐼𝑄𝑈𝐸</mi><mo>(</mo><mo>≠</mo><mo>)</mo></mrow></math></a>
+arc generator the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> do not have any loop.</span></span> successors.
+</span></p></div>
+</li>
+<li id="uid953"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math> <span id="uid954"/> 
+: cardinality of the set <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Cdisjoint.html#uid15507"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚜𝚓𝚘𝚒𝚗𝚝</mi></math><span id="uid955"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn><mo>)</mo></mrow></math> constraint
+enforces that each variable of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>
+take a value that is distinct from all the values assigned to the variables of
+the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>.</span></p>
+<p><span class="small">This is imposed by creating an arc from each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>
+to each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>.
+To each arc corresponds an equality constraint involving the variables associated
+with the extremities of the arc.
+Finally, the graph property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐀𝐑𝐂</mi><mo>=</mo><mn>0</mn></mrow></math> forces <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> to be empty so that
+no value is both assigned to a variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math> as well as
+to a variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>.
+</span></p></div>
+</li>
+<li id="uid956"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐀𝐑𝐂</mi><mo>_</mo><mi>𝐍𝐎</mi><mo>_</mo><mi>𝐋𝐎𝐎𝐏</mi></mrow></math> <span id="uid957"/> 
+: cardinality of the set <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow></math> without considering the arcs
+linking the same vertex (i.e., a loop).</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraint <a href="Calldifferent_same_value.html#uid10569"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi><mo>_</mo><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚞𝚎</mi></mrow></math><span id="uid958"/></a> uses the
+<a href="sec2.2.2.4.html#uid956"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐀𝐑𝐂</mi><mo>_</mo><mi>𝐍𝐎</mi><mo>_</mo><mi>𝐋𝐎𝐎𝐏</mi></mrow></math></a>
+graph-property.
+</span></p></div>
+</li>
+<li id="uid959"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math> <span id="uid960"/> 
+: number of connected components of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ctree.html#uid27089"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚎𝚎</mi></math><span id="uid961"/></a> constraint covers a digraph by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝚃𝚁𝙴𝙴𝚂</mi></math>
+trees in such a way that each vertex belongs to a distinct tree.
+It uses the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐂𝐂</mi><mo>=</mo><mi>𝙽𝚃𝚁𝙴𝙴𝚂</mi></mrow></math> in order to state
+that <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> is made up from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝚃𝚁𝙴𝙴𝚂</mi></math> connected components.
+</span></p></div>
+</li>
+<li id="uid962"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math> <span id="uid963"/> 
+: number of strongly connected components of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraint <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid964"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>
+forces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝚅𝙰𝙻</mi></math> to be equal to the number of distinct values
+assigned to the variables of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>.
+This is enforced by using the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐒𝐂𝐂</mi><mo>=</mo><mi>𝙽𝚅𝙰𝙻</mi></mrow></math>.
+Each strongly connected component of the final graph corresponds to the
+variables that are assigned to the same value.
+</span></p></div>
+</li>
+<li id="uid965"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math> <span id="uid966"/> 
+: number of vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that do not have any successor.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Csame.html#uid24056"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚊𝚖𝚎</mi></math><span id="uid967"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn><mo>)</mo></mrow></math>
+enforces that the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>
+collection correspond to the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>
+collection according to a permutation.</span></p>
+<p><span class="small">We first create an arc from each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>
+to each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>.
+To each arc corresponds an equality constraint involving the variables
+associated with the extremities of the arc.
+We use the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐒𝐈𝐍𝐊</mi><mo>=</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn><mo>|</mo></mrow></math> in
+order to express the fact that each value assigned to a variable of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math> should also be assigned to a variable of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>.
+</span></p></div>
+</li>
+<li id="uid968"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐒𝐈𝐍𝐊</mi><mo>_</mo><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></mrow></math> <span id="uid969"/> 
+: sum over the different connected components of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> of the minimum of the
+number of sinks and the number of sources of a connected component.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Csoft_same_var.html#uid25535"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid970"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙲</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn><mo>)</mo></mrow></math>
+constraint enforces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲</mi></math> to be the minimum number of values to change in the
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math> and the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math> collections of
+variables<span class="note"><span class="small">Both collections have the same number of variables.</span></span>,
+so that the variables of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math> correspond to the
+variables of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math> according to a permutation.</span></p>
+<p><span class="small">A connected component <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒞</mi> <mi>𝑣𝑎𝑙</mi> </msub></math> of the final graph <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> corresponds to all
+variables that are assigned to the same value <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑣𝑎𝑙</mi></math>: the sources and the sinks
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒞</mi> <mi>𝑣𝑎𝑙</mi> </msub></math> respectively correspond to the variables
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math> and to the variables of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>
+that are assigned to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑣𝑎𝑙</mi></math>.
+For a connected component, the minimum of the number of sources and sinks expresses the number of
+variables for which we do not need to make any change. Therefore we use the graph-property
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐒𝐈𝐍𝐊</mi><mo>_</mo><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi><mo>=</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn><mo>|</mo><mo>-</mo><mi>𝙲</mi></mrow></math> for encoding
+the meaning of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚘𝚏𝚝</mi><mo>_</mo><mi>𝚜𝚊𝚖𝚎</mi><mo>_</mo><mi>𝚟𝚊𝚛</mi></mrow></math><span id="uid972"/> constraint.
+</span></p></div>
+</li>
+<li id="uid973"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math> <span id="uid974"/> 
+: number of vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that do not have any predecessor.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Csame.html#uid24056"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚊𝚖𝚎</mi></math><span id="uid975"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn><mo>)</mo></mrow></math>
+enforces that the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>
+collection correspond to the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>
+collection according to a permutation.</span></p>
+<p><span class="small">We first create an arc from each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math>
+to each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>.
+To each arc corresponds an equality constraint involving the variables
+associated with the extremities of the arc.
+We use the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi><mo>=</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn><mo>|</mo></mrow></math> in
+order to express the fact that each value assigned to a variable of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">1</mn></mrow></math> should also be assigned to a variable of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mn mathvariant="monospace">2</mn></mrow></math>.
+</span></p></div>
+</li>
+<li id="uid976"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐓𝐑𝐄𝐄</mi></math> <span id="uid977"/> 
+: number of vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that do not belong to any
+circuit and for which at least one successor belongs to a circuit.
+Such vertices can be interpreted as root nodes of a tree.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ccycle.html#uid14542"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid978"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝙲𝚈𝙲𝙻𝙴</mi><mo>,</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>)</mo></mrow></math>
+enforces that <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝙲𝚈𝙲𝙻𝙴</mi></math> equal the number
+of circuits for covering an initial graph in such a way
+that each vertex belongs to one single circuit.</span></p>
+<p><span class="small">The graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐓𝐑𝐄𝐄</mi><mo>=</mo><mn>0</mn></mrow></math> enforces that all vertices
+of the final graph belong to a circuit.
+</span></p></div>
+</li>
+<li id="uid979"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math> <span id="uid980"/> 
+: cardinality of the set <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ccutset.html#uid14499"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚝𝚜𝚎𝚝</mi></math><span id="uid981"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚂𝙸𝚉𝙴</mi><mo>_</mo><mi>𝙲𝚄𝚃𝚂𝙴𝚃</mi><mo>,</mo><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>)</mo></mrow></math>
+constraint considers a digraph with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> vertices described
+by the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝙾𝙳𝙴𝚂</mi></math> collection.
+It enforces that the subset of kept vertices of cardinality
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>-</mo><mi>𝚂𝙸𝚉𝙴</mi><mo>_</mo><mi>𝙲𝚄𝚃𝚂𝙴𝚃</mi></mrow></math> and their corresponding arcs form
+a graph without a circuit.
+It uses the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi><mo>=</mo><mi>n</mi><mo>-</mo><mi>𝚂𝙸𝚉𝙴</mi><mo>_</mo><mi>𝙲𝚄𝚃𝚂𝙴𝚃</mi></mrow></math>
+for enforcing that the final graph <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> contain the required
+number of vertices.
+</span></p></div>
+</li>
+<li id="uid982"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>_</mo><mi>𝐃𝐑𝐆</mi></mrow></math> <span id="uid983"/> 
+: difference between the largest distance between sources and sinks in
+the reduced graph associated with <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> and the smallest distance between sources and
+sinks in the reduced graph associated with <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Ctree_range.html#uid27151"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚝𝚛𝚎𝚎</mi><mo>_</mo><mi>𝚛𝚊𝚗𝚐𝚎</mi></mrow></math><span id="uid984"/></a> constraint enforces to cover a digraph
+in such a way that each vertex belongs to a distinct tree.
+In addition it forces the difference between the longest and the
+shortest paths of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> to be equal to the variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚁</mi></math>.
+For this purpose it uses the graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>_</mo><mi>𝐃𝐑𝐆</mi><mo>=</mo><mi>𝚁</mi></mrow></math>.
+</span></p></div>
+</li>
+<li id="uid985"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math> <span id="uid986"/> 
+: difference between the number of vertices of the largest connected
+component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> and the number of vertices of the smallest connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+We do not provide any example since <a href="sec2.2.2.4.html#uid985"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a> is currently not used by any constraint.
+</span></p></div>
+</li>
+<li id="uid987"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math> <span id="uid988"/> 
+: difference between the number of vertices of the largest strongly connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> and the number of vertices of the smallest strongly connected component
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Cbalance.html#uid11718"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚋𝚊𝚕𝚊𝚗𝚌𝚎</mi></math><span id="uid989"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙱𝙰𝙻𝙰𝙽𝙲𝙴</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> constraint
+forces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙱𝙰𝙻𝙰𝙽𝙲𝙴</mi></math> to be equal to the difference between the
+number of occurrences of the value that occurs the most and the value that
+occurs the least within the collection of variables <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>.
+Each strongly connected component of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> corresponds to the variables
+that are assigned to the same value.
+The graph property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi><mo>=</mo><mi>𝙱𝙰𝙻𝙰𝙽𝙲𝙴</mi></mrow></math> allows for expressing
+this definition.
+</span></p></div>
+</li>
+<li id="uid990"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐎𝐑𝐃𝐄𝐑</mi><mo>(</mo><mi>𝚛𝚊𝚗𝚔</mi><mo>,</mo><mi>𝚍𝚎𝚏𝚊𝚞𝚕𝚝</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math> <span id="uid991"/></p>
+<ul>
+<li id="uid992"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚛𝚊𝚗𝚔</mi></math> is an integer or an argument of type integer of the global constraint,</p>
+</li>
+<li id="uid993"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚎𝚏𝚊𝚞𝚕𝚝</mi></math> is an integer,</p>
+</li>
+<li id="uid994"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is an attribute corresponding to an integer or to a domain variable
+that occurs in all the collections that were used for generating the vertices of the
+initial graph.</p>
+</li></ul>
+<p>We explain what is the value associated with
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐎𝐑𝐃𝐄𝐑</mi><mo>(</mo><mi>𝚛𝚊𝚗𝚔</mi><mo>,</mo><mi>𝚍𝚎𝚏𝚊𝚞𝚕𝚝</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>.
+Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> denote the vertices of rank <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚛𝚊𝚗𝚔</mi></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math>
+from which we remove any loops.</p>
+<ul>
+<li id="uid995"><p>When <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is not empty, it corresponds to the values of attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math>
+of the items associated with the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math>,</p>
+</li>
+<li id="uid996"><p>Otherwise, when <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is empty, it corresponds to the default value <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚎𝚏𝚊𝚞𝚕𝚝</mi></math>.</p>
+</li></ul>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The <a href="Cminimum.html#uid21326"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid997"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> forces
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙸𝙽</mi></math> to be the minimum value of the collection of domain variables
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>.
+There is an arc from a variable <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚟𝚊𝚛</mi> <mn>1</mn> </msub></math> to a variable <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚟𝚊𝚛</mi> <mn>2</mn> </msub></math>
+if and only if <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝚟𝚊𝚛</mi> <mn>1</mn> </msub><mo>&lt;</mo><msub><mi>𝚟𝚊𝚛</mi> <mn>2</mn> </msub></mrow></math>.
+The graph-property <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐎𝐑𝐃𝐄𝐑</mi><mo>(</mo><mn>0</mn><mo>,</mo><mi>𝙼𝙰𝚇𝙸𝙽𝚃</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo><mo>=</mo><mi>𝙼𝙸𝙽</mi></mrow></math>
+expresses the fact that <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙸𝙽</mi></math> is equal to the value of the source
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> (since <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚊𝚗𝚔</mi><mo>=</mo><mn>0</mn></mrow></math>).
+</span></p></div>
+</li>
+<li id="uid998"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐀𝐓𝐇</mi><mo>_</mo><mi>𝐅𝐑𝐎𝐌</mi><mo>_</mo><mi>𝐓𝐎</mi><mo>(</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>,</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>,</mo><mi>𝚝𝚘</mi><mo>)</mo></mrow></math> <span id="uid999"/></p>
+<ul>
+<li id="uid1000">
+<ul>
+<li id="uid1001"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is an attribute corresponding to an integer that occurs in all the
+collections that were used for generating the vertices of the initial graph,</p>
+</li>
+<li id="uid1002"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚏𝚛𝚘𝚖</mi></math> is an integer or an argument of type integer of the global constraint,</p>
+</li>
+<li id="uid1003"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘</mi></math> is an integer or an argument of type integer of the global constraint.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℱ</mi></math> (respectively <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒯</mi></math>) denote the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> such that
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚏𝚛𝚘𝚖</mi></math> (respectively <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘</mi></math>).
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐀𝐓𝐇</mi><mo>_</mo><mi>𝐅𝐑𝐎𝐌</mi><mo>_</mo><mi>𝐓𝐎</mi><mo>(</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>,</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>,</mo><mi>𝚝𝚘</mi><mo>)</mo></mrow></math> is equal to 1
+if there exists a path between each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℱ</mi></math> and each vertex of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒯</mi></math>, and 0 if there exists no path between a vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℱ</mi></math>
+and a vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒯</mi></math>.</p>
+</li>
+<li id="uid1004">
+<ul>
+<li id="uid1005"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is an attribute corresponding to an integer that occurs in all the
+collections that were used for generating the vertices of the initial graph,</p>
+</li>
+<li id="uid1006"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚏𝚛𝚘𝚖</mi></math> is an attribute corresponding to an integer or to a set of integers
+that occurs in all the collections that were used for generating the vertices of the initial
+graph,</p>
+</li>
+<li id="uid1007"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘</mi></math> is an attribute corresponding to an integer or to a set of integers
+that occurs in all the collections that were used for generating the vertices of the initial
+graph,</p>
+</li></ul>
+<p>For each vertex <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> let:</p>
+<ul>
+<li id="uid1008"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>ℱ</mi> <mi>v</mi> </msub></math> the set of vertices for which the value of the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is equal to
+the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚏𝚛𝚘𝚖</mi></math> attribute (or is included within the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚏𝚛𝚘𝚖</mi></math> attribute
+when it corresponds to a set of integers).</p>
+</li>
+<li id="uid1009"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒯</mi> <mi>v</mi> </msub></math> the set of vertices for which the value of the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is equal to
+the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘</mi></math> attribute (or is included within the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚘</mi></math> attribute
+when it corresponds to a set of integers).</p>
+</li></ul>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐀𝐓𝐇</mi><mo>_</mo><mi>𝐅𝐑𝐎𝐌</mi><mo>_</mo><mi>𝐓𝐎</mi><mo>(</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>,</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>,</mo><mi>𝚝𝚘</mi><mo>)</mo></mrow></math> is equal to</p>
+<ul>
+<li id="uid1010"><p>1 if for each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> there exists a path between each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>ℱ</mi> <mi>v</mi> </msub></math>
+and each vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒯</mi> <mi>v</mi> </msub></math>.</p>
+</li>
+<li id="uid1011"><p>0 if for a vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> there is no path between a vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>ℱ</mi> <mi>v</mi> </msub></math>
+and a vertex of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒯</mi> <mi>v</mi> </msub></math>.</p>
+</li></ul>
+</li></ul>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraints <a href="Clex_lesseq.html#uid20581"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1012"/></a>
+and <a href="Cstable_compatibility.html#uid25871"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚊𝚋𝚕𝚎</mi><mo>_</mo><mi>𝚌𝚘𝚖𝚙𝚊𝚝𝚒𝚋𝚒𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid1013"/></a>
+use the <a href="sec2.2.2.4.html#uid998"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐀𝐓𝐇</mi><mo>_</mo><mi>𝐅𝐑𝐎𝐌</mi><mo>_</mo><mi>𝐓𝐎</mi></mrow></math></a> graph-property.
+</span></p></div>
+</li>
+<li id="uid1014"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐑𝐎𝐃</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math> <span id="uid1015"/></p>
+<ul>
+<li id="uid1016"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math> is a collection that was used for generating the vertices of the
+initial graph,</p>
+</li>
+<li id="uid1017"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is an attribute corresponding to an integer or to a domain variable
+of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math>.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> be the set of vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that were generated from the items
+of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math>.</p>
+<ul>
+<li id="uid1018"><p>If <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐑𝐎𝐃</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>
+corresponds to the product of the values of attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math>
+associated with the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math>,</p>
+</li>
+<li id="uid1019"><p>Otherwise, if <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is empty, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐑𝐎𝐃</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>
+is equal to 1.</p>
+</li></ul>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraint
+<a href="Cproduct_ctr.html#uid23831"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚛𝚘𝚍𝚞𝚌𝚝</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid1020"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝙲𝚃𝚁</mi><mo>,</mo><mi>𝚅𝙰𝚁</mi><mo>)</mo></mrow></math>
+forces the product of the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection
+to be equal, less than or equal, ... to a given domain variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁</mi></math>.</span></p>
+<p><span class="small">To each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> corresponds a vertex of the initial graph.
+Since we want to keep all the vertices of the initial graph we use the <a href="sec2.2.2.3.html#uid869"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑆𝐸𝐿𝐹</mi></math></a>
+arc generator together with the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝚁𝚄𝙴</mi></math> arc constraint.
+Finally, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐑𝐎𝐃</mi><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo> <mi>𝙲𝚃𝚁</mi> <mi>𝚅𝙰𝚁</mi></mrow></math>
+expresses the required condition.
+In this expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚃𝚁</mi></math> respectively
+corresponds to the attribute of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>
+(a domain variable) and to the condition we want to enforce.
+Since the final graph <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> contains all the vertices of the initial graph,
+the expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐏𝐑𝐎𝐃</mi><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo></mrow></math> corresponds
+to the product of the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection.
+</span></p></div>
+</li>
+<li id="uid1021"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math> <span id="uid1022"/></p>
+<ul>
+<li id="uid1023"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math> is a collection that was used for generating the vertices of the
+initial graph,</p>
+</li>
+<li id="uid1024"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is an attribute corresponding to an integer or to a domain variable
+of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math>.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> be the set of vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that were generated from the items
+of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math>.</p>
+<ul>
+<li id="uid1025"><p>If <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>
+corresponds to the difference between the maximum and the minimum values of
+attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> associated with the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math>,</p>
+</li>
+<li id="uid1026"><p>Otherwise, if <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is empty, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>
+is equal to 0.</p>
+</li></ul>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraint
+<a href="Crange_ctr.html#uid23915"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚛𝚊𝚗𝚐𝚎</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid1027"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝙲𝚃𝚁</mi><mo>,</mo><mi>𝚅𝙰𝚁</mi><mo>)</mo></mrow></math>
+forces the difference between the maximum value
+and the minimum value of the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection
+to be equal, less than or equal, ... to a given domain variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁</mi></math>.</span></p>
+<p><span class="small">To each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> corresponds a vertex of the initial graph.
+Since we want to keep all the vertices of the initial graph we use the <a href="sec2.2.2.3.html#uid869"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑆𝐸𝐿𝐹</mi></math></a>
+arc generator together with the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝚁𝚄𝙴</mi></math> arc constraint.
+Finally, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo> <mi>𝙲𝚃𝚁</mi> <mi>𝚅𝙰𝚁</mi></mrow></math>
+expresses the required condition.
+In this expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚃𝚁</mi></math> respectively
+corresponds to the attribute of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>
+(a domain variable) and to the condition we want to enforce.
+Since the final graph <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> contains all the vertices of the initial graph,
+the expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐑𝐀𝐍𝐆𝐄</mi><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo></mrow></math> corresponds
+to the difference between the maximum value and the minimum value of the
+variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection.
+</span></p></div>
+</li>
+<li id="uid1028"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math> <span id="uid1029"/></p>
+<ul>
+<li id="uid1030"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math> is a collection that was used for generating the vertices of the
+initial graph,</p>
+</li>
+<li id="uid1031"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math> is an attribute corresponding to an integer or to a domain variable
+of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math>.</p>
+</li></ul>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> be the set of vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> that were generated from the items
+of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚘𝚕</mi></math>.</p>
+<ul>
+<li id="uid1032"><p>If <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>
+corresponds to the sum of the values of attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚝𝚝𝚛</mi></math>
+associated with the vertices of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math>,</p>
+</li>
+<li id="uid1033"><p>Otherwise, if <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒱</mi></math> is empty, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>(</mo><mi>𝚌𝚘𝚕</mi><mo>,</mo><mi>𝚊𝚝𝚝𝚛</mi><mo>)</mo></mrow></math>
+is equal to 0.</p>
+</li></ul>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraint
+<a href="Csum_ctr.html#uid26464"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid1034"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝙲𝚃𝚁</mi><mo>,</mo><mi>𝚅𝙰𝚁</mi><mo>)</mo></mrow></math>
+forces the sum of the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection
+to be equal, less than or equal, ... to a given domain variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁</mi></math>.</span></p>
+<p><span class="small">To each variable of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> corresponds a vertex of the initial graph.
+Since we want to keep all the vertices of the initial graph we use the <a href="sec2.2.2.3.html#uid869"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑆𝐸𝐿𝐹</mi></math></a>
+arc generator together with the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝚁𝚄𝙴</mi></math> arc constraint.
+Finally, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo> <mi>𝙲𝚃𝚁</mi> <mi>𝚅𝙰𝚁</mi></mrow></math>
+expresses the required condition.
+In this expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝚃𝚁</mi></math> respectively
+correspond to the attribute of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>
+(a domain variable) and to the condition we want to enforce.
+Since the final graph <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mi>f</mi> </msub></math> contains all the vertices of the initial graph,
+the expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mi>𝚟𝚊𝚛</mi><mo>)</mo></mrow></math> corresponds
+to the sum of the variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection.
+</span></p></div>
+</li>
+<li id="uid1035"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>_</mo><mi>𝐖𝐄𝐈𝐆𝐇𝐓</mi><mo>_</mo><mi>𝐀𝐑𝐂</mi><mo>(</mo><mi>𝙴𝚡𝚙𝚛</mi><mo>)</mo></mrow></math> <span id="uid1036"/> 
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙴𝚡𝚙𝚛</mi></math> is an <i>arithmetic expression</i>.
+For each arc <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow></math>, let <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo></mrow></math> denote the value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙴𝚡𝚙𝚛</mi></math>.
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐒𝐔𝐌</mi><mo>_</mo><mi>𝐖𝐄𝐈𝐆𝐇𝐓</mi><mo>_</mo><mi>𝐀𝐑𝐂</mi><mo>(</mo><mi>𝙴𝚡𝚙𝚛</mi><mo>)</mo></mrow></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mo>∑</mo> <mrow><mi>a</mi><mo>∈</mo><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mi>f</mi> </msub><mo>)</mo></mrow> </msub><mi>f</mi><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow></math>.
+The value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙴𝚡𝚙𝚛</mi></math> usually depends on the attributes of the items
+located at the extremities of an arc.</p>
+<div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+The constraint
+<a href="Cglobal_cardinality_with_costs.html#uid17438"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚊𝚛𝚍𝚒𝚗𝚊𝚕𝚒𝚝𝚢</mi><mo>_</mo><mi>𝚠𝚒𝚝𝚑</mi><mo>_</mo><mi>𝚌𝚘𝚜𝚝𝚜</mi></mrow></math><span id="uid1037"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi><mo>,</mo><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi><mo>,</mo><mi>𝙲𝙾𝚂𝚃</mi><mo>)</mo></mrow></math>
+enforces that each value <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>.</mo><mi>𝚟𝚊𝚕</mi></mrow></math> be assigned to exactly
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>.</mo><mi>𝚗𝚘𝚌𝚌𝚞𝚛𝚛𝚎𝚗𝚌𝚎</mi></mrow></math> variables of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>
+collection.
+In addition the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝙾𝚂𝚃</mi></math> of an assignment is equal to the
+sum of the elementary costs associated with the fact that we
+assign the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> variable of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection
+to the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>j</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> value of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi></math> collection. These
+elementary costs are given by the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi></math> collection.</span></p>
+<p><span class="small">The graph-property
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚂𝚄𝙼</mi><mo>_</mo><mi>𝚆𝙴𝙸𝙶𝙷𝚃</mi><mo>_</mo><mi>𝙰𝚁𝙲</mi><mo>(</mo><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi><mo>[</mo><mo>(</mo><mi>𝚟𝚊𝚛𝚒𝚊𝚋𝚕𝚎𝚜</mi><mo>.</mo><mi>𝚔𝚎𝚢</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>*</mo><mi>𝚜𝚒𝚣𝚎</mi><mo>(</mo><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi><mo>)</mo><mo>+</mo><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi><mo>.</mo><mi>𝚔𝚎𝚢</mi><mo>]</mo><mo>.</mo><mi>𝚌</mi><mo>)</mo><mo>=</mo><mi>𝙲𝙾𝚂𝚃</mi></mrow></math>
+expresses the fact that the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝙾𝚂𝚃</mi></math> variable
+is equal to the sum of the elementary costs associated with each
+variable-value assignment. All these elementary costs are recorded
+in the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi></math> collection. More precisely, the cost <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>c</mi> <mrow><mi>i</mi><mi>j</mi></mrow> </msub></math> is
+recorded in the attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌</mi></math> of the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mrow><mo>(</mo><mrow><mo>(</mo><mi>i</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mo>*</mo><mo>|</mo><mi>𝚅𝙰𝙻𝚄𝙴𝚂</mi><mo>)</mo></mrow><mo>|</mo><mo>+</mo><mi>j</mi><mo>)</mo></mrow> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math>
+entry of the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝚃𝚁𝙸𝚇</mi></math> collection.</span></p>
+</div>
+</li></ul>
+<p>A last graph parameter, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐃𝐈𝐒𝐓𝐀𝐍𝐂𝐄</mi></math> <span id="uid1038"/> , is computed on two final graphs <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mn>1</mn> </msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi> <mn>2</mn> </msub></math>
+that have the same set <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi></math> of vertices and the sets <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math> of arcs.
+This graph parameter is the cardinality of the set
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>(</mo><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>-</mo><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>)</mo></mrow><mo>∪</mo><mrow><mo>(</mo><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow><mo>-</mo><mi>E</mi><mrow><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow><mo>)</mo></mrow></mrow></math>.
+This corresponds to the number of arcs that belong to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow></math>
+but not to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math>, plus the number of arcs that are in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mn>2</mn> </msub><mo>)</mo></mrow></math>
+but not in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>E</mi><mo>(</mo><msub><mi>G</mi> <mn>1</mn> </msub><mo>)</mo></mrow></math>.</p>
+</div><div id="uid1039"><h4>Graph class</h4>
+<p>For a given global constraint, a graph class specifies a general property that holds
+on its final digraph. We list the different graph classes and, for each of them, we
+point to some global constraints that fit in that class. Finding all the global
+constraints corresponding to a given graph class can be done by looking into the
+list of keywords (see Section <a href="sec3.7.html#uid2638">3.7</a> on page <a href="sec3.7.html#uid2638">3.7</a>).</p>
+<ul>
+<li id="uid1040"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝙲𝚈𝙲𝙻𝙸𝙲</mi></math> <span id="uid1041"/> 
+: the final graph doesn't have any circuit.</p>
+</li>
+<li id="uid1042"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙱𝙸𝙿𝙰𝚁𝚃𝙸𝚃𝙴</mi></math> <span id="uid1043"/> 
+: the final graph is bipartite.</p>
+</li>
+<li id="uid1044"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝙴𝙲𝚄𝚃𝙸𝚅𝙴</mi><mo>_</mo><mi>𝙻𝙾𝙾𝙿𝚂</mi><mo>_</mo><mi>𝙰𝚁𝙴</mi><mo>_</mo><mi>𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳</mi></mrow></math> <span id="uid1045"/> 
+: denotes the fact that the graph constraint
+of a global constraint uses only the <a href="sec2.2.2.3.html#uid853"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑃𝐴𝑇𝐻</mi></math></a> and the <a href="sec2.2.2.3.html#uid850"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐿𝑂𝑂𝑃</mi></math></a> arc generators and that
+the final graph does not contain consecutive vertices that have a loop and that are
+not connected together by an arc.</p>
+</li>
+<li id="uid1046"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙴𝚀𝚄𝙸𝚅𝙰𝙻𝙴𝙽𝙲𝙴</mi></math> <span id="uid1047"/> 
+: the final graph is reflexive, symmetric and transitive.</p>
+</li>
+<li id="uid1048"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙽𝙾</mi><mo>_</mo><mi>𝙻𝙾𝙾𝙿</mi></mrow></math> <span id="uid1049"/> 
+: the final graph doesn't have any loop.</p>
+</li>
+<li id="uid1050"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙾𝙽𝙴</mi><mo>_</mo><mi>𝚂𝚄𝙲𝙲</mi></mrow></math> <span id="uid1051"/> 
+: the vertices of the initial graph belong to the final graph
+and all vertices of the final graph have exactly one successor.</p>
+</li>
+<li id="uid1052"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚈𝙼𝙼𝙴𝚃𝚁𝙸𝙲</mi></math> <span id="uid1053"/> 
+: the final graph is symmetric.
+A digraph is <i>symmetric</i> if and only if,
+if there is an arc from a vertex <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>u</mi></math> to a vertex <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>,
+there is also an arc from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>u</mi></math>.</p>
+</li></ul>
+</div></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

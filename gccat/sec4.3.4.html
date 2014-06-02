@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">The electronic version of the catalogue</a><ul><li>4.4.1. <a href="sec4.4.1.html">Prolog facts describing a constraint</a></li><li>4.4.2. <a href="sec4.4.2.html">XML schema associated with a global constraint</a><ul><li>4.4.2.1. <a href="sec4.4.2.1.html">Related work</a></li><li>4.4.2.2. <a href="sec4.4.2.2.html">Key features</a></li><li>4.4.2.3. <a href="sec4.4.2.3.html">Structure of schema</a></li><li>4.4.2.4. <a href="sec4.4.2.4.html">Generating schema from the catalogue</a></li><li>4.4.2.5. <a href="sec4.4.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.3.3.html">&lt;&lt; 4.3.3. Using the database of invariants</a></div><div id="main"><h3>4.3.4. The database of graph invariants</h3><p>For each combination of graph parameters we give the number of graph invariants
+we currently have. The items are sorted first in increasing number of graph
+parameters of the invariant, second in alphabetic order on the name of the
+parameters.
+All graph invariants assume a digraph for which each vertex has at least
+one arc.
+For some propositions, a figure depicts the corresponding final graph,
+which minimises or maximises a given graph parameter.
+The propositions of this section and their corresponding proofs use the notations
+introduced in Section <a href="sec2.2.2.4.html#uid897">2.2.2.4.1</a> on page <a href="sec2.2.2.4.html#uid897">2.2.2.4.1</a>.</p><ul>
+<li id="uid8895"><p>Graph invariants involving one graph parameter of a final graph:</p>
+<ul>
+<li id="uid8896"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9000">1</a>),</span></p>
+</li>
+<li id="uid8897"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>: 2   (see Propositions <a href="sec4.3.4.1.html#uid9004">2</a> and <a href="sec4.3.4.1.html#uid9007">3</a>),</span></p>
+</li>
+<li id="uid8898"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9011">4</a>),</span></p>
+</li>
+<li id="uid8899"><p><span class="small"><a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>: 2   (see Propositions <a href="sec4.3.4.1.html#uid9015">5</a> and <a href="sec4.3.4.1.html#uid9018">6</a>),</span></p>
+</li>
+<li id="uid8900"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9022">7</a>),</span></p>
+</li>
+<li id="uid8901"><p><span class="small"><a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.1.html#uid9026">8</a> and
+ <a href="sec4.3.4.1.html#uid9029">9</a>),</span></p>
+</li>
+<li id="uid8902"><p><span class="small"><a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9033">10</a>),</span></p>
+</li>
+<li id="uid8903"><p><span class="small"><a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9037">11</a>),</span></p>
+</li>
+<li id="uid8904"><p><span class="small"><a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9041">12</a>),</span></p>
+</li>
+<li id="uid8905"><p><span class="small"><a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.1.html#uid9045">13</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8906"><p>Graph invariants involving two graph parameters of a final graph:</p>
+<ul>
+<li id="uid8907"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9050">14</a> and <a href="sec4.3.4.2.html#uid9053">15</a>),</span></p>
+</li>
+<li id="uid8908"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9057">16</a> and <a href="sec4.3.4.2.html#uid9060">17</a>),</span></p>
+</li>
+<li id="uid8909"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9064">18</a> and <a href="sec4.3.4.2.html#uid9067">19</a>),</span></p>
+</li>
+<li id="uid8910"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9074">20</a> and <a href="sec4.3.4.2.html#uid9077">21</a>),</span></p>
+</li>
+<li id="uid8911"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9081">22</a> and <a href="sec4.3.4.2.html#uid9084">23</a>),</span></p>
+</li>
+<li id="uid8912"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9088">24</a> and <a href="sec4.3.4.2.html#uid9091">25</a>),</span></p>
+</li>
+<li id="uid8913"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9095">26</a> and <a href="sec4.3.4.2.html#uid9098">27</a>),</span></p>
+</li>
+<li id="uid8914"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9102">28</a> and <a href="sec4.3.4.2.html#uid9105">29</a>),</span></p>
+</li>
+<li id="uid8915"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9111">30</a> and <a href="sec4.3.4.2.html#uid9114">31</a>),</span></p>
+</li>
+<li id="uid8916"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9118">32</a> and <a href="sec4.3.4.2.html#uid9121">33</a>),</span></p>
+</li>
+<li id="uid8917"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9125">34</a> and <a href="sec4.3.4.2.html#uid9128">35</a>),</span></p>
+</li>
+<li id="uid8918"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.2.html#uid9135">36</a>),</span></p>
+</li>
+<li id="uid8919"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 3   (see Propositions <a href="sec4.3.4.2.html#uid9139">37</a>,
+ <a href="sec4.3.4.2.html#uid9142">38</a> and
+ <a href="sec4.3.4.2.html#uid9145">39</a>),</span></p>
+</li>
+<li id="uid8920"><p><span class="small"><a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9149">40</a> and <a href="sec4.3.4.2.html#uid9152">41</a>),</span></p>
+</li>
+<li id="uid8921"><p><span class="small"><a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9158">42</a> and <a href="sec4.3.4.2.html#uid9161">43</a>),</span></p>
+</li>
+<li id="uid8922"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9165">44</a> and <a href="sec4.3.4.2.html#uid9168">45</a>),</span></p>
+</li>
+<li id="uid8923"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9172">46</a> and <a href="sec4.3.4.2.html#uid9175">47</a>),</span></p>
+</li>
+<li id="uid8924"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.2.html#uid9180">48</a>),</span></p>
+</li>
+<li id="uid8925"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.2.html#uid9184">49</a>),</span></p>
+</li>
+<li id="uid8926"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 4   (see Propositions <a href="sec4.3.4.2.html#uid9188">50</a>,
+ <a href="sec4.3.4.2.html#uid9191">51</a>,
+ <a href="sec4.3.4.2.html#uid9203">52</a> and
+ <a href="sec4.3.4.2.html#uid9210">53</a>),</span></p>
+</li>
+<li id="uid8927"><p><span class="small"><a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9214">54</a> and
+ <a href="sec4.3.4.2.html#uid9217">55</a>),</span></p>
+</li>
+<li id="uid8928"><p><span class="small"><a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 3   (see Propositions <a href="sec4.3.4.2.html#uid9221">56</a> and
+ <a href="sec4.3.4.2.html#uid9224">57</a> and
+ <a href="sec4.3.4.2.html#uid9228">58</a>),</span></p>
+</li>
+<li id="uid8929"><p><span class="small"><a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.2.html#uid9232">59</a>),</span></p>
+</li>
+<li id="uid8930"><p><span class="small"><a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.2.html#uid9236">60</a>),</span></p>
+</li>
+<li id="uid8931"><p><span class="small"><a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 3   (see Propositions <a href="sec4.3.4.2.html#uid9240">61</a>,
+ <a href="sec4.3.4.2.html#uid9243">62</a> and
+ <a href="sec4.3.4.2.html#uid9246">63</a>),</span></p>
+</li>
+<li id="uid8932"><p><span class="small"><a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9250">64</a> and <a href="sec4.3.4.2.html#uid9253">65</a>),</span></p>
+</li>
+<li id="uid8933"><p><span class="small"><a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.2.html#uid9257">66</a> and <a href="sec4.3.4.2.html#uid9260">67</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8934"><p>Graph invariants involving three graph parameters of a final graph:</p>
+<ul>
+<li id="uid8935"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9265">68</a>),</span></p>
+</li>
+<li id="uid8936"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9270">69</a>),</span></p>
+</li>
+<li id="uid8937"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 5
+  (see Propositions <a href="sec4.3.4.3.html#uid9274">70</a>,
+ <a href="sec4.3.4.3.html#uid9277">71</a>,
+ <a href="sec4.3.4.3.html#uid9280">72</a>,
+ <a href="sec4.3.4.3.html#uid9283">73</a> and
+ <a href="sec4.3.4.3.html#uid9286">74</a>),</span></p>
+</li>
+<li id="uid8938"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9290">75</a> and
+ <a href="sec4.3.4.3.html#uid9294">76</a>),</span></p>
+</li>
+<li id="uid8939"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9298">77</a> and
+ <a href="sec4.3.4.3.html#uid9304">78</a>),</span></p>
+</li>
+<li id="uid8940"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9308">79</a>),</span></p>
+</li>
+<li id="uid8941"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9312">80</a>),</span></p>
+</li>
+<li id="uid8942"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9316">81</a> and
+ <a href="sec4.3.4.3.html#uid9319">82</a>),</span></p>
+</li>
+<li id="uid8943"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9324">83</a>),</span></p>
+</li>
+<li id="uid8944"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9329">84</a>),</span></p>
+</li>
+<li id="uid8945"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9333">85</a> and
+ <a href="sec4.3.4.3.html#uid9336">86</a>),</span></p>
+</li>
+<li id="uid8946"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9340">87</a>),</span></p>
+</li>
+<li id="uid8947"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9344">88</a> and
+ <a href="sec4.3.4.3.html#uid9347">89</a>),</span></p>
+</li>
+<li id="uid8948"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9352">90</a> and
+ <a href="sec4.3.4.3.html#uid9366">91</a>),</span></p>
+</li>
+<li id="uid8949"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9372">92</a> and
+ <a href="sec4.3.4.3.html#uid9375">93</a>),</span></p>
+</li>
+<li id="uid8950"><p><span class="small"><a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9379">94</a>),</span></p>
+</li>
+<li id="uid8951"><p><span class="small"><a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9385">95</a>),</span></p>
+</li>
+<li id="uid8952"><p><span class="small"><a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9389">96</a> and
+ <a href="sec4.3.4.3.html#uid9392">97</a>),</span></p>
+</li>
+<li id="uid8953"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9396">98</a> and
+ <a href="sec4.3.4.3.html#uid9411">99</a>),</span></p>
+</li>
+<li id="uid8954"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 4   (see Propositions <a href="sec4.3.4.3.html#uid9416">100</a>,
+ <a href="sec4.3.4.3.html#uid9427">101</a>,
+ <a href="sec4.3.4.3.html#uid9432">102</a> and
+ <a href="sec4.3.4.3.html#uid9437">103</a>),</span></p>
+</li>
+<li id="uid8955"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9443">104</a> and
+ <a href="sec4.3.4.3.html#uid9446">105</a>),</span></p>
+</li>
+<li id="uid8956"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.3.html#uid9451">106</a> and
+ <a href="sec4.3.4.3.html#uid9454">107</a>),</span></p>
+</li>
+<li id="uid8957"><p><span class="small"><a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9459">108</a>),</span></p>
+</li>
+<li id="uid8958"><p><span class="small"><a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.3.html#uid9463">109</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8959"><p>Graph invariants involving four graph parameters of a final graph:</p>
+<ul>
+<li id="uid8960"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.4.html#uid9468">110</a> and <a href="sec4.3.4.4.html#uid9478">111</a>),</span></p>
+</li>
+<li id="uid8961"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.4.html#uid9483">112</a> and <a href="sec4.3.4.4.html#uid9486">113</a>),</span></p>
+</li>
+<li id="uid8962"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.4.html#uid9490">114</a>),</span></p>
+</li>
+<li id="uid8963"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.4.html#uid9494">115</a> and <a href="sec4.3.4.4.html#uid9497">116</a>),</span></p>
+</li>
+<li id="uid8964"><p><span class="small"><a href="sec2.2.2.4.html#uid925"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid943"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐒𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.4.html#uid9501">117</a> and <a href="sec4.3.4.4.html#uid9504">118</a>),</span></p>
+</li>
+<li id="uid8965"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.4.html#uid9508">119</a>),</span></p>
+</li>
+<li id="uid8966"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 2   (see Propositions <a href="sec4.3.4.4.html#uid9516">120</a> and <a href="sec4.3.4.4.html#uid9526">121</a>),</span></p>
+</li>
+<li id="uid8967"><p><span class="small"><a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid965"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐈𝐍𝐊</mi></math></a>, <a href="sec2.2.2.4.html#uid973"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐎𝐔𝐑𝐂𝐄</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.4.html#uid9530">122</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8968"><p>Graph invariants involving five graph parameters of a final graph:</p>
+<ul>
+<li id="uid8969"><p><span class="small"><a href="sec2.2.2.4.html#uid922"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.5.html#uid9537">123</a>),</span></p>
+</li>
+<li id="uid8970"><p><span class="small"><a href="sec2.2.2.4.html#uid940"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><mi>𝐍𝐂𝐂</mi></mrow></math></a>, <a href="sec2.2.2.4.html#uid953"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐀𝐑𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid959"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid962"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐒𝐂𝐂</mi></math></a>, <a href="sec2.2.2.4.html#uid979"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi></math></a>: 1   (see Proposition <a href="sec4.3.4.5.html#uid9545">124</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8971"><p>Graph invariants relating two parameters of two final graphs:</p>
+<ul>
+<li id="uid8972"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9549">125</a>),</span></p>
+</li>
+<li id="uid8973"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9553">126</a>),</span></p>
+</li>
+<li id="uid8974"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9557">127</a>),</span></p>
+</li>
+<li id="uid8975"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9564">128</a>),</span></p>
+</li>
+<li id="uid8976"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9569">129</a>),</span></p>
+</li>
+<li id="uid8977"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9575">130</a>),</span></p>
+</li>
+<li id="uid8978"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐀𝐑𝐂</mi> <mn>1</mn> </msub></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐀𝐑𝐂</mi> <mn>2</mn> </msub></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9579">131</a>),</span></p>
+</li>
+<li id="uid8979"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></math>: 2   (see Propositions <a href="sec4.3.4.6.html#uid9583">132</a> and <a href="sec4.3.4.6.html#uid9587">133</a>),</span></p>
+</li>
+<li id="uid8980"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>1</mn> </msub></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>2</mn> </msub></math>: 1   (see Proposition <a href="sec4.3.4.6.html#uid9591">134</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8981"><p>Graph invariants relating three parameters of two final graphs:</p>
+<ul>
+<li id="uid8982"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>: 3   (see Propositions <a href="sec4.3.4.7.html#uid9596">135</a>,
+ <a href="sec4.3.4.7.html#uid9599">136</a> and
+ <a href="sec4.3.4.7.html#uid9602">137</a>),</span></p>
+</li>
+<li id="uid8983"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>: 3   (see Propositions <a href="sec4.3.4.7.html#uid9608">138</a>,
+ <a href="sec4.3.4.7.html#uid9611">139</a> and
+ <a href="sec4.3.4.7.html#uid9614">140</a>),</span></p>
+</li>
+<li id="uid8984"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>2</mn> </msub></mrow></math>: 1   (see Proposition <a href="sec4.3.4.7.html#uid9618">141</a>),</span></p>
+</li>
+<li id="uid8985"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><msub><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>1</mn> </msub></mrow></math>: 1   (see Proposition <a href="sec4.3.4.7.html#uid9622">142</a>),</span></p>
+</li>
+<li id="uid8986"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>𝐍𝐀𝐑𝐂</mi> <mn>2</mn> </msub><mo>,</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>: 1   (see Proposition <a href="sec4.3.4.7.html#uid9626">143</a>),</span></p>
+</li>
+<li id="uid8987"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><msub><mi>𝐍𝐀𝐑𝐂</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>: 1   (see Proposition <a href="sec4.3.4.7.html#uid9630">144</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8988"><p>Graph invariants relating four parameters of two final graphs:</p>
+<ul>
+<li id="uid8989"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>: 2   (see Propositions
+ <a href="sec4.3.4.8.html#uid9635">145</a> and
+ <a href="sec4.3.4.8.html#uid9638">146</a>),</span></p>
+</li>
+<li id="uid8990"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>: 2   (see Propositions
+ <a href="sec4.3.4.8.html#uid9642">147</a> and
+ <a href="sec4.3.4.8.html#uid9645">148</a>),</span></p>
+</li>
+<li id="uid8991"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><msub><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>2</mn> </msub></mrow></math>: 1   (see Proposition
+ <a href="sec4.3.4.8.html#uid9649">149</a>),</span></p>
+</li>
+<li id="uid8992"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub><mo>,</mo><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>𝐍𝐕𝐄𝐑𝐓𝐄𝐗</mi> <mn>1</mn> </msub></mrow></math>: 1   (see Proposition
+ <a href="sec4.3.4.8.html#uid9653">150</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8993"><p>Graph invariants relating five parameters of two final graphs:</p>
+<ul>
+<li id="uid8994"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></math>: 7   (see Propositions
+ <a href="sec4.3.4.9.html#uid9658">151</a>,
+ <a href="sec4.3.4.9.html#uid9661">152</a>,
+ <a href="sec4.3.4.9.html#uid9664">153</a>,
+ <a href="sec4.3.4.9.html#uid9667">154</a>,
+ <a href="sec4.3.4.9.html#uid9670">155</a>,
+ <a href="sec4.3.4.9.html#uid9673">156</a> and
+ <a href="sec4.3.4.9.html#uid9681">157</a>).</span></p>
+</li>
+<li id="uid8995"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></math>: 7   (see Propositions
+ <a href="sec4.3.4.9.html#uid9690">158</a>,
+ <a href="sec4.3.4.9.html#uid9693">159</a>,
+ <a href="sec4.3.4.9.html#uid9696">160</a>,
+ <a href="sec4.3.4.9.html#uid9699">161</a>,
+ <a href="sec4.3.4.9.html#uid9702">162</a>,
+ <a href="sec4.3.4.9.html#uid9705">163</a> and
+ <a href="sec4.3.4.9.html#uid9708">164</a>).</span></p>
+</li></ul>
+</li>
+<li id="uid8996"><p>Graph invariants relating six parameters of two final graphs:</p>
+<ul>
+<li id="uid8997"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐀𝐗</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝐌𝐈𝐍</mi><mo>_</mo><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>1</mn> </msub></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝐍𝐂𝐂</mi> <mn>2</mn> </msub></math>: 2   (see Propositions
+ <a href="sec4.3.4.10.html#uid9713">165</a> and
+ <a href="sec4.3.4.10.html#uid9716">166</a>).</span></p>
+</li></ul>
+</li></ul></div><div id="toc"><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>
