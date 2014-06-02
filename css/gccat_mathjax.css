@@ -32,11 +32,11 @@
 
 /* pre-content  --------------------------------- */
 #navbar { display:inline; text-align: left; padding: .9em 0; }
-#download { display:inline; text-align: right; padding:.9em 0; }
-#download ul { display:inline; list-style:none; }
-#download li { display:inline; white-space: nowrap; }
-#download a, #navbar a { padding: 1em; }
-#download a { cursor: help; }
+.download { display:inline; text-align: right; padding:.9em 0; }
+.download ul { display:inline; list-style:none; }
+.download li { display:inline; white-space: nowrap; }
+.download a, #navbar a { padding: 1em; }
+.download a { cursor: help; }
 
 /* content --------------------------------- */
 #main h1, #mainbody h1 {
