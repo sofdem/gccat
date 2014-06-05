@@ -34,6 +34,7 @@ BeginCommands
 		\newcounter{minitocdepth}
 		\newcommand\minitoc{ }
 		\newcommand\dominitoc{ }
+		\newcommand\exercisecaption{ }
 		\newcommand\addcontentsline[3]{ }
 		\newcommand\adjustmtc{ }
 
@@ -56,6 +57,10 @@ BeginCommands
 
 		\newcommand\ctrdatamenu[1]{\hyperlink{C#1}{description}, \href{src/#1.pl}{prolog source file}\par \par}
 		
+		\newcommand{\bold}[1]{\ensuremath{\mathbf{1}}}
+		\renewcommand{\color}[1]{}
+		\renewcommand{\marginpar}[1]{}
+		\renewcommand{\newpage}{}
 
 %%%%%%%%%% LINKS
 		\newcommand\hyperlink[2]{\href{#1}{#2\ref{#1}}}
@@ -64,9 +69,13 @@ BeginCommands
 		%\newcommand\ctrrefself[1]{$\constraint{#1}$}
 		%\newcommand\ctrref[1]{\ensuremath{\texttt{#1}}}
 		\newcommand\ctrref[1]{\ensuremath{\constraint{#1}}\index{#1@\ensuremath{\constraint{#1}}|indexuse}}
-		\newcommand\ctrrefself[1]{\ensuremath{\texttt{#1}}}
+		\newcommand\ctrrefself[1]{\ensuremath{\mathtt{#1}}}
 
 		\newcommand\pdfmarkup[3]{#2}
+
+%%%%%%%%%% BCLOGO
+		\newcommand\bclampe{\ensuremath{\clubsuit}}
+		\newcommand\bcdz{\ensuremath{\spadesuit}}
 
 %%%%%%%%%% MATH
 		%\input{GCmathcommand.sty}
@@ -78,6 +87,8 @@ BeginCommands
 		\newcommand\rb{\right]}
 
 %%%%%%%%%%% FIGURES
+		\newcommand{\inputtikz}[1]{\includegraphics{ctrs/#1.png}}
+
 		\newcommand{\pspicture}{\centerline{\bf MISSING PICTURE}}
 		\newcommand{\insertPSTEXCenter}{\insertFigCenter}
 
@@ -132,6 +143,11 @@ BeginCommands
 
 
 %%%%%%%%%%% TABLES
+		\newcommand{\arraybackslash}{}
+		\newcommand{\columnbreak}{}
+		\newcommand{\multirow}[1]{#1}
+		\newcommand{\Gape}[1]{#1}
+		\newcommand{\pbox}[2]{\begin{minipage}{#1}#2\end{minipage}}
 		\newenvironment{smallTableCenterLabelCaption}[3]%
 				{\begin{table}\caplab{#2}{#3}\begin{tabular}{#1}}%
 				{\end{tabular}\end{table}}
@@ -160,6 +176,6 @@ BeginCommands
 
 %%%%%%%%%% Trouver une meilleure solution...
 		%\newenvironment{pspicture}[1]{\begin{center}\textbf{MISSING PICTURE}}{\end{center}}
-		\newcommand\Tree[1]{\textbf{MISSING PICTURE}} % OK replaced by picture
+		%\newcommand\Tree[1]{\textbf{MISSING PICTURE}} % OK replaced by picture
 
 EndCommands

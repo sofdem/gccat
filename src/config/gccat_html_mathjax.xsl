@@ -157,7 +157,7 @@
 
 <xsl:template match="div2[contains(../head,'Global Constraint Catalog')]"  mode="cnav" >
   <xsl:variable name="ctrname" select="head"/>
-  <div class="download"><ul>
+  <div id="download"><ul>
 	  <li><a href="../aux/pdf/{$ctrname}.pdf" onclick="{$googlepdf}" title="print">PDF</a></li>
 	  <li><a href="../aux/src/{$ctrname}.pl" onclick="{$googlepl}" title="prolog source file">PL</a></li>
 	  <li><a href="../aux/png/{$ctrname}.png" onclick="{$googlepng}" title="constraint arguments">PNG</a></li>

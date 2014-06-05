@@ -1,0 +1,1880 @@
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+%                                                                   T I K Z     M A C R O S
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\newcounter{tikzhypergraphshift}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% MACROS FOR HYPEREDGES WITH NO COUNTER
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a signature constraint with zero counter (background)
+\def\hyperedgezerocounterfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (2.6,0) -- (2.6,1.1) -- (1.3,2.2) -- (0,1.1) -- cycle;
+\end{scope}
+}
+% leftmost hyperedge of a transition constraint with zero counter
+\def\hyperedgezerocounterfirst#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.1) -- (1.3,2.2) -- (0,1.1) -- cycle;
+    \node at (0.7,0.3) {#2};
+    \node at (2.25,0.3) {#3};
+    \node at (1.35,1.5) {#4};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (2.2,0.6) circle (0.08);
+    \fill (1.3,1.8) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a transition constraint with zero counter
+\def\hyperedgezerocountermid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.1) -- (1.3,2.2) -- (0,1.1) -- cycle;
+    \node at (1.35,1.5) {#2};
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill (1.3,1.8) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a transition constraint with zero counter
+\def\hyperedgezerocounterdashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (2.6,0) -- (2.6,1.1) -- (1.3,2.2) -- (0,1.1) -- cycle;
+    \fill[gray!70] (0.35,0.6) circle (0.08);
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (1.3,1.8) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with zero counter
+\def\hyperedgezerocounterlast#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.1) -- (1.3,2.2) -- (0,1.1) -- cycle;
+    \coordinate (two) at (2.6,0.3);
+    \coordinate (three) at (1.35,1.5);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (1.3,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter (background)
+\def\hyperedgezerocountersignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter
+\def\hyperedgezerocountersignature#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \coordinate (c) at (0.5,1.7);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with zero counter
+\def\hyperedgezerocountersignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \fill[gray!70] (0.5,1.7) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter and 2 isolated variables (background)
+\def\hyperedgezerocountersignaturefilltwo#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,3.0) -- (0,3.0) -- cycle;
+\end{scope}
+}
+
+% hyperedge of a signature constraint with zero counter and 2 isolated variables
+\def\hyperedgezerocountersignaturetwo#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,3.0) -- (0,3.0) -- cycle;
+    \coordinate (c2) at (0.5,2.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (0.5,1.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with zero counter and 2 isolated variables
+\def\hyperedgezerocountersignaturedashedtwo#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,3.0) -- (0,3.0) -- cycle;
+    \fill[gray!70] (0.5,2.7) circle (0.08);
+    \fill[gray!70] (0.5,1.7) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter and 6 isolated variables (background)
+\def\hyperedgezerocountersignaturefillsix#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,5.3) -- (0,5.3) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter and 6 isolated variables
+\def\hyperedgezerocountersignaturesix#1#2#3#4#5#6#7{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,5.3) -- (0,5.3) -- cycle;
+    \coordinate (c2) at (0.5,5.0);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (0.5,4.3);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c4) at (0.5,3.6);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c5) at (0.5,2.9);
+    \fill (c5) circle (0.08);
+    \node at (c5) [below=2] {#5};
+    \coordinate (c6) at (0.5,2.2);
+    \fill (c6) circle (0.08);
+    \node at (c6) [below=2] {#6};
+    \coordinate (c7) at (0.5,1.5);
+    \fill (c7) circle (0.08);
+    \node at (c7) [below=2] {#7};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with zero counter and 6 isolated variables
+\def\hyperedgezerocountersignaturedashedsix#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,5.3) -- (0,5.3) -- cycle;
+    \fill[gray!70]  (0.5,5.0) circle (0.08);
+    \fill[gray!70]  (0.5,4.3) circle (0.08);
+    \fill[gray!70]  (0.5,3.6) circle (0.08);
+    \fill[gray!70]  (0.5,2.9) circle (0.08);
+    \fill[gray!70]  (0.5,2.2) circle (0.08);
+    \fill[gray!70]  (0.5,1.5) circle (0.08);
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (background)
+\def\hyperedgezerocountersignatureonecenteredoneafill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2) -- (3.82,2) -- (3.82,3) -- (0,3) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (background)
+\def\hyperedgezerocountersignatureonecenteredonebfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2) -- (2,2) -- (2,3) -- (0,3) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (background)
+\def\hyperedgezerocountersignatureonecenteredonedfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,3) -- (-2.9,3) -- (-2.9,2) -- (0,2) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable
+\def\hyperedgezerocountersignatureonecenteredonea#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2) -- (3.82,2) -- (3.82,3) -- (0,3) -- cycle;
+    \coordinate (c3) at (3.2,2.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable
+\def\hyperedgezerocountersignatureonecenteredoneb#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,2) -- (2,2) -- (2,3) -- (0,3) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable
+\def\hyperedgezerocountersignaturedashedonecenteredonec#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (0,0) -- (1,0) -- (1,3) -- (-1.075,3) -- (-1.075,2) -- (0,2) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable
+\def\hyperedgezerocountersignatureonecenteredoned#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,3) -- (-2.9,3) -- (-2.9,2) -- (0,2) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable
+\def\hyperedgezerocountersignaturetwocenteredonea#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2.7) -- (3.82,2.7) -- (3.82,3.7) -- (0,3.7) -- cycle;
+    \coordinate (c4) at (3.2,3.4);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (0.5,2.4);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.6);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgezerocountersignaturetwocenteredoneagray#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2.7) -- (3.82,2.7) -- (3.82,3.7) -- (0,3.7) -- cycle;
+    \coordinate (c4) at (3.2,3.4);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (0.5,2.4);
+    \fill[gray] (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \node at (c3) [below=3.5] {\hspace*{1pt}{\color{gray}$\dots$}};
+    \coordinate (c2) at (0.5,1.6);
+    \fill[gray] (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgezerocountersignaturetwocenteredoneaagray#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2.7) -- (3.82,2.7) -- (3.82,3.7) -- (0,3.7) -- cycle;
+    \coordinate (c4) at (3.2,3.4);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c4a) at (3.2,3.0);
+    \fill (c4a) circle (0.08);
+    \coordinate (c3) at (0.5,2.4);
+    \fill[gray] (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \node at (c3) [below=3.5] {\hspace*{1pt}{\color{gray}$\dots$}};
+    \coordinate (c2) at (0.5,1.6);
+    \fill[gray] (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgezerocountersignaturetwocenteredoneaaagray#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2.7) -- (3.82,2.7) -- (3.82,3.7) -- (0,3.7) -- cycle;
+    \coordinate (c4) at (3.2,3.4);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c4a) at (3,3.0);
+    \fill (c4a) circle (0.08);
+    \coordinate (c4b) at (3.4,3.0);
+    \fill (c4b) circle (0.08);
+    \coordinate (c3) at (0.5,2.4);
+    \fill[gray] (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \node at (c3) [below=3.5] {\hspace*{1pt}{\color{gray}$\dots$}};
+    \coordinate (c2) at (0.5,1.6);
+    \fill[gray] (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable
+\def\hyperedgezerocountersignaturetwocenteredoneb#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,2.7) -- (2,2.7) -- (2,3.7) -- (0,3.7) -- cycle;
+    \coordinate (c3) at (0.5,2.4);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.6);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgezerocountersignaturetwocenteredonebgray#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,2.7) -- (2,2.7) -- (2,3.7) -- (0,3.7) -- cycle;
+    \coordinate (c3) at (0.5,2.4);
+    \fill[gray] (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \node at (c3) [below=3.5] {\hspace*{1pt}{\color{gray}$\dots$}};
+    \coordinate (c2) at (0.5,1.6);
+    \fill[gray] (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable
+\def\hyperedgezerocountersignaturedashedtwocenteredonec#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (0,0) -- (1,0) -- (1,3.7) -- (-1.075,3.7) -- (-1.075,2.7) -- (0,2.7) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable
+\def\hyperedgezerocountersignaturetwocenteredoned#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,3.7) -- (-2.9,3.7) -- (-2.9,2.7) -- (0,2.7) -- cycle;
+    \coordinate (c3) at (0.5,2.4);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.6);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgezerocountersignaturetwocenteredonedgray#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,3.7) -- (-2.9,3.7) -- (-2.9,2.7) -- (0,2.7) -- cycle;
+    \coordinate (c3) at (0.5,2.4);
+    \fill[gray] (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \node at (c3) [below=3.5] {\hspace*{1pt}{\color{gray}$\dots$}};
+    \coordinate (c2) at (0.5,1.6);
+    \fill[gray] (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable (background)
+\def\hyperedgezerocountersignaturetwocenteredoneafill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2.7) -- (3.82,2.7) -- (3.82,3.7) -- (0,3.7) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable (background)
+\def\hyperedgezerocountersignaturetwocenteredonebfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2.7) -- (2,2.7) -- (2,3.7) -- (0,3.7) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, two variables and one centered variable (background)
+\def\hyperedgezerocountersignaturetwocenteredonedfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,3.7) -- (-2.9,3.7) -- (-2.9,2.7) -- (0,2.7) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables
+\def\hyperedgezerocountersignatureonecenteredtwoa#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2) -- (3.82,2) -- (3.82,3.8) -- (0,3.8) -- cycle;
+    \coordinate (c4) at (3.2,3.5);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (3.2,2.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables
+\def\hyperedgezerocountersignatureonecenteredtwob#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,2) -- (2,2) -- (2,3.8) -- (0,3.8) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables
+\def\hyperedgezerocountersignaturedashedonecenteredtwoc#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (0,0) -- (1,0) -- (1,3.8) -- (-1.075,3.8) -- (-1.075,2) -- (0,2) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables
+\def\hyperedgezerocountersignatureonecenteredtwod#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,3.8) -- (-2.9,3.8) -- (-2.9,2) -- (0,2) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background)
+\def\hyperedgezerocountersignatureonecenteredtwoafill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2) -- (3.82,2) -- (3.82,3.8) -- (0,3.8) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background)
+\def\hyperedgezerocountersignatureonecenteredtwobfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2) -- (2,2) -- (2,3.8) -- (0,3.8) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background)
+\def\hyperedgezerocountersignatureonecenteredtwodfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,3.8) -- (-2.9,3.8) -- (-2.9,2) -- (0,2) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (small)
+\def\hyperedgezerocountersignonecenteredonea#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,1.5) -- (3.82,1.5) -- (3.82,2.5) -- (0,2.5) -- cycle;
+    \coordinate (c3) at (3.2,2.2);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (small)
+\def\hyperedgezerocountersignonecenteredoneb#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,1.5) -- (2,1.5) -- (2,2.5) -- (0,2.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (small)
+\def\hyperedgezerocountersigndashedonecenteredonec#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (0,0) -- (1,0) -- (1,2.5) -- (-1.075,2.5) -- (-1.075,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (small)
+\def\hyperedgezerocountersignonecenteredoned#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,2.5) -- (-2.9,2.5) -- (-2.9,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (background, small)
+\def\hyperedgezerocountersignonecenteredoneafill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,1.5) -- (3.82,1.5) -- (3.82,2.5) -- (0,2.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (background, small)
+\def\hyperedgezerocountersignonecenteredonebfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,1.5) -- (2,1.5) -- (2,2.5) -- (0,2.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and one centered variable (background, small)
+\def\hyperedgezerocountersignonecenteredonedfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,2.5) -- (-2.9,2.5) -- (-2.9,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variable (background, medium)
+\def\hyperedgezerocountersignonecenteredtwoafillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,1.5) -- (4.12,1.5) -- (4.12,3.1) -- (0,3.1) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variable (background, medium)
+\def\hyperedgezerocountersignonecenteredtwobfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,1.5) -- (2.3,1.5) -- (2.3,3.1) -- (0,3.1) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variable (background, medium)
+\def\hyperedgezerocountersignonecenteredtwodfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,3.1) -- (-3.178,3.1) -- (-3.178,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (medium)
+\def\hyperedgezerocountersignonecenteredtwoamedium#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,1.5) -- (4.12,1.5) -- (4.12,3.1) -- (0,3.1) -- cycle;
+    \coordinate (c4) at (3.2,2.8);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#3};
+    \coordinate (c3) at (3.2,2.2);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (medium)
+\def\hyperedgezerocountersignonecenteredtwobmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,1.5) -- (2.3,1.5) -- (2.3,3.1) -- (0,3.1) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (medium)
+\def\hyperedgezerocountersigndashedonecenteredtwocmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (0,0) -- (1,0) -- (1,3.1) -- (-1.35,3.1) -- (-1.35,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variable (medium)
+\def\hyperedgezerocountersignonecenteredtwodmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,3.1) -- (-3.178,3.1) -- (-3.178,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (small)
+\def\hyperedgezerocountersignonecenteredtwoa#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,1.5) -- (3.82,1.5) -- (3.82,3.15) -- (0,3.15) -- cycle;
+    \coordinate (c2) at (3.2,2.1);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (3.2,2.85);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (small)
+\def\hyperedgezerocountersignonecenteredtwob#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt] (0,0) -- (1,0) -- (1,1.5) -- (2,1.5) -- (2,3.15) -- (0,3.15) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (small)
+\def\hyperedgezerocountersigndashedonecenteredtwoc#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (0,0) -- (1,0) -- (1,3.15) -- (-1.075,3.15) -- (-1.075,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (small)
+\def\hyperedgezerocountersignonecenteredtwod#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1,0) -- (1,3.15) -- (-2.9,3.15) -- (-2.9,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background, small)
+\def\hyperedgezerocountersignonecenteredtwoafill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,1.5) -- (3.82,1.5) -- (3.82,3.15) -- (0,3.15) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background, small)
+\def\hyperedgezerocountersignonecenteredtwobfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,1.5) -- (2,1.5) -- (2,3.15) -- (0,3.15) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background, small)
+\def\hyperedgezerocountersignonecenteredtwodfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1,0) -- (1,3.15) -- (-2.9,3.15) -- (-2.9,1.5) -- (0,1.5) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% MACROS FOR SMALL HYPEREDGES WITH ZERO COUNTER (no signature variable)
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% dashed hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterdashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \fill[gray!70] (0.35,0.6) circle (0.08);
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% leftmost hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterfirst#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (0.7,0.3) {#2};
+    \node at (2.25,0.3) {#3};
+    \node at (1.3,1.02) {#4};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (2.2,0.6) circle (0.08);
+    \fill (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcountermid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (1.3,1.02) {#2};
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterlast#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \coordinate (two) at (2.6,0.3);
+    \coordinate (three) at (1.3,1.02);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterlastbis#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \coordinate (two) at (2.66,0.3);
+    \coordinate (three) at (1.3,1.02);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a small transition constraint with zero counter (large)
+\def\hyperedgezerosmallcounterlastlarge#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (3.1,0) -- (3.1,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \coordinate (two) at (3.1,0.3);
+    \coordinate (three) at (1.3,1.02);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.7,0.6) circle (0.08);
+    \fill (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% leftmost/rightmost hyperedge of a small transition constraint with zero counter (leftmost/rightmost since one single hyperedge)
+\def\hyperedgezerosmallcounterfirstlast#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \coordinate (three) at (2.5,0.3);
+    \node at (0.65,0.3) {#2};
+    \node at (three) [left] {#3};
+    \node at (1.3,1.02) {#4};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (2.2,0.6) circle (0.08);
+    \fill (1.3,1.3) circle (0.08);
+\end{scope}
+}
+% hyperedge of a small signature constraint with zero counter (background)
+\def\hyperedgezerosmallcounterfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;    
+\end{scope}
+}
+% hyperedge of a small signature constraint with zero counter (large background)
+\def\hyperedgezerosmallcounterfilllarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (3.1,0) -- (3.1,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;    
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter for an hypergraph with one single transition constraint (background)
+\def\hyperedgezerocountersignaturefirstlastfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,1.9) -- (0,1.9) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with zero counter for an hypergraph with one single transition constraint
+\def\hyperedgezerocountersignaturefirstlast#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,1.9) -- (0,1.9) -- cycle;
+    \coordinate (c) at (0.5,1.7);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% first hyperedge of a sliding signature constraint with zero counter for an hypergraph
+\def\hyperedgezerocounterslidingsignaturefirst#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% next hyperedge of a sliding signature constraint with zero counter for an hypergraph
+\def\hyperedgezerocounterslidingsignaturemid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c) at (2.3,1.8);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% dashed hyperedge of a sliding signature constraint with zero counter for an hypergraph
+\def\hyperedgezerocounterslidingsignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+% last dashed hyperedge of a sliding signature constraint with zero counter for an hypergraph
+\def\hyperedgezerocounterslidingsignaturedashedlast#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (3.0,1.2) -- (3.0,2.1) -- (0,2.1) -- cycle;
+    \fill[gray!70] (0.5,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a sliding signature constraint with zero counter for an hypergraph (background)
+\def\hyperedgezerocounterslidingsignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=22]
+    \draw [very thick,color=MyYellowlight,rounded corners=6pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% mirror link hyperedge with zero counter
+\def\hyperedgezerosmallmirrorlink#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift}] 
+\draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0.1,0.8) -- (0.9,0.8) -- (0.9,3.1) -- (0.1,3.1) -- cycle;
+\end{scope}
+}
+% mirror link hyperedge with zero counter
+\def\hyperedgezerosmallfillmirrorlink#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift}] 
+\draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0.1,0.8) -- (0.9,0.8) -- (0.9,3.1) -- (0.1,3.1) -- cycle;
+\end{scope}
+}
+% mirror hyperedge of a small signature constraint with zero counter (background)
+\def\hyperedgezerosmallcounterfillmirror#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (1.3,0) -- (2.6,0.9) -- (2.6,1.7) -- (0,1.7) -- (0,0.9) -- cycle;
+\end{scope}
+}
+% mirror leftmost hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterfirstmirror#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}] 
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (1.3,0) -- (2.6,0.9) -- (2.6,1.7) -- (0,1.7) -- (0,0.9) -- cycle;
+    \node at (0.7,1.4) {#2};
+    \node at (2.25,1.4) {#3};
+    \node at (1.3,0.68) {#4};
+    \fill (0.35,1.1) circle (0.08);
+    \fill (2.2,1.1) circle (0.08);
+    \fill (1.3,0.4) circle (0.08);
+\end{scope}
+}
+% mirror mid hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcountermidmirror#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (1.3,0) -- (2.6,0.9) -- (2.6,1.7) -- (0,1.7) -- (0,0.9) -- cycle;
+    \node at (1.3,0.68) {#2};
+    \fill[gray!70] (2.2,1.1) circle (0.08);
+    \fill (1.3,0.4) circle (0.08);
+\end{scope}
+}
+% mirror dashed hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterdashedmirror#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (1.3,0) -- (2.6,0.9) -- (2.6,1.7) -- (0,1.7) -- (0,0.9) -- cycle;
+    \fill[gray!70] (0.35,1.1) circle (0.08);
+    \fill[gray!70] (2.2,1.1) circle (0.08);
+    \fill[gray!70] (1.3,0.4) circle (0.08);
+\end{scope}
+}
+% mirror last hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterlastmirror#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+   \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (1.3,0) -- (2.6,0.9) -- (2.6,1.7) -- (0,1.7) -- (0,0.9) -- cycle;
+    \coordinate (two) at (2.6,1.4);
+    \coordinate (three) at (1.3,0.68);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.2,1.1) circle (0.08);
+    \fill (1.3,0.4) circle (0.08);
+\end{scope}
+}
+% mirror last hyperedge of a small transition constraint with zero counter
+\def\hyperedgezerosmallcounterlastmirrorbis#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+   \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (1.3,0) -- (2.6,0.9) -- (2.6,1.7) -- (0,1.7) -- (0,0.9) -- cycle;
+    \coordinate (two) at (2.66,1.4);
+    \coordinate (three) at (1.3,0.68);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.2,1.1) circle (0.08);
+    \fill (1.3,0.4) circle (0.08);
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% MACROS FOR HYPEREDGES WITH ONE COUNTER
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a signature constraint with one counter (background)
+\def\hyperedgeonecounterfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (2.6,0) -- (2.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with one counter (a bit large, background)
+\def\hyperedgeonecounterbitlargefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (3.6,0) -- (3.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with one counter (large, background)
+\def\hyperedgeonecounterlargefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (4.1,0) -- (4.1,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+\end{scope}
+}
+% leftmost hyperedge of a transition constraint with one counter
+\def\hyperedgeonecounterfirst#1#2#3#4#5#6{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \node at (0.7,0.3) {#2};
+    \node at (0.7,1.1) {#3};
+    \node at (2.25,0.3) {#4};
+    \node at (2.25,1.1) {#5};
+    \node at (1.35,2.0) {#6};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (0.35,1.4) circle (0.08);
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a transition constraint with one counter
+\def\hyperedgeonecountermid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \node at (1.35,2.0) {#2};
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (2.2,1.4) circle (0.08);
+    \fill (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a transition constraint with one counter
+\def\hyperedgeonecounterdashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (2.6,0) -- (2.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (2.2,1.4) circle (0.08);
+    \fill[gray!70] (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% second hyperedge of a transition constraint with one counter
+\def\hyperedgeonecountersecond#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \coordinate (two) at (2.55,0.3);
+    \coordinate (three) at (2.55,1.1);
+    \coordinate (four) at (1.35,2.0);
+    \node at (two) [left] {#2};
+    \node at (three) [left] {#3};
+    \node at (four) {#4};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with one counter
+\def\hyperedgeonecounterlast#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \coordinate (two) at (2.65,0.3);
+    \coordinate (three) at (2.55,1.1);
+    \coordinate (four) at (1.35,2.0);
+    \node at (two) [left] {#2};
+    \node at (three) [left] {#3};
+    \node at (four) {#4};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with one counter (a bit large)
+\def\hyperedgeonecounterlastbitlarge#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (3.6,0) -- (3.6,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \coordinate (two) at (3.6,0.3);
+    \coordinate (three) at (3.5,1.1);
+    \coordinate (four) at (1.35,2.0);
+    \node at (two) [left] {#2};
+    \node at (three) [left] {#3};
+    \node at (four) {#4};
+    \fill (3.2,0.6) circle (0.08);
+    \fill (3.2,1.4) circle (0.08);
+    \fill (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with one counter (large)
+\def\hyperedgeonecounterlastlarge#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (4.1,0) -- (4.1,1.6) -- (1.3,2.7) -- (0,1.6) -- cycle;
+    \coordinate (two) at (4.10,0.3);
+    \coordinate (three) at (4.05,1.1);
+    \coordinate (four) at (1.35,2.0);
+    \node at (two) [left] {#2};
+    \node at (three) [left] {#3};
+    \node at (four) {#4};
+    \fill (3.7,0.6) circle (0.08);
+    \fill (3.7,1.4) circle (0.08);
+    \fill (1.3,2.3) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with one counter (background)
+\def\hyperedgeonecountersignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with one counter
+\def\hyperedgeonecountersignature#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \coordinate (c) at (0.5,1.7);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with one counter
+\def\hyperedgeonecountersignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \fill[gray!70] (0.5,1.7) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with one counter and two extra variables (background)
+\def\hyperedgeonecountersignaturetwofill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,3.0) -- (0,3.0) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with one counter and two extra variables
+\def\hyperedgeonecountersignaturetwo#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,3.0) -- (0,3.0) -- cycle;
+    \coordinate (c2) at (0.5,2.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (0.5,1.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with one counter and two extra variables
+\def\hyperedgeonecountersignaturetwodashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,3.0) -- (0,3.0) -- cycle;
+    \fill[gray!70] (0.5,2.7) circle (0.08);
+    \fill[gray!70] (0.5,1.7) circle (0.08);
+\end{scope}
+}
+% first hyperedge of a sliding signature constraint with one counter for an hypergraph
+\def\hyperedgeonecounterslidingsignaturefirst#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+\def\hyperedgeonecounterslidingsignaturefirstredfirst#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill[red] (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+\def\hyperedgeonecounterslidingsignaturefirstredlast#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill[red] (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% next hyperedge of a sliding signature constraint with one counter for an hypergraph
+\def\hyperedgeonecounterslidingsignaturemid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c) at (2.3,1.8);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% dashed hyperedge of a sliding signature constraint with one counter for an hypergraph
+\def\hyperedgeonecounterslidingsignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+% last dashed hyperedge of a sliding signature constraint with one counter for an hypergraph
+\def\hyperedgeonecounterslidingsignaturedashedlast#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (3.0,1.2) -- (3.0,2.1) -- (0,2.1) -- cycle;
+    \fill[gray!70] (0.5,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a sliding signature constraint with one counter for an hypergraph (background)
+\def\hyperedgeonecounterslidingsignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=MyYellowlight,rounded corners=6pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+% first hyperedge of a sliding signature constraint with one counter for an hypergraph and two extra variables
+\def\hyperedgeonecounterslidingsignaturetwofirst#1#2#3#4#5{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,3.1) -- (0,3.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {\hspace*{6pt}#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {\hspace*{6pt}#3};
+    \coordinate (c4) at (0.5,2.8);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {\hspace*{6pt}#4};
+    \coordinate (c5) at (2.3,2.8);
+    \fill (c5) circle (0.08);
+    \node at (c5) [below=2] {\hspace*{6pt}#5};
+\end{scope}
+}
+% next hyperedge of a sliding signature constraint with one counter for an hypergraph and two extra variables
+\def\hyperedgeonecounterslidingsignaturetwomid#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,3.1) -- (0,3.1) -- cycle;
+    \coordinate (c) at (2.3,1.8);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {\hspace*{3pt}#2};
+    \coordinate (c) at (2.3,2.8);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {\hspace*{3pt}#3};
+\end{scope}
+}
+% dashed hyperedge of a sliding signature constraint with one counter for an hypergraph and two extra variables
+\def\hyperedgeonecounterslidingsignaturetwodashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,3.1) -- (0,3.1) -- cycle;
+\end{scope}
+}
+% last dashed hyperedge of a sliding signature constraint with one counter for an hypergraph and two extra variables
+\def\hyperedgeonecounterslidingsignaturetwodashedlast#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (3.0,1.2) -- (3.0,3.1) -- (0,3.1) -- cycle;
+    \fill[gray!70] (0.5,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a sliding signature constraint with one counter for an hypergraph and two extra variables (background)
+\def\hyperedgeonecounterslidingsignaturetwofill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=50]
+    \draw [very thick,color=MyYellowlight,rounded corners=6pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,3.1) -- (0,3.1) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% MACROS FOR HYPEREDGES WITH TWO COUNTERS
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a signature constraint with two counters (background)
+\def\hyperedgetwocounterfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (2.6,0) -- (2.6,2.6) -- (1.3,3.7) -- (0,2.6) -- cycle;
+\end{scope}
+}
+% leftmost hyperedge of a transition constraint with two counters
+\def\hyperedgetwocounterfirst#1#2#3#4#5#6#7#8{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,2.6) -- (1.3,3.7) -- (0,2.6) -- cycle;
+    \node at (0.7,0.3) {#4};
+    \node at (0.7,1.1) {#3};
+    \node at (0.7,1.9) {#2};
+    \node at (2.25,0.3) {#7};
+    \node at (2.25,1.1) {#6};
+    \node at (2.25,1.9) {#5};
+    \node at (1.35,3.0) {#8};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (0.35,1.4) circle (0.08);
+    \fill (0.35,2.2) circle (0.08);
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (2.2,2.2) circle (0.08);
+    \fill (1.3,3.3) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a transition constraint with two counters
+\def\hyperedgetwocountermid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,2.6) -- (1.3,3.7) -- (0,2.6) -- cycle;
+    \node at (1.35,3.0) {#2};
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (2.2,1.4) circle (0.08);
+    \fill[gray!70] (2.2,2.2) circle (0.08);
+    \fill (1.3,3.3) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a transition constraint with two counters
+\def\hyperedgetwocounterdashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (2.6,0) -- (2.6,2.6) -- (1.3,3.7) -- (0,2.6) -- cycle;
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (2.2,1.4) circle (0.08);
+    \fill[gray!70] (2.2,2.2) circle (0.08);
+    \fill[gray!70] (1.3,3.3) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with two counter
+\def\hyperedgetwocounterlast#1#2#3#4#5{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,2.6) -- (1.3,3.7) -- (0,2.6) -- cycle;
+    \coordinate (two) at (2.55,1.9);
+    \coordinate (three) at (2.60,1.1);
+    \coordinate (four) at (2.60,0.3);
+    \coordinate (five) at (1.35,3.0);
+    \node at (four) [left] {#4};
+    \node at (three) [left] {#3};
+    \node at (two) [left] {#2};
+    \node at (five) {#5};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (2.2,2.2) circle (0.08);
+    \fill (1.3,3.3) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with two counters (background)
+\def\hyperedgetwocountersignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+\end{scope}
+}
+% hyperedge of a signature constraint with two counters
+\def\hyperedgetwocountersignature#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \coordinate (c) at (0.5,1.7);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with two counters
+\def\hyperedgetwocountersignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \fill[gray!70] (0.5,1.7) circle (0.08);
+\end{scope}
+}
+% first hyperedge of a sliding signature constraint with two counters for an hypergraph
+\def\hyperedgetwocounterslidingsignaturefirst#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% next hyperedge of a sliding signature constraint with two counters for an hypergraph
+\def\hyperedgetwocounterslidingsignaturemid#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c) at (2.3,1.8);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+% dashed hyperedge of a sliding signature constraint with two counters for an hypergraph
+\def\hyperedgetwocounterslidingsignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+% last dashed hyperedge of a sliding signature constraint with two counters for an hypergraph
+\def\hyperedgetwocounterslidingsignaturedashedlast#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (3.0,1.2) -- (3.0,2.1) -- (0,2.1) -- cycle;
+    \fill[gray!70] (0.5,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a sliding signature constraint with two counter for an hypergraph (background)
+\def\hyperedgetwocounterslidingsignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=75]
+    \draw [very thick,color=MyYellowlight,rounded corners=6pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a sliding signature constraint with three counters for an hypergraph (background)
+\def\hyperedgethreecounterslidingsignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=105]
+    \draw [very thick,color=MyYellowlight,rounded corners=6pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+\end{scope}
+}
+% first hyperedge of a sliding signature constraint with three counters for an hypergraph
+\def\hyperedgethreecounterslidingsignaturefirst#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=105]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,1.8);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (2.3,1.8);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c4) at (0.5,0.6);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+\end{scope}
+}
+% next hyperedge of a sliding signature constraint with three counters for an hypergraph
+\def\hyperedgethreecounterslidingsignaturemid#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=105]
+    \draw [ultra thick,color=pink,rounded corners=6pt] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c) at (2.3,1.8);
+    \fill (c) circle (0.08);
+    \node at (c) [below=2] {#2};
+    \coordinate (c3) at (0.5,0.6);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% dashed hyperedge of a sliding signature constraint with three counters for an hypergraph
+\def\hyperedgethreecounterslidingsignaturedashed#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=105]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (2.8,1.2) -- (2.8,2.1) -- (0,2.1) -- cycle;
+    \coordinate (c2) at (0.5,0.6);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% last dashed hyperedge of a sliding signature constraint with three counters for an hypergraph
+\def\hyperedgethreecounterslidingsignaturedashedlast#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=105]
+    \draw [very thick,color=pink,rounded corners=6pt,dashed] (0,0) -- (1.0,0) -- (1.0,1.2) -- (3.0,1.2) -- (3.0,2.1) -- (0,2.1) -- cycle;
+    \fill[gray!70] (0.5,1.8) circle (0.08);
+    \fill[gray!70] (0.5,0.6) circle (0.08);
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% MACROS FOR HYPEREDGES WITH THREE COUNTERS
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a signature constraint with three counters (background)
+\def\hyperedgethreecounterfill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (2.6,0) -- (2.6,3.6) -- (1.3,4.7) -- (0,3.6) -- cycle;
+\end{scope}
+}
+% leftmost hyperedge of a transition constraint with three counters
+\def\hyperedgethreecounterfirst#1#2#3#4#5#6#7#8#9{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,3.5) -- (1.3,4.7) -- (0,3.5) -- cycle;
+    \node at (0.7,0.3) {#5};
+    \node at (0.7,1.1) {#4};
+    \node at (0.7,1.9) {#3};
+    \node at (0.7,2.7) {#2}; 
+    \node at (2.25,0.3) {#9};
+    \node at (2.25,1.1) {#8};
+    \node at (2.25,1.9) {#7};
+    \node at (2.25,2.7) {#6};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (0.35,1.4) circle (0.08);
+    \fill (0.35,2.2) circle (0.08);
+    \fill (0.35,3.0) circle (0.08);
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (2.2,2.2) circle (0.08);
+    \fill (2.2,3.0) circle (0.08);
+%    \fill (1.3,4.3) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a transition constraint with three counters
+\def\hyperedgethreecountermid#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,3.5) -- (1.3,4.7) -- (0,3.5) -- cycle;
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (2.2,1.4) circle (0.08);
+    \fill[gray!70] (2.2,2.2) circle (0.08);
+    \fill[gray!70] (2.2,3.0) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a transition constraint with three counters
+\def\hyperedgethreecounterdashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (2.6,0) -- (2.6,3.5) -- (1.3,4.7) -- (0,3.5) -- cycle;
+    \fill[gray!70] (2.2,0.6) circle (0.08);
+    \fill[gray!70] (2.2,1.4) circle (0.08);
+    \fill[gray!70] (2.2,2.2) circle (0.08);
+    \fill[gray!70] (2.2,3.0) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with three counters
+\def\hyperedgethreecounterlast#1#2#3#4#5{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,3.5) -- (1.3,4.7) -- (0,3.5) -- cycle;
+    \coordinate (two) at (2.55,2.7);
+    \coordinate (three) at (2.60,1.9);
+    \coordinate (four) at (2.60,1.1);
+    \coordinate (five) at (2.60,0.3);
+    \node at (five) [left] {#5};
+    \node at (four) [left] {#4};
+    \node at (three) [left] {#3};
+    \node at (two) [left] {#2};
+    \fill (2.2,0.6) circle (0.08);
+    \fill (2.2,1.4) circle (0.08);
+    \fill (2.2,2.2) circle (0.08);
+    \fill (2.2,3.0) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with three counters
+\def\hyperedgethreecountersign#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=102]
+    \coordinate (c3) at (0.5,0.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a signature constraint with three counters
+\def\hyperedgethreecountersignature#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=102]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+    \coordinate (c3) at (0.5,0.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with three counters
+\def\hyperedgethreecountersigndashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=102,dotted]
+    \fill[gray!70] (0.5,0.7) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a signature constraint with three counters
+\def\hyperedgethreecountersignaturedashed#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=102,dotted]
+    \draw [ultra thick,color=pink,rounded corners=4pt,dashed] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+    \fill[gray!70] (0.5,0.7) circle (0.08);
+    \fill[gray!70] (0.5,1.7) circle (0.08);
+\end{scope}
+}
+% hyperedge of a signature constraint with three counters (background)
+\def\hyperedgethreecountersignaturefill#1{
+\setcounter{tikzhypergraphshift}{#1 * 52 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=102]
+    \draw [very thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (0,0) -- (1.0,0) -- (1.0,2.0) -- (0,2.0) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a signature constraint with zero counter (background,large)
+\def\hyperedgezerocounterfilllarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 92}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (4,0) -- (4,1.1) -- (2,2.2) -- (0,1.1) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background,large)
+\def\hyperedgezerocountersignatureonecenteredtwoafilllarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (-0.6,0) -- (1.6,0) -- (1.6,2) -- (6.4,2) -- (6.4,3.75) -- (-0.6,3.75) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background,large)
+\def\hyperedgezerocountersignatureonecenteredtwobfilllarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (-0.6,0) -- (1.6,0) -- (1.6,2) -- (3.17,2) -- (3.17,3.75) -- (-0.6,3.75) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background,large)
+\def\hyperedgezerocountersignatureonecenteredtwodfilllarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (-0.6,0) -- (1.6,0) -- (1.6,3.75) -- (-7.06,3.75) -- (-7.06,2) -- (-0.6,2) -- cycle;
+\end{scope}
+}
+% leftmost hyperedge of a transition constraint with zero counter (large)
+\def\hyperedgezerocounterfirstlarge#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 92}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (4,0) -- (4,1.1) -- (2,2.2) -- (0,1.1) -- cycle;
+    \node at (0.7,0.3) {#2};
+    \node at (3.65,0.3) {#3};
+    \node at (2.05,1.5) {#4};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (3.6,0.6) circle (0.08);
+    \fill (2.0,1.8) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a transition constraint with zero counter (large)
+\def\hyperedgezerocountermidlarge#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 92}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (4,0) -- (4,1.1) -- (2,2.2) -- (0,1.1) -- cycle;
+    \node at (2.05,1.5) {#2};
+    \fill[gray!70] (3.6,0.6) circle (0.08);
+    \fill (2.0,1.8) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a transition constraint with zero counter (large)
+\def\hyperedgezerocounterdashedlarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 92}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (4,0) -- (4,1.1) -- (2,2.2) -- (0,1.1) -- cycle;
+    \fill[gray!70] (0.35,0.6) circle (0.08);
+    \fill[gray!70] (3.6,0.6) circle (0.08);
+    \fill[gray!70] (2.0,1.8) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with zero counter (large)
+\def\hyperedgezerocounterlastlarge#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 92}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (4,0) -- (4,1.1) -- (2,2.2) -- (0,1.1) -- cycle;
+    \coordinate (two) at (3.75,0.3);
+    \coordinate (three) at (2.05,1.5);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (3.6,0.6) circle (0.08);
+    \fill (2.0,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (large)
+\def\hyperedgezerocountersignatureonecenteredtwoalarge#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.6,0) -- (1.6,0) -- (1.6,2) -- (6.4,2) -- (6.4,3.75) -- (-0.6,3.75) -- cycle;
+    \coordinate (c4) at (5.34,3.4);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (5.34,2.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (large)
+\def\hyperedgezerocountersignatureonecenteredtwoblarge#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.6,0) -- (1.6,0) -- (1.6,2) -- (3.17,2) -- (3.17,3.75) -- (-0.6,3.75) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (large)
+\def\hyperedgezerocountersignaturedashedonecenteredtwoclarge#1{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (-0.6,0) -- (1.6,0) -- (1.6,3.75) -- (-2.2,3.75) -- (-2.2,2) -- (-0.6,2) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (large) ???
+\def\hyperedgezerocountersignatureonecenteredtwodlarge#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 92 + 43}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.6,0) -- (1.6,0) -- (1.6,3.75) -- (-5.433,3.75) -- (-5.433,2) -- (-0.6,2) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a signature constraint with zero counter (background,medium)
+\def\hyperedgezerocounterfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyYellowlight,rounded corners=3pt,fill=MyYellowlight] (0,0) -- (3.2,0) -- (3.2,1.1) -- (1.6,2.2) -- (0,1.1) -- cycle;
+\end{scope}
+}
+% leftmost hyperedge of a transition constraint with zero counter (medium)
+\def\hyperedgezerocounterfirstmedium#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 70}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (3.2,0) -- (3.2,1.1) -- (1.6,2.2) -- (0,1.1) -- cycle;
+    \node at (0.7,0.3) {#2};
+    \node at (2.85,0.3) {#3};
+    \node at (1.65,1.5) {#4};
+    \fill (0.35,0.6) circle (0.08);
+    \fill (2.8,0.6) circle (0.08);
+    \fill (1.6,1.8) circle (0.08);
+\end{scope}
+}
+% mid hyperedge of a transition constraint with zero counter (medium)
+\def\hyperedgezerocountermidmedium#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 70}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (3.2,0) -- (3.2,1.1) -- (1.6,2.2) -- (0,1.1) -- cycle;
+    \node at (1.65,1.5) {#2};
+    \fill[gray!70] (2.8,0.6) circle (0.08);
+    \fill (1.6,1.8) circle (0.08);
+\end{scope}
+}
+% dashed hyperedge of a transition constraint with zero counter (medium)
+\def\hyperedgezerocounterdashedmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue!90,rounded corners=3pt,dashed] (0,0) -- (3.2,0) -- (3.2,1.1) -- (1.6,2.2) -- (0,1.1) -- cycle;
+    \fill[gray!70] (0.35,0.6) circle (0.08);
+    \fill[gray!70] (2.8,0.6) circle (0.08);
+    \fill[gray!70] (1.6,1.8) circle (0.08);
+\end{scope}
+}
+% last hyperedge of a transition constraint with zero counter (medium)
+\def\hyperedgezerocounterlastmedium#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 70}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [very thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (3.2,0) -- (3.2,1.1) -- (1.6,2.2) -- (0,1.1) -- cycle;
+    \coordinate (two) at (3.1,0.3);
+    \coordinate (three) at (1.65,1.5);
+    \node at (two) [left] {#2};
+    \node at (three) {#3};
+    \fill (2.8,0.6) circle (0.08);
+    \fill (1.6,1.8) circle (0.08);
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and three centered variables (medium)
+\def\hyperedgezerocountersignatureonecenteredthreeamedium#1#2#3#4#5{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.2,0) -- (1.2,0) -- (1.2,2) -- (5.2,2) -- (5.2,4.5) -- (-0.2,4.5) -- cycle;
+    \coordinate (c5) at (4.2,4.1);
+    \fill (c5) circle (0.08);
+    \node at (c5) [below=2] {#5};
+    \coordinate (c4) at (4.2,3.4);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (4.2,2.7);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.51,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and three centered variables (medium)
+\def\hyperedgezerocountersignatureonecenteredthreebmedium#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.2,0) -- (1.2,0) -- (1.2,2) -- (2.74,2) -- (2.74,4.5) -- (-0.2,4.5) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and three centered variables (medium)
+\def\hyperedgezerocountersignaturedashedonecenteredthreecmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (-0.2,0) -- (1.2,0) -- (1.2,4.5) -- (-1.7,4.5) -- (-1.7,2) -- (-0.2,2) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and three centered variables (medium)
+\def\hyperedgezerocountersignatureonecenteredthreedmedium#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.2,0) -- (1.2,0) -- (1.2,4.5) -- (-4.16,4.5) -- (-4.16,2) -- (-0.2,2) -- cycle;
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and three centered variables (background,medium)
+\def\hyperedgezerocountersignatureonecenteredthreeafillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (-0.2,0) -- (1.2,0) -- (1.2,2) -- (5.2,2) -- (5.2,4.5) -- (-0.2,4.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and three centered variables (background,medium)
+\def\hyperedgezerocountersignatureonecenteredthreebfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (-0.2,0) -- (1.2,0) -- (1.2,2) -- (3.66,2) -- (3.66,4.5) -- (-0.2,4.5) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, one variable and two centered variables (background,medium)
+\def\hyperedgezerocountersignatureonecenteredthreedfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (-0.2,0) -- (1.2,0) -- (1.2,4.5) -- (-4.16,4.5) -- (-4.16,2) -- (-0.2,2) -- cycle;
+\end{scope}
+}
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (background, medium)
+\def\hyperedgezerocountersignaturethreecenteredthreeafillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (-0.4,0) -- (1.4,0) -- (1.4,3.4) -- (5.2,3.4) -- (5.2,5.75) -- (-0.4,5.75) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (background, medium)
+\def\hyperedgezerocountersignaturethreecenteredthreebfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=5pt,fill=MyYellowlight] (-0.4,0) -- (1.4,0) -- (1.4,3.4) -- (2.74,3.4) -- (2.74,5.75) -- (-0.4,5.75) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (background, medium)
+\def\hyperedgezerocountersignaturethreecenteredthreedfillmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=MyYellowlight,rounded corners=4pt,fill=MyYellowlight] (-0.45,0) -- (1.45,0) -- (1.45,5.75) -- (-4.16,5.75) -- (-4.16,3.4) -- (-0.45,3.4) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (medium)
+\def\hyperedgezerocountersignaturethreecenteredthreeamedium#1#2#3#4#5#6#7{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.4,0) -- (1.4,0) -- (1.4,3.4) -- (5.2,3.4) -- (5.2,5.75) -- (-0.4,5.75) -- cycle;
+    \coordinate (c7) at (4.2,5.5);
+    \fill (c7) circle (0.08);
+    \node at (c7) [below=2] {#7};
+    \coordinate (c6) at (4.2,4.8);
+    \fill (c6) circle (0.08);
+    \node at (c6) [below=2] {#6};
+    \coordinate (c5) at (4.2,4.1);
+    \fill (c5) circle (0.08);
+    \node at (c5) [below=2] {#5};
+    \coordinate (c4) at (0.51,3.1);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (0.51,2.4);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.51,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (medium)
+\def\hyperedgezerocountersignaturethreecenteredthreebmedium#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.4,0) -- (1.4,0) -- (1.4,3.4) -- (2.74,3.4) -- (2.74,5.75) -- (-0.4,5.75) -- cycle;
+    \coordinate (c4) at (0.51,3.1);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (0.51,2.4);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (medium)
+\def\hyperedgezerocountersignaturedashedthreecenteredthreecmedium#1{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=5pt,dashed] (-0.4,0) -- (1.4,0) -- (1.4,5.75) -- (-1.7,5.75) -- (-1.7,3.4) -- (-0.4,3.4) -- cycle;
+\end{scope}
+}
+% hyperedge of a centered signature constraint with zero counter, three variables and three centered variables (medium)
+\def\hyperedgezerocountersignaturethreecenteredthreedmedium#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 70 + 31}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=35]
+    \draw [ultra thick,color=pink,rounded corners=4pt] (-0.45,0) -- (1.45,0) -- (1.45,5.75) -- (-4.16,5.75) -- (-4.16,3.4) -- (-0.45,3.4) -- cycle;
+    \coordinate (c4) at (0.51,3.1);
+    \fill (c4) circle (0.08);
+    \node at (c4) [below=2] {#4};
+    \coordinate (c3) at (0.51,2.4);
+    \fill (c3) circle (0.08);
+    \node at (c3) [below=2] {#3};
+    \coordinate (c2) at (0.5,1.7);
+    \fill (c2) circle (0.08);
+    \node at (c2) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgefirst#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (0.45,0.35) {#2};
+    \node at (2.25,0.35) {#3};
+    \node at (1.3,1.1) {#4};
+\end{scope}
+}
+\def\hyperedgefirstinc#1#2#3#4{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (0.45,0.35) {#2};
+    \node at (2.25,0.35) {#3};
+    \node at (1.3,1.3) {#4};
+\end{scope}
+}
+\def\hyperedgefirstb#1#2#3#4#5{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (0.45,0.35) {#2};
+    \node at (2.25,0.25) {#3};
+    \node at (2.25,0.7) {#4};
+    \node at (1.3,1.1) {#5};
+\end{scope}
+}
+\def\hyperedgesecond#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (2.2,0.35) {#2};
+    \node at (1.35,1.1) {#3};
+\end{scope}
+}
+\def\hyperedgesecondinc#1#2#3{
+\setcounter{tikzhypergraphshift}{#1 * 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (2.2,0.35) {#2};
+    \node at (1.35,1.3) {#3};
+\end{scope}
+}
+\def\hyperedgethird#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 26}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=30]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=3pt] (0,0) -- (2.6,0) -- (2.6,0.8) -- (1.3,1.7) -- (0,0.8) -- cycle;
+    \node at (1.35,1.2) {#2};
+\end{scope}
+}
+\def\hyperedgesign#1#2{
+\setcounter{tikzhypergraphshift}{#1 * 55 + 23}
+\begin{scope}[xshift=\value{tikzhypergraphshift},yshift=20]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=4pt] (0,0) -- (0.8,0) -- (0.8,2) -- (0,2) -- cycle;
+    \coordinate (c) at (0.45,2);
+    \node at (c) [below=2] {#2};
+\end{scope}
+}
+\def\hyperedgesigna#1#2#3#4#5{
+\setcounter{tikzhypergraphshift}{#1 * 55 + 52}
+\begin{scope}[xshift=\value{tikzhypergraphshift}]
+    \draw [thick,color=MyCornflowerBlue,rounded corners=4pt] (0,0) -- (0.8,0) -- (0.8,2) -- (0,2) -- cycle;
+    \draw [thick,color=MyCornflowerBlue,rounded corners=4pt] (0,0) -- (0,0.8) -- (2,0.8) -- (2,0) -- cycle;
+    \draw [thick,color=MyCornflowerBlue,rounded corners=4pt] (0.8,0) -- (0.8,0.8) -- (0.8-2,0.8) -- (0.8-2,0) -- cycle;
+    \coordinate (a) at (0.45,0.85);
+    \coordinate (b) at (0.45,2);
+    \coordinate (c) at (-0.75,0.85);
+    \coordinate (d) at (1.55,0.85);
+    \node at (a) [below=2] {#2};
+    \node at (b) [below=2] {#3};
+    \node at (c) [below=2] {#4};
+    \node at (d) [below=2] {#5};
+\end{scope}
+}
+% 1:ori_x, 2:ori_y, 3:ori_z, 4:end_x, 5:end_y, 6:end_z, 7:color
+\def\parallelepiped#1#2#3#4#5#6#7{
+\begin{scope}
+\filldraw[fill=#7!30] (#1,#2,-#3)--(#1,#5,-#3)--(#4,#5,-#3)--(#4,#2,-#3)--cycle;
+\filldraw[fill=#7!30] (#1,#5,-#3)--(#4,#5,-#3)--(#4,#5,-#6)--(#1,#5,-#6)--cycle;
+\filldraw[fill=#7!50] (#4,#2,-#3)--(#4,#2,-#6)--(#4,#5,-#6)--(#4,#5,-#3)--cycle;
+\end{scope}
+}

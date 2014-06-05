@@ -16,7 +16,7 @@
 <!ENTITY % mathml PUBLIC "mathml" "mathml2/mathml2.dtd">
 %mathml;
 
-<!ENTITY % tei-aux "(p | hi | note | list | formula | table | theorem | figure | rule | anchor | zws | clearpage  | newpage)+" >
+<!ENTITY % tei-aux "(p | hi | note | list | formula | table | theorem | figure | rule | anchor | zws | clearpage)+" >
 <!ENTITY % texte-general "dotfill | rule | fbox | minipage | hi | ref | xref | formula | cit | label | list | note | figure | table | theorem | LaTeX | anchor | zws | hfil | hfill | mbox | line" >
 <!ENTITY % texte-restreint "hi | ref | xref | formula | LaTeX" >
 
@@ -115,7 +115,7 @@
           bottom-border (true|false) "false"
 		  >
 
-<!ELEMENT figure (head?, p*)>
+<!ELEMENT figure (head?, (hi | p)*)>
 <!ATTLIST figure 
           id ID #IMPLIED
 		  rend (inline|float|array) "float"
@@ -228,7 +228,7 @@
 <!ELEMENT theindex (index+) >
 <!ATTLIST theindex
 		  title CDATA #IMPLIED >
-<!ELEMENT index (#PCDATA | formula)* >
+<!ELEMENT index (#PCDATA | formula | hi)* >
 <!ATTLIST index 
 		  target CDATA #REQUIRED
 		  level CDATA #REQUIRED
@@ -312,7 +312,6 @@
 <!ELEMENT LaTeX EMPTY>
 <!ELEMENT zws EMPTY>
 <!ELEMENT clearpage EMPTY>
-<!ELEMENT newpage EMPTY>
 <!ELEMENT allowbreak EMPTY>
 
 <!ELEMENT color EMPTY>

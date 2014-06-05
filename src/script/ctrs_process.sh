@@ -22,7 +22,7 @@ do
 ###### remove hyperlink{DT...} !!! why did they reappear ?????
 ###### replace the colored boxes by command \mygreatbox
 ###### remove useless \\\ \\
-			cat $i | sed 's/^\(\\index{signature.*\)\\small\(.*}\)$/\1\2/g;s/\\hrule//;s/\(\\item\[.*Automaton.*\]\)/\\end{ctrdesc}\\begin{ctrdesc}\1/;s/hypertarget\({C.*P.*}\){}/label\1/;s/\$\\hyperlink{DT[^}]*}{\$\([^$]*\)\$}\$/\1/g;s/\\setlength\\fboxrule{1\.5pt}\\fcolorbox{MyCornflowerBlue}{MyYellowlight}{\\makebox\[\\width\]/{\\mygreatbox/;s/\\setlength\\fboxrule{1\.5pt}\\fcolorbox{MyRed}{white}{\\begin{minipage}{11\.1cm}//;s/\\\\\\ \\\\//;s/\\colorbox{MyAzurelight}{\\begin{minipage}\[t\]{11\.2cm}//;s/\\end{minipage}}//;1,/item\[Arc input(s)\]/s/\(\\item\[Arc input(s)\]\)/\\end{ctrdesc}\\begin{ctrdesc}\1/'> tmp.tex
+			cat $i | sed 's/^\(\\index{signature.*\)\\small\(.*}\)$/\1\2/g;s/\\hrule//;s/\(\\item\[.*Automaton.*\]\)/\\end{ctrdesc}\\begin{ctrdesc}\1/;s/hypertarget\({C.*P.*}\){}/label\1/;s/\$\\hyperlink{DT[^}]*}{\$\([^$]*\)\$}\$/\1/g;s/\\setlength\\fboxrule{1\.5pt}\\fcolorbox{MyCornflowerBlue}{MyYellowlight}{\\makebox\[\\width\]/{\\mygreatbox/;s/\\setlength\\fboxrule{1\.5pt}\\fcolorbox{MyRed}{white}{\\begin{minipage}{11\.1cm}//;s/\\\\\\ \\\\//;s/\\colorbox{MyAzurelight}{\\begin{minipage}\[t\]{11\.2cm}//;s/\\end{minipage}}//;1,/item\[Arc input(s)\]/s/\(\\item\[Arc input(s)\]\)/\\end{ctrdesc}\\begin{ctrdesc}\1/;s/\(g12.*\)#/\1\\#/'> tmp.tex
 # todo: remplacer les clearpage par les hrule ?? 
 			mv tmp.tex $i
 			

@@ -1,7 +1,7 @@
 #! /bin/bash
 #	 Sophie Demassey/ EMN-LINA/ Global Constraint Catalog Project
 #	 general script for translating the Latex documents to HTML
-#	 Time-stamp: <[process.sh] last changed 02-06-2014 15:00 by sofdem>
+#	 Time-stamp: <[process.sh] last changed 05-06-2014 15:59 by sofdem>
 
 zepwd=`pwd`/..
 xsldir=$zepwd/xsl
@@ -9,14 +9,15 @@ indir=$zepwd/catalog
 namedir=gccat
 
 ############################### scripts
-figpstex=$xsldir/script/figpstex.sh
+#figpstex=$xsldir/script/figpstex.sh
 makeindex=$xsldir/script/make_index.sh
 processctrs=$xsldir/script/ctrs_process.sh
+processtikz=$xsldir/script/tikz_process.sh
 rmhyperlinks=$xsldir/script/remove_hyperlink.sh
 extractpages=$xsldir/script/extractnamedpages.sh
 gensysxml=$xsldir/script/systemxmltopl.sh
 tralicsconf=$xsldir/config/gccat.tcf
-for i in $figpstex $makeindex $processctrs $rmhyperlinks $tralicsconf $gensysxml; do
+for i in $makeindex $processctrs $rmhyperlinks $tralicsconf $gensysxml; do
 	if [ ! -f $i ]; then echo "stop: no script file $i"; exit 1; fi
 done
 tralicsdir=~/bin/tralics-2.13.6
@@ -34,9 +35,9 @@ outdir=$zepwd/webcatalog
 bindir=$zepwd/bin
 savedir=$bindir/savetex
 imgdir=$outdir/ctrs
-pstrickdir=$outdir/figpstrick
+#pstrickdir=$outdir/figpstrick
 logdir=$bindir/log
-for i in $outdir $bindir $savedir $imgdir $pstrickdir $logdir; do
+for i in $outdir $bindir $savedir $imgdir $logdir; do
 	if [ ! -d $i ]; then mkdir $i; fi
 done
 texinputfiles="$xsldir/texinput/titlepage.tex"
@@ -54,7 +55,7 @@ echo "**********************************************"
 read ans; case $ans in
 	[yY])
 
-		echo "(dot): in/ctrs/XXX.dot --> out/ctrs/XXX.png"; c=0
+		echo "(dot): in/ctrs/XXX.dot --> out/ctrs/XXX.png (initial-final graphs)"; c=0
 		for i in $indir/ctrs/*.dot; do basename=`basename $i .dot`; outi=$imgdir/$basename.png
 			if [ ! -f $outi ]; then echo "dot $basename" | tee -a $log; c=`expr $c + 1`
 				$dot -Tpng $i -o $outi
@@ -62,21 +63,21 @@ read ans; case $ans in
 		done
 		echo "dot: $c images generated" | tee -a $log
 
-		echo "(fig2dev): in/srcfigs/fig/XXX.fig --> out/ctrs/XXX.png"; c=0
-		for i in $indir/srcfigs/fig/*.fig; do basename=`basename $i .fig`; outi=$imgdir/$basename.png
-			if [ ! -f $outi ]; then echo "fig2dev $basename" | tee -a $log; c=`expr $c + 1`
-				$fig2dev -L png -m 1.5 -S 4 -f cmr $i $outi
-			fi
-		done
-		echo "fig2dev: $c images generated" | tee -a $log
+		#echo "(fig2dev): in/srcfigs/fig/XXX.fig --> out/ctrs/XXX.png"; c=0
+		#for i in $indir/srcfigs/fig/*.fig; do basename=`basename $i .fig`; outi=$imgdir/$basename.png
+		#	if [ ! -f $outi ]; then echo "fig2dev $basename" | tee -a $log; c=`expr $c + 1`
+		#		$fig2dev -L png -m 1.5 -S 4 -f cmr $i $outi
+		#	fi
+		#done
+		#echo "fig2dev: $c images generated" | tee -a $log
 
-		echo "(fig2dev): in/srcfigs/pstex/XXX.fig --> out/ctrs/XXX.png"; c=0
-		for i in $indir/srcfigs/pstex/*.fig; do basename=`basename $i .fig`; outi=$imgdir/$basename.png
-			if [ ! -f $outi ]; then echo "fig2dev $basename" | tee -a $log; c=`expr $c + 1`
-				$fig2dev -L png -m 1.5 -S 4 -f cmr $i $outi
-			fi
-		done
-		echo "fig2dev: $c images generated" | tee -a $log
+		#echo "(fig2dev): in/srcfigs/pstex/XXX.fig --> out/ctrs/XXX.png"; c=0
+		#for i in $indir/srcfigs/pstex/*.fig; do basename=`basename $i .fig`; outi=$imgdir/$basename.png
+		#	if [ ! -f $outi ]; then echo "fig2dev $basename" | tee -a $log; c=`expr $c + 1`
+		#		$fig2dev -L png -m 1.5 -S 4 -f cmr $i $outi
+		#	fi
+		#done
+		#echo "fig2dev: $c images generated" | tee -a $log
 
 		#echo "(pstex): in/ctrs/XXX.pstex_t --> in/ctrs/XXX.eps"; c=0
 		#for i in $indir/ctrs/*.pstex_t; do basename=`basename $i .pstex_t`; outi=$indir/ctrs/$basename.eps
@@ -98,20 +99,20 @@ read ans; case $ans in
 		#echo "(cp): in/src/fig_treeXXX.png --> out/ctrs/fig_treeXXX.png" | tee -a $log
 		#cp $indir/src/fig*.png $imgdir/
 
-		echo "(cp): in/figpstrick/*.pl --> out/figpstrick/*.pl" | tee -a $log
-		cp $indir/srcfigs/figpstrick/*.pl $pstrickdir/
+		#echo "(cp): in/figpstrick/*.pl --> out/figpstrick/*.pl" | tee -a $log
+		#cp $indir/srcfigs/figpstrick/*.pl $pstrickdir/
 
 		
-		echo "(gs): in/figpstrick/XXX.eps --> out/figpstrick/XXX.png"; c=0
-		echo "(cp): in/ctrs/XXX.xml --> out/figpstrick/XXX.xml"
-		for i in $indir/srcfigs/figpstrick/*.eps; do basename=`basename $i .eps`; outi=$pstrickdir/$basename.png
-			xmli=$indir/ctrs/$basename.xml 
-			if [ -f $xmli ]; then cp $xmli $pstrickdir/; else echo "WARNING: file $xmli does not exist" | tee -a $log; fi
-			if [ ! -f $outi ]; then echo "gs $basename" | tee -a $log; c=`expr $c + 1`
-				gs -q -dBATCH -dNOPAUSE -sDEVICE=png16m -dSAFER -dEPSCrop -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -r200 -sOutputFile=$outi $i # resolution = -R200 for the biggest images
-			fi
-		done
-		echo "gs: $c images generated in figpstrick" | tee -a $log
+		#echo "(gs): in/figpstrick/XXX.eps --> out/figpstrick/XXX.png"; c=0
+		#echo "(cp): in/ctrs/XXX.xml --> out/figpstrick/XXX.xml"
+		#for i in $indir/srcfigs/figpstrick/*.eps; do basename=`basename $i .eps`; outi=$pstrickdir/$basename.png
+		#	xmli=$indir/ctrs/$basename.xml 
+		#	if [ -f $xmli ]; then cp $xmli $pstrickdir/; else echo "WARNING: file $xmli does not exist" | tee -a $log; fi
+		#	if [ ! -f $outi ]; then echo "gs $basename" | tee -a $log; c=`expr $c + 1`
+		#		gs -q -dBATCH -dNOPAUSE -sDEVICE=png16m -dSAFER -dEPSCrop -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -r200 -sOutputFile=$outi $i # resolution = -R200 for the biggest images
+		#	fi
+		#done
+		#echo "gs: $c images generated in figpstrick" | tee -a $log
 		;;
 
 	[qQ])
@@ -129,26 +130,24 @@ read ans; case $ans in
 		cd $indir/
 		if [ ! -f $savedir/preface.tex ]; then cp preface.tex $savedir; else cp $savedir/preface.tex ./; fi
 
-		echo '\hypertarget{bla}{}\subsection{bli} --> \subsection{bli}\label{bla}'
-		cat preface.tex | sed -e 's/^\\hypertarget{\([^}]*\)}{}\(\\subsection{.*}\)/\2\\label{\1}/' > tmp.tex 
-		mv tmp.tex preface.tex
+		#echo '\hypertarget{bla}{}\subsection{bli} --> \subsection{bli}\label{bla}'
+		#sed -i .bak -e 's/^\\hypertarget{\([^}]*\)}{}\(\\subsection{.*}\)/\2\\label{\1}/' preface.tex
+		echo '\hypertarget{bla}{}\subsection[bli]{blo} --> \subsection{bli}\label{bla}'
+		sed -i "" -e 's/^\\hypertarget{\([^}]*\)}{}\\subsection\[\([^]]*\)\]\(.*\)/\\subsection{\2}\\label{\1}%\3/' preface.tex
 
 		#echo '\path|bla| --> \url{bla}'
-		#cat preface.tex | sed -e 's/\(.*\)\\path|\(.*\)|\(.*\)/\1\\url{\2}\3/g' > tmp.tex 
-		#mv tmp.tex preface.tex
+		#sed -i .bak -e 's/\(.*\)\\path|\(.*\)|\(.*\)/\1\\url{\2}\3/g' preface.tex
 		
 		echo "[Bb]oxedverbatim --> verbatim (renewcommand is not enough)..."
-		cat preface.tex | sed -e 's/[Bb]oxedverbatim/verbatim/' > tmp.tex 
-		mv tmp.tex preface.tex
+		sed -i "" -e 's/[Bb]oxedverbatim/verbatim/' preface.tex
 	
-		echo 'href{figpstrick/ --> href{../figpstrick/'
-		cat preface.tex | sed -e 's%href{figpstrick/%href{\.\./figpstrick/%g' > tmp.tex 
-		mv tmp.tex preface.tex
+		#echo 'href{figpstrick/ --> href{../figpstrick/'
+		#sed -i .bak -e 's%href{figpstrick/%href{\.\./figpstrick/%g' preface.tex
 
 		echo '\ref{correspondence_tables} --> \href{xml/gccat_systems.xml}{Systems}'
-		cat preface.tex | sed -e 's%ref{correspondence_tables}%href{xml/gccat_systems.xml}{Systems}%g' | sed -e 's%ref{sec:systems}%href{xml/gccat_systems.xml}{Systems}%g' > tmp.tex 
-		mv tmp.tex preface.tex
+		sed -i "" -e 's%ref{correspondence_tables}%href{xml/gccat_systems.xml}{Systems}%g;s%ref{sec:systems}%href{xml/gccat_systems.xml}{Systems}%g' preface.tex
 
+		sed -i "" -e 's/\\setcounter{enumi}/%&/' preface.tex
 		;;
 
 	[qQ])
@@ -182,9 +181,45 @@ read ans; case $ans in
 		cd $xsldir
 		bash $processctrs $indir/ctrs $savedir
 
-		bash $rmhyperlinks $indir/ctrs/place_in_pyramid.tex $indir/ctrs/disj.tex $indir/ctrs/connect_points.tex $indir/ctrs/tour.tex
+		bash $rmhyperlinks $indir/ctrs/place_in_pyramid.tex $indir/ctrs/disj.tex $indir/ctrs/connect_points.tex $indir/ctrs/tour.tex $indir/ctrs/equilibrium.tex $indir/ctrs/first_value_diff_0.tex $indir/ctrs/k_cut.tex $indir/ctrs/lex_greater.tex $indir/ctrs/lex_greatereq.tex $indir/ctrs/lex_less.tex $indir/ctrs/lex_lesseq.tex $indir/ctrs/minimum_weight_alldifferent.tex $indir/ctrs/roots.tex
 		echo "check tralics errors due to hyperlinks in array environment"
 		echo "then run remove_hyperlink.sh on these specific files"
+		;;
+	[qQ])
+		echo "bye"
+		exit 1;;
+esac
+
+########################################################################################################
+echo "*****************************"
+echo "    Tikz: process preface and ctrs/*.tex [Y]es / [N]o / [Q]uit ?"
+echo "*****************************"
+
+read ans; case $ans in
+	[yY])
+		source $processtikz
+		cd $xsldir
+		processallfiles
+		cd ..
+		;;
+	[qQ])
+		echo "bye"
+		exit 1;;
+esac
+
+########################################################################################################
+echo "*****************************"
+echo "    Tikz: generate images [Y]es / [N]o / [Q]uit ?"
+echo "*****************************"
+
+read ans; case $ans in
+	[yY])
+		source $processtikz
+		cd $xsldir
+		tikz2png
+		echo "(mv): in/tikz/*.png --> out/ctrs/*.tikz" | tee -a $log
+		cd ..
+		mv $xsldir/tikz/*.png $imgdir/
 		;;
 	[qQ])
 		echo "bye"
@@ -199,7 +234,9 @@ echo "*****************************"
 read ans; case $ans in
 	[yY])
 		cd $indir/
-		cat catalog.tex | sed 's/^\\webfalse/%\\webfalse/;s/^%\\webtrue/\\webtrue/' > tmp.tex; mv tmp.tex catalog.tex
+		if [ ! -f $savedir/catalog.tex ]; then cp catalog.tex $savedir; else cp $savedir/catalog.tex ./; fi
+		sed -i "" 's/^\\webfalse/%&/;s/^%\\webtrue/\\webtrue/;s/\\usetikzlibrary/%&/' catalog.tex
+
 		# noentname option : replace &nbsp; by its unicode
 		#$tralics catalog -config=$tralicsconf -confdir=$tralicsconfdir -xml -noentnames -math_variant > $logdir/tralics.log
 		$tralics catalog -config=$tralicsconf -confdir=$tralicsconfdir -xml > $logdir/tralics.log
@@ -222,7 +259,7 @@ read ans; case $ans in
 		then # temporaire !!!!!!!!!!!!! bug Tralics v.12.3
 #			cat $i | sed "s/\(figure [^>]* width='[^']*\)\..*cm/\1cm/g" | sed "s%>  \(<hi rend='bold'>(A)\)%></cell></row><row><cell>\1%" > catalog.xml
 			# supprime les formules vides: problemes dans firefox/mathjax (et inutiles de toute maniere) --> a faire dans le xslt
-			cat $i | sed "s/\(figure [^>]* width='[^']*\)\..*cm/\1cm/g;s%<formula type='inline'><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow/></math></formula>%%g" > $outi
+			cat $i | sed "s/\(figure [^>]* width='[^']*\)\..*cm/\1cm/g;s%<formula type='inline'><math xmlns='http://www.w3.org/1998/Math/MathML'><mrow/></math></formula>%%g;s%<unexpected>%%g;s%</unexpected>%%g" > $outi
 			#########################################################################################rm $i
 		elif [ ! -f $outi ]; then echo "problem !!! no xml file to process"; exit 1
 		fi
@@ -311,7 +348,7 @@ case $ans in
 		echo "copy files in doc/"
 		mkdir $auxdir/doc
 		#########????? rm config/tmp.html
-		cp $indir/catalog.pdf #$xsldir/config/* $xsldir/$0 $xsldir/script/* $auxdir/doc
+		cp $indir/catalog.pdf $auxdir/doc #$xsldir/config/* $xsldir/$0 $xsldir/script/* $auxdir/doc
 
 # 		echo "*****************************"
 # 		echo "process biblio..."
@@ -361,7 +398,7 @@ esac
 
 echo "!!!!!!!!!!!!!!!!!!!! manoprocess !!!!!!!!!!!!"
 echo "xml+xslt"
-echo "squared squares: root, branching, left (--> figpstricks) + directory squared/"
+#echo "squared squares: root, branching, left (--> figpstricks) + directory squared/"
 echo "table numbers in keywords Flow models for... 3.7.84...."
 echo "generate missing figs (tree) and grep -r MISSING *"
 echo "update index.html"
