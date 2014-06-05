@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec2.html">2. Describing Global Constraints</a></h1><ul><li>2.1. <a href="sec2.1.html">Global constraint: what it is, and what it is not</a><ul><li>2.1.1. <a href="sec2.1.1.html">Checker view</a></li><li>2.1.2. <a href="sec2.1.2.html">Feasibility view</a></li><li>2.1.3. <a href="sec2.1.3.html">Filtering view</a></li><li>2.1.4. <a href="sec2.1.4.html">Explanation view</a></li><li>2.1.5. <a href="sec2.1.5.html">Cost violation view</a></li><li>2.1.6. <a href="sec2.1.6.html">Reification view</a></li><li>2.1.7. <a href="sec2.1.7.html">Counting view</a></li><li>2.1.8. <a href="sec2.1.8.html">Property view</a></li></ul></li><li>2.2. <a href="sec2.2.html">Describing the arguments of a global constraint</a><ul><li>2.2.1. <a href="sec2.2.1.html">Basic data types</a></li><li>2.2.2. <a href="sec2.2.2.html">Compound data types</a></li><li>2.2.3. <a href="sec2.2.3.html">Restrictions</a></li><li>2.2.4. <a href="sec2.2.4.html">Declaring a global constraint</a></li><li>2.2.5. <a href="sec2.2.5.html">Describing symmetries between arguments</a></li></ul></li><li>2.3. <a href="sec2.3.html">Describing global constraints in terms of graph properties</a><ul><li>2.3.1. <a href="sec2.3.1.html">Basic ideas and illustrative example</a></li><li>2.3.2. <a href="sec2.3.2.html">Ingredients used for describing global constraints</a><ul><li>2.3.2.1. <a href="sec2.3.2.1.html"><span id="uid781"/>Collection generators</a></li><li>2.3.2.2. <a href="sec2.3.2.2.html">Elementary constraints attached to the arcs</a></li><li>2.3.2.3. <a href="sec2.3.2.3.html">Graph generators</a></li><li>2.3.2.4. <a href="sec2.3.2.4.html">Graph properties</a></li></ul></li><li>2.3.3. <a href="sec2.3.3.html">Graph constraint</a><ul><li>2.3.3.1. <a href="sec2.3.3.1.html">Simple graph constraint</a></li><li>2.3.3.2. <a href="sec2.3.3.2.html">Dynamic graph constraint</a></li></ul></li></ul></li><li>2.4. <a href="sec2.4.html">Describing global constraints in terms of automata</a><ul><li>2.4.1. <a href="sec2.4.1.html">Selecting an appropriate description</a></li><li>2.4.2. <a href="sec2.4.2.html">Defining an automaton</a></li></ul></li><li>2.5. <a href="sec2.5.html">Reformulating global constraints as a conjunction</a></li><li>2.6. <a href="sec2.6.html">Semantic links between global constraints</a><ul><li>2.6.1. <a href="sec2.6.1.html">Assignment dimension added</a></li><li>2.6.2. <a href="sec2.6.2.html">Assignment dimension removed</a></li><li>2.6.3. <a href="sec2.6.3.html">Attached to cost variant</a></li><li>2.6.4. <a href="sec2.6.4.html">Common keyword</a></li><li>2.6.5. <a href="sec2.6.5.html">Comparison swapped</a></li><li>2.6.6. <a href="sec2.6.6.html">Cost variant</a></li><li>2.6.7. <a href="sec2.6.7.html">Generalisation</a></li><li>2.6.8. <a href="sec2.6.8.html">Hard version</a></li><li>2.6.9. <a href="sec2.6.9.html">Implied by</a></li><li>2.6.10. <a href="sec2.6.10.html">Implies</a></li><li>2.6.11. <a href="sec2.6.11.html">Implies (if swap arguments)</a></li><li>2.6.12. <a href="sec2.6.12.html">Implies (items to collection)</a></li><li>2.6.13. <a href="sec2.6.13.html">Negation</a></li><li>2.6.14. <a href="sec2.6.14.html">Part of system of constraints</a></li><li>2.6.15. <a href="sec2.6.15.html">Related</a></li><li>2.6.16. <a href="sec2.6.16.html">Related to a common problem</a></li><li>2.6.17. <a href="sec2.6.17.html">Root concept</a></li><li>2.6.18. <a href="sec2.6.18.html">Shift of concept</a></li><li>2.6.19. <a href="sec2.6.19.html">Soft variant</a></li><li>2.6.20. <a href="sec2.6.20.html">Specialisation</a></li><li>2.6.21. <a href="sec2.6.21.html">System of constraints</a></li><li>2.6.22. <a href="sec2.6.22.html">Used in graph description</a></li><li>2.6.23. <a href="sec2.6.23.html">Used in reformulation</a></li><li>2.6.24. <a href="sec2.6.24.html">Uses in its reformulation</a></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec2.4.2.html">2.4.2. Defining an automaton &gt;&gt;</a></div><div id="main"><h3>2.4.1. Selecting an appropriate description</h3><p>As we previously said, we focus on those global constraints that can be
+checked by scanning once through their variables. This is for instance
+the case of:</p><ul>
+<li id="uid1308"><p><a href="Celement.html#uid20353"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚎𝚕𝚎𝚖𝚎𝚗𝚝</mi></math><span id="uid1309"/></a><span id="uid1310"/> <a class="cite" href="biblio.html#bid59">[VanHentenryckCarillon88]</a>,</p>
+</li>
+<li id="uid1311"><p><a href="Cminimum.html#uid27036"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid1312"/></a><span id="uid1313"/> <a class="cite" href="biblio.html#bid60">[Beldiceanu01]</a>,</p>
+</li>
+<li id="uid1314"><p><a href="Cpattern.html#uid29774"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚊𝚝𝚝𝚎𝚛𝚗</mi></math><span id="uid1315"/></a><span id="uid1316"/> <a class="cite" href="biblio.html#bid61">[BourdaisGalinierPesant03]</a>,</p>
+</li>
+<li id="uid1317"><p><a href="Cglobal_contiguity.html#uid22084"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚝𝚒𝚐𝚞𝚒𝚝𝚢</mi></mrow></math><span id="uid1318"/></a><span id="uid1319"/> <a class="cite" href="biblio.html#bid62">[Maher02]</a>,</p>
+</li>
+<li id="uid1320"><p><a href="Clex_lesseq.html#uid25731"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1321"/></a><span id="uid1322"/> <a class="cite" href="biblio.html#bid63">[FrischHnichKiziltanMiguelWalsh02]</a>,</p>
+</li>
+<li id="uid1323"><p><a href="Camong.html#uid13793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid1324"/></a><span id="uid1325"/> <a class="cite" href="biblio.html#bid64">[BeldiceanuContejean94]</a>,</p>
+</li>
+<li id="uid1326"><p><a href="Cinflexion.html#uid23514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid1327"/></a><span id="uid1328"/> <a class="cite" href="biblio.html#bid6">[Beldiceanu00]</a>,</p>
+</li>
+<li id="uid1329"><p><a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid1330"/></a><span id="uid1331"/> <a class="cite" href="biblio.html#bid39">[Regin94]</a>.</p>
+</li></ul><p>Since they illustrate key points needed for characterising the set of
+solutions associated with a global constraint, our discussion will be
+based on the last five constraints for which we now recall the definition:</p><ul>
+<li id="uid1332"><p>The <a href="Cglobal_contiguity.html#uid22084"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚝𝚒𝚐𝚞𝚒𝚝𝚢</mi></mrow></math><span id="uid1333"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>)</mo></mrow></math> constraint forces
+the sequence of 0-1 variables <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛𝚜</mi></math> to have at most one
+group of consecutive 1. For instance, the constraint
+<a href="Cglobal_contiguity.html#uid22084"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚝𝚒𝚐𝚞𝚒𝚝𝚢</mi></mrow></math><span id="uid1334"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>〉</mo><mo>)</mo></mrow></math> holds since we have only one
+group of consecutive 1.</p>
+</li>
+<li id="uid1335"><p>The lexicographic ordering constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>x</mi> <mo>→</mo></mover><msub><mo>≤</mo> <mi> lex </mi> </msub><mover accent="true"><mi>y</mi> <mo>→</mo></mover></mrow></math>
+(see <a href="Clex_lesseq.html#uid25731"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1336"/></a>)
+over two vectors of variables
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>x</mi> <mo>→</mo></mover><mo>=</mo><mrow><mo>〈</mo><msub><mi>x</mi> <mn>0</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>x</mi> <mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow> </msub><mo>〉</mo></mrow></mrow></math> and
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover accent="true"><mi>y</mi> <mo>→</mo></mover><mo>=</mo><mrow><mo>〈</mo><msub><mi>y</mi> <mn>0</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>y</mi> <mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow> </msub><mo>〉</mo></mrow></mrow></math> holds
+if and only if
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>x</mi> <mn>0</mn> </msub><mo>&lt;</mo><msub><mi>y</mi> <mn>0</mn> </msub></mrow></math> or
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>x</mi> <mn>0</mn> </msub><mo>=</mo><msub><mi>y</mi> <mn>0</mn> </msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>〈</mo><msub><mi>x</mi> <mn>1</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>x</mi> <mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow> </msub><mo>〉</mo></mrow><msub><mo>≤</mo> <mi> lex </mi> </msub><mrow><mo>〈</mo><msub><mi>y</mi> <mn>1</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>y</mi> <mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow> </msub><mo>〉</mo></mrow></mrow></math>.</p>
+</li>
+<li id="uid1337"><p>The <a href="Camong.html#uid13793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid1338"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚗𝚟𝚊𝚛</mi><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>,</mo><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi><mo>)</mo></mrow></math> constraint
+restricts the number of variables of the sequence of variables <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛𝚜</mi></math>
+that take their values in a given set <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi></math>, to be equal to the
+variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚛</mi></math>.
+For instance, <a href="Camong.html#uid13793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid1339"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>3</mn><mo>,</mo><mo>〈</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo>〉</mo><mo>,</mo><mo>〈</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>〉</mo><mo>)</mo></mrow></math>
+holds since exactly 3 values of the sequence 45541 are located in the set of values <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>}</mo></mrow></math>.</p>
+</li>
+<li id="uid1340"><p>The <a href="Cinflexion.html#uid23514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid1341"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚗𝚒𝚗𝚏</mi><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>)</mo></mrow></math> constraint
+forces the number of inflexions of the sequence of variables
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛𝚜</mi></math> to be equal to the variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚏</mi></math>. An
+<i>inflexion</i> is described by one of the following patterns:
+a strict increase followed by a strict decrease or, conversely,
+a strict decrease followed by a strict increase. For instance,
+<a href="Cinflexion.html#uid23514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid1342"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mn>4</mn><mo>,</mo><mo>〈</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>3</mn><mo>〉</mo><mo>)</mo></mrow></math> holds since we
+can extract from the sequence 33145565563 the four subsequences
+314, 565, 6556 and 563, which all follow one of these two
+patterns.</p>
+</li>
+<li id="uid1343"><p>The <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid1344"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>)</mo></mrow></math> constraint
+forces all pairs of distinct variables of the collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛𝚜</mi></math>
+to take distinct values.
+For instance <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid1345"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mo>〈</mo><mn>6</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo>〉</mo><mo>)</mo></mrow></math> holds since we have
+four distinct values.</p>
+</li></ul><div class="figure" id="uid1346"><h5><b>Figure 2.4.1. </b><span class="small">Five checkers and their corresponding automata</span></h5><img alt="ctrs/preface-11-tikz" src="../ctrs/preface-11-tikz.png"/></div><p>Parts (A1), (B1), (C1), (D1) and (E1) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a> depict the five checkers
+respectively associated
+with <a href="Cglobal_contiguity.html#uid22084"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚝𝚒𝚐𝚞𝚒𝚝𝚢</mi></mrow></math><span id="uid1347"/></a>,
+with <a href="Clex_lesseq.html#uid25731"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1348"/></a>,
+with <a href="Camong.html#uid13793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid1349"/></a>,
+with <a href="Cinflexion.html#uid23514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid1350"/></a> and
+with <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid1351"/></a>.
+Within the corresponding automata
+an initial state is indicated by an arc coming from no state and
+an accepting state is denoted graphically by a double circle.
+For each checker we observe the following facts:</p><ul>
+<li id="uid1352"><p>Within the checker depicted by part (A1) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>,
+the values of the sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>
+are successively compared against 0 and 1 in order to check that we
+have at most one group of consecutive 1. This can be translated to
+the automaton depicted by part (A2) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>.
+The automaton takes as input the sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>, and triggers successively a transition for
+each term of this sequence. Transitions labelled by 0 and 1 are respectively associated with the conditions <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>=</mo><mn>0</mn></mrow></math> and
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>=</mo><mn>1</mn></mrow></math>.Transitions leading to failure are systematically skipped.
+This is why no transition labelled with a 1 starts from state <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math>.</p>
+</li>
+<li id="uid1353"><p>Within the checker given by part (B1) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>,
+the components of vectors <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>x</mi> <mo>→</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mi>y</mi> <mo>→</mo></mover></math>
+are scanned in parallel.
+We first skip all the components that are equal and then perform a final check.
+This is represented by the automaton depicted by part (B2) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>.
+The automaton takes as input the sequence
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><mi>x</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mi>y</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>〉</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mo>〈</mo><mi>x</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo><mo>,</mo><mi>y</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo><mo>〉</mo></mrow></math>
+and triggers a transition for each term of this sequence.
+Unlike the <a href="Cglobal_contiguity.html#uid22084"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚕𝚘𝚋𝚊𝚕</mi><mo>_</mo><mi>𝚌𝚘𝚗𝚝𝚒𝚐𝚞𝚒𝚝𝚢</mi></mrow></math><span id="uid1354"/></a> constraint, some transitions
+now correspond to a condition
+(e.g., <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>=</mo><mi>y</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>x</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>&lt;</mo><mi>y</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>)
+between two variables of the <a href="Clex_lesseq.html#uid25731"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚡</mi><mo>_</mo><mi>𝚕𝚎𝚜𝚜𝚎𝚚</mi></mrow></math><span id="uid1355"/></a> constraint.</p>
+</li>
+<li id="uid1356"><p>Note that the <a href="Camong.html#uid13793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid1357"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚗𝚟𝚊𝚛</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi><mo>)</mo></mrow></math> constraint
+involves a variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚛</mi></math> whose value is computed from a given collection
+of variables <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛𝚜</mi></math>.
+The checker depicted by part (C1) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a> counts the number of variables
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math> that take their values in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi></math>.
+For this purpose it uses a counter <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>, which is possibly tested against the value
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚛</mi></math>.
+This convinced us to allow the use of counters in an automaton.
+Each counter has an initial value, which can be updated while triggering certain
+transitions. The accepting states of an automaton can force a variable of the constraint
+to be equal to a given counter.
+Part (C2) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a> describes the automaton corresponding to the code given
+in part (C1) of the same figure.
+The automaton uses the counter variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> initially set to 0 and takes as input
+the sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>.
+It triggers a transition for each variable of this sequence and increments <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math>
+when the corresponding variable takes its value in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚞𝚎𝚜</mi></math>.
+The accepting state returns a success when the value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> is
+equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚛</mi></math>.
+At this point we want to stress the following fact:
+it would have been possible to use an automaton that avoids the use of counters.
+However, this automaton would depend on the effective value of the argument <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚛</mi></math>.
+In addition, it would require more states than the automaton of part (C2) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>.
+This is typically a problem if we want to have a fixed number of states
+in order to save memory as well as time.</p>
+</li>
+<li id="uid1358"><p>As the <a href="Camong.html#uid13793"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚖𝚘𝚗𝚐</mi></math><span id="uid1359"/></a> constraint, the <a href="Cinflexion.html#uid23514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid1360"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚗𝚒𝚗𝚏</mi><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>)</mo></mrow></math>
+constraint involves a variable <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚏</mi></math> whose value is computed from a given sequence
+of variables <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>⋯</mo><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>.
+Therefore, the checker depicted in part (D1) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a> uses also a
+counter <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> for counting the number of inflexions, and compares its final value to the
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚏</mi></math> argument.
+The automaton depicted by part (D2) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>
+represents this program.
+It takes as input the sequence of pairs
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>1</mn><mo>]</mo><mo>〉</mo><mo>,</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>1</mn><mo>]</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>2</mn><mo>]</mo><mo>〉</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>,</mo><mo>⋯</mo><mo>,</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>2</mn><mo>]</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo><mo>〉</mo></mrow></math>
+and triggers a transition for each pair.
+Note that a given variable may occur in more than one pair.
+Each transition compares the respective values of two consecutive variables of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>.</mo><mo>.</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math> and increments the counter <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> when a new inflexion is detected.
+The accepting state returns a success when the value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚒𝚗𝚏</mi></math>.</p>
+</li>
+<li id="uid1361"><p>The checker associated with <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid1362"/></a> is depicted by part (E1) of Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>.
+It first initialises an array of counters to 0.
+The entries of the array correspond to the potential values of the sequence
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>.
+In a second phase the checker computes for each potential value its number of
+occurrences in the sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>.
+This is done by scanning this sequence.
+Finally in a third phase the checker verifies that no value is used more than once.
+These three phases are represented by the automaton depicted by part (E2) of
+Figure <a href="sec2.4.1.html#uid1346">2.4.1</a>.
+The automaton depicted by part (E2) takes as input the sequence
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>.
+Its initial state initialises an array of counters to 0.
+Then it triggers successively a transition for each element <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>
+of the input sequence and increments by 1 the entry corresponding to
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>.
+The accepting state checks that all entries of the array of counters are strictly
+less than 2, which means that no value occurs more than once in the
+sequence <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>⋯</mo><mo>,</mo><mi>𝚟𝚊𝚛𝚜</mi><mo>[</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>.</p>
+</li></ul><p>Synthesising all the observations we got from these
+examples leads to the following remarks and definitions
+for a given global constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒞</mi></math>:</p><ul>
+<li id="uid1363"><p>For a given state, no transition can be triggered indicates that the constraint
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒞</mi></math> does not hold.</p>
+</li>
+<li id="uid1364"><p>Since all transitions starting from a given state are mutually incompatible all automata
+are deterministic.
+Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℳ</mi></math> denote the set of mutually incompatible conditions associated with the
+different transitions of an automaton.</p>
+</li>
+<li id="uid1365"><p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝒮</mi> <mn>0</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>𝒮</mi> <mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow> </msub></mrow></math> denote the sequence of subsets of variables
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒞</mi></math> on which the transitions are successively triggered.
+All these subsets contain the same number of elements and refer to some variables
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝒞</mi></math>.
+Since these subsets typically depend on the constraint, we leave the computation of
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝒮</mi> <mn>0</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>𝒮</mi> <mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow> </msub></mrow></math> outside the automaton.
+To each subset <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒮</mi> <mi>i</mi> </msub></math> of this sequence corresponds a variable
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi> <mi>i</mi> </msub></math> with an initial domain ranging over <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><mi>𝑚𝑖𝑛</mi><mo>,</mo><mi>𝑚𝑖𝑛</mi><mo>+</mo><mo>|</mo><mi>ℳ</mi><mo>|</mo><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>,
+where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑚𝑖𝑛</mi></math> is a fixed integer.
+To each integer of this range corresponds one of the mutually incompatible conditions
+of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ℳ</mi></math>.
+The sequences <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>S</mi> <mn>0</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>S</mi> <mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow> </msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>𝒮</mi> <mn>0</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>𝒮</mi> <mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow> </msub></mrow></math> are respectively
+called the <i>signature</i> and the <i>signature argument</i> of the constraint.
+The constraint between <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi> <mi>i</mi> </msub></math> and the variables of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝒮</mi> <mi>i</mi> </msub></math> is called the
+<i>signature constraint</i> and is denoted by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>Ψ</mi> <mi>𝒞</mi> </msub><mrow><mo>(</mo><msub><mi>S</mi> <mi>i</mi> </msub><mo>,</mo><msub><mi>𝒮</mi> <mi>i</mi> </msub><mo>)</mo></mrow></mrow></math>.</p>
+</li>
+<li id="uid1366"><p>From a pragmatic point the view, the task of writing a constraint checker is
+naturally done by writing down an imperative program where local variables,
+arrays, assignment statements and control structures are used.
+This suggested us to consider deterministic finite automata augmented with local
+variables and assignment statements on these variables.
+Regarding control structures, we did not introduce any extra feature since the
+deterministic choice of which transition to trigger next seemed to be good enough.</p>
+</li>
+<li id="uid1367"><p>Many global constraints involve a variable whose value is computed from a given
+collection of variables.
+This convinced us to allow the accepting state of an automaton to optionally return
+a result. In practice, this result corresponds to the value of a local variable
+of the automaton in the accepting state.</p>
+</li></ul></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-5. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

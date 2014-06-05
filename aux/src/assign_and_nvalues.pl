@@ -143,8 +143,8 @@ assign_and_nvalues_r(ITEMS, RELOP, LIMIT) :-
     check_type(dvar, LIMIT),
     get_attr1(ITEMS, BINS),
     get_attr2(ITEMS, VALUES),
-    get_minimum(BINS, MINBINS),
-    get_maximum(BINS, MAXBINS),
+	get_minimum(BINS, MINBINS),
+	get_maximum(BINS, MAXBINS),
     gen_matrix_bool(MINBINS, MAXBINS, BINS, BMATRIX),
     get_minimum(VALUES, MINVALUES),
     JOKER is MINVALUES-1,
@@ -162,7 +162,5 @@ assign_and_nvalues1([BLINE|RBMATRIX], VALUES, JOKER, RELOP, LIM) :-
 
 assign_and_nvalues2([], [], JOKER, [JOKER]).
 assign_and_nvalues2([VAR|RVAR], [VAL|RVAL], JOKER, [V|R]) :-
-    fd_max(VAL, MAX),
-    V in JOKER..MAX,
     (VAR #= 0 #/\ V #= JOKER) #\/ (VAR #= 1 #/\ V #= VAL),
     assign_and_nvalues2(RVAR, RVAL, JOKER, R).

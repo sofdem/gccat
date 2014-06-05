@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">Functional dependency invariants</a><ul><li>4.4.1. <a href="sec4.4.1.html">Functional dependency invariants involving two constraints</a></li><li>4.4.2. <a href="sec4.4.2.html">Functional dependency invariants involving three constraints</a></li><li>4.4.3. <a href="sec4.4.3.html">Functional dependency invariants involving four constraints</a></li></ul></li><li>4.5. <a href="sec4.5.html">The electronic version of the catalogue</a><ul><li>4.5.1. <a href="sec4.5.1.html">Prolog facts describing a constraint</a></li><li>4.5.2. <a href="sec4.5.2.html">XML schema associated with a global constraint</a><ul><li>4.5.2.1. <a href="sec4.5.2.1.html">Related work</a></li><li>4.5.2.2. <a href="sec4.5.2.2.html">Key features</a></li><li>4.5.2.3. <a href="sec4.5.2.3.html">Structure of schema</a></li><li>4.5.2.4. <a href="sec4.5.2.4.html">Generating schema from the catalogue</a></li><li>4.5.2.5. <a href="sec4.5.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.5.2.html">4.5.2. XML schema associated with a global cons &gt;&gt;</a></div><div id="main"><h3>4.5.1. Prolog facts describing a constraint</h3><p>For each global constraint, the electronic version of its description is provided as a Prolog file (see the link “.pl file” at the beginning of the section corresponding to a global constraint). In addition the file “eval.pl” contains a set of shared utilities used for evaluating the constraints.
+This electronic version was used for generating the
+LaTeX file of this catalogue, the figures associated with
+the graph-based description and a filtering algorithm
+for some of the constraints that use the automaton-based
+description.
+Within the electronic version, each constraint is described
+in terms of meta-data.
+A typical entry is:</p><p><span class="small"><tt>ctr_date(minimum, ['20000128','20030820','20040530',</tt></span></p><p><span class="small"><tt>                   '20041230','20060811','20090416']).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_origin(minimum, '\\index{CHIP|indexuse}CHIP', []).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_arguments(minimum, ['MIN'-dvar, 'VARIABLES'-collection(var-dvar)]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_exchangeable(minimum,</tt></span></p><p><span class="small"><tt>                 [items('VARIABLES',all),</tt></span></p><p><span class="small"><tt>                  vals(['VARIABLES'^var],int,=\=,all,in),</tt></span></p><p><span class="small"><tt>                  translate(['MIN','VARIABLES'^var])]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_synonyms(minimum, [min]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_restrictions(minimum, [size('VARIABLES')&gt;0, required('VARIABLES',var)]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_typical(minimum, [size('VARIABLES') &gt; 1, range('VARIABLES'^var) &gt; 1]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_pure_functional_dependency(minimum, []).</tt></span></p><p><span class="small"><tt>ctr_functional_dependency(minimum, 1, [2]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_aggregate(minimum, [], [min, union]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_graph(minimum,</tt></span></p><p><span class="small"><tt>          ['VARIABLES'],</tt></span></p><p><span class="small"><tt>          2,</tt></span></p><p><span class="small"><tt>          ['CLIQUE'&gt;&gt;collection(variables1,variables2)],</tt></span></p><p><span class="small"><tt>          [variables1^key=variables2^key #\/ variables1^var&lt;variables2^var],</tt></span></p><p><span class="small"><tt>          ['ORDER'(0,'MAXINT',var)='MIN'],</tt></span></p><p><span class="small"><tt>          []).</tt></span></p><p/><p><span class="small"><tt>ctr_example(minimum,</tt></span></p><p><span class="small"><tt>            [minimum(2,[[var-3],[var-2],[var-7],[var-2],[var-6]]),</tt></span></p><p><span class="small"><tt>             minimum(7,[[var-8],[var-8],[var-7],[var-8],[var-7]])]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_cond_imply(minimum, deepest_valley,</tt></span></p><p><span class="small"><tt>               [first('VARIABLES'^var) &gt; 'MIN',</tt></span></p><p><span class="small"><tt>                last('VARIABLES'^var) &gt; 'MIN'], [], id).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_see_also(minimum,</tt></span></p><p><span class="small"><tt> [link('generalisation', minimum_modulo,</tt></span></p><p><span class="small"><tt>       '%e replaced by %e', [variable, variable mod constant]),</tt></span></p><p><span class="small"><tt>  link('specialisation', min_n,</tt></span></p><p><span class="small"><tt>       'minimum or order %e replaced by absolute minimum', [n]),</tt></span></p><p><span class="small"><tt>  link('comparison swapped', maximum, '', []),</tt></span></p><p><span class="small"><tt>  link('common keyword', maximum, '%k', ['order constraint']),</tt></span></p><p><span class="small"><tt>  link('soft variant', open_minimum, '%k', ['open constraint']),</tt></span></p><p><span class="small"><tt>  link('soft variant', minimum_except_0, 'value %e is ignored', [0]),</tt></span></p><p><span class="small"><tt>  link('implies', between_min_max, '', []),</tt></span></p><p><span class="small"><tt>  link('implies', in, '', []),</tt></span></p><p><span class="small"><tt>  link('implied by', and, '', [])]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_key_words(minimum,['order constraint'                        ,</tt></span></p><p><span class="small"><tt>                       'minimum'                                 ,</tt></span></p><p><span class="small"><tt>                       'maxint'                                  ,</tt></span></p><p><span class="small"><tt>                       'automaton'                               ,</tt></span></p><p><span class="small"><tt>                       'automaton without counters'              ,</tt></span></p><p><span class="small"><tt>                       'reified automaton constraint'            ,</tt></span></p><p><span class="small"><tt>                       'centered cyclic(1) constraint network(1)',</tt></span></p><p><span class="small"><tt>                       'arc-consistency'                         ]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_persons(minimum,['Beldiceanu N.']).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_eval(minimum, [builtin(minimum_b), automaton(minimum_a)]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>minimum_b(MIN, VARIABLES) :-</tt></span></p><p><span class="small"><tt>    check_type(dvar, MIN),      collection(VARIABLES, [dvar]),</tt></span></p><p><span class="small"><tt>    length(VARIABLES, N),       N &gt; 0,</tt></span></p><p><span class="small"><tt>    get_attr1(VARIABLES, VARS), minimum(MIN, VARS).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>minimum_a(MIN, VARIABLES) :-   % 0: MIN&lt;VAR, 1: MIN=VAR, 2: MIN&gt;VAR</tt></span></p><p><span class="small"><tt>    minimum_signature(VARIABLES, SIGNATURE, MIN),</tt></span></p><p><span class="small"><tt>    automaton(SIGNATURE, _, SIGNATURE,</tt></span></p><p><span class="small"><tt>              [source(s),sink(t)],</tt></span></p><p><span class="small"><tt>              [arc(s,0,s),arc(s,1,t),arc(t,1,t),arc(t,0,t)],</tt></span></p><p><span class="small"><tt>              [],[],[]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>minimum_signature([], [], _).</tt></span></p><p><span class="small"><tt>minimum_signature([[var-VAR]|VARs], [S|Ss], MIN) :-</tt></span></p><p><span class="small"><tt>    S in 0..2,</tt></span></p><p><span class="small"><tt>    MIN #&lt; VAR #&lt;=&gt; S #= 0, MIN #= VAR #&lt;=&gt; S #= 1, MIN #&gt; VAR #&lt;=&gt; S #= 2,</tt></span></p><p><span class="small"><tt>    minimum_signature(VARs, Ss, MIN).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_sol(minimum,2,0,2,9,[0-5,1-3,2-1]).</tt></span></p><p><span class="small"><tt>ctr_sol(minimum,3,0,3,64,[0-37,1-19,2-7,3-1]).</tt></span></p><p><span class="small"><tt>ctr_sol(minimum,4,0,4,625,[0-369,1-175,2-65,3-15,4-1]).</tt></span></p><p><span class="small"><tt>ctr_sol(minimum,5,0,5,7776,[0-4651,1-2101,2-781,3-211,4-31,5-1]).</tt></span></p><p><span class="small"><tt>ctr_sol(minimum,6,0,6,117649,[0-70993,1-31031,2-11529,3-3367,</tt></span></p><p><span class="small"><tt>                              4-665,5-63,6-1]).</tt></span></p><p><span class="small"><tt>ctr_sol(minimum,7,0,7,2097152,[0-1273609,1-543607,2-201811,3-61741,</tt></span></p><p><span class="small"><tt>                               4-14197,5-2059,6-127,7-1]).</tt></span></p><p><span class="small"><tt>ctr_sol(minimum,8,0,8,43046721,[0-26269505,1-11012415,2-4085185,</tt></span></p><p><span class="small"><tt>                                3-1288991,4-325089,5-58975,6-6305,7-255,</tt></span></p><p><span class="small"><tt>                                8-1]).</tt></span></p><p/><p>and consists of the following Prolog facts,
+where <span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math></span> is the name of
+the constraint under consideration.
+The facts are organised in the following 20 items:</p><ul>
+<li id="uid12356"><p>Items 1, 2, 3, 4, 16 and 17 provide general information about a global constraint,</p>
+</li>
+<li id="uid12357"><p>Items 5, 6, 7 and 8 describe the arguments of a global constraint.</p>
+</li>
+<li id="uid12358"><p>Items 9 and 10 give properties of the arguments of a global constraint,
+e.g. <a href="Kfunctional_dependency.html#uid6717">functional dependency</a>, <a href="Kcontractible.html#uid5344">contractibility</a>.</p>
+</li>
+<li id="uid12359"><p>Item 11 describes symmetries of a global constraint,
+i.e. list of mappings (e.g., permutation of arguments) that preserve the solutions of a global constraint.</p>
+</li>
+<li id="uid12360"><p>Items 12 and 13 describes the meaning of a global constraint in terms of a
+graph-based representation.</p>
+</li>
+<li id="uid12361"><p>Item 14 provides one or several ground instances which hold.</p>
+</li>
+<li id="uid12362"><p>Item 18 gives the list of available evaluators of a global constraint.</p>
+</li>
+<li id="uid12363"><p>Item 19 provides the number of solutions of the constraint under various assumptions
+on the number of variables and on their initial domains.</p>
+</li>
+<li id="uid12364"><p>Item 20 describes the meaning of a global constraint in terms of a
+set of first order logic formulae.</p>
+</li></ul><p>Items 1, 2, 6 and 14 are mandatory, while all other items are optional.
+We now give the different items:</p><ol>
+<li id="uid12365"><p><span class="small"><tt>ctr_date</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙰𝚃𝙴𝚂</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12366"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙰𝚃𝙴𝚂</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of dates when the
+description of the constraint was modified.</span></p>
+</li></ul>
+</li>
+<li id="uid12367"><p><span class="small"><tt>ctr_origin</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12368"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi></math> is a string denoting the origin of the constraint.
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴𝚂</mi></mrow></math> is a possibly empty list
+of constraint names related to the origin of the constraint.</span></p>
+</li></ul>
+</li>
+<li id="uid12369"><p><span class="small"><tt>ctr_usual_name</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝚄𝚂𝚄𝙰𝙻</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12370"><p><span class="small">When, for some reason, the constraint name used in the catalogue does not correspond to
+the usual name of the constraint, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚄𝚂𝚄𝙰𝙻</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math> provides the usual name of
+the constraint. This stems from the fact that each entry of the catalogue should have a distinct
+name. This is for instance the case for the <a href="Cstretch_path.html#uid32795"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚙𝚊𝚝𝚑</mi></mrow></math><span id="uid12371"/></a> and
+the <a href="Cstretch_circuit.html#uid32710"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi></mrow></math><span id="uid12372"/></a> constraints which are both usually called
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi></math>.</span></p>
+</li></ul>
+</li>
+<li id="uid12373"><p><span class="small"><tt>ctr_synonyms</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙽𝙾𝙽𝚈𝙼𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12374"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙽𝙾𝙽𝚈𝙼𝚂</mi></mrow></math> is a list of synonyms for the constraint.
+This stems from the fact that, quite often, different authors use a different
+name for the same constraint. This is for instance the case for the
+<a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid12375"/></a> and the <a href="Csymmetric_alldifferent.html#uid33648"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚢𝚖𝚖𝚎𝚝𝚛𝚒𝚌</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid12376"/></a> constraints.</span></p>
+</li></ul>
+</li>
+<li id="uid12377"><p><span class="small"><tt>ctr_types</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚃𝚈𝙿𝙴𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12378"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚃𝚈𝙿𝙴𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of
+elements of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚊𝚖𝚎</mi></math>-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math>, where
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚊𝚖𝚎</mi></math> is the name of a new type
+and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math> the type itself (usually a collection).
+Basic and compound data types were respectively introduced in
+sections <a href="sec2.2.1.html#uid272">2.2.1</a> and <a href="sec2.2.2.html#uid287">2.2.2</a>
+on page <a href="sec2.2.1.html#uid272">2.2.1</a>.
+This field is only used when we need to declare a new type that
+will be used for specifying the type of the arguments of the constraint.
+This is for instance the case when one argument of the constraint
+is a collection for which the type of one attribute is also a
+collection. This is for instance the case for the <a href="Cdiffn.html#uid19177"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid12379"/></a>
+constraint where the unique argument <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi></math> is a
+collection of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi></math> refers
+to a new type declared in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚃𝚈𝙿𝙴𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math>.</span></p>
+</li></ul>
+</li>
+<li id="uid12380"><p><span class="small"><tt>ctr_arguments</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12381"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of
+elements of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚛𝚐</mi></math>-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math>, where
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚛𝚐</mi></math> is the name of an argument of the constraint
+and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math> the type of the argument.
+Basic and compound data types were respectively introduced in
+sections <a href="sec2.2.1.html#uid272">2.2.1</a> and <a href="sec2.2.2.html#uid287">2.2.2</a>
+on page <a href="sec2.2.1.html#uid272">2.2.1</a>.</span></p>
+</li></ul>
+</li>
+<li id="uid12382"><p><span class="small"><tt>ctr_restrictions</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12383"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of restrictions
+on the different arguments of the constraint.
+Possible restrictions were described in Section <a href="sec2.2.3.html#uid311">2.2.3</a>
+on page <a href="sec2.2.3.html#uid311">2.2.3</a>.</span></p>
+</li></ul>
+</li>
+<li id="uid12384"><p><span class="small"><tt>ctr_typical</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12385"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of typical restrictions
+on the different arguments of the constraint, i.e. even though these restrictions
+are not mandatory they usually hold.
+Possible restrictions were described in Section <a href="sec2.2.3.html#uid311">2.2.3</a>
+on page <a href="sec2.2.3.html#uid311">2.2.3</a>.</span></p>
+</li></ul>
+</li>
+<li id="uid12386"><p><span class="small"><tt>ctr_pure_functional_dependency</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12387"><p><span class="small">Indicate that, under the assumption that all restrictions described
+by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> hold, at least one of the arguments
+of the constraint is <a href="Kfunctional_dependency.html#uid6717">functionally determined</a>
+by the other arguments. Possible restrictions were described in
+Section <a href="sec2.2.3.html#uid311">2.2.3</a> on page <a href="sec2.2.3.html#uid311">2.2.3</a>.
+Which argument <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙰𝚁𝙶</mi></math> is determined by which subset of arguments <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙰𝚁𝙶𝚂</mi></mrow></math>
+is described by the fact </span><span class="small"><tt>ctr_functional_dependency</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo></mrow></math>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙶</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙰𝚁𝙶𝚂</mi> <mo>)</mo></mrow></math> where arguments are denoted by their positions within the constraint.</span></p>
+</li></ul>
+</li>
+<li id="uid12388"><p><span class="small"><tt>ctr_aggregate</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi><mo>,</mo>  <mi>𝙰𝚁𝙶</mi><mo>_</mo><mi>𝙰𝙶𝙶𝚁𝙴𝙶𝙰𝚃𝙸𝙾𝙽</mi> <mo>)</mo></mrow></math></span></p>
+<p><span class="small">Denotes that, given two instances of the constraint that both satisfy all restrictions described
+by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math>, we can combine (i.e., aggregate) these two instances
+in order to obtain an implied constraint, which has the same name as the first two constraints.
+We use <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙶</mi><mo>_</mo><mi>𝙰𝙶𝙶𝚁𝙴𝙶𝙰𝚃𝙸𝙾𝙽</mi></mrow></math> in order to obtain the arguments of the implied
+constraint as described in the keyword <a href="Kaggregate.html#uid3018">Aggregate</a>.</span></p>
+</li>
+<li id="uid12389"><p><span class="small"><tt>ctr_exchangeable</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙼𝙼𝙴𝚃𝚁𝙸𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12390"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙼𝙼𝙴𝚃𝚁𝙸𝙴𝚂</mi></mrow></math> is a list of mappings
+preserving the solutions to the constraint.
+Possible mappings were described in Section <a href="sec2.2.5.html#uid472">2.2.5</a>
+on page <a href="sec2.2.5.html#uid472">2.2.5</a>.</span></p>
+</li></ul>
+</li>
+<li id="uid12391"><p><span class="small"><tt>ctr_derived_collections</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙴𝚁𝙸𝚅𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙻𝙻𝙴𝙲𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12392"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙴𝚁𝙸𝚅𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙻𝙻𝙴𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of <span id="uid12393"/>derived collections.
+<span id="uid12394"/>Derived collections are collections that are computed from the arguments of the
+constraint and are used in the graph-based description.
+<span id="uid12395"/>Derived collections were described in Section <a href="sec2.3.2.1.html#uid780">2.3.2.1</a> on page <a href="sec2.3.2.1.html#uid780">2.3.2.1</a>.</span></p>
+</li></ul>
+</li>
+<li id="uid12396"><p><span class="small"><tt>ctr_graph</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙸𝙽𝙿𝚄𝚃</mi><mo>,</mo>  <mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙰𝚁𝙸𝚃𝚈</mi><mo>,</mo></mrow></math></span></p>
+<p><span class="small">              <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁𝚂</mi><mo>,</mo>  <mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi><mo>,</mo>  <mi>𝙶𝚁𝙰𝙿𝙷</mi><mo>_</mo><mi>𝙿𝚁𝙾𝙿𝙴𝚁𝚃𝙸𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12397"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙸𝙽𝙿𝚄𝚃</mi></mrow></math> is a list of collections used for
+creating the vertices of the initial graph.
+This was described at page <a href="sec2.3.3.1.html#uid1198">2.3.3.1</a>
+of Section <a href="sec2.3.3.1.html#uid1193">2.3.3.1</a>.</span></p>
+</li>
+<li id="uid12398"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙰𝚁𝙸𝚃𝚈</mi></mrow></math> is the number of vertices of an arc.
+Arc arity was explained at page <a href="sec2.3.3.1.html#uid1219">2.3.3.1</a>
+of Section <a href="sec2.3.3.1.html#uid1193">2.3.3.1</a>.</span></p>
+</li>
+<li id="uid12399"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁𝚂</mi></mrow></math> is a list of arc generators.
+Arc generators were introduced at page <a href="sec2.3.3.1.html#uid1203">2.3.3.1</a>
+of Section <a href="sec2.3.3.1.html#uid1193">2.3.3.1</a>.</span></p>
+</li>
+<li id="uid12400"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi></mrow></math> is a list of arc constraints.
+Arc constraints were defined in Section <a href="sec2.3.2.2.html#uid874">2.3.2.2</a> on page <a href="sec2.3.2.2.html#uid874">2.3.2.2</a>.</span></p>
+</li>
+<li id="uid12401"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙶𝚁𝙰𝙿𝙷</mi><mo>_</mo><mi>𝙿𝚁𝙾𝙿𝙴𝚁𝚃𝙸𝙴𝚂</mi></mrow></math> is a list of graph properties.
+Graph properties were described in Section <a href="sec2.3.2.4.html#uid1029">2.3.2.4</a>
+on page <a href="sec2.3.2.4.html#uid1029">2.3.2.4</a>.</span></p>
+</li></ul>
+</li>
+<li id="uid12402"><p><span class="small"><tt>ctr_example</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚇𝙰𝙼𝙿𝙻𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12403"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚇𝙰𝙼𝙿𝙻𝙴𝚂</mi></mrow></math> is a list of examples (usually one).
+Each example corresponds to a ground instance for which the constraint holds.</span></p>
+</li></ul>
+</li>
+<li id="uid12404"><p><span class="small"><tt>ctr_cond_imply</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>,</mo></mrow></math></span></p>
+<p><span class="small">                   <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi><mo>_</mo><mi>𝙲𝚃𝚁</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi><mo>_</mo><mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝚃𝚁</mi><mo>,</mo>  <mi>𝙼𝙰𝚃𝙲𝙷𝙸𝙽𝙶</mi> <mo>)</mo></mrow></math></span></p>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></mrow></math> is a constraint implied by <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math>
+provided that</span></p>
+<ul>
+<li id="uid12405"><p><span class="small">the list of restrictions <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi><mo>_</mo><mi>𝙲𝚃𝚁</mi></mrow></math>
+holds for the constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math>, and</span></p>
+</li>
+<li id="uid12406"><p><span class="small">the list of restrictions <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi><mo>_</mo><mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝚃𝚁</mi></mrow></math>
+holds for the constraint <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></mrow></math>.</span></p>
+</li></ul>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝚃𝙲𝙷𝙸𝙽𝙶</mi></math> describes how to create the arguments of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></mrow></math>
+from the arguments of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math>.
+Note that some arguments of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙸𝙼𝙿𝙻𝙸𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></mrow></math>
+may not be explicitly mentioned since they correspond to existentially
+quantified variables.</span></p>
+</li>
+<li id="uid12407"><p><span class="small"><tt>ctr_see_also</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12408"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi></mrow></math> is a list of constraints that are
+related in some way to the constraint. Each element of the list is a fact
+of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚒𝚗𝚔</mi><mo>(</mo><mi>𝚃𝚈𝙿𝙴</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙻𝙸𝙽𝙺</mi><mo>,</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>,</mo><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi><mo>,</mo><mi>𝚂𝚈𝙼𝙱𝙾𝙻𝚂</mi><mo>)</mo></mrow></math>, where:</span></p>
+<ul>
+<li id="uid12409"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚃𝚈𝙿𝙴</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙻𝙸𝙽𝙺</mi></mrow></math> is a semantic link that explains why we refer to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></math>.
+Semantic links were described in Section <a href="sec2.6.html#uid1393">2.6</a> on page <a href="sec2.6.html#uid1393">2.6</a>.</span></p>
+</li>
+<li id="uid12410"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></math> is the name of the constraint that is linked to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math>.</span></p>
+</li>
+<li id="uid12411"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi></math> is a string providing contextual explanation.</span></p>
+</li>
+<li id="uid12412"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚈𝙼𝙱𝙾𝙻𝚂</mi></math> is a list of symbols (e.g., keywords, constraint names, mathematical expressions)
+that are inserted in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi></math>.</span></p>
+</li></ul>
+</li></ul>
+</li>
+<li id="uid12413"><p><span class="small"><tt>ctr_key_words</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙺𝙴𝚈𝚆𝙾𝚁𝙳𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12414"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙺𝙴𝚈𝚆𝙾𝚁𝙳𝚂</mi></mrow></math> is a list of keywords associated with the constraint.
+Keywords may be linked
+to the </span><span class="small"><i>meaning</i></span><span class="small"> of the constraint,
+to a </span><span class="small"><i>typical pattern</i></span><span class="small"> where the constraint can be applied or
+to a </span><span class="small"><i>specific problem</i></span><span class="small"> where the constraint is useful.
+All keywords used in the catalogue are listed in alphabetic order
+in Section <a href="sec3.7.html#uid2934">3.7</a> on page <a href="sec3.7.html#uid2934">3.7</a>.
+Each keyword has an entry explaining its meaning and providing the list
+of global constraints using that keyword.</span></p>
+</li></ul>
+</li>
+<li id="uid12415"><p><span class="small"><tt>ctr_eval</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚅𝙰𝙻𝚄𝙰𝚃𝙾𝚁𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12416"><p><span class="small">For many of the constraints of the catalogue one or several evaluators are provided.
+Each evaluator is explicitly described in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚅𝙰𝙻𝚄𝙰𝚃𝙾𝚁𝚂</mi></mrow></math> by an element
+of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚎𝚝𝚑𝚘𝚍</mi><mo>(</mo><mi>𝚙𝚛𝚎𝚍𝚒𝚌𝚊𝚝𝚎</mi><mo>_</mo><mi>𝚗𝚊𝚖𝚎</mi><mo>)</mo></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚛𝚎𝚍𝚒𝚌𝚊𝚝𝚎</mi><mo>_</mo><mi>𝚗𝚊𝚖𝚎</mi></mrow></math>
+is the name of the Prolog predicate to call in order to evaluate the constraint,<span class="note"><span class="small">Note that
+this predicate name should be different from existing <span id="uid12418"/><a href="http://www.sics.se/sicstus/"><span class="small"><b>SICStus</b></span></a> built-ins</span></span>, and
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚎𝚝𝚑𝚘𝚍</mi></math> can be one of the following keywords:</span></p>
+<ul>
+<li id="uid12419"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚋𝚞𝚒𝚕𝚝𝚒𝚗</mi></math> when the corresponding evaluator uses a <span id="uid12420"/><a href="http://www.sics.se/sicstus/"><span class="small"><b>SICStus</b></span></a> built-in.
+This is for instance the case for the <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid12421"/></a> constraint.</span></p>
+</li>
+<li id="uid12422"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚛𝚎𝚏𝚘𝚛𝚖𝚞𝚕𝚊𝚝𝚒𝚘𝚗</mi></math> when the corresponding evaluator reformulates the constraints in terms
+of a conjunction of constraints of the catalogue and/or in term of a conjunction of reified constraints.
+This is for instance the case for the <a href="Ctree.html#uid34207"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚎𝚎</mi></math><span id="uid12423"/></a> constraint.</span></p>
+</li>
+<li id="uid12424"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚞𝚝𝚘𝚖𝚊𝚝𝚘𝚗</mi></math> when the corresponding evaluator is based on an automaton that describes
+the set of solutions accepted by the constraint. The evaluator corresponds to the Prolog code that creates
+the signature constraints as well as the automata (usually one) associated with the constraint.
+A fact of the form </span><span class="small"><tt>automaton/9</tt></span><span class="small"> lists the states and the transitions of the automata used for
+describing the set of solutions accepted by the constraint. It follows the description provided in
+Section <a href="sec2.4.2.html#uid1368">2.4.2</a> on page <a href="sec2.4.2.html#uid1368">2.4.2</a>.
+The <a href="Cpattern.html#uid29774"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚊𝚝𝚝𝚎𝚛𝚗</mi></math><span id="uid12425"/></a> constraint is an example of constraint for which an automaton
+is provided.</span></p>
+</li>
+<li id="uid12426"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚕𝚘𝚐𝚒𝚌</mi></math> when the corresponding evaluator is based on a first order logic formula that describes
+the meaning of the constraint. This is for instance the case for the
+<a href="Cmeet_sboxes.html#uid26586"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚎𝚎𝚝</mi><mo>_</mo><mi>𝚜𝚋𝚘𝚡𝚎𝚜</mi></mrow></math><span id="uid12427"/></a> constraint.</span></p>
+</li>
+<li id="uid12428"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚑𝚎𝚌𝚔𝚎𝚛</mi></math> when the corresponding evaluator only accepts ground instances of the constraint.
+This is for instance the case for the <a href="Ccycle.html#uid18336"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid12429"/></a> constraint.</span></p>
+</li></ul>
+</li></ul>
+</li>
+<li id="uid12430"><p><span class="small"><tt>ctr_sol</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝚂𝙸𝚉𝙴</mi><mo>,</mo>  <mi>𝙼𝙸𝙽𝚅𝙰𝙻</mi><mo>,</mo>  <mi>𝙼𝙰𝚇𝚅𝙰𝙻</mi><mo>,</mo>  <mi>𝙽𝚂𝙾𝙻</mi><mo>,</mo>  <mi>𝙰𝚁𝙶</mi><mo>_</mo><mi>𝙽𝚂𝙾𝙻</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12431"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝙸𝚉𝙴</mi></math> is the number of variables of the collection of variables.</span></p>
+</li>
+<li id="uid12432"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙸𝙽𝚅𝙰𝙻</mi></math> is the smallest value of the variables of the sequence of variables.</span></p>
+</li>
+<li id="uid12433"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙼𝙰𝚇𝚅𝙰𝙻</mi></math> is the largest value of the variables of the sequence of variables.</span></p>
+</li>
+<li id="uid12434"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝚂𝙾𝙻</mi></math> is the total number of solutions of the constraint,
+assuming a collection with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝙸𝚉𝙴</mi></math> items and all variables
+within interval <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><mi>𝙼𝙸𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝙼𝙰𝚇𝚅𝙰𝙻</mi><mo>]</mo></mrow></math>.</span></p>
+</li>
+<li id="uid12435"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙶</mi><mo>_</mo><mi>𝙽𝚂𝙾𝙻</mi></mrow></math> is a list, which for each value that can be assigned to
+an argument of the constraint, gives the corresponding number of solutions assuming
+we have a collection with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝙸𝚉𝙴</mi></math> items, and that all variables of the collection
+are assigned a value in interval <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><mi>𝙼𝙸𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝙼𝙰𝚇𝚅𝙰𝙻</mi><mo>]</mo></mrow></math>.</span></p>
+</li></ul>
+</li>
+<li id="uid12436"><p><span class="small"><tt>ctr_logic</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙵𝙸𝚁𝚂𝚃</mi><mo>_</mo><mi>𝙾𝚁𝙳𝙴𝚁</mi><mo>_</mo><mi>𝙻𝙾𝙶𝙸𝙲</mi><mo>_</mo><mi>𝙵𝙾𝚁𝙼𝚄𝙻𝙰𝙴</mi> <mo>)</mo></mrow></math></span></p>
+<ul>
+<li id="uid12437"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙵𝙸𝚁𝚂𝚃</mi><mo>_</mo><mi>𝙾𝚁𝙳𝙴𝚁</mi><mo>_</mo><mi>𝙻𝙾𝙶𝙸𝙲</mi><mo>_</mo><mi>𝙵𝙾𝚁𝙼𝚄𝙻𝙰𝙴</mi></mrow></math> is a list of
+first order logical formulae that describe the meaning of the
+constraint<span id="uid12438"/> <a class="cite" href="biblio.html#bid12">[CarlssonBeldiceanuMartin08]</a>.</span></p>
+</li></ul>
+</li></ol></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-5. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

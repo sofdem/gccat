@@ -15,7 +15,7 @@
     </script>
     <title>Global Constraint Catalog</title>
   </head>
-  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="contentwrap"><div id="content"><div id="main"><h1>1. Preface</h1><p>This catalogue presents a list of global constraints.
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="contentwrap"><div id="content"><div id="main"><h1>1. Preface</h1><p><i>“Although dictionaries give the impression of analyzing words all the way down to their very atoms, all they do in fact is graze their surfaces.”</i></p><p>– Douglas Hofstadter, Emmanuel Sander, <i>Surfaces and Essences</i>     </p><p/><p>This catalogue presents a list of global constraints.
 Within this catalogue the term <i>global constraint</i> should be
 understood as an <i>expressive and concise condition involving
 a non-fixed number of variables</i>. This informal definition
@@ -24,7 +24,7 @@ constraint nor about the techniques<span class="note">As quoted by J. N. Hooke
 in<span id="uid5"/> <a class="cite" href="biblio.html#bid0">[Hooker07]</a>, “<i>identifying a field with its techniques is an intellectually
 as well as practically unsatisfying</i>” and has a lot of drawbacks.</span> associated with the
 development of global constraints.
-It contains about 354 constraints, which are explicitly described in terms of
+It contains about 423 constraints, which are explicitly described in terms of
 graph properties and/or
 automata and/or
 first order logic formulae and/or
@@ -38,21 +38,27 @@ global constraints. Since 2003, we try to provide an
 automaton that recognises the solutions associated with a global constraint.
 Since 2009, we also try to provide a first order logic formula for defining
 the solutions accepted by a geometrical constraint.</p><p>Writing a dictionary is a long process, especially in a field where new
-words are defined every year. In this context, one difficulty has been related
-to the fact that we want to express explicitly the meaning of global
-constraints in terms of meta-data. Finding an appropriate and
-concise description that easily captures the meaning of most global constraints
-seems to be a tricky task.</p><p>One may wonder how so many constraints can be used at all in practice?
+words are defined every year. In this context, one difficulty is to express
+explicitly the meaning of global constraints in terms of meta-data.
+Finding an appropriate and
+concise description that both easily captures the meaning of most global constraints
+and allows fast inferences<span class="note">E.g., in the context of the constraint and
+model seeker<span id="uid9"/> <a class="cite" href="biblio.html#bid3">[BeldiceanuSimonis11]</a>, <a class="cite" href="biblio.html#bid4">[BeldiceanuSimonis12]</a>
+we have gradually identified a number of properties for inferring that a constraint/conjunction of constraints is implied by another constraint/conjunction of constraints.</span> involving global constraints seems to be a tricky task.</p><p>One may wonder how so many constraints can be used at all in practice?
 However many fields produce a number of articles containing partial and
 specific results. Within the area of global constraints, we fill that trying extracting
 and classifying such knowledge, as well as providing meta-data for
 encoding it, may be a help, both for humans and machines, to exploit systematically
-ongoing research results and to put these results in perspective.</p><div id="uid8"><h4>Goal of the catalogue.</h4>
+ongoing research results and to put these results in perspective. Work about the
+<i>constraint seeker</i><span id="uid10"/> <a class="cite" href="biblio.html#bid3">[BeldiceanuSimonis11]</a> and the
+<i>model seeker</i><span id="uid11"/> <a class="cite" href="biblio.html#bid4">[BeldiceanuSimonis12]</a>
+relies on these meta-data to identify global constraints and to automatically
+come up with a constraint model from a set of positive samples.</p><div id="uid12"><h4>Goal of the catalogue.</h4>
 <p>This catalogue has four main goals. First, it provides an overview of
 most of the different global constraints that were gradually introduced
 in the area of constraint programming since the work of
 J.-L. Laurière on
-<span id="uid9"/>ALICE<span id="uid10"/> <a class="cite" href="biblio.html#bid3">[Lauriere78]</a>.
+<span id="uid13"/>ALICE<span id="uid14"/> <a class="cite" href="biblio.html#bid5">[Lauriere78]</a>.
 It also identifies new global constraints for which no existing published work
 exists. The global constraints are arranged in alphabetic order,
 and for all of them a description and an example are systematically
@@ -69,19 +75,19 @@ generated from this electronic version by a computer program.
 This description is based on three complementary ways to look at
 a global constraint. The first one defines a global constraint
 as searching for a graph with specific
-properties<span id="uid11"/> <a class="cite" href="biblio.html#bid4">[Beldiceanu00]</a>,
+properties<span id="uid15"/> <a class="cite" href="biblio.html#bid6">[Beldiceanu00]</a>,
 the second one characterises a global constraint in terms
 of an automaton that only recognises the solutions associated
 with that global
-constraint<span id="uid12"/> <a class="cite" href="biblio.html#bid5">[BeldiceanuCarlssonPetit04]</a>, <a class="cite" href="biblio.html#bid6">[Pesant04]</a><span class="note">Automata
-were first use in the 90ies by N. R. Vempaty<span id="uid14"/> <a class="cite" href="biblio.html#bid7">[Vempaty92]</a> and
-J. Amilhastre<span id="uid15"/> <a class="cite" href="biblio.html#bid8">[Amilhastre99]</a> in the context of constraint
+constraint<span id="uid16"/> <a class="cite" href="biblio.html#bid7">[BeldiceanuCarlssonPetit04]</a>, <a class="cite" href="biblio.html#bid8">[Pesant04]</a><span class="note">Automata
+were first used in the 90ies by N. R. Vempaty<span id="uid18"/> <a class="cite" href="biblio.html#bid9">[Vempaty92]</a> and
+J. Amilhastre<span id="uid19"/> <a class="cite" href="biblio.html#bid10">[Amilhastre99]</a> in the context of constraint
 networks. Later on in 2007, they were also used by
-M.-C. Coté <i>et al.</i><span id="uid16"/> <a class="cite" href="biblio.html#bid9">[CoteGendronRousseau07]</a>
+M.-C. Coté <i>et al.</i><span id="uid20"/> <a class="cite" href="biblio.html#bid11">[CoteGendronRousseau07]</a>
 in the context of linear programming.</span>,
 while the third one defines in the context of geometric constraints
 a global constraint as a restricted first order
-logic formula<span id="uid17"/> <a class="cite" href="biblio.html#bid10">[CarlssonBeldiceanuMartin08]</a>.
+logic formula<span id="uid21"/> <a class="cite" href="biblio.html#bid12">[CarlssonBeldiceanuMartin08]</a>.
 The key point of these descriptions is their ability to define
 explicitly in a concise way the meaning of most global constraints.
 In addition these descriptions can also be systematically turned
@@ -96,146 +102,176 @@ at places like CWI in Amsterdam, the Max-Planck für Informatik (Saarbrücken)
 or the university of Waterloo.
 We also hope that it will attract people from combinatorics in order to produce
 theories and knowledge that could nicely unify and/or put in perspective different
-aspects of constraints (i.e., breaking symmetries, counting the number of solutions).</p>
-</div><div id="uid18"><h4>Use of the catalogue.</h4>
+aspects of constraints (i.e., breaking symmetries, counting the number of solutions).
+Identifying bijections <a class="cite" href="biblio.html#bid13">[Stanley11]</a>, <a class="cite" href="biblio.html#bid14">[Stanley01]</a> relating global constraints to well known
+combinatorial objects would be a step in this direction.<span class="note">This is currently the
+case only for a few constraints like <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid23"/></a>,
+<a href="Ccycle.html#uid18336"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid24"/></a> or <a href="Ctree.html#uid34207"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚎𝚎</mi></math><span id="uid25"/></a>.
+The information about the number of solutions of a global constraint in the <b>Counting</b>
+slot could certainly help identifying relevant combinatorial objects.</span></p>
+</div><div id="uid26"><h4>Use of the catalogue.</h4>
 <p>The catalogue is organised into five chapters:</p>
 <ul>
-<li id="uid19"><p>Chapter <a href="sec1.html#uid107">1</a> provide a short overview of the main entries you may first consult
+<li id="uid27"><p>Chapter <a href="sec1.html#uid132">1</a> provide a short overview of the main entries you may first consult
 when you are not familiar with the catalogue.</p>
 </li>
-<li id="uid20"><p>Chapter <a href="sec2.html#uid127">2</a> explains how the meaning of global constraints is described in
+<li id="uid28"><p>Chapter <a href="sec2.html#uid169">2</a> explains how the meaning of global constraints is described in
 terms of graph-properties or in terms of automata.
 On the one hand, if one wants to consult the catalogue for getting the informal
 definition of a global constraint, examples of use of that constraint or pointers to
-filtering algorithms, then one only needs to read the first section of Chapter <a href="sec2.html#uid127">2</a>:
-describing the arguments of a global constraint, page <a href="sec2.1.html#uid154">2.1</a>.
+filtering algorithms, then one only needs to read the first section of Chapter <a href="sec2.html#uid169">2</a>:
+describing the arguments of a global constraint, page <a href="sec2.2.html#uid271">2.2</a>.
 On the other hand, if one wants to understand those entries describing
-explicitly the meaning of a constraint then all the material of Chapter <a href="sec2.html#uid127">2</a>
+explicitly the meaning of a constraint then all the material of Chapter <a href="sec2.html#uid169">2</a>
 is required.</p>
 </li>
-<li id="uid21"><p>Chapter <a href="sec3.html#uid1382">3</a> describes the content of the catalogue as well as different
+<li id="uid29"><p>Chapter <a href="sec3.html#uid1530">3</a> describes the content of the catalogue as well as different
 ways for searching through the catalogue. This material is essential.</p>
 </li>
-<li id="uid22"><p>Chapter <a href="sec4.html#uid8789">4</a> covers additional topics, such as
-the differences from the 2000 report<span id="uid23"/> <a class="cite" href="biblio.html#bid1">[BeldiceanuR00]</a> on global constraints,
+<li id="uid30"><p>Chapter <a href="sec4.html#uid11160">4</a> covers additional topics, such as
+the differences from the 2000 report<span id="uid31"/> <a class="cite" href="biblio.html#bid1">[BeldiceanuR00]</a> on global constraints,
 the generation of implied constraints that are systematically linked to the graph-based description of a global constraint,
 and the electronic version of the catalogue.
 The material describing the format of the entries of a global constraint is mandatory for those who want
 to exploit the electronic version in order to write pre-processors for performing various
 tasks for a global constraint.</p>
 </li>
-<li id="uid24"><p>Finally, Chapter <a href="sec5.html#uid9821">5</a> corresponds to the catalogue itself, which gives
+<li id="uid32"><p>Finally, Chapter <a href="sec5.html#uid12473">5</a> corresponds to the catalogue itself, which gives
 the global constraints in alphabetical order.</p>
 </li></ul>
-</div><div id="uid25"><h4>Acknowledgments.</h4>
+</div><div id="uid33"><h4>Acknowledgments.</h4>
 <p>Nicolas Beldiceanu was the principal investigator and main architect
 of the constraint catalogue, provided the main ideas, and wrote a checker
 for the constraint descriptions, a figure generation program for
 the constraint descriptions and an evaluator for most constraints.
 Jean-Xavier Rampon provided the proofs for the graph invariants.
 Mats Carlsson contributed to the design of the meta-data
-format, generated some of the automata, and wrote the program that
-created the LaTeX version of this catalogue from the constraint
-descriptions.</p>
+format, generated some of the automata together with their negated forms,
+provide some constraints evaluators, and wrote the program that created the
+LaTeX version of this catalogue from the constraint descriptions.</p>
 <p>The idea of describing explicitly the meaning of global constraints in
 a declarative way has been inspired by the work on meta-knowledge of
-Jacques Pitrat<span id="uid26"/> <a class="cite" href="biblio.html#bid11">[Pitrat01]</a>, <a class="cite" href="biblio.html#bid12">[Pitrat08]</a>, <a class="cite" href="biblio.html#bid13">[Pitrat09]</a>.</p>
+Jacques Pitrat<span id="uid34"/> <a class="cite" href="biblio.html#bid15">[Pitrat01]</a>, <a class="cite" href="biblio.html#bid16">[Pitrat08]</a>, <a class="cite" href="biblio.html#bid17">[Pitrat09]</a>.</p>
 <p>We are grateful to
-<span id="uid27"/>Magnus Ågren,
-<span id="uid28"/>Abderrahmane Aggoun,
-<span id="uid29"/>Ernst Althaus,
-<span id="uid30"/>Gregor Baues,
-<span id="uid31"/>Christian Bessière,
-<span id="uid32"/>Éric Bourreau,
-<span id="uid33"/>Pascal Brisset,
-<span id="uid34"/>Hadrien Cambazard,
-<span id="uid35"/>Gilles Chabert,
-<span id="uid36"/>Peter Chan,
-<span id="uid37"/>Philippe Charlier,
-<span id="uid38"/>François Clautiaux,
-<span id="uid39"/>Evelyne Contejean,
-<span id="uid40"/>Radoslaw Cymer,
-<span id="uid41"/>Romuald Debruyne,
-<span id="uid42"/>Frédéric Deces,
-<span id="uid43"/>Sophie Demassey,
-<span id="uid44"/>Mehmet Dincbas,
-<span id="uid45"/>Grégoire Dooms,
-<span id="uid46"/>François Fages,
-<span id="uid47"/>Pierre Flener,
-<span id="uid48"/>Xavier Gandibleux,
-<span id="uid49"/>Yan Georget,
-<span id="uid50"/>Dávid Hanák,
-<span id="uid51"/>Emmanuel Hebrard,
-<span id="uid52"/>Fabien Hermenier,
-<span id="uid53"/>Han J. A. Hoogeveen,
-<span id="uid54"/>Giuseppe F. Italiano,
-<span id="uid55"/>Antoine Jouglet,
-<span id="uid56"/>Narendra Jussien,
-<span id="uid57"/>Irit Katriel,
-<span id="uid58"/>Waldemar Kocjan,
-<span id="uid59"/>Per Kreuger,
-<span id="uid60"/>Krzysztof Kuchcinski,
-<span id="uid61"/>Mikael Zayenz Lagerkvist,
-<span id="uid62"/>Michel Leconte,
-<span id="uid63"/>Christophe Lecoutre,
-<span id="uid64"/>Xavier Lorca,
-<span id="uid65"/>Michael Marte,
-<span id="uid66"/>Julien Martin,
-<span id="uid67"/>Julien Menana,
-<span id="uid68"/>Per Mildner,
-<span id="uid69"/>Nicolas Museux,
-<span id="uid70"/>Justin Pearson,
-<span id="uid71"/>Gilles Pesant,
-<span id="uid72"/>Thierry Petit,
-<span id="uid73"/>Emmanuel Poder,
-<span id="uid74"/>Charles Prud'homme,
-<span id="uid75"/>Luis Quesada,
-<span id="uid76"/>Jean-Charles Régin,
-<span id="uid77"/>Guillaume Rochart,
-<span id="uid78"/>Xavier Savalle,
-<span id="uid79"/>Pierre Schaus,
-<span id="uid80"/>Helmut Simonis,
-<span id="uid81"/>Péter Szeredi,
-<span id="uid82"/>Radoslaw Szymanek,
-<span id="uid83"/>Guido Tack,
-<span id="uid84"/>Sven Thiel,
-<span id="uid85"/>Charlotte Truchet,
-<span id="uid86"/>Willem-Jan van Hoeve,
-<span id="uid87"/>Richard J. Wallace,
-<span id="uid88"/>Toby Walsh and
-<span id="uid89"/>Stéphane Zampelli
-for discussion, information exchange or
+<span id="uid35"/>Magnus Ågren,
+<span id="uid36"/>Abderrahmane Aggoun,
+<span id="uid37"/>Ernst Althaus,
+<span id="uid38"/>María Andreína Francisco Rodríguez,
+<span id="uid39"/>Gregor Baues,
+<span id="uid40"/>Christian Bessière,
+<span id="uid41"/>Éric Bourreau,
+<span id="uid42"/>Sebastian Brand,
+<span id="uid43"/>Pascal Brisset,
+<span id="uid44"/>Hadrien Cambazard,
+<span id="uid45"/>Gilles Chabert,
+<span id="uid46"/>Peter Chan,
+<span id="uid47"/>Philippe Charlier,
+<span id="uid48"/>François Clautiaux,
+<span id="uid49"/>Evelyne Contejean,
+<span id="uid50"/>Radoslaw Cymer,
+<span id="uid51"/>Romuald Debruyne,
+<span id="uid52"/>Frédéric Deces,
+<span id="uid53"/>Sophie Demassey,
+<span id="uid54"/>Mehmet Dincbas,
+<span id="uid55"/>Grégoire Dooms,
+<span id="uid56"/>François Fages,
+<span id="uid57"/>Jean-Guillaume Fages,
+<span id="uid58"/>Pierre Flener,
+<span id="uid59"/>Xavier Gandibleux,
+<span id="uid60"/>Yan Georget,
+<span id="uid61"/>Dávid Hanák,
+<span id="uid62"/>Emmanuel Hebrard,
+<span id="uid63"/>Pascal Van Hentenryck,
+<span id="uid64"/>Fabien Hermenier,
+<span id="uid65"/>Han J. A. Hoogeveen,
+<span id="uid66"/>Stefan Hougardy,
+<span id="uid67"/>Giuseppe F. Italiano,
+<span id="uid68"/>Antoine Jouglet,
+<span id="uid69"/>Narendra Jussien,
+<span id="uid70"/>Irit Katriel,
+<span id="uid71"/>Waldemar Kocjan,
+<span id="uid72"/>Per Kreuger,
+<span id="uid73"/>Krzysztof Kuchcinski,
+<span id="uid74"/>Mikael Zayenz Lagerkvist,
+<span id="uid75"/>Michel Leconte,
+<span id="uid76"/>Christophe Lecoutre,
+<span id="uid77"/>Arnaud Letort,
+<span id="uid78"/>Xavier Lorca,
+<span id="uid79"/>Michael J. Maher,
+<span id="uid80"/>Michael Marte,
+<span id="uid81"/>Julien Martin,
+<span id="uid82"/>Julien Menana,
+<span id="uid83"/>Per Mildner,
+<span id="uid84"/>Nicolas Museux,
+<span id="uid85"/>Justin Pearson,
+<span id="uid86"/>Gilles Pesant,
+<span id="uid87"/>Thierry Petit,
+<span id="uid88"/>Emmanuel Poder,
+<span id="uid89"/>Charles Prud'homme,
+<span id="uid90"/>Luis Quesada,
+<span id="uid91"/>Claude Guy Quimper,
+<span id="uid92"/>Jean-Charles Régin,
+<span id="uid93"/>Florian Richoux,
+<span id="uid94"/>Guillaume Rochart,
+<span id="uid95"/>Xavier Savalle,
+<span id="uid96"/>Pierre Schaus,
+<span id="uid97"/>Thomas Schiex,
+<span id="uid98"/>Christian Schulte,
+<span id="uid99"/>Helmut Simonis,
+<span id="uid100"/>Péter Szeredi,
+<span id="uid101"/>Radoslaw Szymanek,
+<span id="uid102"/>Guido Tack,
+<span id="uid103"/>Sven Thiel,
+<span id="uid104"/>Charlotte Truchet,
+<span id="uid105"/>Eliane Vacheret,
+<span id="uid106"/>Willem-Jan van Hoeve,
+<span id="uid107"/>Richard J. Wallace,
+<span id="uid108"/>Toby Walsh and
+<span id="uid109"/>Stéphane Zampelli
+for correction, discussion, information exchange or
 common work about specific global constraints.</p>
 <p>Furthermore, we are grateful
-to <span id="uid90"/>Irit Katriel who contributed by updating the description of some filtering algorithms related to flow
+to <span id="uid110"/>Irit Katriel who contributed by updating the description of some filtering algorithms related to flow
 and matching of the catalogue,
-to <span id="uid91"/>Luis Quesada and <span id="uid92"/>Stéphane Zampelli
-who provide inputs for the <a href="Cdom_reachability.html#uid15840"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚘𝚖</mi><mo>_</mo><mi>𝚛𝚎𝚊𝚌𝚑𝚊𝚋𝚒𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid93"/></a>,
-the <a href="Csubgraph_isomorphism.html#uid26392"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚋𝚐𝚛𝚊𝚙𝚑</mi><mo>_</mo><mi>𝚒𝚜𝚘𝚖𝚘𝚛𝚙𝚑𝚒𝚜𝚖</mi></mrow></math><span id="uid94"/></a>
-and <a href="Cgraph_isomorphism.html#uid17660"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚛𝚊𝚙𝚑</mi><mo>_</mo><mi>𝚒𝚜𝚘𝚖𝚘𝚛𝚙𝚑𝚒𝚜𝚖</mi></mrow></math><span id="uid95"/></a> constraints,
-and to <span id="uid96"/>Radoslaw Szymanek and <span id="uid97"/>Guido Tack for providing
+to <span id="uid111"/>Luis Quesada and <span id="uid112"/>Stéphane Zampelli
+who provide inputs for the <a href="Cdom_reachability.html#uid20058"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚍𝚘𝚖</mi><mo>_</mo><mi>𝚛𝚎𝚊𝚌𝚑𝚊𝚋𝚒𝚕𝚒𝚝𝚢</mi></mrow></math><span id="uid113"/></a>,
+the <a href="Csubgraph_isomorphism.html#uid33130"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚋𝚐𝚛𝚊𝚙𝚑</mi><mo>_</mo><mi>𝚒𝚜𝚘𝚖𝚘𝚛𝚙𝚑𝚒𝚜𝚖</mi></mrow></math><span id="uid114"/></a>
+and <a href="Cgraph_isomorphism.html#uid22249"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚐𝚛𝚊𝚙𝚑</mi><mo>_</mo><mi>𝚒𝚜𝚘𝚖𝚘𝚛𝚙𝚑𝚒𝚜𝚖</mi></mrow></math><span id="uid115"/></a> constraints,
+and to <span id="uid116"/>Radoslaw Szymanek and <span id="uid117"/>Guido Tack for providing
 the correspondence of global constraints of the catalogue with the constraints of
-<span id="uid98"/><a href="http://www.jacop.eu/"><b>JaCoP</b></a> and
-<span id="uid99"/><a href="http://www.gecode.org/"><b>Gecode</b></a>.
-We are also especially grateful to <span id="uid100"/>Sophie Demassey both,
+<span id="uid118"/><a href="http://www.jacop.eu/"><b>JaCoP</b></a> and
+<span id="uid119"/><a href="http://www.gecode.org/"><b>Gecode</b></a>.
+We are also especially grateful to <span id="uid120"/>Sophie Demassey both,
 for creating the on-line version of the catalogue (<span class="small"><a href="http://www.emn.fr/x-info/sdemasse/gccat/">http://www.emn.fr/x-info/sdemasse/gccat/</a></span>) and
-for writing down the entry related to the <a href="Kcumulative_longest_hole_problems.html#uid4788">cumulative longest hole problems</a>,
-to <span id="uid101"/>Helmut Simonis both, for designing the XML schema (see Section <a href="sec4.4.2.html#uid9787">4.4.2</a>)
-for the global constraints and their parameters, for providing the corresponding generation programs
-and for providing data for several rectangle<span id="uid102"/> placement problems,
-and to <span id="uid103"/>Pierre Flener and <span id="uid104"/>Justin Pearson for
-providing feedback with respect to the <b>Symmetry</b> slot of global constraints.</p>
-<p>The geometric constraints <a href="Cgeost.html#uid16937"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚐𝚎𝚘𝚜𝚝</mi></math><span id="uid105"/></a> and <a href="Cvisible.html#uid27847"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚒𝚜𝚒𝚋𝚕𝚎</mi></math><span id="uid106"/></a>
-as well as the constraints related to the <a href="Krcc8.html#uid7074">Region Connection Calculus</a>
+for writing down the entry related to the <a href="Kcumulative_longest_hole_problems.html#uid5791">cumulative longest hole problems</a>,
+to <span id="uid121"/>Helmut Simonis both, for designing the XML schema (see Section <a href="sec4.5.2.html#uid12439">4.5.2</a>)
+for the global constraints and their arguments, for providing the corresponding generation programs,
+for providing data for several rectangle<span id="uid122"/> placement problems,
+and for providing the code for generating the figures that display the number of solutions of a constraint
+wrt some of their parameters,
+and to <span id="uid123"/>Pierre Flener and <span id="uid124"/>Justin Pearson for
+providing feedback with respect to the <b>Symmetry</b> slot of global constraints.
+Moreover <span id="uid125"/>Eliane Vacheret helps for structuring many
+exercises of the <b>Quiz</b> slot of the core constraints and did a first version of the
+<a href="http://imedia.emn.fr/progparcontraintes/index.html">online version constraint course</a>,
+and <span id="uid126"/>Pierre Flener provides additional feedback on the exercises
+on the core constraints.</p>
+<p>The geometric constraints <a href="Cgeost.html#uid21442"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚐𝚎𝚘𝚜𝚝</mi></math><span id="uid127"/></a> and <a href="Cvisible.html#uid35092"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚒𝚜𝚒𝚋𝚕𝚎</mi></math><span id="uid128"/></a>
+as well as the constraints related to the <a href="Krcc8.html#uid9139">Region Connection Calculus</a>
 where integrated within the catalogue while working on the
 European Union Sixth Framework Programme Contract FP6-034691 “Net-WMS”.</p>
+<p>The <a href="Kglue_matrix.html#uid7065">glue matrices</a> of the automata were first worked out by
+<span id="uid129"/>María Andreína Francisco Rodríguez and
+<span id="uid130"/>Nicolas Beldiceanu,
+and latter on systematically tested with a program
+by <span id="uid131"/>Mats Carlsson.</p>
 <p>Finally, we want to acknowledge the continuing support of SICS and EMN for providing
 excellent working conditions over the years. The part of this work related to graph
-properties in Chapter <a href="sec5.html#uid9821">5</a> was done while the corresponding author was working at SICS.</p>
-<p>Readers may send their suggestion via email to the corresponding author with <tt>catalogue</tt> as subject.</p>
-<p><i>Uppsala, Sweden, August 2003 – Nantes, France, November 2010</i>    —  NB, MC, JXR</p>
+properties in Chapter <a href="sec5.html#uid12473">5</a> was done while the corresponding author was working at SICS.</p>
+<p>Readers may send their suggestions via email to the corresponding author with <tt>catalogue</tt> as subject.</p>
+<p><i>Uppsala, Sweden, August 2003 – Nantes, France, April 2014</i>    —  NB, MC, JXR</p>
 </div></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
-  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+  last update: 2014-6-5. <a href="http://sofdem.github.io/">SD</a>.</p></div>
     
 	<script type="text/javascript">
 	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -15,221 +15,217 @@
     </script>
     <title>Global Constraint Catalog</title>
   </head>
-  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">The electronic version of the catalogue</a><ul><li>4.4.1. <a href="sec4.4.1.html">Prolog facts describing a constraint</a></li><li>4.4.2. <a href="sec4.4.2.html">XML schema associated with a global constraint</a><ul><li>4.4.2.1. <a href="sec4.4.2.1.html">Related work</a></li><li>4.4.2.2. <a href="sec4.4.2.2.html">Key features</a></li><li>4.4.2.3. <a href="sec4.4.2.3.html">Structure of schema</a></li><li>4.4.2.4. <a href="sec4.4.2.4.html">Generating schema from the catalogue</a></li><li>4.4.2.5. <a href="sec4.4.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.4.2.html">4.4.2. XML schema associated with a global cons &gt;&gt;</a></div><div id="main"><h3>4.4.1. Prolog facts describing a constraint</h3><p>For each global constraint, the electronic version of its description is provided as a Prolog file (see the link “.pl file” at the beginning of the section corresponding to a global constraint). In addition the file “eval.pl” contains a set of shared utilities used for evaluating the constraints.
-This electronic version was used for generating the
-LaTeX file of this catalogue, the figures associated with
-the graph-based description and a filtering algorithm
-for some of the constraints that use the automaton-based
-description.
-Within the electronic version, each constraint is described
-in terms of meta-data.
-A typical entry is:</p><p><span class="small"><tt>ctr_date(minimum, ['20000128','20030820','20040530',</tt></span></p><p><span class="small"><tt>                   '20041230','20060811','20090416']).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_origin(minimum, '\\index{CHIP|indexuse}CHIP', []).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_arguments(minimum, ['MIN'-dvar, 'VARIABLES'-collection(var-dvar)]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_exchangeable(minimum,</tt></span></p><p><span class="small"><tt>                 [items('VARIABLES',all),</tt></span></p><p><span class="small"><tt>                  vals(['VARIABLES'^var],int,=\=,all,in),</tt></span></p><p><span class="small"><tt>                  translate(['MIN','VARIABLES'^var])]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_synonyms(minimum, [min]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_restrictions(minimum, [size('VARIABLES') &gt; 0, required('VARIABLES',var)]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_graph(minimum,</tt></span></p><p><span class="small"><tt>          ['VARIABLES'],</tt></span></p><p><span class="small"><tt>          2,</tt></span></p><p><span class="small"><tt>          ['CLIQUE'&gt;&gt;collection(variables1,variables2)],</tt></span></p><p><span class="small"><tt>          [variables1^key = variables2^key #\/ variables1^var &lt; variables2^var],</tt></span></p><p><span class="small"><tt>          ['ORDER'(0,'MAXINT',var) = 'MIN'],</tt></span></p><p><span class="small"><tt>          []).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_example(minimum, minimum(2,[[var-3],[var-2],[var-7],[var-2],[var-6]])).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_see_also(minimum,</tt></span></p><p><span class="small"><tt> [link('generalisation', minimum_modulo,</tt></span></p><p><span class="small"><tt>       '%e replaced by %e', [variable, variable mod constant]),</tt></span></p><p><span class="small"><tt>  link('specialisation', min_n,</tt></span></p><p><span class="small"><tt>       'minimum or order %e replaced by absolute minimum', [n]),</tt></span></p><p><span class="small"><tt>  link('comparison swapped', maximum, '', []),</tt></span></p><p><span class="small"><tt>  link('common keyword', maximum, '%k', ['order constraint']),</tt></span></p><p><span class="small"><tt>  link('soft variant', open_minimum, '%k', ['open constraint']),</tt></span></p><p><span class="small"><tt>  link('soft variant', minimum_except_0, 'value %e is ignored', [0]),</tt></span></p><p><span class="small"><tt>  link('implies', between_min_max, '', []),</tt></span></p><p><span class="small"><tt>  link('implies', in, '', []),</tt></span></p><p><span class="small"><tt>  link('implied by', and, '', [])]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_key_words(minimum,['order constraint'                        ,</tt></span></p><p><span class="small"><tt>                       'minimum'                                 ,</tt></span></p><p><span class="small"><tt>                       'maxint'                                  ,</tt></span></p><p><span class="small"><tt>                       'automaton'                               ,</tt></span></p><p><span class="small"><tt>                       'automaton without counters'              ,</tt></span></p><p><span class="small"><tt>                       'reified automaton constraint'            ,</tt></span></p><p><span class="small"><tt>                       'centered cyclic(1) constraint network(1)',</tt></span></p><p><span class="small"><tt>                       'arc-consistency'                         ]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_persons(minimum,['Beldiceanu N.']).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>ctr_eval(minimum, [builtin(minimum_b), automaton(minimum_a)]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>minimum_b(MIN, VARIABLES) :-</tt></span></p><p><span class="small"><tt>    check_type(dvar, MIN),      collection(VARIABLES, [dvar]),</tt></span></p><p><span class="small"><tt>    length(VARIABLES, N),       N &gt; 0,</tt></span></p><p><span class="small"><tt>    get_attr1(VARIABLES, VARS), minimum(MIN, VARS).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>minimum_a(MIN, VARIABLES) :-   % 0: MIN&lt;VAR, 1: MIN=VAR, 2: MIN&gt;VAR</tt></span></p><p><span class="small"><tt>    minimum_signature(VARIABLES, SIGNATURE, MIN),</tt></span></p><p><span class="small"><tt>    automaton(SIGNATURE, _, SIGNATURE,</tt></span></p><p><span class="small"><tt>              [source(s),sink(t)], [arc(s,0,s),arc(s,1,t),arc(t,1,t),arc(t,0,t)],</tt></span></p><p><span class="small"><tt>              [],[],[]).</tt></span></p><p><span class="small"><tt> </tt></span></p><p><span class="small"><tt>minimum_signature([], [], _).</tt></span></p><p><span class="small"><tt>minimum_signature([[var-VAR]|VARs], [S|Ss], MIN) :-</tt></span></p><p><span class="small"><tt>    S in 0..2,</tt></span></p><p><span class="small"><tt>    MIN #&lt; VAR #&lt;=&gt; S #= 0, MIN #= VAR #&lt;=&gt; S #= 1, MIN #&gt; VAR #&lt;=&gt; S #= 2,</tt></span></p><p><span class="small"><tt>    minimum_signature(VARs, Ss, MIN).</tt></span></p><p/><p>and consists of the following Prolog facts,
-where <span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math></span> is the name of
-the constraint under consideration.
-The facts are organised in the following 15 items:</p><ul>
-<li id="uid9721"><p>Items 1, 2, 3, 4, 12 and 13 provide general information about a global constraint,</p>
-</li>
-<li id="uid9722"><p>Items 5, 6 and 7 describe the arguments of a global constraint.</p>
-</li>
-<li id="uid9723"><p>Items 9 and 10 describes the meaning of a global constraint in terms of a
-graph-based representation.</p>
-</li>
-<li id="uid9724"><p>Item 11 provides a ground instance which holds.</p>
-</li>
-<li id="uid9725"><p>Item 14 gives the list of available evaluators of a global constraint.</p>
-</li>
-<li id="uid9726"><p>Item 15 describes the meaning of a global constraint in terms of a
-set of first order logic formulae.</p>
-</li></ul><p>Items 1, 2, 6 and 11 are mandatory, while all other items are optional.
-We now give the different items:</p><ol>
-<li id="uid9727"><p><span class="small"><tt>ctr_date</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙰𝚃𝙴𝚂</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">Functional dependency invariants</a><ul><li>4.4.1. <a href="sec4.4.1.html">Functional dependency invariants involving two constraints</a></li><li>4.4.2. <a href="sec4.4.2.html">Functional dependency invariants involving three constraints</a></li><li>4.4.3. <a href="sec4.4.3.html">Functional dependency invariants involving four constraints</a></li></ul></li><li>4.5. <a href="sec4.5.html">The electronic version of the catalogue</a><ul><li>4.5.1. <a href="sec4.5.1.html">Prolog facts describing a constraint</a></li><li>4.5.2. <a href="sec4.5.2.html">XML schema associated with a global constraint</a><ul><li>4.5.2.1. <a href="sec4.5.2.1.html">Related work</a></li><li>4.5.2.2. <a href="sec4.5.2.2.html">Key features</a></li><li>4.5.2.3. <a href="sec4.5.2.3.html">Structure of schema</a></li><li>4.5.2.4. <a href="sec4.5.2.4.html">Generating schema from the catalogue</a></li><li>4.5.2.5. <a href="sec4.5.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.4.2.html">4.4.2. Functional dependency invariants involvi &gt;&gt;</a></div><div id="main"><h3>4.4.1. Functional dependency invariants involving two constraints</h3><div class="theorem" id="uid12092"><p><b>Proposition 167</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9728"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙰𝚃𝙴𝚂</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of dates when the
-description of the constraint was modified.</span></p>
-</li></ul>
+<li id="uid12093"><p><span class="small"><a href="Cinflexion.html#uid23514"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚏𝚕𝚎𝚡𝚒𝚘𝚗</mi></math><span id="uid12094"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝙸𝙽𝙵</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9729"><p><span class="small"><tt>ctr_origin</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12095"><p><span class="small"><a href="Cnvalue.html#uid28179"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid12096"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙽𝚅𝙰𝙻</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>𝙽𝙸𝙽𝙵</mi><mo>=</mo><mn>0</mn></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12098"><p><b>Proof 165</b> <span class="small">Since a single value leads to a plateau.</span></p>
+</div><div class="theorem" id="uid12099"><p><b>Proposition 168</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9730"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi></math> is a string denoting the origin of the constraint.
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴𝚂</mi></mrow></math> is a possibly empty list
-of constraint names related to the origin of the constraint.</span></p>
-</li></ul>
+<li id="uid12100"><p><span class="small"><a href="Clength_first_sequence.html#uid24731"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚗𝚐𝚝𝚑</mi><mo>_</mo><mi>𝚏𝚒𝚛𝚜𝚝</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12101"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙻𝙴𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9731"><p><span class="small"><tt>ctr_usual_name</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝚄𝚂𝚄𝙰𝙻</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12102"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12103"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mn>2</mn><mo>·</mo><mi>𝙿</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mi>𝙻𝙴𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12105"><p><b>Proof 166</b> <span class="small">Beside a first sequence with a small value, we alternate between large and small values in order to maximise the number of peaks.</span></p>
+</div><div class="theorem" id="uid12106"><p><b>Proposition 169</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9732"><p><span class="small">When, for some reason, the constraint name used in the catalogue does not correspond to
-the usual name of the constraint, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚄𝚂𝚄𝙰𝙻</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math> provides the usual name of
-the constraint. This stems from the fact that each entry of the catalogue should have a distinct
-name. This is for instance the case for the <a href="Cstretch_path.html#uid26073"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚙𝚊𝚝𝚑</mi></mrow></math><span id="uid9733"/></a> and
-the <a href="Cstretch_circuit.html#uid25989"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi><mo>_</mo><mi>𝚌𝚒𝚛𝚌𝚞𝚒𝚝</mi></mrow></math><span id="uid9734"/></a> constraints which are both usually called
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚝𝚛𝚎𝚝𝚌𝚑</mi></math>.</span></p>
-</li></ul>
+<li id="uid12107"><p><span class="small"><a href="Clength_first_sequence.html#uid24731"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚗𝚐𝚝𝚑</mi><mo>_</mo><mi>𝚏𝚒𝚛𝚜𝚝</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12108"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙻𝙴𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9735"><p><span class="small"><tt>ctr_synonyms</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙽𝙾𝙽𝚈𝙼𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12109"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12110"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mn>2</mn><mo>·</mo><mi>𝚅</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mi>𝙻𝙴𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12112"><p><b>Proof 167</b> <span class="small">Beside a first sequence with a large value, we alternate between small and large values in order to maximise the number of valleys.</span></p>
+</div><div class="theorem" id="uid12113"><p><b>Proposition 170</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9736"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙽𝙾𝙽𝚈𝙼𝚂</mi></mrow></math> is a list of synonyms for the constraint.
-This stems from the fact that, quite often, different authors use a different
-name for the same constraint. This is for instance the case for the
-<a href="Calldifferent.html#uid9995"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid9737"/></a> and the <a href="Csymmetric_alldifferent.html#uid26661"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚢𝚖𝚖𝚎𝚝𝚛𝚒𝚌</mi><mo>_</mo><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></mrow></math><span id="uid9738"/></a> constraints.</span></p>
-</li></ul>
+<li id="uid12114"><p><span class="small"><a href="Clength_last_sequence.html#uid24773"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚗𝚐𝚝𝚑</mi><mo>_</mo><mi>𝚕𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12115"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙻𝙴𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9739"><p><span class="small"><tt>ctr_types</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚃𝚈𝙿𝙴𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12116"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12117"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mn>2</mn><mo>·</mo><mi>𝙿</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mi>𝙻𝙴𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12119"><p><b>Proof 168</b> <span class="small">Beside a last sequence with a small value, we alternate between large and small values in order to maximise the number of peaks.</span></p>
+</div><div class="theorem" id="uid12120"><p><b>Proposition 171</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9740"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚃𝚈𝙿𝙴𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of
-elements of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚊𝚖𝚎</mi></math>-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math>, where
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚊𝚖𝚎</mi></math> is the name of a new type
-and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math> the type itself (usually a collection).
-Basic and compound data types were respectively introduced in
-sections <a href="sec2.1.1.html#uid155">2.1.1</a> and <a href="sec2.1.2.html#uid170">2.1.2</a>
-on page <a href="sec2.1.1.html#uid155">2.1.1</a>.
-This field is only used when we need to declare a new type that
-will be used for specifying the type of the arguments of the constraint.
-This is for instance the case when one argument of the constraint
-is a collection for which the type of one attribute is also a
-collection. This is for instance the case of the <a href="Cdiffn.html#uid15152"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid9741"/></a>
-constraint where the unique argument <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi></math> is a
-collection of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi></math> refers
-to a new type declared in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚃𝚈𝙿𝙴𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math>.</span></p>
-</li></ul>
+<li id="uid12121"><p><span class="small"><a href="Clength_last_sequence.html#uid24773"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚎𝚗𝚐𝚝𝚑</mi><mo>_</mo><mi>𝚕𝚊𝚜𝚝</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12122"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙻𝙴𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9742"><p><span class="small"><tt>ctr_arguments</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12123"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12124"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mn>2</mn><mo>·</mo><mi>𝚅</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mi>𝙻𝙴𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12126"><p><b>Proof 169</b> <span class="small">Beside a last sequence with a large value, we alternate between small and large values in order to maximise the number of valleys.</span></p>
+</div><div class="theorem" id="uid12127"><p><b>Proposition 172</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9743"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃𝚂</mi><mo>_</mo><mi>𝙳𝙴𝙲𝙻𝙰𝚁𝙰𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of
-elements of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚛𝚐</mi></math>-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math>, where
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚛𝚐</mi></math> is the name of an argument of the constraint
-and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚢𝚙𝚎</mi></math> the type of the argument.
-Basic and compound data types were respectively introduced in
-sections <a href="sec2.1.1.html#uid155">2.1.1</a> and <a href="sec2.1.2.html#uid170">2.1.2</a>
-on page <a href="sec2.1.1.html#uid155">2.1.1</a>.</span></p>
-</li></ul>
+<li id="uid12128"><p><span class="small"><a href="Clongest_decreasing_sequence.html#uid25969"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚘𝚗𝚐𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12129"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9744"><p><span class="small"><tt>ctr_restrictions</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12130"><p><span class="small"><a href="Cmax_decreasing_slope.html#uid26127"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12131"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙻</mi><mo>≥</mo><mi>𝙼𝙰𝚇</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12133"><p><b>Proof 170</b> <span class="small">By definition of the
+<a href="Clongest_decreasing_sequence.html#uid25969"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚘𝚗𝚐𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12134"/></a> and
+<a href="Cmax_decreasing_slope.html#uid26127"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12135"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12136"><p><b>Proposition 173</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9745"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of restrictions
-on the different argument of the constraint.
-Possible restrictions were described in Section <a href="sec2.1.3.html#uid194">2.1.3</a>
-on page <a href="sec2.1.3.html#uid194">2.1.3</a>.</span></p>
-</li></ul>
+<li id="uid12137"><p><span class="small"><a href="Clongest_increasing_sequence.html#uid26009"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚘𝚗𝚐𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12138"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9746"><p><span class="small"><tt>ctr_exchangeable</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙼𝙼𝙴𝚃𝚁𝙸𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12139"><p><span class="small"><a href="Cmax_increasing_slope.html#uid26160"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12140"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙻</mi><mo>≥</mo><mi>𝙼𝙰𝚇</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12142"><p><b>Proof 171</b> <span class="small">By definition of the
+<a href="Clongest_increasing_sequence.html#uid26009"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚘𝚗𝚐𝚎𝚜𝚝</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚎𝚚𝚞𝚎𝚗𝚌𝚎</mi></mrow></math><span id="uid12143"/></a> and
+<a href="Cmax_increasing_slope.html#uid26160"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12144"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12145"><p><b>Proposition 174</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9747"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝚂𝚈𝙼𝙼𝙴𝚃𝚁𝙸𝙴𝚂</mi></mrow></math> is a list of mappings
-preserving the solutions of the constraint.
-Possible mappings were described in Section <a href="sec2.1.5.html#uid337">2.1.5</a>
-on page <a href="sec2.1.5.html#uid337">2.1.5</a>.</span></p>
-</li></ul>
+<li id="uid12146"><p><span class="small"><a href="Cmax_decreasing_slope.html#uid26127"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12147"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9748"><p><span class="small"><tt>ctr_derived_collections</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙴𝚁𝙸𝚅𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙻𝙻𝙴𝙲𝚃𝙸𝙾𝙽𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12148"><p><span class="small"><a href="Cmin_decreasing_slope.html#uid26628"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12149"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙼𝙰𝚇</mi><mo>≥</mo><mi>𝙼𝙸𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12151"><p><b>Proof 172</b> <span class="small">By definition of the
+<a href="Cmax_decreasing_slope.html#uid26127"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12152"/></a> and
+<a href="Cmin_decreasing_slope.html#uid26628"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚍𝚎𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12153"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12154"><p><b>Proposition 175</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9749"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙳𝙴𝚁𝙸𝚅𝙴𝙳</mi><mo>_</mo><mi>𝙲𝙾𝙻𝙻𝙴𝙲𝚃𝙸𝙾𝙽𝚂</mi></mrow></math> is a list of <span id="uid9750"/>derived collections.
-<span id="uid9751"/>Derived collections are collections that are computed from the arguments of the
-constraint and are used in the graph-based description.
-<span id="uid9752"/>Derived collections were described in Section <a href="sec2.2.2.1.html#uid645">2.2.2.1</a> on page <a href="sec2.2.2.1.html#uid645">2.2.2.1</a>.</span></p>
-</li></ul>
+<li id="uid12155"><p><span class="small"><a href="Cmax_increasing_slope.html#uid26160"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12156"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9753"><p><span class="small"><tt>ctr_graph</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙸𝙽𝙿𝚄𝚃</mi><mo>,</mo>  <mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙰𝚁𝙸𝚃𝚈</mi><mo>,</mo></mrow></math></span></p>
-<p><span class="small">              <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁𝚂</mi><mo>,</mo>  <mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi><mo>,</mo>  <mi>𝙶𝚁𝙰𝙿𝙷</mi><mo>_</mo><mi>𝙿𝚁𝙾𝙿𝙴𝚁𝚃𝙸𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12157"><p><span class="small"><a href="Cmin_increasing_slope.html#uid26697"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12158"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙼𝙰𝚇</mi><mo>≥</mo><mi>𝙼𝙸𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12160"><p><b>Proof 173</b> <span class="small">By definition of the
+<a href="Cmax_increasing_slope.html#uid26160"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚊𝚡</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12161"/></a> and
+<a href="Cmin_increasing_slope.html#uid26697"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚌𝚛𝚎𝚊𝚜𝚒𝚗𝚐</mi><mo>_</mo><mi>𝚜𝚕𝚘𝚙𝚎</mi></mrow></math><span id="uid12162"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12163"><p><b>Proposition 176</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9754"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙸𝙽𝙿𝚄𝚃</mi></mrow></math> is a list of collections used for
-creating the vertices of the initial graph.
-This was described at page <a href="sec2.2.3.1.html#uid1063">2.2.3.1</a>
-of Section <a href="sec2.2.3.1.html#uid1058">2.2.3.1</a>.</span></p>
+<li id="uid12164"><p><span class="small"><a href="Cmaximum.html#uid26467"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚊𝚡𝚒𝚖𝚞𝚖</mi></math><span id="uid12165"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9755"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙰𝚁𝙸𝚃𝚈</mi></mrow></math> is the number of vertices of an arc.
-Arc arity was explained at page <a href="sec2.2.3.1.html#uid1084">2.2.3.1</a>
-of Section <a href="sec2.2.3.1.html#uid1058">2.2.3.1</a>.</span></p>
-</li>
-<li id="uid9756"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁𝚂</mi></mrow></math> is a list of arc generators.
-Arc generators were introduced at page <a href="sec2.2.3.1.html#uid1068">2.2.3.1</a>
-of Section <a href="sec2.2.3.1.html#uid1058">2.2.3.1</a>.</span></p>
-</li>
-<li id="uid9757"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙰𝚁𝙲</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi></mrow></math> is a list of arc constraints.
-Arc constraints were defined in Section <a href="sec2.2.2.2.html#uid739">2.2.2.2</a> on page <a href="sec2.2.2.2.html#uid739">2.2.2.2</a>.</span></p>
-</li>
-<li id="uid9758"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙶𝚁𝙰𝙿𝙷</mi><mo>_</mo><mi>𝙿𝚁𝙾𝙿𝙴𝚁𝚃𝙸𝙴𝚂</mi></mrow></math> is a list of graph properties.
-Graph properties were described in Section <a href="sec2.2.2.4.html#uid894">2.2.2.4</a>
-on page <a href="sec2.2.2.4.html#uid894">2.2.2.4</a>.</span></p>
+<li id="uid12166"><p><span class="small"><a href="Cminimum.html#uid27036"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid12167"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
 </li></ul>
-</li>
-<li id="uid9759"><p><span class="small"><tt>ctr_example</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚇𝙰𝙼𝙿𝙻𝙴𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙼𝙰𝚇</mi><mo>≥</mo><mi>𝙼𝙸𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12169"><p><b>Proof 174</b> <span class="small">By definition of the <a href="Cmaximum.html#uid26467"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚊𝚡𝚒𝚖𝚞𝚖</mi></math><span id="uid12170"/></a> and the <a href="Cminimum.html#uid27036"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid12171"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12172"><p><b>Proposition 177</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9760"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚇𝙰𝙼𝙿𝙻𝙴𝚂</mi></mrow></math> is a list of examples (usually one).
-Each example corresponds to a ground instance for which the constraint holds.</span></p>
-</li></ul>
+<li id="uid12173"><p><span class="small"><a href="Cmaximum.html#uid26467"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚊𝚡𝚒𝚖𝚞𝚖</mi></math><span id="uid12174"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙰𝚇</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9761"><p><span class="small"><tt>ctr_see_also</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12175"><p><span class="small"><a href="Csum_ctr.html#uid33213"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid12176"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mo>=</mo><mo>,</mo><mi>𝚂𝚄𝙼</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝚂𝚄𝙼</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>·</mo><mi>𝙼𝙰𝚇</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12178"><p><b>Proof 175</b> <span class="small">By definition of the <a href="Cmaximum.html#uid26467"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚊𝚡𝚒𝚖𝚞𝚖</mi></math><span id="uid12179"/></a> and <a href="Csum_ctr.html#uid33213"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid12180"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12181"><p><b>Proposition 178</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9762"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃𝚂</mi></mrow></math> is a list of constraints that are
-related in some way to the constraint. Each element of the list is a fact
-of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚒𝚗𝚔</mi><mo>(</mo><mi>𝚃𝚈𝙿𝙴</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙻𝙸𝙽𝙺</mi><mo>,</mo><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>,</mo><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi><mo>,</mo><mi>𝚂𝚈𝙼𝙱𝙾𝙻𝚂</mi><mo>)</mo></mrow></math>, where:</span></p>
+<li id="uid12182"><p><span class="small"><a href="Cminimum.html#uid27036"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid12183"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12184"><p><span class="small"><a href="Csum_ctr.html#uid33213"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid12185"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>,</mo><mo>=</mo><mo>,</mo><mi>𝚂𝚄𝙼</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝚂𝚄𝙼</mi><mo>≥</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>·</mo><mi>𝙼𝙸𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12187"><p><b>Proof 176</b> <span class="small">By definition of the <a href="Cminimum.html#uid27036"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚒𝚗𝚒𝚖𝚞𝚖</mi></math><span id="uid12188"/></a> and <a href="Csum_ctr.html#uid33213"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚜𝚞𝚖</mi><mo>_</mo><mi>𝚌𝚝𝚛</mi></mrow></math><span id="uid12189"/></a> constraints.</span></p>
+</div><div class="theorem" id="uid12190"><p><b>Proposition 179</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9763"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚃𝚈𝙿𝙴</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙻𝙸𝙽𝙺</mi></mrow></math> is a semantic link that explains why we refer to <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></math>.
-Semantic links were described in Section <a href="sec2.5.html#uid1255">2.5</a> on page <a href="sec2.5.html#uid1255">2.5</a>.</span></p>
+<li id="uid12191"><p><span class="small"><a href="Cmin_width_peak.html#uid26955"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚠𝚒𝚍𝚝𝚑</mi><mo>_</mo><mi>𝚙𝚎𝚊𝚔</mi></mrow></math><span id="uid12192"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9764"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi></math> is the name of the constraint that is linked to <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi></mrow></math>.</span></p>
-</li>
-<li id="uid9765"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi></math> is a string providing contextual explanation.</span></p>
-</li>
-<li id="uid9766"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚈𝙼𝙱𝙾𝙻𝚂</mi></math> is a list of symbols (e.g., keywords, constraint names, mathematical expressions)
-that are inserted in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚂𝚃𝚁𝙸𝙽𝙶</mi></math>.</span></p>
+<li id="uid12193"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12194"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
 </li></ul>
-</li></ul>
-</li>
-<li id="uid9767"><p><span class="small"><tt>ctr_key_words</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙺𝙴𝚈𝚆𝙾𝚁𝙳𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙿</mi><mo>·</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12196"><p><b>Proof 177</b> <span class="small">Cumulated minimum width of the different peaks cannot exceed size of sequence.</span></p>
+</div><div class="theorem" id="uid12197"><p><b>Proposition 180</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9768"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙺𝙴𝚈𝚆𝙾𝚁𝙳𝚂</mi></mrow></math> is a list of keywords associated with the constraint.
-Keywords may be linked
-to the </span><span class="small"><i>meaning</i></span><span class="small"> of the constraint,
-to a </span><span class="small"><i>typical pattern</i></span><span class="small"> where the constraint can be applied or
-to a </span><span class="small"><i>specific problem</i></span><span class="small"> where the constraint is useful.
-All keywords used in the catalogue are listed in alphabetic order
-in Section <a href="sec3.7.html#uid2638">3.7</a> on page <a href="sec3.7.html#uid2638">3.7</a>.
-Each keyword has an entry explaining its meaning and providing the list
-of global constraints using that keyword.</span></p>
-</li></ul>
+<li id="uid12198"><p><span class="small"><a href="Cmin_width_peak.html#uid26955"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚠𝚒𝚍𝚝𝚑</mi><mo>_</mo><mi>𝚙𝚎𝚊𝚔</mi></mrow></math><span id="uid12199"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9769"><p><span class="small"><tt>ctr_eval</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚅𝙰𝙻𝚄𝙰𝚃𝙾𝚁𝚂</mi> <mo>)</mo></mrow></math></span></p>
+<li id="uid12200"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12201"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<p><span class="small">The automaton depicted by Figure <a href="sec4.4.1.html#uid12202">4.4.1</a> provides a necessary condition.</span></p>
+</div><div class="figure" id="uid12202"><h5><b>Figure 4.4.1. </b><span class="small">Automaton for a redundant constraint between the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> and the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚠𝚒𝚍𝚝𝚑</mi><mo>_</mo><mi>𝚙𝚎𝚊𝚔</mi></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> constraints when <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><munder><mi>𝙿</mi> <mo> ̲</mo></munder><mo>&gt;</mo><mn>0</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><munder><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi></mrow> <mo> ̲</mo></munder><mo>&gt;</mo><mn>0</mn></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑐𝑜𝑛𝑑</mi></math> is the
+condition <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo></mrow><mo>-</mo><mi>i</mi><mo>&gt;</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><munder><mi>𝙿</mi> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mo>·</mo><mrow><mo>(</mo><munder><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi></mrow> <mo> ̲</mo></munder><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><munder><mi>𝙿</mi> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>≥</mo><mn>1</mn><mo>)</mo></mrow><mo>·</mo><mrow><mo>(</mo><munder><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi></mrow> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>i</mi><mo>-</mo><mi>F</mi><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>)</mo></mrow></mrow></math>,
+and where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>F</mi></math> respectively stand for
+the index of the current pairs (<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>i</mi><mo>∈</mo><mo>[</mo><mn>1</mn><mo>,</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>),
+the number of start of potential peaks already encountered,
+the position of the start of the last potential peak encountered;
+the quantity <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow></math> denotes the number of peaks already encountered, while
+the quantity <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><munder><mi>𝙿</mi> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn><mo>)</mo></mrow></math> denotes the minimum number of peaks that remain to done from position <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math>.</span></h5><img alt="ctrs/preface-228-tikz" src="../ctrs/preface-228-tikz.png"/></div><div class="theorem" id="uid12203"><p><b>Proof 178</b> <span class="small">The condition associated with each transition of the automaton checks that there is enough space between the current position and the end of the sequence to place the remaining minimum number of required peaks.</span></p>
+</div><div class="theorem" id="uid12204"><p><b>Proposition 181</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9770"><p><span class="small">For many of the constraints of the catalogue one or several evaluators are provided.
-Each evaluator is explicitly described in <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙴𝚅𝙰𝙻𝚄𝙰𝚃𝙾𝚁𝚂</mi></mrow></math> by an element
-of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚎𝚝𝚑𝚘𝚍</mi><mo>(</mo><mi>𝚙𝚛𝚎𝚍𝚒𝚌𝚊𝚝𝚎</mi><mo>_</mo><mi>𝚗𝚊𝚖𝚎</mi><mo>)</mo></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚙𝚛𝚎𝚍𝚒𝚌𝚊𝚝𝚎</mi><mo>_</mo><mi>𝚗𝚊𝚖𝚎</mi></mrow></math>
-is the name of the Prolog predicate to call in order to evaluate the constraint,<span class="note"><span class="small">Note that
-this predicate name should be different from existing <span id="uid9772"/><a href="http://www.sics.se/sicstus/"><span class="small"><b>SICStus</b></span></a> built-ins</span></span>, and
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚖𝚎𝚝𝚑𝚘𝚍</mi></math> can be one of the following keywords:</span></p>
+<li id="uid12205"><p><span class="small"><a href="Cmin_width_valley.html#uid26996"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚠𝚒𝚍𝚝𝚑</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></mrow></math><span id="uid12206"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12207"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12208"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝚅</mi><mo>·</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>≤</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12210"><p><b>Proof 179</b> <span class="small">Cumulated minimum width of the different valleys cannot exceed size of sequence.</span></p>
+</div><div class="theorem" id="uid12211"><p><b>Proposition 182</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9773"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚋𝚞𝚒𝚕𝚝𝚒𝚗</mi></math> when the corresponding evaluator uses a <span id="uid9774"/><a href="http://www.sics.se/sicstus/"><span class="small"><b>SICStus</b></span></a> built-in.
-This is for instance the case of the <a href="Calldifferent.html#uid9995"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid9775"/></a> constraint.</span></p>
+<li id="uid12212"><p><span class="small"><a href="Cmin_width_valley.html#uid26996"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚠𝚒𝚍𝚝𝚑</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></mrow></math><span id="uid12213"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
 </li>
-<li id="uid9776"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚛𝚎𝚏𝚘𝚛𝚖𝚞𝚕𝚊𝚝𝚒𝚘𝚗</mi></math> when the corresponding evaluator reformulates the constraints in terms
-of a conjunction of constraints of the catalogue and/or in term of a conjunction of reified constraints.
-This is for instance the case of the <a href="Ctree.html#uid27089"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚝𝚛𝚎𝚎</mi></math><span id="uid9777"/></a> constraint.</span></p>
-</li>
-<li id="uid9778"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚞𝚝𝚘𝚖𝚊𝚝𝚘𝚗</mi></math> when the corresponding evaluator is based on an automaton that describes
-the set of solutions accepted by the constraint. The evaluator corresponds to the Prolog code that creates
-the signature constraints as well as the automata (usually one) associated with the constraint.
-A fact of the form </span><span class="small"><tt>automaton/9</tt></span><span class="small"> lists the states and the transitions of the automata used for
-describing the set of solutions accepted by the constraint. It follows the description provided in
-Section <a href="sec2.3.2.html#uid1233">2.3.2</a> on page <a href="sec2.3.2.html#uid1233">2.3.2</a>.
-The <a href="Cpattern.html#uid23589"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚊𝚝𝚝𝚎𝚛𝚗</mi></math><span id="uid9779"/></a> constraint is an example of constraint for which an automaton
-is provided.</span></p>
-</li>
-<li id="uid9780"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚕𝚘𝚐𝚒𝚌</mi></math> when the corresponding evaluator is based on a first order logic formula that describes
-the meaning of the constraint. This is for instance the case of the
-<a href="Cmeet_sboxes.html#uid21119"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚎𝚎𝚝</mi><mo>_</mo><mi>𝚜𝚋𝚘𝚡𝚎𝚜</mi></mrow></math><span id="uid9781"/></a> constraint.</span></p>
-</li>
-<li id="uid9782"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚑𝚎𝚌𝚔𝚎𝚛</mi></math> when the corresponding evaluator only accepts ground instances of the constraint.
-This is for instance the case of the <a href="Ccycle.html#uid14542"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚢𝚌𝚕𝚎</mi></math><span id="uid9783"/></a> constraint.</span></p>
+<li id="uid12214"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12215"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
 </li></ul>
-</li></ul>
-</li>
-<li id="uid9784"><p><span class="small"><tt>ctr_logic</tt></span><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo> <mi>𝙲𝙾𝙽𝚂𝚃𝚁𝙰𝙸𝙽𝚃</mi><mo>_</mo><mi>𝙽𝙰𝙼𝙴</mi><mo>,</mo>  <mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙵𝙸𝚁𝚂𝚃</mi><mo>_</mo><mi>𝙾𝚁𝙳𝙴𝚁</mi><mo>_</mo><mi>𝙻𝙾𝙶𝙸𝙲</mi><mo>_</mo><mi>𝙵𝙾𝚁𝙼𝚄𝙻𝙰𝙴</mi> <mo>)</mo></mrow></math></span></p>
+<p><span class="small">The automaton depicted by Figure <a href="sec4.4.1.html#uid12216">4.4.2</a> provides a necessary condition.</span></p>
+</div><div class="figure" id="uid12216"><h5><b>Figure 4.4.2. </b><span class="small">Automaton for a redundant constraint between the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> and the <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚖𝚒𝚗</mi><mo>_</mo><mi>𝚠𝚒𝚍𝚝𝚑</mi><mo>_</mo><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> constraints when <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><munder><mi>𝚅</mi> <mo> ̲</mo></munder><mo>&gt;</mo><mn>0</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><munder><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi></mrow> <mo> ̲</mo></munder><mo>&gt;</mo><mn>0</mn></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝑐𝑜𝑛𝑑</mi></math> is the
+condition <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo></mrow><mo>-</mo><mi>i</mi><mo>&gt;</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><munder><mi>𝚅</mi> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mo>·</mo><munder><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi></mrow> <mo> ̲</mo></munder><mo>+</mo><mrow><mo>(</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><munder><mi>𝚅</mi> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>≥</mo><mn>1</mn><mo>)</mo></mrow><mo>·</mo><mrow><mo>(</mo><munder><mrow><mi>𝙼𝙸𝙽</mi><mo>_</mo><mi>𝚆𝙸𝙳𝚃𝙷</mi></mrow> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>i</mi><mo>-</mo><mi>F</mi><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>)</mo></mrow></mrow></math>,
+and where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>F</mi></math> respectively stand for
+the index of the current pairs (<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>i</mi><mo>∈</mo><mo>[</mo><mn>1</mn><mo>,</mo><mo>|</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>|</mo><mo>-</mo><mn>1</mn><mo>]</mo></mrow></math>),
+the number of start of potential valleys already encountered,
+the position of the start of the last potential valley encountered;
+the quantity <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow></math> denotes the number of valleys already encountered, while
+the quantity <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo movablelimits="true" form="prefix">max</mo><mo>(</mo><munder><mi>𝚅</mi> <mo> ̲</mo></munder><mo>-</mo><mo movablelimits="true" form="prefix">max</mo><mrow><mo>(</mo><mi>S</mi><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></mrow><mo>,</mo><mn>0</mn><mo>)</mo></mrow></math> denotes the minimum number of valleys that remain to done from position <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math>.</span></h5><img alt="ctrs/preface-229-tikz" src="../ctrs/preface-229-tikz.png"/></div><div class="theorem" id="uid12217"><p><b>Proof 180</b> <span class="small">The condition associated with each transition of the automaton checks that there is enough space between the current position and the end of the sequence to place the remaining minimum number of required valleys.</span></p>
+</div><div class="theorem" id="uid12218"><p><b>Proposition 183</b> <span class="small">Given the constraints</span></p>
 <ul>
-<li id="uid9785"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙻𝙸𝚂𝚃</mi><mo>_</mo><mi>𝙾𝙵</mi><mo>_</mo><mi>𝙵𝙸𝚁𝚂𝚃</mi><mo>_</mo><mi>𝙾𝚁𝙳𝙴𝚁</mi><mo>_</mo><mi>𝙻𝙾𝙶𝙸𝙲</mi><mo>_</mo><mi>𝙵𝙾𝚁𝙼𝚄𝙻𝙰𝙴</mi></mrow></math> is a list of
-first order logical formulae that describe the meaning of the
-constraint<span id="uid9786"/> <a class="cite" href="biblio.html#bid10">[CarlssonBeldiceanuMartin08]</a>.</span></p>
+<li id="uid12219"><p><span class="small"><a href="Cnvalue.html#uid28179"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid12220"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12221"><p><span class="small"><a href="Cnvisible_from_end.html#uid28601"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚟𝚒𝚜𝚒𝚋𝚕𝚎</mi><mo>_</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>_</mo><mi>𝚎𝚗𝚍</mi></mrow></math><span id="uid12222"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
 </li></ul>
-</li></ol></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
-  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙽𝚅𝙰𝙻</mi><mo>≥</mo><mi>𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12224"><p><b>Proof 181</b> <span class="small">Since stairs visible from the end are located at different altitudes.</span></p>
+</div><div class="theorem" id="uid12225"><p><b>Proposition 184</b> <span class="small">Given the constraints</span></p>
+<ul>
+<li id="uid12226"><p><span class="small"><a href="Cnvalue.html#uid28179"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid12227"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12228"><p><span class="small"><a href="Cnvisible_from_start.html#uid28631"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚗𝚟𝚒𝚜𝚒𝚋𝚕𝚎</mi><mo>_</mo><mi>𝚏𝚛𝚘𝚖</mi><mo>_</mo><mi>𝚜𝚝𝚊𝚛𝚝</mi></mrow></math><span id="uid12229"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mi>𝙽𝚅𝙰𝙻</mi><mo>≥</mo><mi>𝙽</mi></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12231"><p><b>Proof 182</b> <span class="small">Since stairs visible from the start are located at different altitudes.</span></p>
+</div><div class="theorem" id="uid12232"><p><b>Proposition 185</b> <span class="small">Given the constraints</span></p>
+<ul>
+<li id="uid12233"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12234"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12235"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12236"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math></span><span class="small"><i>:</i></span></p>
+</li></ul>
+<div class="formula"><math xmlns="http://www.w3.org/1998/Math/MathML" mode="display"><mrow><mo>|</mo><mi>𝙿</mi><mo>-</mo><mi>𝚅</mi><mo>|</mo><mo>≤</mo><mn>1</mn></mrow></math></div>
+<p/>
+</div><div class="theorem" id="uid12238"><p><b>Proof 183</b> <span class="small">Since peaks and valleys can only alternate.</span></p>
+</div><div class="theorem" id="uid12239"><p><b>Proposition 186</b> <span class="small">Given the constraints</span></p>
+<ul>
+<li id="uid12240"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12241"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12242"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12243"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li></ul>
+<p><span class="small">with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙿</mi><mo>&gt;</mo><mi>𝚅</mi></mrow></math>,
+the automaton depicted by Figure <a href="sec4.4.1.html#uid12244">4.4.3</a> provides a necessary condition.</span></p>
+</div><div class="figure" id="uid12244"><h5><b>Figure 4.4.3. </b><span class="small">Automaton for a redundant constraint for the conjunction <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo> <mo>∧</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo> <mo>∧</mo> <mi>𝙿</mi><mo>&gt;</mo><mi>𝚅</mi></mrow></math> (we have both to start with a peak and to finish with a peak)</span></h5><img alt="ctrs/preface-230-tikz" src="../ctrs/preface-230-tikz.png"/></div><div class="theorem" id="uid12245"><p><b>Proof 184</b> <span class="small">Since peaks and valleys can only alternate and since having more peaks than valleys enforces to start and end on a peak.</span></p>
+</div><div class="theorem" id="uid12246"><p><b>Proposition 187</b> <span class="small">Given the constraints</span></p>
+<ul>
+<li id="uid12247"><p><span class="small"><a href="Cpeak.html#uid29824"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><span id="uid12248"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid12249"><p><span class="small"><a href="Cvalley.html#uid34991"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><span id="uid12250"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math>,</span></p>
+</li></ul>
+<p><span class="small">with <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅</mi><mo>&gt;</mo><mi>𝙿</mi></mrow></math>
+the automaton depicted by Figure <a href="sec4.4.1.html#uid12251">4.4.4</a> provides a necessary condition.</span></p>
+</div><div class="figure" id="uid12251"><h5><b>Figure 4.4.4. </b><span class="small">Automaton for a redundant constraint for the conjunction <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚕𝚕𝚎𝚢</mi></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝚅</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo> <mo>∧</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚙𝚎𝚊𝚔</mi></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙿</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo> <mo>∧</mo> <mi>𝚅</mi><mo>&gt;</mo><mi>𝙿</mi></mrow></math> (we have both to start with a valley and to finish with a valley)</span></h5><img alt="ctrs/preface-231-tikz" src="../ctrs/preface-231-tikz.png"/></div><div class="theorem" id="uid12252"><p><b>Proof 185</b> <span class="small">Since valleys and peaks can only alternate and since having more valleys than peaks enforces to start and end on a valley.</span></p>
+</div></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-5. <a href="http://sofdem.github.io/">SD</a>.</p></div>
     
 	<script type="text/javascript">
 	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

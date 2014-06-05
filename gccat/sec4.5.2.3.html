@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta http-equiv="Window-target" content="_parent"/>
+    <meta name="author" content="Nicolas Beldiceanu, Sophie Demassey"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="keywords" content="beldiceanu, global constraint catalog, global constraint catalogue, global constraints, constraint programming, contraintes globales"/>
+    <meta name="description" content="The catalogue of global constraints: description, origin,... ; search by keywords, number of arguments,... ; reformulation in terms of graph properties or of automata"/>
+    <link href="../css/gccat_mathjax.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"/>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ "HTML-CSS": { scale: 90 } });</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      
+    </script>
+    <title>Global Constraint Catalog</title>
+  </head>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec4.html">4. Further Topics</a></h1><ul><li>4.1. <a href="sec4.1.html">Differences from the 2000 report</a></li><li>4.2. <a href="sec4.2.html">Differences from the 2005 report</a></li><li>4.3. <a href="sec4.3.html">Graph invariants</a><ul><li>4.3.1. <a href="sec4.3.1.html">Graph classes</a></li><li>4.3.2. <a href="sec4.3.2.html">Format of an invariant</a></li><li>4.3.3. <a href="sec4.3.3.html">Using the database of invariants</a></li><li>4.3.4. <a href="sec4.3.4.html">The database of graph invariants</a><ul><li>4.3.4.1. <a href="sec4.3.4.1.html">one parameter/one final graph</a></li><li>4.3.4.2. <a href="sec4.3.4.2.html">two parameters/one final graph</a></li><li>4.3.4.3. <a href="sec4.3.4.3.html">three parameters/one final graph</a></li><li>4.3.4.4. <a href="sec4.3.4.4.html">four parameters/one final graph</a></li><li>4.3.4.5. <a href="sec4.3.4.5.html">five parameters/one final graph</a></li><li>4.3.4.6. <a href="sec4.3.4.6.html">two parameters/two final graphs</a></li><li>4.3.4.7. <a href="sec4.3.4.7.html">three parameters/two final graphs</a></li><li>4.3.4.8. <a href="sec4.3.4.8.html">four parameters/two final graphs</a></li><li>4.3.4.9. <a href="sec4.3.4.9.html">five parameters/two final graphs</a></li><li>4.3.4.10. <a href="sec4.3.4.10.html">six parameters/two final graphs</a></li></ul></li></ul></li><li>4.4. <a href="sec4.4.html">Functional dependency invariants</a><ul><li>4.4.1. <a href="sec4.4.1.html">Functional dependency invariants involving two constraints</a></li><li>4.4.2. <a href="sec4.4.2.html">Functional dependency invariants involving three constraints</a></li><li>4.4.3. <a href="sec4.4.3.html">Functional dependency invariants involving four constraints</a></li></ul></li><li>4.5. <a href="sec4.5.html">The electronic version of the catalogue</a><ul><li>4.5.1. <a href="sec4.5.1.html">Prolog facts describing a constraint</a></li><li>4.5.2. <a href="sec4.5.2.html">XML schema associated with a global constraint</a><ul><li>4.5.2.1. <a href="sec4.5.2.1.html">Related work</a></li><li>4.5.2.2. <a href="sec4.5.2.2.html">Key features</a></li><li>4.5.2.3. <a href="sec4.5.2.3.html">Structure of schema</a></li><li>4.5.2.4. <a href="sec4.5.2.4.html">Generating schema from the catalogue</a></li><li>4.5.2.5. <a href="sec4.5.2.5.html">Conclusion</a></li></ul></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec4.5.2.2.html">&lt;&lt; 4.5.2.2. Key features</a><a href="sec4.5.2.4.html">4.5.2.4. Generating schema from the catalogue &gt;&gt;</a></div><div id="main"><h3>4.5.2.3. Structure of schema</h3><div id="uid12458"><h4>Model</h4>
+<p>The top-level element for the schema is <i>model</i>, which contains an optional <i>variables</i> element
+and a required <i>constraints</i> element.</p>
+</div><div id="uid12459"><h4>Variables</h4>
+<p>The <i>variables</i> element consists of a non-empty sequence of <i>variable</i> elements,
+each describing a single variable which may occur in some of the constraints.
+Each variable has some attributes, an required <i>id</i>, an optional <i>name</i> and a required <i>external</i>.
+The <i>id</i> is an XML schema <b>ID</b> used to refer to the variable in the constraints of the model,
+the <i>name</i> is a <b>string</b> which describes the variable to the user, and <i>external</i> is a “yes”/“no” <b>string</b>
+which states if the variable is visible outside the model.</p>
+<p>The domains of variables are not described as part of the variables section, special unary constraints
+(e.g., <a href="Cin_interval.html#uid22701"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚒𝚗</mi><mo>_</mo><mi>𝚒𝚗𝚝𝚎𝚛𝚟𝚊𝚕</mi></mrow></math><span id="uid12460"/></a>)
+are used in the constraint section instead.</p>
+</div><div id="uid12461"><h4>constraints</h4>
+<p>The <i>constraints</i> element consists of one or more elements representing constraints in the catalogue.
+The constraints can be stated in any order, with the understanding that the order may influence the sequence
+in which they are introduced to the solver.</p>
+<p>For each constraint in the catalogue, a specific element with the same name is described in the schema.
+This imposes restrictions on the names of constraints in the catalogue,
+only alphanumerical names (with underscores) should be used.</p>
+<p>Each constraint has attributes <i>id</i> (type <b>ID</b>), a <i>name</i> (type <b>string</b>)
+and an optional <i>description</i> (type <b>string</b>).
+The <i>name</i> and <i>description</i> can be used to include user-readable information
+about the constraint for example for debugging or explanations.</p>
+<p>For each introduced element, a sequence of arguments is defined to define the arguments of the constraints
+in the same order as described in the catalogue. Each of the arguments has a specific type, which is defined
+in accordance with the catalogue definition. The argument names can be reused throughout the catalogue,
+as long as they are unique within each constraint. Arguments can have atomic values (i.e., consist of a single value),
+or they may be <i>collection</i> elements.</p>
+</div><div id="uid12462"><h4>collection</h4>
+<p>Roughly, collections correspond to lists in Prolog. Collections can be empty, or must contain entries of the same type.
+Collections can be nested as required.</p>
+</div><div id="uid12463"><h4>item</h4>
+<p>Items correspond to terms in Prolog. Items have named arguments,
+for which the same rules apply as for the arguments of constraints.
+The different arguments of an item can be of different type.</p>
+</div></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-5. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+    
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-3373473-1");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>
+    
+  </body>
+</html>

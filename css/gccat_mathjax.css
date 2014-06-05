@@ -32,11 +32,11 @@
 
 /* pre-content  --------------------------------- */
 #navbar { display:inline; text-align: left; padding: .9em 0; }
-.download { display:inline; text-align: right; padding:.9em 0; }
-.download ul { display:inline; list-style:none; }
-.download li { display:inline; white-space: nowrap; }
-.download a, #navbar a { padding: 1em; }
-.download a { cursor: help; }
+#download { display:inline; text-align: right; padding:.9em 0; }
+#download ul { display:inline; list-style:none; }
+#download li { display:inline; white-space: nowrap; }
+#download a, #navbar a { padding: 1em; }
+#download a { cursor: help; }
 
 /* content --------------------------------- */
 #main h1, #mainbody h1 {
@@ -146,8 +146,9 @@ div.fbox { padding: 7px; border: 2px solid; text-align: center; }
 /* figure */
 div.figure { text-align: center; width: 100%; }
 div.figure table { text-align: center; width: 100%; }
-div.figure>img { max-width: 100%; }
+/* div.figure>img { max-width: 100%; } */
 /*div.figure td>img {width: 100%; }*/
+img { max-width: 90%; }
 
 
 /* table */

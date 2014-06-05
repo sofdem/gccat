@@ -15,59 +15,102 @@
     </script>
     <title>Global Constraint Catalog</title>
   </head>
-  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec2.html">2. Describing Global Constraints</a></h1><ul><li>2.1. <a href="sec2.1.html">Describing the arguments of a global constraint</a><ul><li>2.1.1. <a href="sec2.1.1.html">Basic data types</a></li><li>2.1.2. <a href="sec2.1.2.html">Compound data types</a></li><li>2.1.3. <a href="sec2.1.3.html">Restrictions</a></li><li>2.1.4. <a href="sec2.1.4.html">Declaring a global constraint</a></li><li>2.1.5. <a href="sec2.1.5.html">Describing symmetries between arguments</a></li></ul></li><li>2.2. <a href="sec2.2.html">Describing global constraints in terms of graph properties</a><ul><li>2.2.1. <a href="sec2.2.1.html">Basic ideas and illustrative example</a></li><li>2.2.2. <a href="sec2.2.2.html">Ingredients used for describing global constraints</a><ul><li>2.2.2.1. <a href="sec2.2.2.1.html"><span id="uid646"/>Collection generators</a></li><li>2.2.2.2. <a href="sec2.2.2.2.html">Elementary constraints attached to the arcs</a></li><li>2.2.2.3. <a href="sec2.2.2.3.html">Graph generators</a></li><li>2.2.2.4. <a href="sec2.2.2.4.html">Graph properties</a></li></ul></li><li>2.2.3. <a href="sec2.2.3.html">Graph constraint</a><ul><li>2.2.3.1. <a href="sec2.2.3.1.html">Simple graph constraint</a></li><li>2.2.3.2. <a href="sec2.2.3.2.html">Dynamic graph constraint</a></li></ul></li></ul></li><li>2.3. <a href="sec2.3.html">Describing global constraints in terms of automata</a><ul><li>2.3.1. <a href="sec2.3.1.html">Selecting an appropriate description</a></li><li>2.3.2. <a href="sec2.3.2.html">Defining an automaton</a></li></ul></li><li>2.4. <a href="sec2.4.html">Reformulating global constraints as a conjunction</a></li><li>2.5. <a href="sec2.5.html">Semantic links between global constraints</a><ul><li>2.5.1. <a href="sec2.5.1.html">Assignment dimension added</a></li><li>2.5.2. <a href="sec2.5.2.html">Assignment dimension removed</a></li><li>2.5.3. <a href="sec2.5.3.html">Attached to cost variant</a></li><li>2.5.4. <a href="sec2.5.4.html">Common keyword</a></li><li>2.5.5. <a href="sec2.5.5.html">Comparison swapped</a></li><li>2.5.6. <a href="sec2.5.6.html">Cost variant</a></li><li>2.5.7. <a href="sec2.5.7.html">Generalisation</a></li><li>2.5.8. <a href="sec2.5.8.html">Hard version</a></li><li>2.5.9. <a href="sec2.5.9.html">Implied by</a></li><li>2.5.10. <a href="sec2.5.10.html">Implies</a></li><li>2.5.11. <a href="sec2.5.11.html">Implies if swap arguments</a></li><li>2.5.12. <a href="sec2.5.12.html">Negation</a></li><li>2.5.13. <a href="sec2.5.13.html">Part of system of constraints</a></li><li>2.5.14. <a href="sec2.5.14.html">Related</a></li><li>2.5.15. <a href="sec2.5.15.html">Related to a common problem</a></li><li>2.5.16. <a href="sec2.5.16.html">Root concept</a></li><li>2.5.17. <a href="sec2.5.17.html">Shift of concept</a></li><li>2.5.18. <a href="sec2.5.18.html">Soft variant</a></li><li>2.5.19. <a href="sec2.5.19.html">Specialisation</a></li><li>2.5.20. <a href="sec2.5.20.html">System of constraints</a></li><li>2.5.21. <a href="sec2.5.21.html">Used in graph description</a></li><li>2.5.22. <a href="sec2.5.22.html">Used in reformulation</a></li><li>2.5.23. <a href="sec2.5.23.html">Uses in its reformulation</a></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec2.2.1.html">&lt;&lt; 2.2.1. Basic ideas and illustrative example</a><a href="sec2.2.3.html">2.2.3. Graph constraint &gt;&gt;</a></div><div id="main"><h3>2.2.2. Ingredients used for describing global constraints</h3><p>We first introduce the basic ingredients used for describing a global constraint
-and illustrate them shortly on the example of the <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid627"/></a> constraint
-introduced in the previous section on page <a href="sec2.2.1.html#uid609">2.2.1</a>.
-We then go through each basic ingredient in more detail.
-The graph-based description is founded on the following basic ingredients:</p><ul>
-<li id="uid628"><p><i>Data types</i> and <i>restrictions</i> used in order
-to describe the arguments of a global constraint.
-Data types and restrictions were already described in the previous section
-(from page <a href="sec2.1.1.html#uid155">2.1.1</a> to page <a href="sec2.1.4.html#uid336">2.1.4</a>).</p>
+  <body><div id="header"><h1><a href="index.html">Global Constraint Catalog</a></h1></div><div id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="titlepage.html">Title</a></li><li><a href="preface.html">Preface</a></li><li><a href="biblio.html">Bibliography</a></li><li><a href="theindex.html">Index</a></li><li><a href="content.html">Content</a></li></ul><ul><li>1. <a href="sec1.html">Getting started</a></li> <li>2. <a href="sec2.html">Describing Global Constraints</a></li> <li>3. <a href="sec3.html">Description of the Catalogue</a></li> <li>4. <a href="sec4.html">Further Topics</a></li> <li>5. <a href="sec5.html">Global Constraint Catalogue</a></li> <li>6. <a href="sec6.html">Legend for the Description</a></li> </ul></div><div id="wrap"><div id="mainbody"><div id="menu"><h1><a href="sec2.html">2. Describing Global Constraints</a></h1><ul><li>2.1. <a href="sec2.1.html">Global constraint: what it is, and what it is not</a><ul><li>2.1.1. <a href="sec2.1.1.html">Checker view</a></li><li>2.1.2. <a href="sec2.1.2.html">Feasibility view</a></li><li>2.1.3. <a href="sec2.1.3.html">Filtering view</a></li><li>2.1.4. <a href="sec2.1.4.html">Explanation view</a></li><li>2.1.5. <a href="sec2.1.5.html">Cost violation view</a></li><li>2.1.6. <a href="sec2.1.6.html">Reification view</a></li><li>2.1.7. <a href="sec2.1.7.html">Counting view</a></li><li>2.1.8. <a href="sec2.1.8.html">Property view</a></li></ul></li><li>2.2. <a href="sec2.2.html">Describing the arguments of a global constraint</a><ul><li>2.2.1. <a href="sec2.2.1.html">Basic data types</a></li><li>2.2.2. <a href="sec2.2.2.html">Compound data types</a></li><li>2.2.3. <a href="sec2.2.3.html">Restrictions</a></li><li>2.2.4. <a href="sec2.2.4.html">Declaring a global constraint</a></li><li>2.2.5. <a href="sec2.2.5.html">Describing symmetries between arguments</a></li></ul></li><li>2.3. <a href="sec2.3.html">Describing global constraints in terms of graph properties</a><ul><li>2.3.1. <a href="sec2.3.1.html">Basic ideas and illustrative example</a></li><li>2.3.2. <a href="sec2.3.2.html">Ingredients used for describing global constraints</a><ul><li>2.3.2.1. <a href="sec2.3.2.1.html"><span id="uid781"/>Collection generators</a></li><li>2.3.2.2. <a href="sec2.3.2.2.html">Elementary constraints attached to the arcs</a></li><li>2.3.2.3. <a href="sec2.3.2.3.html">Graph generators</a></li><li>2.3.2.4. <a href="sec2.3.2.4.html">Graph properties</a></li></ul></li><li>2.3.3. <a href="sec2.3.3.html">Graph constraint</a><ul><li>2.3.3.1. <a href="sec2.3.3.1.html">Simple graph constraint</a></li><li>2.3.3.2. <a href="sec2.3.3.2.html">Dynamic graph constraint</a></li></ul></li></ul></li><li>2.4. <a href="sec2.4.html">Describing global constraints in terms of automata</a><ul><li>2.4.1. <a href="sec2.4.1.html">Selecting an appropriate description</a></li><li>2.4.2. <a href="sec2.4.2.html">Defining an automaton</a></li></ul></li><li>2.5. <a href="sec2.5.html">Reformulating global constraints as a conjunction</a></li><li>2.6. <a href="sec2.6.html">Semantic links between global constraints</a><ul><li>2.6.1. <a href="sec2.6.1.html">Assignment dimension added</a></li><li>2.6.2. <a href="sec2.6.2.html">Assignment dimension removed</a></li><li>2.6.3. <a href="sec2.6.3.html">Attached to cost variant</a></li><li>2.6.4. <a href="sec2.6.4.html">Common keyword</a></li><li>2.6.5. <a href="sec2.6.5.html">Comparison swapped</a></li><li>2.6.6. <a href="sec2.6.6.html">Cost variant</a></li><li>2.6.7. <a href="sec2.6.7.html">Generalisation</a></li><li>2.6.8. <a href="sec2.6.8.html">Hard version</a></li><li>2.6.9. <a href="sec2.6.9.html">Implied by</a></li><li>2.6.10. <a href="sec2.6.10.html">Implies</a></li><li>2.6.11. <a href="sec2.6.11.html">Implies (if swap arguments)</a></li><li>2.6.12. <a href="sec2.6.12.html">Implies (items to collection)</a></li><li>2.6.13. <a href="sec2.6.13.html">Negation</a></li><li>2.6.14. <a href="sec2.6.14.html">Part of system of constraints</a></li><li>2.6.15. <a href="sec2.6.15.html">Related</a></li><li>2.6.16. <a href="sec2.6.16.html">Related to a common problem</a></li><li>2.6.17. <a href="sec2.6.17.html">Root concept</a></li><li>2.6.18. <a href="sec2.6.18.html">Shift of concept</a></li><li>2.6.19. <a href="sec2.6.19.html">Soft variant</a></li><li>2.6.20. <a href="sec2.6.20.html">Specialisation</a></li><li>2.6.21. <a href="sec2.6.21.html">System of constraints</a></li><li>2.6.22. <a href="sec2.6.22.html">Used in graph description</a></li><li>2.6.23. <a href="sec2.6.23.html">Used in reformulation</a></li><li>2.6.24. <a href="sec2.6.24.html">Uses in its reformulation</a></li></ul></li></ul></div><div id="contentwrap"><div id="content"><div id="navbar"><a href="sec2.2.1.html">&lt;&lt; 2.2.1. Basic data types</a><a href="sec2.2.3.html">2.2.3. Restrictions &gt;&gt;</a></div><div id="main"><h3>2.2.2. Compound data types</h3><p>We provide the following <i>compound data types</i>:</p><ul>
+<li id="uid288"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚕𝚒𝚜𝚝</mi><mo>(</mo><mi>T</mi><mo>)</mo></mrow></math>
+corresponds to a list of elements of type <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math>
+is a basic or a compound data type.</p>
 </li>
-<li id="uid629"><p><span id="uid630"/><i>Collection generators</i> used in order
-to derive new collections from the arguments of a global constraint for one
-of the following reasons:</p>
+<li id="uid289"><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi><mo>(</mo><msub><mi>A</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>A</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>A</mi> <mi>n</mi> </msub><mo>)</mo></mrow></math> 
+corresponds to a collection of ordered items,
+where each item consists of <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow></math> attributes <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>A</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>A</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>A</mi> <mi>n</mi> </msub></mrow></math>.
+Each attribute is an expression of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚊</mi><mo>-</mo><mi>T</mi></mrow></math>,
+where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊</mi></math> is the <i>name</i> of the attribute
+and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math> the <i>type</i> of the attribute (a basic or a compound data type).
+All names of the attributes of a given collection should be distinct
+and different from the keyword <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚔𝚎𝚢</mi></math>, which corresponds
+to an implicit<span class="note">This attribute is not explicitly defined.</span>
+attribute.
+Its value is the position of an item within the collection.
+The first item of a collection is associated with position 1.</p>
+</li></ul><p>The following notations are used for instantiated arguments:</p><ul>
+<li id="uid291"><p>A <i>list of elements</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>e</mi> <mi>n</mi> </msub></mrow></math> is denoted <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>[</mo><msub><mi>e</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>e</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>e</mi> <mi>n</mi> </msub><mo>]</mo></mrow></math>.</p>
+</li>
+<li id="uid292"><p>A <i>finite set of integers</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>i</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>i</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>i</mi> <mi>n</mi> </msub></mrow></math> is denoted <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>{</mo><msub><mi>i</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>i</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>i</mi> <mi>n</mi> </msub><mo>}</mo></mrow></math>.</p>
+</li>
+<li id="uid293"><p>A <i>multiset of integers</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>i</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>i</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>i</mi> <mi>n</mi> </msub></mrow></math> is denoted <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>{</mo><mrow><mo>{</mo><msub><mi>i</mi> <mn>1</mn> </msub><mo>,</mo><msub><mi>i</mi> <mn>2</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>i</mi> <mi>n</mi> </msub><mo>}</mo></mrow><mo>}</mo></mrow></math>.</p>
+</li>
+<li id="uid294"><p>A <i>collection of</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> <i>items</i>, each item having <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> attributes, is denoted by</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><msub><mi>𝚊</mi> <mn>1</mn> </msub><mo>-</mo><msub><mi>v</mi> <mn>11</mn> </msub><mo>⋯</mo><msub><mi>𝚊</mi> <mi>m</mi> </msub><mo>-</mo><msub><mi>v</mi> <mrow><mn>1</mn><mi>m</mi></mrow> </msub><mo>,</mo>  <msub><mi>𝚊</mi> <mn>1</mn> </msub><mo>-</mo><msub><mi>v</mi> <mn>21</mn> </msub><mo>⋯</mo><msub><mi>𝚊</mi> <mi>m</mi> </msub><mo>-</mo><msub><mi>v</mi> <mrow><mn>2</mn><mi>m</mi></mrow> </msub><mo>,</mo>  <mo>⋯</mo>  <mo>,</mo><msub><mi>𝚊</mi> <mn>1</mn> </msub><mo>-</mo><msub><mi>v</mi> <mrow><mi>n</mi><mn>1</mn></mrow> </msub><mo>⋯</mo><msub><mi>𝚊</mi> <mi>m</mi> </msub><mo>-</mo><msub><mi>v</mi> <mrow><mi>n</mi><mi>m</mi></mrow> </msub><mo>〉</mo></mrow></math>.
+Each item is separated from the previous item by a comma.
+When the items of the collection involve a single attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>𝚊</mi> <mn>1</mn> </msub></math>,
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><msub><mi>v</mi> <mn>11</mn> </msub><mo>,</mo><msub><mi>v</mi> <mn>21</mn> </msub><mo>,</mo><mo>⋯</mo><mo>,</mo><msub><mi>v</mi> <mrow><mi>n</mi><mn>1</mn></mrow> </msub><mo>〉</mo></mrow></math>
+can possibly be used as a shortcut for
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>〈</mo><msub><mi>𝚊</mi> <mn>1</mn> </msub><mo>-</mo><msub><mi>v</mi> <mn>11</mn> </msub><mo>,</mo>  <msub><mi>𝚊</mi> <mn>1</mn> </msub><mo>-</mo><msub><mi>v</mi> <mn>21</mn> </msub><mo>,</mo>  <mo>⋯</mo>  <mo>,</mo><msub><mi>𝚊</mi> <mn>1</mn> </msub><mo>-</mo><msub><mi>v</mi> <mrow><mi>n</mi><mn>1</mn></mrow> </msub><mo>〉</mo></mrow></math>.</p>
+</li>
+<li id="uid295"><p>The <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> <i>item of a collection</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌</mi></math> is denoted <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>.</p>
+</li>
+<li id="uid296"><p>The <i>value of the attribute</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊</mi></math> <i>of the</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>i</mi> <mrow><mi>t</mi><mi>h</mi></mrow> </msup></math> <i>item of a collection</i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌</mi></math>
+is denoted <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>.</mo><mi>𝚊</mi></mrow></math>.
+Note that, within an arithmetic expression, we can use the shortcut <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚌</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math> when the collection
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌</mi></math> involves a single attribute.</p>
+</li>
+<li id="uid297"><p>The <i>number of items</i> of a collection <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌</mi></math> is denoted <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>𝚌</mi><mo>|</mo></mrow></math>.</p>
+</li></ul><div class="minipage"><p><span class="small"><b>EXAMPLE:</b></span><span class="small">
+Let us illustrate with four examples, the types one can create.
+These examples concern the creation of a collection of variables,
+a collection of tasks, a graph variable<span id="uid298"/> <a class="cite" href="biblio.html#bid52">[Dooms06]</a> and a collection of
+<a href="Korthotope.html#uid8464">orthotopes</a>.<span class="note"><span class="small">An </span><span class="small"><i>orthotope</i></span><span class="small"> corresponds to the generalisation of
+a segment, a rectangle and a box to the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math>-dimensional case.</span></span></span></p>
 <ul>
-<li id="uid631"><p><span id="uid632"/>Collection generators are sometimes required since
-the initial graph of a global constraint cannot always be directly
-generated from the arguments of the global constraint.
-The <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid633"/></a><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>𝙽𝚅𝙰𝙻</mi><mo>,</mo><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>)</mo></mrow></math> constraint
-did not require any <span id="uid634"/>collection generator since the vertices of its
-initial graph were directly generated from the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> collection.</p>
+<li id="uid300"><p><span class="small">In the first example we define <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math>
+so that it corresponds to a collection of variables.
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi></math> is for instance used in the <a href="Calldifferent.html#uid13010"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚊𝚕𝚕𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝</mi></math><span id="uid301"/></a> constraint.
+The declaration
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚅𝙰𝚁𝙸𝙰𝙱𝙻𝙴𝚂</mi><mo>:</mo><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi><mo>(</mo><mi>𝚟𝚊𝚛</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>)</mo></mrow></math>
+defines a collection of items, each of which having one attribute
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚟𝚊𝚛</mi></math> that is a domain variable.</span></p>
 </li>
-<li id="uid635"><p>A second use of <span id="uid636"/>collection generators is for deriving a collection of
-items for different set of vertices of the final graph. This is
-sometimes required when we use <i>set generators</i> (see the last item
-of the enumeration).</p>
+<li id="uid302"><p><span class="small">In the second example we define <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚃𝙰𝚂𝙺𝚂</mi></math>
+so that it corresponds to a collection of tasks,
+each task being defined by its origin, its duration, its end and its resource consumption.
+Such a collection is for instance used in the <a href="Ccumulative.html#uid17828"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚌𝚞𝚖𝚞𝚕𝚊𝚝𝚒𝚟𝚎</mi></math><span id="uid303"/></a> constraint.
+The declaration
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝚃𝙰𝚂𝙺𝚂</mi><mo>:</mo><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi><mo>(</mo><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>,</mo><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>,</mo><mi>𝚎𝚗𝚍</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>,</mo><mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>)</mo></mrow></math>
+defines a collection of items, each of which having the four attributes
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚘𝚛𝚒𝚐𝚒𝚗</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚞𝚛𝚊𝚝𝚒𝚘𝚗</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚎𝚗𝚍</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚑𝚎𝚒𝚐𝚑𝚝</mi></math>
+which all are domain variables.</span></p>
+</li>
+<li id="uid304"><p><span class="small">
+In the third example we define a graph as a collection of nodes <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙽𝙾𝙳𝙴𝚂</mi></math>,
+each node being defined by its index (i.e., identifier) and its successors.
+Such a collection is for instance used in the <a href="Cdag.html#uid18782"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚊𝚐</mi></math><span id="uid305"/></a> constraint.
+The declaration
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙽𝙾𝙳𝙴𝚂</mi><mo>:</mo><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi><mo>(</mo><mi>𝚒𝚗𝚍𝚎𝚡</mi><mo>-</mo><mi>𝚒𝚗𝚝</mi><mo>,</mo><mi>𝚜𝚞𝚌𝚌</mi><mo>-</mo><mi>𝚜𝚟𝚊𝚛</mi><mo>)</mo></mrow></math>
+defines a collection of items, each of which having the two attributes
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚒𝚗𝚍𝚎𝚡</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚜𝚞𝚌𝚌</mi></math>
+which respectively are integers and set variables.</span></p>
+</li>
+<li id="uid306"><p><span class="small">
+In the last example we define <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi></math>
+so that is corresponds to a collection of <a href="Korthotope.html#uid8464">orthotopes</a>.
+Each <a href="Korthotope.html#uid8464">orthotope</a> is described by an attribute <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚘𝚛𝚝𝚑</mi></math>.
+Unlike the previous examples, the type of this attribute
+does not correspond any more to a basic data type but rather to
+a collection of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> items, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> is the number of dimensions
+of the <a href="Korthotope.html#uid8464">orthotope</a>.<span class="note"><span class="small">1 for a segment, 2 for a rectangle, 3 for a box, ... .</span></span>
+This collection, named <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi></math>, defines for a given
+dimension the origin, the size and the end of the object in this
+dimension.
+This leads to the two declarations:</span></p>
+<ul>
+<li id="uid308"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi><mo>-</mo><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi><mo>(</mo><mi>𝚘𝚛𝚒</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>,</mo><mi>𝚜𝚒𝚣</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>,</mo><mi>𝚎𝚗𝚍</mi><mo>-</mo><mi>𝚍𝚟𝚊𝚛</mi><mo>)</mo></mrow></math>,</span></p>
+</li>
+<li id="uid309"><p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi><mo>-</mo><mi>𝚌𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗</mi><mo>(</mo><mi>𝚘𝚛𝚝𝚑</mi><mo>-</mo><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴</mi><mo>)</mo></mrow></math>.</span></p>
 </li></ul>
-</li>
-<li id="uid637"><p><i>Elementary constraints</i> associated with the arcs of
-the initial and final graph of a global constraint.
-The <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid638"/></a> constraint was using an <i>equality</i> constraint,
-but other constraints are usually required.</p>
-</li>
-<li id="uid639"><p><i>Graph generators</i> employed for constructing the
-initial graph of a global constraint.
-In the context of the <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid640"/></a> constraint the initial graph
-was a <i>clique</i>.
-As we will see later, other patterns are needed for generating an initial graph.</p>
-</li>
-<li id="uid641"><p><i>Graph properties</i> and <i>graph classes</i> used for constraining the
-final graph we want to obtain.
-In the context of the <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid642"/></a> constraint we were using the
-<i>number of strongly connected components</i> for expressing the fact that
-we want to count the number of distinct values.</p>
-</li>
-<li id="uid643"><p><i>Set generators</i> that may be used for generating
-specific sets of vertices of the final graph on which we want to
-enforce a given constraint. Since the <a href="Cnvalue.html#uid22241"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚗𝚟𝚊𝚕𝚞𝚎</mi></math><span id="uid644"/></a> constraint
-enforces a graph property on the final graph (and not on subparts of
-the final graph) we did not use this feature.</p>
-</li></ul><p>We first start to explain each ingredient separately and then
-show how one can describe most global constraints in terms of
-these basic ingredients.</p></div><div id="toc"><ul><li>2.2.2.1. <a href="sec2.2.2.1.html"><span id="uid646"/>Collection generators</a></li><li>2.2.2.2. <a href="sec2.2.2.2.html">Elementary constraints attached to the arcs</a></li><li>2.2.2.3. <a href="sec2.2.2.3.html">Graph generators</a></li><li>2.2.2.4. <a href="sec2.2.2.4.html">Graph properties</a></li></ul></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
-  last update: 2014-6-2. <a href="http://sofdem.github.io/">SD</a>.</p></div>
+<p><span class="small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝙾𝚁𝚃𝙷𝙾𝚃𝙾𝙿𝙴𝚂</mi></math> is for instance used in the <a href="Cdiffn.html#uid19177"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝚍𝚒𝚏𝚏𝚗</mi></math><span id="uid310"/></a> constraint.</span></p>
+</li></ul>
+</div></div></div></div></div></div><div id="footer"><p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> -
+  last update: 2014-6-5. <a href="http://sofdem.github.io/">SD</a>.</p></div>
     
 	<script type="text/javascript">
 	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

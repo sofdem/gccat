@@ -160,8 +160,6 @@ assign_and_counts_r(COLOURS, ITEMS, RELOP, LIMIT) :-
     assign_and_counts1(ITEMSCOLOURS, COLS, CLINE),
     assign_and_counts2(BMATRIX, CLINE, RELOP, LIMIT).
 
-% CLINE: pour chaque tâche construit une variable disant si un item peut ou pas prendre la couleur (indépendament du bin)
-% dans la limit il faut qu'au moins un item soit affecté à un bin donné fait le et sur les variables bin
 assign_and_counts1([], _, []).
 assign_and_counts1([ITEMCOLOUR|RITEMCOLOURS], COLS, [B|R]) :-
     build_or_var_in_values(COLS, ITEMCOLOUR, OR),
@@ -170,12 +168,10 @@ assign_and_counts1([ITEMCOLOUR|RITEMCOLOURS], COLS, [B|R]) :-
 
 assign_and_counts2([], _, _, _).
 assign_and_counts2([BLINE|RBMATRIX], CLINE, RELOP, LIMIT) :-
-    assign_and_counts3(BLINE, CLINE, TERM, OR_B),
-    call(A #= OR_B),
-    call_term_relop_value(TERM, RELOP, A*LIMIT),
+    assign_and_counts3(BLINE, CLINE, TERM),
+    call_term_relop_value(TERM, RELOP, LIMIT),
     assign_and_counts2(RBMATRIX, CLINE, RELOP, LIMIT).
 
-assign_and_counts3([], [], 0, 0).
-assign_and_counts3([B|RBLINE], [C|RCLINE], B*C+R, BC #\/ S) :-
-    BC #<=> B #/\ C,
-    assign_and_counts3(RBLINE, RCLINE, R, S).
+assign_and_counts3([], [], 0).
+assign_and_counts3([B|RBLINE], [C|RCLINE], B*C+R) :-
+    assign_and_counts3(RBLINE, RCLINE, R).

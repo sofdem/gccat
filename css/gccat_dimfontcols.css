@@ -101,13 +101,13 @@ span.error { background: #660000; }
 a, #header h1, div.entry h2 { color:#006699; }
 #nav a, #menu a, #footer a { color:#0099CC; }
 a:hover, #nav a:hover, #menu a:hover, #footer a:hover   { color:#00CCCC; }
-.download a:hover, #navbar a:hover { background: #333333; }
+#download a:hover, #navbar a:hover { background: #333333; }
 
 
 /* fonts --------------------------------- */
 body {  font:12pt/1.2 "Lato", "Helvetica Neue", "Verdana", Helvetica, Arial, sans-serif; font-weight: 300; }
 h1, h2, h3, h4, #nav, #menu, dt, #toc { font: 12pt/1.2 'Dosis', "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.download, #navbar { font: 12pt/1.2 'Yanone Kaffeesatz', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+#download, #navbar { font: 12pt/1.2 'Yanone Kaffeesatz', "Helvetica Neue", Helvetica, Arial, sans-serif; }
 math{ font-family: TeXGyrePagella,"URW Palladio L","STIXGeneral","FreeSerif","Nimbus Roman No9 L","Cambria Math","Lucida Sans Unicode",monospace;}
 span.monospace { font-family: "Monaco", monospace; }
 tt { font: 90% "Monaco", monospace; }
