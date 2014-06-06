@@ -16,7 +16,7 @@
 
 <div id="header">
 <h1>Global Constraint Catalog</h1>
-<h2>a dictionary for Constraint Programming - current version: <span class="zedate">2014-06-02</span></h2>
+<h2>a dictionary for Constraint Programming - current version: <span class="zedate">2014-06-05</span></h2>
 <form method="get" action="http://www.google.com/search">
   <input type="hidden"  name="sitesearch" value="sofdem.github.io/gccat" />
   <input type="text"   name="q" size="31" maxlength="255" value="" />
@@ -25,7 +25,7 @@
 </div>
 
 <div id="access">
-<p><a href="gccat/titlepage.html">enter the catalog</a> or <a href="gccat/#nav">search constraints</a></p>
+<p><a href="gccat/titlepage.html">enter the catalog</a> or <a href="#nav">search constraints</a></p>
 </div>
 
 <div id="nav">
@@ -49,9 +49,9 @@
 <p>The catalog is periodically updated by <a class="people" href="http://www.emn.fr/z-info/ppc/">Nicolas Beldiceanu</a> and <a class="people" href="http://www.sics.se/~matsc/">Mats Carlsson</a>. Feel free to contact the first author for any questions about the content of the catalog.</p> 
 <p>Download the Global Constraint Catalog in pdf format:</p>
 <ul>
-  <li><a href="aux/doc/catalog.pdf" onclick="javascript: pageTracker._trackPageview('/downloads/pdf'); ">last working version (<span class="zedate">2014-06-02</span>)</a> (about 20 Mo)</li>
+  <li><a href="aux/doc/catalog.pdf" onclick="javascript: pageTracker._trackPageview('/downloads/pdf'); ">last working version (<span class="zedate">2014-06-05</span>)</a> (about 27 Mo)</li>
   <li><a href="http://soda.swedish-ict.se/4041/">2nd edition (SICS Technical Report 2010-07)</a> (about 20 Mo)</li>
-  <li><a href="gccat/ftp://ftp.sics.se/pub/SICS-reports/Reports/SICS-T--2005-08--SE.pdf">1st edition (SICS Technical Report 2005-08)</a> (about 7 Mo)</li>
+  <li><a href="ftp://ftp.sics.se/pub/SICS-reports/Reports/SICS-T--2005-08--SE.pdf">1st edition (SICS Technical Report 2005-08)</a> (about 7 Mo)</li>
 </ul>
 
 </div>
@@ -61,8 +61,8 @@
 <p>The online version is conceived to ease the search through the catalog and to make available its electronic counterpart. These are Prolog and XML files describing global constraints and combinatorial problems, which can be used in systematic ways.
 See the pages below for a description of these two formats:</p>
 <ul>
-<li><a href="gccat/sec4.4.1.html">Prolog format</a></li>
-<li><a href="gccat/sec4.4.2.html">XML format</a> (see also the <a href="aux/xml/gccat_schema.xml">XML Schema + XSL</a>)</li>
+<li><a href="gccat/sec4.5.1.html">Prolog format</a></li>
+<li><a href="gccat/sec4.5.2.html">XML format</a> (see also the <a href="aux/xml/gccat_schema.xml">XML Schema + XSL</a>)</li>
 </ul> 
 <p>The table below sets side by side the constraints in the catalog with their analog in the systems <a href="http://choco.emn.fr/">Choco</a>, <a href="http://www.gecode.org/">Gecode</a>, <a href="http://jacop.osolpro.com/">Jacop</a>, and <a href="http://www.sics.se/sicstus/">SICStus</a>:</p>
 <ul><li><a href="aux/xml/gccat_systems.xml">Catalog-Systems correspondence table</a></li></ul>
@@ -95,9 +95,9 @@ Online version: <a class="people" href="http://sofdem.github.io/">Sophie Demasse
 <h2>change log</h2>
 <dl>
 <dt>2014-06-05 working version update: 423 constraints</dt><dd><ul>
-<li>69 new constraints including several variants of <a href="Kdisequality.html">disequality</a> and of <a href="KSequence.html">sequence</a> constraints.</li>
-<li>new sections: <a href="sec2.5.html">different facets</a> of a global constraint and <a href="sec4.4.html">function dependency invariants</a>. 
-<li>electronic catalog, new <a href="sec4.5.1.html">description fields</a>: quiz (modelling exercices), argument properties, counting (number of solutions), all solutions (example of a non ground instance and all the solutions associated), conditional implications (for learning models)</li>
+<li>69 new constraints including several variants of <a href="gccat/Kdisequality.html">disequality</a> and of <a href="gccat/KSequence.html">sequence</a> constraints.</li>
+<li>new sections: <a href="gccat/sec2.5.html">different facets</a> of a global constraint and <a href="gccat/sec4.4.html">function dependency invariants</a>. 
+<li>electronic catalog, new <a href="gccat/sec4.5.1.html">description fields</a>: quiz (modelling exercices), argument properties, counting (number of solutions), all solutions (example of a non ground instance and all the solutions associated), conditional implications (for learning models)</li>
 <li>links to miniZinc</li>
 <li>web: extract/generate all tikz images, new CSS, new URL.</li>
 </ul></dd>
@@ -121,7 +121,7 @@ Online version: <a class="people" href="http://sofdem.github.io/">Sophie Demasse
 <dt>2009-12-16 working version update: 348 constraints</dt><dd><ul>
 <li>new constraints: graph, order, vector, and arithmetic constraints, etc.</li>
 <li>electronic catalog, new description field <b>Systems</b>: synonyms in the constraint systems <a href="http://choco.emn.fr/">Choco</a>, <a href="http://www.gecode.org/">Gecode</a>, <a href="http://jacop.osolpro.com/">Jacop</a>, and <a href="http://www.sics.se/sicstus/">SICStus</a>(see also: <b><a href="aux/xml/gccat_systems.xml">gccat_systems.xml</a></b>).</li>
-<li>electronic catalog, new description field <b><a href="Klogic.html">Logic</a></b> for geometrical constraints: reformulation as first order logical formulae.</li>
+<li>electronic catalog, new description field <b>Logic</b> for geometrical constraints: reformulation as first order logical formulae.</li>
 <li>new description field <b>Reformulation</b>: decomposition as conjunctions of constraints.</li>
 <li>automata: generation from constraint parameters.</li>
 <li>automata: $ transitions removed (the few remaining will be also removed)</li>
@@ -210,7 +210,7 @@ and
 
 
 <div id="footer">
-<p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fsimple.css&amp;profile=css3">CSS(s)</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fgccat_mathjax.css&amp;profile=css3">CSS(m)</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fprint.css&amp;profile=css3">CSS(p)</a> - last update&nbsp;: <span class="zedate">2014-06-02</span>. <a class="people" href="http://sofdem.github.io/">SD</a>.</p>
+<p>W3C: <a href="http://validator.w3.org/check?uri=referer">XHTML</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fsimple.css&amp;profile=css3">CSS(s)</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fgccat_mathjax.css&amp;profile=css3">CSS(m)</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fsofdem.github.io%gccat%2Fcss%2Fprint.css&amp;profile=css3">CSS(p)</a> - last update&nbsp;: <span class="zedate">2014-06-05</span>. <a class="people" href="http://sofdem.github.io/">SD</a>.</p>
 </div>
 </div>
 
