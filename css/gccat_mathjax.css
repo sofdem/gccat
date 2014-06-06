@@ -60,7 +60,7 @@
   font-weight:bold;
 }
 #main p { padding: 0 10px 15px 20px; text-align: justify; }
-#main ul, #main dl { padding: 10px 10px 20px 40px; }
+#main ul, #main dl, #main ol { padding: 10px 10px 20px 40px; }
 #main dl.ctrdesc { padding: 10px 0 20px 0; }
 #main dl.ctrdesc p { padding: 0 10px 10px 5px; }
 #main dl.ctrdesc ul { padding: 10px 10px 20px 25px; }
