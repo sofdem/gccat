@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <distance id='c1' name='name1' desc=''>
+  <X>
+   <integer value='5'/>
+  </X>
+  <Y>
+   <integer value='7'/>
+  </Y>
+  <Z>
+   <integer value='2'/>
+  </Z>
+ </distance>
+</constraints>
+</model>

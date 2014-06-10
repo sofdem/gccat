@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <alldifferent_modulo id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='25'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='14'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <M>
+   <integer value='5'/>
+  </M>
+ </alldifferent_modulo>
+</constraints>
+</model>

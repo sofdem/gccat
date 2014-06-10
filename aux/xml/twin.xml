@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <twin id='c1' name='name1' desc=''>
+  <PAIRS>
+   <collection>
+    <item>
+     <x>
+      <integer value='1'/>
+     </x>
+     <y>
+      <integer value='8'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='9'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='1'/>
+     </x>
+     <y>
+      <integer value='8'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='5'/>
+     </x>
+     <y>
+      <integer value='0'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='6'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='9'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+   </collection>
+  </PAIRS>
+ </twin>
+</constraints>
+</model>

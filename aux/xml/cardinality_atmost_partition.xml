@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cardinality_atmost_partition id='c1' name='name1' desc=''>
+  <ATMOST>
+   <integer value='2'/>
+  </ATMOST>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <PARTITIONS>
+   <collection>
+    <item>
+     <p>
+      <collection>
+       <item>
+        <val>
+         <integer value='1'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='3'/>
+        </val>
+       </item>
+      </collection>
+     </p>
+    </item>
+    <item>
+     <p>
+      <collection>
+       <item>
+        <val>
+         <integer value='4'/>
+        </val>
+       </item>
+      </collection>
+     </p>
+    </item>
+    <item>
+     <p>
+      <collection>
+       <item>
+        <val>
+         <integer value='2'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='6'/>
+        </val>
+       </item>
+      </collection>
+     </p>
+    </item>
+   </collection>
+  </PARTITIONS>
+ </cardinality_atmost_partition>
+</constraints>
+</model>

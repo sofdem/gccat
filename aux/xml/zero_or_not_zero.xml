@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <zero_or_not_zero id='c1' name='name1' desc=''>
+  <VAR1>
+   <integer value='1'/>
+  </VAR1>
+  <VAR2>
+   <integer value='8'/>
+  </VAR2>
+ </zero_or_not_zero>
+</constraints>
+</model>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <sliding_time_window_sum id='c1' name='name1' desc=''>
+  <WINDOW_SIZE>
+   <integer value='9'/>
+  </WINDOW_SIZE>
+  <LIMIT>
+   <integer value='16'/>
+  </LIMIT>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='10'/>
+     </origin>
+     <end>
+      <integer value='13'/>
+     </end>
+     <npoint>
+      <integer value='2'/>
+     </npoint>
+    </item>
+    <item>
+     <origin>
+      <integer value='5'/>
+     </origin>
+     <end>
+      <integer value='6'/>
+     </end>
+     <npoint>
+      <integer value='3'/>
+     </npoint>
+    </item>
+    <item>
+     <origin>
+      <integer value='6'/>
+     </origin>
+     <end>
+      <integer value='8'/>
+     </end>
+     <npoint>
+      <integer value='4'/>
+     </npoint>
+    </item>
+    <item>
+     <origin>
+      <integer value='14'/>
+     </origin>
+     <end>
+      <integer value='16'/>
+     </end>
+     <npoint>
+      <integer value='5'/>
+     </npoint>
+    </item>
+    <item>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <end>
+      <integer value='4'/>
+     </end>
+     <npoint>
+      <integer value='6'/>
+     </npoint>
+    </item>
+   </collection>
+  </TASKS>
+ </sliding_time_window_sum>
+</constraints>
+</model>

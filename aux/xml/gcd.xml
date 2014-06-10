@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <gcd id='c1' name='name1' desc=''>
+  <X>
+   <integer value='24'/>
+  </X>
+  <Y>
+   <integer value='60'/>
+  </Y>
+  <Z>
+   <integer value='12'/>
+  </Z>
+ </gcd>
+</constraints>
+</model>

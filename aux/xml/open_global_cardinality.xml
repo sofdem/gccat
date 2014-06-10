@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <open_global_cardinality id='c1' name='name1' desc=''>
+  <S>
+   <integerset>
+    <integer value='2'/>
+    <integer value='3'/>
+    <integer value='4'/>
+   </integerset>
+  </S>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='3'/>
+     </val>
+     <noccurrence>
+      <integer value='1'/>
+     </noccurrence>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <noccurrence>
+      <integer value='0'/>
+     </noccurrence>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+     <noccurrence>
+      <integer value='1'/>
+     </noccurrence>
+    </item>
+   </collection>
+  </VALUES>
+ </open_global_cardinality>
+</constraints>
+</model>

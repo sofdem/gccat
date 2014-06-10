@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cyclic_change_joker id='c1' name='name1' desc=''>
+  <NCHANGE>
+   <integer value='2'/>
+  </NCHANGE>
+  <CYCLE_LENGTH>
+   <integer value='4'/>
+  </CYCLE_LENGTH>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <CTR>
+   <atom value='NEQ'/>
+  </CTR>
+ </cyclic_change_joker>
+</constraints>
+</model>

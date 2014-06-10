@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <open_maximum id='c1' name='name1' desc=''>
+  <MAX>
+   <integer value='5'/>
+  </MAX>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+     <bool>
+      <integer value='1'/>
+     </bool>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+     <bool>
+      <integer value='0'/>
+     </bool>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+     <bool>
+      <integer value='0'/>
+     </bool>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+     <bool>
+      <integer value='1'/>
+     </bool>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+     <bool>
+      <integer value='1'/>
+     </bool>
+    </item>
+   </collection>
+  </VARIABLES>
+ </open_maximum>
+</constraints>
+</model>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <soft_cumulative id='c1' name='name1' desc=''>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <duration>
+      <integer value='4'/>
+     </duration>
+     <end>
+      <integer value='5'/>
+     </end>
+     <height>
+      <integer value='1'/>
+     </height>
+    </item>
+    <item>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <duration>
+      <integer value='1'/>
+     </duration>
+     <end>
+      <integer value='2'/>
+     </end>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <origin>
+      <integer value='3'/>
+     </origin>
+     <duration>
+      <integer value='3'/>
+     </duration>
+     <end>
+      <integer value='6'/>
+     </end>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+   </collection>
+  </TASKS>
+  <LIMIT>
+   <integer value='3'/>
+  </LIMIT>
+  <INTERMEDIATE_LEVEL>
+   <integer value='2'/>
+  </INTERMEDIATE_LEVEL>
+  <SURFACE_ON_TOP>
+   <integer value='3'/>
+  </SURFACE_ON_TOP>
+ </soft_cumulative>
+</constraints>
+</model>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <scalar_product id='c1' name='name1' desc=''>
+  <LINEARTERM>
+   <collection>
+    <item>
+     <coeff>
+      <integer value='1'/>
+     </coeff>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <coeff>
+      <integer value='3'/>
+     </coeff>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <coeff>
+      <integer value='1'/>
+     </coeff>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+   </collection>
+  </LINEARTERM>
+  <CTR>
+   <atom value='EQ'/>
+  </CTR>
+  <VAL>
+   <integer value='8'/>
+  </VAL>
+ </scalar_product>
+</constraints>
+</model>

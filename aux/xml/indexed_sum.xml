@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <indexed_sum id='c1' name='name1' desc=''>
+  <ITEMS>
+   <collection>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <weight>
+      <integer value='-4'/>
+     </weight>
+    </item>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <weight>
+      <integer value='6'/>
+     </weight>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <weight>
+      <integer value='1'/>
+     </weight>
+    </item>
+   </collection>
+  </ITEMS>
+  <TABLE>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <summation>
+      <integer value='6'/>
+     </summation>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <summation>
+      <integer value='0'/>
+     </summation>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <summation>
+      <integer value='-3'/>
+     </summation>
+    </item>
+   </collection>
+  </TABLE>
+ </indexed_sum>
+</constraints>
+</model>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <arith_or id='c1' name='name1' desc=''>
+  <VARIABLES1>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES1>
+  <VARIABLES2>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES2>
+  <RELOP>
+   <atom value='EQ'/>
+  </RELOP>
+  <VALUE>
+   <integer value='0'/>
+  </VALUE>
+ </arith_or>
+</constraints>
+</model>

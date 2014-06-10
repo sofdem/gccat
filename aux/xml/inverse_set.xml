@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <inverse_set id='c1' name='name1' desc=''>
+  <X>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='2'/>
+       <integer value='4'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='4'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='4'/>
+      </integerset>
+     </set>
+    </item>
+   </collection>
+  </X>
+  <Y>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <set>
+      <integerset/>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <set>
+      <integerset>
+       <integer value='1'/>
+       <integer value='2'/>
+       <integer value='4'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <set>
+      <integerset/>
+     </set>
+    </item>
+   </collection>
+  </Y>
+ </inverse_set>
+</constraints>
+</model>

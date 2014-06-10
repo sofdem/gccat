@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <proper_forest id='c1' name='name1' desc=''>
+  <NTREES>
+   <integer value='3'/>
+  </NTREES>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='3'/>
+       <integer value='6'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='9'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='1'/>
+       <integer value='5'/>
+       <integer value='7'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='9'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='10'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='9'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='2'/>
+       <integer value='4'/>
+      </integerset>
+     </neighbour>
+    </item>
+    <item>
+     <index>
+      <integer value='10'/>
+     </index>
+     <neighbour>
+      <integerset>
+       <integer value='8'/>
+      </integerset>
+     </neighbour>
+    </item>
+   </collection>
+  </NODES>
+ </proper_forest>
+</constraints>
+</model>

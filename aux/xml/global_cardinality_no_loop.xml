@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <global_cardinality_no_loop id='c1' name='name1' desc=''>
+  <NLOOP>
+   <integer value='1'/>
+  </NLOOP>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='1'/>
+     </val>
+     <noccurrence>
+      <integer value='1'/>
+     </noccurrence>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <noccurrence>
+      <integer value='0'/>
+     </noccurrence>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+     <noccurrence>
+      <integer value='1'/>
+     </noccurrence>
+    </item>
+   </collection>
+  </VALUES>
+ </global_cardinality_no_loop>
+</constraints>
+</model>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <sum_set id='c1' name='name1' desc=''>
+  <SV>
+   <integerset>
+    <integer value='2'/>
+    <integer value='3'/>
+    <integer value='6'/>
+   </integerset>
+  </SV>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='2'/>
+     </val>
+     <coef>
+      <integer value='7'/>
+     </coef>
+    </item>
+    <item>
+     <val>
+      <integer value='9'/>
+     </val>
+     <coef>
+      <integer value='1'/>
+     </coef>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <coef>
+      <integer value='7'/>
+     </coef>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+     <coef>
+      <integer value='2'/>
+     </coef>
+    </item>
+   </collection>
+  </VALUES>
+  <CTR>
+   <atom value='EQ'/>
+  </CTR>
+  <VAR>
+   <integer value='9'/>
+  </VAR>
+ </sum_set>
+</constraints>
+</model>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <in_same_partition id='c1' name='name1' desc=''>
+  <VAR1>
+   <integer value='6'/>
+  </VAR1>
+  <VAR2>
+   <integer value='2'/>
+  </VAR2>
+  <PARTITIONS>
+   <collection>
+    <item>
+     <p>
+      <collection>
+       <item>
+        <val>
+         <integer value='1'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='3'/>
+        </val>
+       </item>
+      </collection>
+     </p>
+    </item>
+    <item>
+     <p>
+      <collection>
+       <item>
+        <val>
+         <integer value='4'/>
+        </val>
+       </item>
+      </collection>
+     </p>
+    </item>
+    <item>
+     <p>
+      <collection>
+       <item>
+        <val>
+         <integer value='2'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='6'/>
+        </val>
+       </item>
+      </collection>
+     </p>
+    </item>
+   </collection>
+  </PARTITIONS>
+ </in_same_partition>
+</constraints>
+</model>

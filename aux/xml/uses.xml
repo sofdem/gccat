@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <uses id='c1' name='name1' desc=''>
+  <VARIABLES1>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES1>
+  <VARIABLES2>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES2>
+ </uses>
+</constraints>
+</model>

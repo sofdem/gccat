@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <connect_points id='c1' name='name1' desc=''>
+  <SIZE1>
+   <integer value='8'/>
+  </SIZE1>
+  <SIZE2>
+   <integer value='4'/>
+  </SIZE2>
+  <SIZE3>
+   <integer value='2'/>
+  </SIZE3>
+  <NGROUP>
+   <integer value='2'/>
+  </NGROUP>
+  <POINTS>
+   <collection>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='1'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='2'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+    <item>
+     <p>
+      <integer value='0'/>
+     </p>
+    </item>
+   </collection>
+  </POINTS>
+ </connect_points>
+</constraints>
+</model>

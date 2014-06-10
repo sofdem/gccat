@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <bin_packing_capa id='c1' name='name1' desc=''>
+  <BINS>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <capa>
+      <integer value='4'/>
+     </capa>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <capa>
+      <integer value='3'/>
+     </capa>
+    </item>
+    <item>
+     <id>
+      <integer value='3'/>
+     </id>
+     <capa>
+      <integer value='5'/>
+     </capa>
+    </item>
+    <item>
+     <id>
+      <integer value='4'/>
+     </id>
+     <capa>
+      <integer value='3'/>
+     </capa>
+    </item>
+    <item>
+     <id>
+      <integer value='5'/>
+     </id>
+     <capa>
+      <integer value='3'/>
+     </capa>
+    </item>
+   </collection>
+  </BINS>
+  <ITEMS>
+   <collection>
+    <item>
+     <bin>
+      <integer value='3'/>
+     </bin>
+     <weight>
+      <integer value='4'/>
+     </weight>
+    </item>
+    <item>
+     <bin>
+      <integer value='1'/>
+     </bin>
+     <weight>
+      <integer value='3'/>
+     </weight>
+    </item>
+    <item>
+     <bin>
+      <integer value='3'/>
+     </bin>
+     <weight>
+      <integer value='1'/>
+     </weight>
+    </item>
+   </collection>
+  </ITEMS>
+ </bin_packing_capa>
+</constraints>
+</model>

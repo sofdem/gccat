@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <next_element id='c1' name='name1' desc=''>
+  <THRESHOLD>
+   <integer value='2'/>
+  </THRESHOLD>
+  <INDEX>
+   <integer value='3'/>
+  </INDEX>
+  <TABLE>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <value>
+      <integer value='1'/>
+     </value>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <value>
+      <integer value='8'/>
+     </value>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <value>
+      <integer value='9'/>
+     </value>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <value>
+      <integer value='5'/>
+     </value>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <value>
+      <integer value='9'/>
+     </value>
+    </item>
+   </collection>
+  </TABLE>
+  <VAL>
+   <integer value='9'/>
+  </VAL>
+ </next_element>
+</constraints>
+</model>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <atmost1 id='c1' name='name1' desc=''>
+  <SETS>
+   <collection>
+    <item>
+     <s>
+      <integerset>
+       <integer value='5'/>
+       <integer value='8'/>
+      </integerset>
+     </s>
+     <c>
+      <integer value='2'/>
+     </c>
+    </item>
+    <item>
+     <s>
+      <integerset>
+       <integer value='5'/>
+      </integerset>
+     </s>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <s>
+      <integerset>
+       <integer value='5'/>
+       <integer value='6'/>
+       <integer value='7'/>
+      </integerset>
+     </s>
+     <c>
+      <integer value='3'/>
+     </c>
+    </item>
+    <item>
+     <s>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+      </integerset>
+     </s>
+     <c>
+      <integer value='2'/>
+     </c>
+    </item>
+   </collection>
+  </SETS>
+ </atmost1>
+</constraints>
+</model>

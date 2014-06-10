@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <min_increasing_slope id='c1' name='name1' desc=''>
+  <MIN>
+   <integer value='3'/>
+  </MIN>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </min_increasing_slope>
+ <min_increasing_slope id='c2' name='name2' desc=''>
+  <MIN>
+   <integer value='0'/>
+  </MIN>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </min_increasing_slope>
+ <min_increasing_slope id='c3' name='name3' desc=''>
+  <MIN>
+   <integer value='9'/>
+  </MIN>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </min_increasing_slope>
+</constraints>
+</model>

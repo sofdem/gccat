@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <place_in_pyramid id='c1' name='name1' desc=''>
+  <ORTHOTOPES>
+   <collection>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='3'/>
+        </siz>
+        <end>
+         <integer value='4'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='3'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='3'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='3'/>
+        </ori>
+        <siz>
+         <integer value='3'/>
+        </siz>
+        <end>
+         <integer value='6'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='5'/>
+        </ori>
+        <siz>
+         <integer value='6'/>
+        </siz>
+        <end>
+         <integer value='11'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='3'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='5'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='7'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='3'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='5'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='8'/>
+        </ori>
+        <siz>
+         <integer value='3'/>
+        </siz>
+        <end>
+         <integer value='11'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='3'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='5'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='8'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='10'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='5'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='7'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+   </collection>
+  </ORTHOTOPES>
+  <VERTICAL_DIM>
+   <integer value='2'/>
+  </VERTICAL_DIM>
+ </place_in_pyramid>
+</constraints>
+</model>

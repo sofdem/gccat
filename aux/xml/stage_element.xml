@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <stage_element id='c1' name='name1' desc=''>
+  <ITEM>
+   <collection>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <value>
+      <integer value='6'/>
+     </value>
+    </item>
+   </collection>
+  </ITEM>
+  <TABLE>
+   <collection>
+    <item>
+     <low>
+      <integer value='3'/>
+     </low>
+     <up>
+      <integer value='7'/>
+     </up>
+     <value>
+      <integer value='6'/>
+     </value>
+    </item>
+    <item>
+     <low>
+      <integer value='8'/>
+     </low>
+     <up>
+      <integer value='8'/>
+     </up>
+     <value>
+      <integer value='8'/>
+     </value>
+    </item>
+    <item>
+     <low>
+      <integer value='9'/>
+     </low>
+     <up>
+      <integer value='14'/>
+     </up>
+     <value>
+      <integer value='2'/>
+     </value>
+    </item>
+    <item>
+     <low>
+      <integer value='15'/>
+     </low>
+     <up>
+      <integer value='19'/>
+     </up>
+     <value>
+      <integer value='9'/>
+     </value>
+    </item>
+   </collection>
+  </TABLE>
+ </stage_element>
+</constraints>
+</model>

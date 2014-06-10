@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <in_interval id='c1' name='name1' desc=''>
+  <VAR>
+   <integer value='3'/>
+  </VAR>
+  <LOW>
+   <integer value='2'/>
+  </LOW>
+  <UP>
+   <integer value='5'/>
+  </UP>
+ </in_interval>
+</constraints>
+</model>

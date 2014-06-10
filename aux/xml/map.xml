@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <map id='c1' name='name1' desc=''>
+  <NBCYCLE>
+   <integer value='2'/>
+  </NBCYCLE>
+  <NBTREE>
+   <integer value='3'/>
+  </NBTREE>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='9'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='8'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='9'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='9'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <succ>
+      <integer value='8'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='9'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+   </collection>
+  </NODES>
+ </map>
+</constraints>
+</model>

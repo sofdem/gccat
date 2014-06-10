@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <sum id='c1' name='name1' desc=''>
+  <INDEX>
+   <integer value='8'/>
+  </INDEX>
+  <SETS>
+   <collection>
+    <item>
+     <ind>
+      <integer value='8'/>
+     </ind>
+     <set>
+      <integerset>
+       <integer value='2'/>
+       <integer value='3'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <ind>
+      <integer value='1'/>
+     </ind>
+     <set>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <ind>
+      <integer value='3'/>
+     </ind>
+     <set>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+       <integer value='5'/>
+      </integerset>
+     </set>
+    </item>
+    <item>
+     <ind>
+      <integer value='6'/>
+     </ind>
+     <set>
+      <integerset>
+       <integer value='2'/>
+       <integer value='4'/>
+      </integerset>
+     </set>
+    </item>
+   </collection>
+  </SETS>
+  <CONSTANTS>
+   <collection>
+    <item>
+     <cst>
+      <integer value='4'/>
+     </cst>
+    </item>
+    <item>
+     <cst>
+      <integer value='9'/>
+     </cst>
+    </item>
+    <item>
+     <cst>
+      <integer value='1'/>
+     </cst>
+    </item>
+    <item>
+     <cst>
+      <integer value='3'/>
+     </cst>
+    </item>
+    <item>
+     <cst>
+      <integer value='1'/>
+     </cst>
+    </item>
+   </collection>
+  </CONSTANTS>
+  <S>
+   <integer value='10'/>
+  </S>
+ </sum>
+</constraints>
+</model>

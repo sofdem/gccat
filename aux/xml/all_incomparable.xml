@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <all_incomparable id='c1' name='name1' desc=''>
+  <VECTORS>
+   <collection>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='18'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='16'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='13'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='11'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='10'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='9'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+   </collection>
+  </VECTORS>
+ </all_incomparable>
+</constraints>
+</model>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <graph_crossing id='c1' name='name1' desc=''>
+  <NCROSS>
+   <integer value='2'/>
+  </NCROSS>
+  <NODES>
+   <collection>
+    <item>
+     <succ>
+      <integer value='1'/>
+     </succ>
+     <x>
+      <integer value='4'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='1'/>
+     </succ>
+     <x>
+      <integer value='2'/>
+     </x>
+     <y>
+      <integer value='5'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='1'/>
+     </succ>
+     <x>
+      <integer value='7'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='2'/>
+     </succ>
+     <x>
+      <integer value='1'/>
+     </x>
+     <y>
+      <integer value='2'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='3'/>
+     </succ>
+     <x>
+      <integer value='2'/>
+     </x>
+     <y>
+      <integer value='2'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='2'/>
+     </succ>
+     <x>
+      <integer value='5'/>
+     </x>
+     <y>
+      <integer value='3'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='3'/>
+     </succ>
+     <x>
+      <integer value='8'/>
+     </x>
+     <y>
+      <integer value='2'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='9'/>
+     </succ>
+     <x>
+      <integer value='6'/>
+     </x>
+     <y>
+      <integer value='2'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='10'/>
+     </succ>
+     <x>
+      <integer value='10'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+    <item>
+     <succ>
+      <integer value='8'/>
+     </succ>
+     <x>
+      <integer value='10'/>
+     </x>
+     <y>
+      <integer value='1'/>
+     </y>
+    </item>
+   </collection>
+  </NODES>
+ </graph_crossing>
+</constraints>
+</model>

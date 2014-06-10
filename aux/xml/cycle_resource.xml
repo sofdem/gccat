@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cycle_resource id='c1' name='name1' desc=''>
+  <RESOURCE>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <first_task>
+      <integer value='5'/>
+     </first_task>
+     <nb_task>
+      <integer value='3'/>
+     </nb_task>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <first_task>
+      <integer value='2'/>
+     </first_task>
+     <nb_task>
+      <integer value='0'/>
+     </nb_task>
+    </item>
+    <item>
+     <id>
+      <integer value='3'/>
+     </id>
+     <first_task>
+      <integer value='8'/>
+     </first_task>
+     <nb_task>
+      <integer value='2'/>
+     </nb_task>
+    </item>
+   </collection>
+  </RESOURCE>
+  <TASK>
+   <collection>
+    <item>
+     <id>
+      <integer value='4'/>
+     </id>
+     <next_task>
+      <integer value='7'/>
+     </next_task>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='5'/>
+     </id>
+     <next_task>
+      <integer value='4'/>
+     </next_task>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='6'/>
+     </id>
+     <next_task>
+      <integer value='3'/>
+     </next_task>
+     <resource>
+      <integer value='3'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='7'/>
+     </id>
+     <next_task>
+      <integer value='1'/>
+     </next_task>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='8'/>
+     </id>
+     <next_task>
+      <integer value='6'/>
+     </next_task>
+     <resource>
+      <integer value='3'/>
+     </resource>
+    </item>
+   </collection>
+  </TASK>
+ </cycle_resource>
+</constraints>
+</model>

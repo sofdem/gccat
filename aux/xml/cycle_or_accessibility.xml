@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cycle_or_accessibility id='c1' name='name1' desc=''>
+  <MAXDIST>
+   <integer value='3'/>
+  </MAXDIST>
+  <NCYCLE>
+   <integer value='2'/>
+  </NCYCLE>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+     <x>
+      <integer value='4'/>
+     </x>
+     <y>
+      <integer value='5'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='0'/>
+     </succ>
+     <x>
+      <integer value='9'/>
+     </x>
+     <y>
+      <integer value='1'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='0'/>
+     </succ>
+     <x>
+      <integer value='2'/>
+     </x>
+     <y>
+      <integer value='4'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+     <x>
+      <integer value='2'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+     <x>
+      <integer value='7'/>
+     </x>
+     <y>
+      <integer value='2'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='4'/>
+     </succ>
+     <x>
+      <integer value='4'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='0'/>
+     </succ>
+     <x>
+      <integer value='6'/>
+     </x>
+     <y>
+      <integer value='4'/>
+     </y>
+    </item>
+   </collection>
+  </NODES>
+ </cycle_or_accessibility>
+</constraints>
+</model>

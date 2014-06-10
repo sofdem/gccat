@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <int_value_precede id='c1' name='name1' desc=''>
+  <S>
+   <integer value='0'/>
+  </S>
+  <T>
+   <integer value='1'/>
+  </T>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </int_value_precede>
+</constraints>
+</model>

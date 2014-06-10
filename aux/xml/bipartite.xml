@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <bipartite id='c1' name='name1' desc=''>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='2'/>
+       <integer value='3'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+       <integer value='5'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='2'/>
+       <integer value='3'/>
+       <integer value='6'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='3'/>
+       <integer value='6'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='4'/>
+       <integer value='5'/>
+      </integerset>
+     </succ>
+    </item>
+   </collection>
+  </NODES>
+ </bipartite>
+</constraints>
+</model>

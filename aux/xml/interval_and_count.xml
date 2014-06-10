@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <interval_and_count id='c1' name='name1' desc=''>
+  <ATMOST>
+   <integer value='2'/>
+  </ATMOST>
+  <COLOURS>
+   <collection>
+    <item>
+     <val>
+      <integer value='4'/>
+     </val>
+    </item>
+   </collection>
+  </COLOURS>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <colour>
+      <integer value='4'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='0'/>
+     </origin>
+     <colour>
+      <integer value='9'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='10'/>
+     </origin>
+     <colour>
+      <integer value='4'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='4'/>
+     </origin>
+     <colour>
+      <integer value='4'/>
+     </colour>
+    </item>
+   </collection>
+  </TASKS>
+  <SIZE_INTERVAL>
+   <integer value='5'/>
+  </SIZE_INTERVAL>
+ </interval_and_count>
+</constraints>
+</model>

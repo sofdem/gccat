@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <abs_value id='c1' name='name1' desc=''>
+  <Y>
+   <integer value='8'/>
+  </Y>
+  <X>
+   <integer value='-8'/>
+  </X>
+ </abs_value>
+</constraints>
+</model>

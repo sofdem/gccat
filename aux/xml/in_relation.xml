@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <in_relation id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <TUPLES_OF_VALS>
+   <collection>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='5'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='2'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='3'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='5'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='2'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='6'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='5'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='3'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='3'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+   </collection>
+  </TUPLES_OF_VALS>
+ </in_relation>
+</constraints>
+</model>

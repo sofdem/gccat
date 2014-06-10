@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <orchard id='c1' name='name1' desc=''>
+  <NROW>
+   <integer value='10'/>
+  </NROW>
+  <TREES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <x>
+      <integer value='0'/>
+     </x>
+     <y>
+      <integer value='0'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <x>
+      <integer value='4'/>
+     </x>
+     <y>
+      <integer value='0'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <x>
+      <integer value='8'/>
+     </x>
+     <y>
+      <integer value='0'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <x>
+      <integer value='2'/>
+     </x>
+     <y>
+      <integer value='4'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <x>
+      <integer value='4'/>
+     </x>
+     <y>
+      <integer value='4'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <x>
+      <integer value='6'/>
+     </x>
+     <y>
+      <integer value='4'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <x>
+      <integer value='0'/>
+     </x>
+     <y>
+      <integer value='8'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <x>
+      <integer value='4'/>
+     </x>
+     <y>
+      <integer value='8'/>
+     </y>
+    </item>
+    <item>
+     <index>
+      <integer value='9'/>
+     </index>
+     <x>
+      <integer value='8'/>
+     </x>
+     <y>
+      <integer value='8'/>
+     </y>
+    </item>
+   </collection>
+  </TREES>
+ </orchard>
+</constraints>
+</model>

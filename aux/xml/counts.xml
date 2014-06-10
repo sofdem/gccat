@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <counts id='c1' name='name1' desc=''>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='1'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='3'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='4'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='9'/>
+     </val>
+    </item>
+   </collection>
+  </VALUES>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <RELOP>
+   <atom value='EQ'/>
+  </RELOP>
+  <LIMIT>
+   <integer value='3'/>
+  </LIMIT>
+ </counts>
+</constraints>
+</model>

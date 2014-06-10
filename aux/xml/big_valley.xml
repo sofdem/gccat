@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <big_valley id='c1' name='name1' desc=''>
+  <N>
+   <integer value='7'/>
+  </N>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='11'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='11'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='10'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='10'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='12'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <TOLERANCE>
+   <integer value='0'/>
+  </TOLERANCE>
+ </big_valley>
+ <big_valley id='c2' name='name2' desc=''>
+  <N>
+   <integer value='4'/>
+  </N>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='11'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='11'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='10'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='10'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='12'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <TOLERANCE>
+   <integer value='1'/>
+  </TOLERANCE>
+ </big_valley>
+</constraints>
+</model>

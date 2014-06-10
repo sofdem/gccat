@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <global_cardinality_with_costs id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='3'/>
+     </val>
+     <noccurrence>
+      <integer value='3'/>
+     </noccurrence>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <noccurrence>
+      <integer value='0'/>
+     </noccurrence>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+     <noccurrence>
+      <integer value='1'/>
+     </noccurrence>
+    </item>
+   </collection>
+  </VALUES>
+  <MATRIX>
+   <collection>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='4'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='7'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='8'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='3'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='2'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='6'/>
+     </c>
+    </item>
+   </collection>
+  </MATRIX>
+  <COST>
+   <integer value='14'/>
+  </COST>
+ </global_cardinality_with_costs>
+</constraints>
+</model>

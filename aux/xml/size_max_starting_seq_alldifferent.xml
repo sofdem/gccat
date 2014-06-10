@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <size_max_starting_seq_alldifferent id='c1' name='name1' desc=''>
+  <SIZE>
+   <integer value='4'/>
+  </SIZE>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </size_max_starting_seq_alldifferent>
+ <size_max_starting_seq_alldifferent id='c2' name='name2' desc=''>
+  <SIZE>
+   <integer value='7'/>
+  </SIZE>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </size_max_starting_seq_alldifferent>
+ <size_max_starting_seq_alldifferent id='c3' name='name3' desc=''>
+  <SIZE>
+   <integer value='6'/>
+  </SIZE>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </size_max_starting_seq_alldifferent>
+</constraints>
+</model>

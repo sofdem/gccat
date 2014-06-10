@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <element_matrix id='c1' name='name1' desc=''>
+  <MAX_I>
+   <integer value='4'/>
+  </MAX_I>
+  <MAX_J>
+   <integer value='3'/>
+  </MAX_J>
+  <INDEX_I>
+   <integer value='1'/>
+  </INDEX_I>
+  <INDEX_J>
+   <integer value='3'/>
+  </INDEX_J>
+  <MATRIX>
+   <collection>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <v>
+      <integer value='4'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <v>
+      <integer value='1'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <v>
+      <integer value='7'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <v>
+      <integer value='1'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <v>
+      <integer value='0'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <v>
+      <integer value='8'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <v>
+      <integer value='3'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <v>
+      <integer value='2'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <v>
+      <integer value='1'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <v>
+      <integer value='0'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <v>
+      <integer value='0'/>
+     </v>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <v>
+      <integer value='6'/>
+     </v>
+    </item>
+   </collection>
+  </MATRIX>
+  <VALUE>
+   <integer value='7'/>
+  </VALUE>
+ </element_matrix>
+</constraints>
+</model>

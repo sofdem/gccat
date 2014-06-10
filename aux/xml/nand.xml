@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <nand id='c1' name='name1' desc=''>
+  <VAR>
+   <integer value='1'/>
+  </VAR>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </nand>
+ <nand id='c2' name='name2' desc=''>
+  <VAR>
+   <integer value='1'/>
+  </VAR>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </nand>
+ <nand id='c3' name='name3' desc=''>
+  <VAR>
+   <integer value='1'/>
+  </VAR>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </nand>
+ <nand id='c4' name='name4' desc=''>
+  <VAR>
+   <integer value='0'/>
+  </VAR>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </nand>
+ <nand id='c5' name='name5' desc=''>
+  <VAR>
+   <integer value='1'/>
+  </VAR>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </nand>
+</constraints>
+</model>

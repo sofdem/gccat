@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <leq_cst id='c1' name='name1' desc=''>
+  <VAR1>
+   <integer value='5'/>
+  </VAR1>
+  <VAR2>
+   <integer value='2'/>
+  </VAR2>
+  <CST2>
+   <integer value='4'/>
+  </CST2>
+ </leq_cst>
+</constraints>
+</model>

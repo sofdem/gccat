@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <assign_and_nvalues id='c1' name='name1' desc=''>
+  <ITEMS>
+   <collection>
+    <item>
+     <bin>
+      <integer value='2'/>
+     </bin>
+     <value>
+      <integer value='3'/>
+     </value>
+    </item>
+    <item>
+     <bin>
+      <integer value='1'/>
+     </bin>
+     <value>
+      <integer value='5'/>
+     </value>
+    </item>
+    <item>
+     <bin>
+      <integer value='2'/>
+     </bin>
+     <value>
+      <integer value='3'/>
+     </value>
+    </item>
+    <item>
+     <bin>
+      <integer value='2'/>
+     </bin>
+     <value>
+      <integer value='3'/>
+     </value>
+    </item>
+    <item>
+     <bin>
+      <integer value='2'/>
+     </bin>
+     <value>
+      <integer value='4'/>
+     </value>
+    </item>
+   </collection>
+  </ITEMS>
+  <RELOP>
+   <atom value='LE'/>
+  </RELOP>
+  <LIMIT>
+   <integer value='2'/>
+  </LIMIT>
+ </assign_and_nvalues>
+</constraints>
+</model>

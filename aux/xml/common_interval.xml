@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <common_interval id='c1' name='name1' desc=''>
+  <NCOMMON1>
+   <integer value='3'/>
+  </NCOMMON1>
+  <NCOMMON2>
+   <integer value='2'/>
+  </NCOMMON2>
+  <VARIABLES1>
+   <collection>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES1>
+  <VARIABLES2>
+   <collection>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES2>
+  <SIZE_INTERVAL>
+   <integer value='3'/>
+  </SIZE_INTERVAL>
+ </common_interval>
+</constraints>
+</model>

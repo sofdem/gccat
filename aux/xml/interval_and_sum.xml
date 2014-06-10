@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <interval_and_sum id='c1' name='name1' desc=''>
+  <SIZE_INTERVAL>
+   <integer value='5'/>
+  </SIZE_INTERVAL>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <origin>
+      <integer value='10'/>
+     </origin>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <origin>
+      <integer value='10'/>
+     </origin>
+     <height>
+      <integer value='3'/>
+     </height>
+    </item>
+    <item>
+     <origin>
+      <integer value='4'/>
+     </origin>
+     <height>
+      <integer value='1'/>
+     </height>
+    </item>
+   </collection>
+  </TASKS>
+  <LIMIT>
+   <integer value='5'/>
+  </LIMIT>
+ </interval_and_sum>
+</constraints>
+</model>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <domain id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <LOW>
+   <integer value='1'/>
+  </LOW>
+  <UP>
+   <integer value='9'/>
+  </UP>
+ </domain>
+</constraints>
+</model>

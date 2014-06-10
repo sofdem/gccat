@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <inverse id='c1' name='name1' desc=''>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+     <pred>
+      <integer value='2'/>
+     </pred>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+     <pred>
+      <integer value='1'/>
+     </pred>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+     <pred>
+      <integer value='4'/>
+     </pred>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='3'/>
+     </succ>
+     <pred>
+      <integer value='5'/>
+     </pred>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='4'/>
+     </succ>
+     <pred>
+      <integer value='3'/>
+     </pred>
+    </item>
+   </collection>
+  </NODES>
+ </inverse>
+</constraints>
+</model>

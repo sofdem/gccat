@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <polyomino id='c1' name='name1' desc=''>
+  <CELLS>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <right>
+      <integer value='0'/>
+     </right>
+     <left>
+      <integer value='0'/>
+     </left>
+     <up>
+      <integer value='2'/>
+     </up>
+     <down>
+      <integer value='0'/>
+     </down>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <right>
+      <integer value='3'/>
+     </right>
+     <left>
+      <integer value='0'/>
+     </left>
+     <up>
+      <integer value='0'/>
+     </up>
+     <down>
+      <integer value='1'/>
+     </down>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <right>
+      <integer value='0'/>
+     </right>
+     <left>
+      <integer value='2'/>
+     </left>
+     <up>
+      <integer value='4'/>
+     </up>
+     <down>
+      <integer value='0'/>
+     </down>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <right>
+      <integer value='5'/>
+     </right>
+     <left>
+      <integer value='0'/>
+     </left>
+     <up>
+      <integer value='0'/>
+     </up>
+     <down>
+      <integer value='3'/>
+     </down>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <right>
+      <integer value='0'/>
+     </right>
+     <left>
+      <integer value='4'/>
+     </left>
+     <up>
+      <integer value='0'/>
+     </up>
+     <down>
+      <integer value='0'/>
+     </down>
+    </item>
+   </collection>
+  </CELLS>
+ </polyomino>
+</constraints>
+</model>

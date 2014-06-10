@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <equilibrium id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <INDEX1>
+   <integer value='2'/>
+  </INDEX1>
+  <INDEX2>
+   <integer value='4'/>
+  </INDEX2>
+  <EPSILON>
+   <integer value='2'/>
+  </EPSILON>
+  <COEF1>
+   <integer value='1'/>
+  </COEF1>
+  <COEF2>
+   <integer value='1'/>
+  </COEF2>
+  <TOLERANCE>
+   <integer value='0'/>
+  </TOLERANCE>
+  <CTR>
+   <atom value='SUM_CTR'/>
+  </CTR>
+ </equilibrium>
+ <equilibrium id='c2' name='name2' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='-2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <INDEX1>
+   <integer value='5'/>
+  </INDEX1>
+  <INDEX2>
+   <integer value='5'/>
+  </INDEX2>
+  <EPSILON>
+   <integer value='0'/>
+  </EPSILON>
+  <COEF1>
+   <integer value='1'/>
+  </COEF1>
+  <COEF2>
+   <integer value='1'/>
+  </COEF2>
+  <TOLERANCE>
+   <integer value='0'/>
+  </TOLERANCE>
+  <CTR>
+   <atom value='SUM_CTR'/>
+  </CTR>
+ </equilibrium>
+ <equilibrium id='c3' name='name3' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='-2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='-1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <INDEX1>
+   <integer value='11'/>
+  </INDEX1>
+  <INDEX2>
+   <integer value='11'/>
+  </INDEX2>
+  <EPSILON>
+   <integer value='0'/>
+  </EPSILON>
+  <COEF1>
+   <integer value='1'/>
+  </COEF1>
+  <COEF2>
+   <integer value='1'/>
+  </COEF2>
+  <TOLERANCE>
+   <integer value='0'/>
+  </TOLERANCE>
+  <CTR>
+   <atom value='SUM_CTR'/>
+  </CTR>
+ </equilibrium>
+ <equilibrium id='c4' name='name4' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <INDEX1>
+   <integer value='5'/>
+  </INDEX1>
+  <INDEX2>
+   <integer value='7'/>
+  </INDEX2>
+  <EPSILON>
+   <integer value='2'/>
+  </EPSILON>
+  <COEF1>
+   <integer value='1'/>
+  </COEF1>
+  <COEF2>
+   <integer value='1'/>
+  </COEF2>
+  <TOLERANCE>
+   <integer value='0'/>
+  </TOLERANCE>
+  <CTR>
+   <atom value='PEAK'/>
+  </CTR>
+ </equilibrium>
+ <equilibrium id='c5' name='name5' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <INDEX1>
+   <integer value='7'/>
+  </INDEX1>
+  <INDEX2>
+   <integer value='7'/>
+  </INDEX2>
+  <EPSILON>
+   <integer value='0'/>
+  </EPSILON>
+  <COEF1>
+   <integer value='1'/>
+  </COEF1>
+  <COEF2>
+   <integer value='1'/>
+  </COEF2>
+  <TOLERANCE>
+   <integer value='0'/>
+  </TOLERANCE>
+  <CTR>
+   <atom value='CHANGE'/>
+  </CTR>
+ </equilibrium>
+</constraints>
+</model>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <coloured_cumulative id='c1' name='name1' desc=''>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='3'/>
+     </end>
+     <colour>
+      <integer value='1'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <duration>
+      <integer value='9'/>
+     </duration>
+     <end>
+      <integer value='11'/>
+     </end>
+     <colour>
+      <integer value='2'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='3'/>
+     </origin>
+     <duration>
+      <integer value='10'/>
+     </duration>
+     <end>
+      <integer value='13'/>
+     </end>
+     <colour>
+      <integer value='3'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='6'/>
+     </origin>
+     <duration>
+      <integer value='6'/>
+     </duration>
+     <end>
+      <integer value='12'/>
+     </end>
+     <colour>
+      <integer value='2'/>
+     </colour>
+    </item>
+    <item>
+     <origin>
+      <integer value='7'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='9'/>
+     </end>
+     <colour>
+      <integer value='3'/>
+     </colour>
+    </item>
+   </collection>
+  </TASKS>
+  <LIMIT>
+   <integer value='2'/>
+  </LIMIT>
+ </coloured_cumulative>
+</constraints>
+</model>

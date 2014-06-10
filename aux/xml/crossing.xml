@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <crossing id='c1' name='name1' desc=''>
+  <NCROSS>
+   <integer value='3'/>
+  </NCROSS>
+  <SEGMENTS>
+   <collection>
+    <item>
+     <ox>
+      <integer value='1'/>
+     </ox>
+     <oy>
+      <integer value='4'/>
+     </oy>
+     <ex>
+      <integer value='9'/>
+     </ex>
+     <ey>
+      <integer value='2'/>
+     </ey>
+    </item>
+    <item>
+     <ox>
+      <integer value='1'/>
+     </ox>
+     <oy>
+      <integer value='1'/>
+     </oy>
+     <ex>
+      <integer value='3'/>
+     </ex>
+     <ey>
+      <integer value='5'/>
+     </ey>
+    </item>
+    <item>
+     <ox>
+      <integer value='3'/>
+     </ox>
+     <oy>
+      <integer value='2'/>
+     </oy>
+     <ex>
+      <integer value='7'/>
+     </ex>
+     <ey>
+      <integer value='4'/>
+     </ey>
+    </item>
+    <item>
+     <ox>
+      <integer value='9'/>
+     </ox>
+     <oy>
+      <integer value='1'/>
+     </oy>
+     <ex>
+      <integer value='9'/>
+     </ex>
+     <ey>
+      <integer value='4'/>
+     </ey>
+    </item>
+   </collection>
+  </SEGMENTS>
+ </crossing>
+</constraints>
+</model>

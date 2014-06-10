@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <diffn_column id='c1' name='name1' desc=''>
+  <ORTHOTOPES>
+   <collection>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='3'/>
+        </siz>
+        <end>
+         <integer value='4'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='3'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='5'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='9'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='10'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='4'/>
+        </ori>
+        <siz>
+         <integer value='3'/>
+        </siz>
+        <end>
+         <integer value='7'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='4'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='6'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='3'/>
+        </ori>
+        <siz>
+         <integer value='4'/>
+        </siz>
+        <end>
+         <integer value='7'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='3'/>
+        </siz>
+        <end>
+         <integer value='4'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='6'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='7'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='6'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='8'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='4'/>
+        </siz>
+        <end>
+         <integer value='5'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='10'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='11'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='2'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='9'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='10'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='1'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='2'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+    <item>
+     <orth>
+      <collection>
+       <item>
+        <ori>
+         <integer value='6'/>
+        </ori>
+        <siz>
+         <integer value='2'/>
+        </siz>
+        <end>
+         <integer value='8'/>
+        </end>
+       </item>
+       <item>
+        <ori>
+         <integer value='6'/>
+        </ori>
+        <siz>
+         <integer value='1'/>
+        </siz>
+        <end>
+         <integer value='7'/>
+        </end>
+       </item>
+      </collection>
+     </orth>
+    </item>
+   </collection>
+  </ORTHOTOPES>
+  <DIM>
+   <integer value='1'/>
+  </DIM>
+ </diffn_column>
+</constraints>
+</model>

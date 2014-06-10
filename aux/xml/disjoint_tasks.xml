@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <disjoint_tasks id='c1' name='name1' desc=''>
+  <TASKS1>
+   <collection>
+    <item>
+     <origin>
+      <integer value='6'/>
+     </origin>
+     <duration>
+      <integer value='5'/>
+     </duration>
+     <end>
+      <integer value='11'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='8'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='10'/>
+     </end>
+    </item>
+   </collection>
+  </TASKS1>
+  <TASKS2>
+   <collection>
+    <item>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='4'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='3'/>
+     </origin>
+     <duration>
+      <integer value='3'/>
+     </duration>
+     <end>
+      <integer value='6'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='12'/>
+     </origin>
+     <duration>
+      <integer value='1'/>
+     </duration>
+     <end>
+      <integer value='13'/>
+     </end>
+    </item>
+   </collection>
+  </TASKS2>
+ </disjoint_tasks>
+</constraints>
+</model>

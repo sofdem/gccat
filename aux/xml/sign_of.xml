@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <sign_of id='c1' name='name1' desc=''>
+  <S>
+   <integer value='-1'/>
+  </S>
+  <X>
+   <integer value='-8'/>
+  </X>
+ </sign_of>
+ <sign_of id='c2' name='name2' desc=''>
+  <S>
+   <integer value='0'/>
+  </S>
+  <X>
+   <integer value='0'/>
+  </X>
+ </sign_of>
+ <sign_of id='c3' name='name3' desc=''>
+  <S>
+   <integer value='1'/>
+  </S>
+  <X>
+   <integer value='8'/>
+  </X>
+ </sign_of>
+</constraints>
+</model>

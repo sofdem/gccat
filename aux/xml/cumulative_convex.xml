@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cumulative_convex id='c1' name='name1' desc=''>
+  <TASKS>
+   <collection>
+    <item>
+     <points>
+      <collection>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+      </collection>
+     </points>
+     <height>
+      <integer value='1'/>
+     </height>
+    </item>
+    <item>
+     <points>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+      </collection>
+     </points>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <points>
+      <collection>
+       <item>
+        <var>
+         <integer value='14'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='13'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='9'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='11'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='10'/>
+        </var>
+       </item>
+      </collection>
+     </points>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+   </collection>
+  </TASKS>
+  <LIMIT>
+   <integer value='3'/>
+  </LIMIT>
+ </cumulative_convex>
+</constraints>
+</model>

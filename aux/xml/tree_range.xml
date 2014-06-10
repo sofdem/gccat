@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <tree_range id='c1' name='name1' desc=''>
+  <NTREES>
+   <integer value='2'/>
+  </NTREES>
+  <R>
+   <integer value='1'/>
+  </R>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+   </collection>
+  </NODES>
+ </tree_range>
+</constraints>
+</model>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <set_value_precede id='c1' name='name1' desc=''>
+  <S>
+   <integer value='2'/>
+  </S>
+  <T>
+   <integer value='1'/>
+  </T>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='2'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </set_value_precede>
+ <set_value_precede id='c2' name='name2' desc=''>
+  <S>
+   <integer value='0'/>
+  </S>
+  <T>
+   <integer value='1'/>
+  </T>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='2'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </set_value_precede>
+ <set_value_precede id='c3' name='name3' desc=''>
+  <S>
+   <integer value='0'/>
+  </S>
+  <T>
+   <integer value='2'/>
+  </T>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='2'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </set_value_precede>
+ <set_value_precede id='c4' name='name4' desc=''>
+  <S>
+   <integer value='0'/>
+  </S>
+  <T>
+   <integer value='4'/>
+  </T>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='2'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='0'/>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </set_value_precede>
+</constraints>
+</model>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <symmetric_gcc id='c1' name='name1' desc=''>
+  <VARS>
+   <collection>
+    <item>
+     <idvar>
+      <integer value='1'/>
+     </idvar>
+     <var>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </var>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <idvar>
+      <integer value='2'/>
+     </idvar>
+     <var>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </var>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <idvar>
+      <integer value='3'/>
+     </idvar>
+     <var>
+      <integerset>
+       <integer value='1'/>
+       <integer value='2'/>
+      </integerset>
+     </var>
+     <nocc>
+      <integer value='2'/>
+     </nocc>
+    </item>
+    <item>
+     <idvar>
+      <integer value='4'/>
+     </idvar>
+     <var>
+      <integerset>
+       <integer value='1'/>
+       <integer value='3'/>
+      </integerset>
+     </var>
+     <nocc>
+      <integer value='2'/>
+     </nocc>
+    </item>
+   </collection>
+  </VARS>
+  <VALS>
+   <collection>
+    <item>
+     <idval>
+      <integer value='1'/>
+     </idval>
+     <val>
+      <integerset>
+       <integer value='2'/>
+       <integer value='3'/>
+       <integer value='4'/>
+      </integerset>
+     </val>
+     <nocc>
+      <integer value='3'/>
+     </nocc>
+    </item>
+    <item>
+     <idval>
+      <integer value='2'/>
+     </idval>
+     <val>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <idval>
+      <integer value='3'/>
+     </idval>
+     <val>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+      </integerset>
+     </val>
+     <nocc>
+      <integer value='2'/>
+     </nocc>
+    </item>
+    <item>
+     <idval>
+      <integer value='4'/>
+     </idval>
+     <val>
+      <integerset/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+   </collection>
+  </VALS>
+ </symmetric_gcc>
+</constraints>
+</model>

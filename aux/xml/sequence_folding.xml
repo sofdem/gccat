@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <sequence_folding id='c1' name='name1' desc=''>
+  <LETTERS>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <next>
+      <integer value='1'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <next>
+      <integer value='8'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <next>
+      <integer value='3'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <next>
+      <integer value='5'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <next>
+      <integer value='5'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <next>
+      <integer value='7'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <next>
+      <integer value='7'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <next>
+      <integer value='8'/>
+     </next>
+    </item>
+    <item>
+     <index>
+      <integer value='9'/>
+     </index>
+     <next>
+      <integer value='9'/>
+     </next>
+    </item>
+   </collection>
+  </LETTERS>
+ </sequence_folding>
+</constraints>
+</model>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cycle_card_on_path id='c1' name='name1' desc=''>
+  <NCYCLE>
+   <integer value='2'/>
+  </NCYCLE>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+     <colour>
+      <integer value='2'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='4'/>
+     </succ>
+     <colour>
+      <integer value='3'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='8'/>
+     </succ>
+     <colour>
+      <integer value='2'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='9'/>
+     </succ>
+     <colour>
+      <integer value='1'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+     <colour>
+      <integer value='2'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+     <colour>
+      <integer value='1'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+     <colour>
+      <integer value='1'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+     <colour>
+      <integer value='1'/>
+     </colour>
+    </item>
+    <item>
+     <index>
+      <integer value='9'/>
+     </index>
+     <succ>
+      <integer value='3'/>
+     </succ>
+     <colour>
+      <integer value='1'/>
+     </colour>
+    </item>
+   </collection>
+  </NODES>
+  <ATLEAST>
+   <integer value='1'/>
+  </ATLEAST>
+  <ATMOST>
+   <integer value='2'/>
+  </ATMOST>
+  <PATH_LEN>
+   <integer value='3'/>
+  </PATH_LEN>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='1'/>
+     </val>
+    </item>
+   </collection>
+  </VALUES>
+ </cycle_card_on_path>
+</constraints>
+</model>

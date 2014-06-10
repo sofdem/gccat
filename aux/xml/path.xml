@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <path id='c1' name='name1' desc=''>
+  <NPATH>
+   <integer value='3'/>
+  </NPATH>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='3'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+    </item>
+   </collection>
+  </NODES>
+ </path>
+ <path id='c2' name='name2' desc=''>
+  <NPATH>
+   <integer value='1'/>
+  </NPATH>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='8'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='4'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='3'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+    </item>
+   </collection>
+  </NODES>
+ </path>
+ <path id='c3' name='name3' desc=''>
+  <NPATH>
+   <integer value='8'/>
+  </NPATH>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='1'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='3'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='4'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <succ>
+      <integer value='8'/>
+     </succ>
+    </item>
+   </collection>
+  </NODES>
+ </path>
+</constraints>
+</model>

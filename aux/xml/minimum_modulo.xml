@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <minimum_modulo id='c1' name='name1' desc=''>
+  <MIN>
+   <integer value='6'/>
+  </MIN>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <M>
+   <integer value='3'/>
+  </M>
+ </minimum_modulo>
+ <minimum_modulo id='c2' name='name2' desc=''>
+  <MIN>
+   <integer value='9'/>
+  </MIN>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <M>
+   <integer value='3'/>
+  </M>
+ </minimum_modulo>
+</constraints>
+</model>

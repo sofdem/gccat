@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <power id='c1' name='name1' desc=''>
+  <X>
+   <integer value='2'/>
+  </X>
+  <N>
+   <integer value='3'/>
+  </N>
+  <Y>
+   <integer value='8'/>
+  </Y>
+ </power>
+</constraints>
+</model>

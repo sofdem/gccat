@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <calendar id='c1' name='name1' desc=''>
+  <INSTANTS>
+   <collection>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <virtual>
+      <integer value='2'/>
+     </virtual>
+     <ireal>
+      <integer value='3'/>
+     </ireal>
+     <flagend>
+      <integer value='0'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <virtual>
+      <integer value='5'/>
+     </virtual>
+     <ireal>
+      <integer value='6'/>
+     </ireal>
+     <flagend>
+      <integer value='1'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='2'/>
+     </machine>
+     <virtual>
+      <integer value='4'/>
+     </virtual>
+     <ireal>
+      <integer value='5'/>
+     </ireal>
+     <flagend>
+      <integer value='0'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='2'/>
+     </machine>
+     <virtual>
+      <integer value='6'/>
+     </virtual>
+     <ireal>
+      <integer value='9'/>
+     </ireal>
+     <flagend>
+      <integer value='1'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='3'/>
+     </machine>
+     <virtual>
+      <integer value='2'/>
+     </virtual>
+     <ireal>
+      <integer value='2'/>
+     </ireal>
+     <flagend>
+      <integer value='0'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='3'/>
+     </machine>
+     <virtual>
+      <integer value='5'/>
+     </virtual>
+     <ireal>
+      <integer value='5'/>
+     </ireal>
+     <flagend>
+      <integer value='1'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='4'/>
+     </machine>
+     <virtual>
+      <integer value='2'/>
+     </virtual>
+     <ireal>
+      <integer value='2'/>
+     </ireal>
+     <flagend>
+      <integer value='0'/>
+     </flagend>
+    </item>
+    <item>
+     <machine>
+      <integer value='4'/>
+     </machine>
+     <virtual>
+      <integer value='7'/>
+     </virtual>
+     <ireal>
+      <integer value='9'/>
+     </ireal>
+     <flagend>
+      <integer value='1'/>
+     </flagend>
+    </item>
+   </collection>
+  </INSTANTS>
+  <MACHINES>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <cal>
+      <collection>
+       <item>
+        <low>
+         <integer value='2'/>
+        </low>
+        <up>
+         <integer value='2'/>
+        </up>
+       </item>
+       <item>
+        <low>
+         <integer value='6'/>
+        </low>
+        <up>
+         <integer value='7'/>
+        </up>
+       </item>
+      </collection>
+     </cal>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <cal>
+      <collection>
+       <item>
+        <low>
+         <integer value='2'/>
+        </low>
+        <up>
+         <integer value='2'/>
+        </up>
+       </item>
+       <item>
+        <low>
+         <integer value='6'/>
+        </low>
+        <up>
+         <integer value='7'/>
+        </up>
+       </item>
+      </collection>
+     </cal>
+    </item>
+    <item>
+     <id>
+      <integer value='3'/>
+     </id>
+     <cal>
+      <collection/>
+     </cal>
+    </item>
+    <item>
+     <id>
+      <integer value='4'/>
+     </id>
+     <cal>
+      <collection>
+       <item>
+        <low>
+         <integer value='3'/>
+        </low>
+        <up>
+         <integer value='4'/>
+        </up>
+       </item>
+      </collection>
+     </cal>
+    </item>
+   </collection>
+  </MACHINES>
+ </calendar>
+</constraints>
+</model>

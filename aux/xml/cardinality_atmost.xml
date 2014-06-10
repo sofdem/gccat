@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cardinality_atmost id='c1' name='name1' desc=''>
+  <ATMOST>
+   <integer value='2'/>
+  </ATMOST>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='7'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='2'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='9'/>
+     </val>
+    </item>
+   </collection>
+  </VALUES>
+ </cardinality_atmost>
+</constraints>
+</model>

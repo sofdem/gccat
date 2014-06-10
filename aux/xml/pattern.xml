@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <pattern id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <PATTERNS>
+   <collection>
+    <item>
+     <pat>
+      <collection>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+      </collection>
+     </pat>
+    </item>
+    <item>
+     <pat>
+      <collection>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+      </collection>
+     </pat>
+    </item>
+    <item>
+     <pat>
+      <collection>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+      </collection>
+     </pat>
+    </item>
+   </collection>
+  </PATTERNS>
+ </pattern>
+</constraints>
+</model>

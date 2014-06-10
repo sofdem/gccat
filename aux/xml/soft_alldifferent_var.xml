@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <soft_alldifferent_var id='c1' name='name1' desc=''>
+  <C>
+   <integer value='3'/>
+  </C>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </soft_alldifferent_var>
+ <soft_alldifferent_var id='c2' name='name2' desc=''>
+  <C>
+   <integer value='1'/>
+  </C>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </soft_alldifferent_var>
+ <soft_alldifferent_var id='c3' name='name3' desc=''>
+  <C>
+   <integer value='0'/>
+  </C>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </soft_alldifferent_var>
+</constraints>
+</model>

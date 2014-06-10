@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <sum_free id='c1' name='name1' desc=''>
+  <S>
+   <integerset>
+    <integer value='1'/>
+    <integer value='3'/>
+    <integer value='5'/>
+    <integer value='9'/>
+   </integerset>
+  </S>
+ </sum_free>
+</constraints>
+</model>

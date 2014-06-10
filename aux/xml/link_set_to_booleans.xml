@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <link_set_to_booleans id='c1' name='name1' desc=''>
+  <SVAR>
+   <integerset>
+    <integer value='1'/>
+    <integer value='3'/>
+    <integer value='4'/>
+   </integerset>
+  </SVAR>
+  <BOOLEANS>
+   <collection>
+    <item>
+     <bool>
+      <integer value='0'/>
+     </bool>
+     <val>
+      <integer value='0'/>
+     </val>
+    </item>
+    <item>
+     <bool>
+      <integer value='1'/>
+     </bool>
+     <val>
+      <integer value='1'/>
+     </val>
+    </item>
+    <item>
+     <bool>
+      <integer value='0'/>
+     </bool>
+     <val>
+      <integer value='2'/>
+     </val>
+    </item>
+    <item>
+     <bool>
+      <integer value='1'/>
+     </bool>
+     <val>
+      <integer value='3'/>
+     </val>
+    </item>
+    <item>
+     <bool>
+      <integer value='1'/>
+     </bool>
+     <val>
+      <integer value='4'/>
+     </val>
+    </item>
+    <item>
+     <bool>
+      <integer value='0'/>
+     </bool>
+     <val>
+      <integer value='5'/>
+     </val>
+    </item>
+   </collection>
+  </BOOLEANS>
+ </link_set_to_booleans>
+</constraints>
+</model>

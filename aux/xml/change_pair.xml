@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <change_pair id='c1' name='name1' desc=''>
+  <NCHANGE>
+   <integer value='3'/>
+  </NCHANGE>
+  <PAIRS>
+   <collection>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='5'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='8'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='4'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='1'/>
+     </x>
+     <y>
+      <integer value='3'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='1'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='1'/>
+     </x>
+     <y>
+      <integer value='6'/>
+     </y>
+    </item>
+    <item>
+     <x>
+      <integer value='3'/>
+     </x>
+     <y>
+      <integer value='7'/>
+     </y>
+    </item>
+   </collection>
+  </PAIRS>
+  <CTRX>
+   <atom value='NEQ'/>
+  </CTRX>
+  <CTRY>
+   <atom value='GT'/>
+  </CTRY>
+ </change_pair>
+</constraints>
+</model>

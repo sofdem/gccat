@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <among_low_up id='c1' name='name1' desc=''>
+  <LOW>
+   <integer value='1'/>
+  </LOW>
+  <UP>
+   <integer value='2'/>
+  </UP>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='0'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='2'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='4'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='8'/>
+     </val>
+    </item>
+   </collection>
+  </VALUES>
+ </among_low_up>
+</constraints>
+</model>

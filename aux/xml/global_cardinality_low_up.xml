@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <global_cardinality_low_up id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='6'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='3'/>
+     </val>
+     <omin>
+      <integer value='2'/>
+     </omin>
+     <omax>
+      <integer value='3'/>
+     </omax>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <omin>
+      <integer value='0'/>
+     </omin>
+     <omax>
+      <integer value='1'/>
+     </omax>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+     <omin>
+      <integer value='1'/>
+     </omin>
+     <omax>
+      <integer value='2'/>
+     </omax>
+    </item>
+   </collection>
+  </VALUES>
+ </global_cardinality_low_up>
+</constraints>
+</model>

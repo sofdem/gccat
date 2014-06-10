@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <track id='c1' name='name1' desc=''>
+  <NTRAIL>
+   <integer value='2'/>
+  </NTRAIL>
+  <TASKS>
+   <collection>
+    <item>
+     <trail>
+      <integer value='1'/>
+     </trail>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <end>
+      <integer value='2'/>
+     </end>
+    </item>
+    <item>
+     <trail>
+      <integer value='2'/>
+     </trail>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <end>
+      <integer value='2'/>
+     </end>
+    </item>
+    <item>
+     <trail>
+      <integer value='1'/>
+     </trail>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <end>
+      <integer value='4'/>
+     </end>
+    </item>
+    <item>
+     <trail>
+      <integer value='2'/>
+     </trail>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <end>
+      <integer value='3'/>
+     </end>
+    </item>
+    <item>
+     <trail>
+      <integer value='2'/>
+     </trail>
+     <origin>
+      <integer value='3'/>
+     </origin>
+     <end>
+      <integer value='4'/>
+     </end>
+    </item>
+   </collection>
+  </TASKS>
+ </track>
+</constraints>
+</model>

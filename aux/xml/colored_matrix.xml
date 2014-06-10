@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <colored_matrix id='c1' name='name1' desc=''>
+  <C>
+   <integer value='1'/>
+  </C>
+  <L>
+   <integer value='2'/>
+  </L>
+  <K>
+   <integer value='4'/>
+  </K>
+  <MATRIX>
+   <collection>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <line>
+      <integer value='0'/>
+     </line>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <line>
+      <integer value='1'/>
+     </line>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <line>
+      <integer value='2'/>
+     </line>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <line>
+      <integer value='0'/>
+     </line>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <line>
+      <integer value='1'/>
+     </line>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <line>
+      <integer value='2'/>
+     </line>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </MATRIX>
+  <CPROJ>
+   <collection>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <val>
+      <integer value='0'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <val>
+      <integer value='1'/>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <val>
+      <integer value='2'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <val>
+      <integer value='3'/>
+     </val>
+     <nocc>
+      <integer value='2'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='0'/>
+     </column>
+     <val>
+      <integer value='4'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <val>
+      <integer value='0'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <val>
+      <integer value='1'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <val>
+      <integer value='2'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <val>
+      <integer value='3'/>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <column>
+      <integer value='1'/>
+     </column>
+     <val>
+      <integer value='4'/>
+     </val>
+     <nocc>
+      <integer value='2'/>
+     </nocc>
+    </item>
+   </collection>
+  </CPROJ>
+  <LPROJ>
+   <collection>
+    <item>
+     <line>
+      <integer value='0'/>
+     </line>
+     <val>
+      <integer value='0'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='0'/>
+     </line>
+     <val>
+      <integer value='1'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='0'/>
+     </line>
+     <val>
+      <integer value='2'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='0'/>
+     </line>
+     <val>
+      <integer value='3'/>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='0'/>
+     </line>
+     <val>
+      <integer value='4'/>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='1'/>
+     </line>
+     <val>
+      <integer value='0'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='1'/>
+     </line>
+     <val>
+      <integer value='1'/>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='1'/>
+     </line>
+     <val>
+      <integer value='2'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='1'/>
+     </line>
+     <val>
+      <integer value='3'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='1'/>
+     </line>
+     <val>
+      <integer value='4'/>
+     </val>
+     <nocc>
+      <integer value='1'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='2'/>
+     </line>
+     <val>
+      <integer value='0'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='2'/>
+     </line>
+     <val>
+      <integer value='1'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='2'/>
+     </line>
+     <val>
+      <integer value='2'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='2'/>
+     </line>
+     <val>
+      <integer value='3'/>
+     </val>
+     <nocc>
+      <integer value='2'/>
+     </nocc>
+    </item>
+    <item>
+     <line>
+      <integer value='2'/>
+     </line>
+     <val>
+      <integer value='4'/>
+     </val>
+     <nocc>
+      <integer value='0'/>
+     </nocc>
+    </item>
+   </collection>
+  </LPROJ>
+ </colored_matrix>
+</constraints>
+</model>

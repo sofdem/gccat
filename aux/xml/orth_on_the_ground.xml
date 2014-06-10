@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <orth_on_the_ground id='c1' name='name1' desc=''>
+  <ORTHOTOPE>
+   <collection>
+    <item>
+     <ori>
+      <integer value='1'/>
+     </ori>
+     <siz>
+      <integer value='2'/>
+     </siz>
+     <end>
+      <integer value='3'/>
+     </end>
+    </item>
+    <item>
+     <ori>
+      <integer value='2'/>
+     </ori>
+     <siz>
+      <integer value='3'/>
+     </siz>
+     <end>
+      <integer value='5'/>
+     </end>
+    </item>
+   </collection>
+  </ORTHOTOPE>
+  <VERTICAL_DIM>
+   <integer value='1'/>
+  </VERTICAL_DIM>
+ </orth_on_the_ground>
+</constraints>
+</model>

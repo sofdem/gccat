@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <alldifferent_between_sets id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integerset>
+       <integer value='3'/>
+       <integer value='5'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integerset>
+       <integer value='3'/>
+       <integer value='5'/>
+       <integer value='7'/>
+      </integerset>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </alldifferent_between_sets>
+</constraints>
+</model>

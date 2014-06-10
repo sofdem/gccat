@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <smooth id='c1' name='name1' desc=''>
+  <NCHANGE>
+   <integer value='1'/>
+  </NCHANGE>
+  <TOLERANCE>
+   <integer value='2'/>
+  </TOLERANCE>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </smooth>
+</constraints>
+</model>

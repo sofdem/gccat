@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <tree_resource id='c1' name='name1' desc=''>
+  <RESOURCE>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <nb_task>
+      <integer value='4'/>
+     </nb_task>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <nb_task>
+      <integer value='0'/>
+     </nb_task>
+    </item>
+    <item>
+     <id>
+      <integer value='3'/>
+     </id>
+     <nb_task>
+      <integer value='1'/>
+     </nb_task>
+    </item>
+   </collection>
+  </RESOURCE>
+  <TASK>
+   <collection>
+    <item>
+     <id>
+      <integer value='4'/>
+     </id>
+     <father>
+      <integer value='8'/>
+     </father>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='5'/>
+     </id>
+     <father>
+      <integer value='3'/>
+     </father>
+     <resource>
+      <integer value='3'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='6'/>
+     </id>
+     <father>
+      <integer value='8'/>
+     </father>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='7'/>
+     </id>
+     <father>
+      <integer value='1'/>
+     </father>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+    <item>
+     <id>
+      <integer value='8'/>
+     </id>
+     <father>
+      <integer value='1'/>
+     </father>
+     <resource>
+      <integer value='1'/>
+     </resource>
+    </item>
+   </collection>
+  </TASK>
+ </tree_resource>
+</constraints>
+</model>

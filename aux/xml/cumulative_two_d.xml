@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cumulative_two_d id='c1' name='name1' desc=''>
+  <RECTANGLES>
+   <collection>
+    <item>
+     <start1>
+      <integer value='1'/>
+     </start1>
+     <size1>
+      <integer value='4'/>
+     </size1>
+     <last1>
+      <integer value='4'/>
+     </last1>
+     <start2>
+      <integer value='3'/>
+     </start2>
+     <size2>
+      <integer value='3'/>
+     </size2>
+     <last2>
+      <integer value='5'/>
+     </last2>
+     <height>
+      <integer value='4'/>
+     </height>
+    </item>
+    <item>
+     <start1>
+      <integer value='3'/>
+     </start1>
+     <size1>
+      <integer value='2'/>
+     </size1>
+     <last1>
+      <integer value='4'/>
+     </last1>
+     <start2>
+      <integer value='1'/>
+     </start2>
+     <size2>
+      <integer value='2'/>
+     </size2>
+     <last2>
+      <integer value='2'/>
+     </last2>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <start1>
+      <integer value='1'/>
+     </start1>
+     <size1>
+      <integer value='2'/>
+     </size1>
+     <last1>
+      <integer value='2'/>
+     </last1>
+     <start2>
+      <integer value='1'/>
+     </start2>
+     <size2>
+      <integer value='2'/>
+     </size2>
+     <last2>
+      <integer value='2'/>
+     </last2>
+     <height>
+      <integer value='3'/>
+     </height>
+    </item>
+    <item>
+     <start1>
+      <integer value='4'/>
+     </start1>
+     <size1>
+      <integer value='1'/>
+     </size1>
+     <last1>
+      <integer value='4'/>
+     </last1>
+     <start2>
+      <integer value='1'/>
+     </start2>
+     <size2>
+      <integer value='1'/>
+     </size2>
+     <last2>
+      <integer value='1'/>
+     </last2>
+     <height>
+      <integer value='1'/>
+     </height>
+    </item>
+   </collection>
+  </RECTANGLES>
+  <LIMIT>
+   <integer value='4'/>
+  </LIMIT>
+ </cumulative_two_d>
+</constraints>
+</model>

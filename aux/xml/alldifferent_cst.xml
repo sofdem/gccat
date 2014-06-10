@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <alldifferent_cst id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+     <cst>
+      <integer value='0'/>
+     </cst>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+     <cst>
+      <integer value='1'/>
+     </cst>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+     <cst>
+      <integer value='0'/>
+     </cst>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+     <cst>
+      <integer value='4'/>
+     </cst>
+    </item>
+   </collection>
+  </VARIABLES>
+ </alldifferent_cst>
+</constraints>
+</model>

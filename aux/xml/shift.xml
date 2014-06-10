@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <shift id='c1' name='name1' desc=''>
+  <MIN_BREAK>
+   <integer value='6'/>
+  </MIN_BREAK>
+  <MAX_RANGE>
+   <integer value='8'/>
+  </MAX_RANGE>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='17'/>
+     </origin>
+     <end>
+      <integer value='20'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='7'/>
+     </origin>
+     <end>
+      <integer value='10'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <end>
+      <integer value='4'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='21'/>
+     </origin>
+     <end>
+      <integer value='22'/>
+     </end>
+    </item>
+    <item>
+     <origin>
+      <integer value='5'/>
+     </origin>
+     <end>
+      <integer value='6'/>
+     </end>
+    </item>
+   </collection>
+  </TASKS>
+ </shift>
+</constraints>
+</model>

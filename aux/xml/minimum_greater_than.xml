@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <minimum_greater_than id='c1' name='name1' desc=''>
+  <VAR1>
+   <integer value='5'/>
+  </VAR1>
+  <VAR2>
+   <integer value='3'/>
+  </VAR2>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </minimum_greater_than>
+</constraints>
+</model>

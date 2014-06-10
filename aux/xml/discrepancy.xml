@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <discrepancy id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+     <bad>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+       <integer value='6'/>
+      </integerset>
+     </bad>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+     <bad>
+      <integerset>
+       <integer value='0'/>
+       <integer value='1'/>
+      </integerset>
+     </bad>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+     <bad>
+      <integerset>
+       <integer value='1'/>
+       <integer value='6'/>
+       <integer value='9'/>
+      </integerset>
+     </bad>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+     <bad>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+      </integerset>
+     </bad>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+     <bad>
+      <integerset/>
+     </bad>
+    </item>
+   </collection>
+  </VARIABLES>
+  <K>
+   <integer value='2'/>
+  </K>
+ </discrepancy>
+</constraints>
+</model>

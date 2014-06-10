@@ -160,6 +160,7 @@ div.tablesmall td { font-size: 80%; }
 table>caption { font-size: 90%; }
 #main table td { padding: 0 5px; }
 #main table tr { padding: 0; }
-td.border { border-left: 1px solid; border-right: 1px solid; }
-tr.border td { border-bottom: 1px solid; border-top: 1px solid; }
-
+td.left { border-left: 1px solid; }
+td.right { border-right: 1px solid; }
+tr.bot td { border-bottom: 1px solid; }
+tr.top td { border-top: 1px solid; }

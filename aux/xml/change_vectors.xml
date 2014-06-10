@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <change_vectors id='c1' name='name1' desc=''>
+  <NCHANGE>
+   <integer value='3'/>
+  </NCHANGE>
+  <VECTORS>
+   <collection>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='0'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='0'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='0'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+   </collection>
+  </VECTORS>
+  <CTRS>
+   <collection>
+    <item>
+     <ctr>
+      <atom value='NEQ'/>
+     </ctr>
+    </item>
+    <item>
+     <ctr>
+      <atom value='NEQ'/>
+     </ctr>
+    </item>
+   </collection>
+  </CTRS>
+ </change_vectors>
+</constraints>
+</model>

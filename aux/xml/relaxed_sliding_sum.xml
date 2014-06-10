@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <relaxed_sliding_sum id='c1' name='name1' desc=''>
+  <ATLEAST>
+   <integer value='3'/>
+  </ATLEAST>
+  <ATMOST>
+   <integer value='4'/>
+  </ATMOST>
+  <LOW>
+   <integer value='3'/>
+  </LOW>
+  <UP>
+   <integer value='7'/>
+  </UP>
+  <SEQ>
+   <integer value='4'/>
+  </SEQ>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+ </relaxed_sliding_sum>
+</constraints>
+</model>

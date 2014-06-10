@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cutset id='c1' name='name1' desc=''>
+  <SIZE_CUTSET>
+   <integer value='1'/>
+  </SIZE_CUTSET>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='2'/>
+       <integer value='3'/>
+       <integer value='4'/>
+      </integerset>
+     </succ>
+     <bool>
+      <integer value='1'/>
+     </bool>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='3'/>
+      </integerset>
+     </succ>
+     <bool>
+      <integer value='1'/>
+     </bool>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='4'/>
+      </integerset>
+     </succ>
+     <bool>
+      <integer value='1'/>
+     </bool>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </succ>
+     <bool>
+      <integer value='0'/>
+     </bool>
+    </item>
+   </collection>
+  </NODES>
+ </cutset>
+</constraints>
+</model>

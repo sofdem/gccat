@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <disj id='c1' name='name1' desc=''>
+  <TASKS>
+   <collection>
+    <item>
+     <start>
+      <integer value='1'/>
+     </start>
+     <duration>
+      <integer value='3'/>
+     </duration>
+     <before>
+      <integerset/>
+     </before>
+     <position>
+      <integer value='0'/>
+     </position>
+    </item>
+    <item>
+     <start>
+      <integer value='9'/>
+     </start>
+     <duration>
+      <integer value='1'/>
+     </duration>
+     <before>
+      <integerset>
+       <integer value='1'/>
+       <integer value='3'/>
+       <integer value='4'/>
+      </integerset>
+     </before>
+     <position>
+      <integer value='3'/>
+     </position>
+    </item>
+    <item>
+     <start>
+      <integer value='7'/>
+     </start>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <before>
+      <integerset>
+       <integer value='1'/>
+       <integer value='4'/>
+      </integerset>
+     </before>
+     <position>
+      <integer value='2'/>
+     </position>
+    </item>
+    <item>
+     <start>
+      <integer value='4'/>
+     </start>
+     <duration>
+      <integer value='1'/>
+     </duration>
+     <before>
+      <integerset>
+       <integer value='1'/>
+      </integerset>
+     </before>
+     <position>
+      <integer value='1'/>
+     </position>
+    </item>
+   </collection>
+  </TASKS>
+ </disj>
+</constraints>
+</model>

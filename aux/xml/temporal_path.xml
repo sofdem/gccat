@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <temporal_path id='c1' name='name1' desc=''>
+  <NPATH>
+   <integer value='2'/>
+  </NPATH>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integer value='2'/>
+     </succ>
+     <start>
+      <integer value='0'/>
+     </start>
+     <end>
+      <integer value='1'/>
+     </end>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+     <start>
+      <integer value='3'/>
+     </start>
+     <end>
+      <integer value='5'/>
+     </end>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integer value='4'/>
+     </succ>
+     <start>
+      <integer value='0'/>
+     </start>
+     <end>
+      <integer value='3'/>
+     </end>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integer value='5'/>
+     </succ>
+     <start>
+      <integer value='4'/>
+     </start>
+     <end>
+      <integer value='6'/>
+     </end>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+     <start>
+      <integer value='7'/>
+     </start>
+     <end>
+      <integer value='8'/>
+     </end>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <succ>
+      <integer value='6'/>
+     </succ>
+     <start>
+      <integer value='7'/>
+     </start>
+     <end>
+      <integer value='9'/>
+     </end>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <succ>
+      <integer value='7'/>
+     </succ>
+     <start>
+      <integer value='9'/>
+     </start>
+     <end>
+      <integer value='10'/>
+     </end>
+    </item>
+   </collection>
+  </NODES>
+ </temporal_path>
+</constraints>
+</model>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <vec_eq_tuple id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <TUPLE>
+   <collection>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='3'/>
+     </val>
+    </item>
+    <item>
+     <val>
+      <integer value='3'/>
+     </val>
+    </item>
+   </collection>
+  </TUPLE>
+ </vec_eq_tuple>
+</constraints>
+</model>

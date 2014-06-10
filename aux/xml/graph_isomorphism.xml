@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <graph_isomorphism id='c1' name='name1' desc=''>
+  <NODES_PATTERN>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='2'/>
+       <integer value='4'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='1'/>
+       <integer value='3'/>
+       <integer value='4'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integerset/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integerset/>
+     </succ>
+    </item>
+   </collection>
+  </NODES_PATTERN>
+  <NODES_TARGET>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <succ>
+      <integerset/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='1'/>
+       <integer value='3'/>
+       <integer value='4'/>
+      </integerset>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <succ>
+      <integerset/>
+     </succ>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <succ>
+      <integerset>
+       <integer value='1'/>
+       <integer value='2'/>
+      </integerset>
+     </succ>
+    </item>
+   </collection>
+  </NODES_TARGET>
+  <FUNCTION>
+   <collection>
+    <item>
+     <image>
+      <integer value='4'/>
+     </image>
+    </item>
+    <item>
+     <image>
+      <integer value='2'/>
+     </image>
+    </item>
+    <item>
+     <image>
+      <integer value='3'/>
+     </image>
+    </item>
+    <item>
+     <image>
+      <integer value='1'/>
+     </image>
+    </item>
+   </collection>
+  </FUNCTION>
+ </graph_isomorphism>
+</constraints>
+</model>

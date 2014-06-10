@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cumulatives id='c1' name='name1' desc=''>
+  <TASKS>
+   <collection>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='4'/>
+     </end>
+     <height>
+      <integer value='-2'/>
+     </height>
+    </item>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <duration>
+      <integer value='4'/>
+     </duration>
+     <end>
+      <integer value='5'/>
+     </end>
+     <height>
+      <integer value='1'/>
+     </height>
+    </item>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <origin>
+      <integer value='4'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='6'/>
+     </end>
+     <height>
+      <integer value='-1'/>
+     </height>
+    </item>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <origin>
+      <integer value='2'/>
+     </origin>
+     <duration>
+      <integer value='3'/>
+     </duration>
+     <end>
+      <integer value='5'/>
+     </end>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <machine>
+      <integer value='1'/>
+     </machine>
+     <origin>
+      <integer value='5'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='7'/>
+     </end>
+     <height>
+      <integer value='2'/>
+     </height>
+    </item>
+    <item>
+     <machine>
+      <integer value='2'/>
+     </machine>
+     <origin>
+      <integer value='3'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+     <end>
+      <integer value='5'/>
+     </end>
+     <height>
+      <integer value='-1'/>
+     </height>
+    </item>
+    <item>
+     <machine>
+      <integer value='2'/>
+     </machine>
+     <origin>
+      <integer value='1'/>
+     </origin>
+     <duration>
+      <integer value='4'/>
+     </duration>
+     <end>
+      <integer value='5'/>
+     </end>
+     <height>
+      <integer value='1'/>
+     </height>
+    </item>
+   </collection>
+  </TASKS>
+  <MACHINES>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <capacity>
+      <integer value='0'/>
+     </capacity>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <capacity>
+      <integer value='0'/>
+     </capacity>
+    </item>
+   </collection>
+  </MACHINES>
+  <CTR>
+   <atom value='GE'/>
+  </CTR>
+ </cumulatives>
+</constraints>
+</model>

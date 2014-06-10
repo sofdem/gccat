@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <divisible id='c1' name='name1' desc=''>
+  <Q>
+   <integer value='12'/>
+  </Q>
+  <D>
+   <integer value='4'/>
+  </D>
+ </divisible>
+</constraints>
+</model>

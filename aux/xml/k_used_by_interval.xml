@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <k_used_by_interval id='c1' name='name1' desc=''>
+  <SETS>
+   <collection>
+    <item>
+     <set>
+      <collection>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='8'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+      </collection>
+     </set>
+    </item>
+    <item>
+     <set>
+      <collection>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='0'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+      </collection>
+     </set>
+    </item>
+    <item>
+     <set>
+      <collection>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+      </collection>
+     </set>
+    </item>
+   </collection>
+  </SETS>
+  <SIZE_INTERVAL>
+   <integer value='3'/>
+  </SIZE_INTERVAL>
+ </k_used_by_interval>
+</constraints>
+</model>

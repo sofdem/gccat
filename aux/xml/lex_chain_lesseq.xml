@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <lex_chain_lesseq id='c1' name='name1' desc=''>
+  <VECTORS>
+   <collection>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='9'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+   </collection>
+  </VECTORS>
+ </lex_chain_lesseq>
+</constraints>
+</model>

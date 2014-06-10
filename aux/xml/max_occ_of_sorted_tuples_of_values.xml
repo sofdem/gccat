@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <max_occ_of_sorted_tuples_of_values id='c1' name='name1' desc=''>
+  <MAX>
+   <integer value='1'/>
+  </MAX>
+  <K>
+   <integer value='2'/>
+  </K>
+  <VECTORS>
+   <collection>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='4'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='5'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='6'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='2'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+    <item>
+     <vec>
+      <collection>
+       <item>
+        <var>
+         <integer value='3'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='1'/>
+        </var>
+       </item>
+       <item>
+        <var>
+         <integer value='7'/>
+        </var>
+       </item>
+      </collection>
+     </vec>
+    </item>
+   </collection>
+  </VECTORS>
+ </max_occ_of_sorted_tuples_of_values>
+</constraints>
+</model>

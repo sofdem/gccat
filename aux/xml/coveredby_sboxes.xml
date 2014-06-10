@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <coveredby_sboxes id='c1' name='name1' desc=''>
+  <K>
+   <integer value='2'/>
+  </K>
+  <DIMS>
+   <integerset>
+    <integer value='0'/>
+    <integer value='1'/>
+   </integerset>
+  </DIMS>
+  <OBJECTS>
+   <collection>
+    <item>
+     <oid>
+      <integer value='1'/>
+     </oid>
+     <sid>
+      <integer value='4'/>
+     </sid>
+     <x>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='3'/>
+        </v>
+       </item>
+      </collection>
+     </x>
+    </item>
+    <item>
+     <oid>
+      <integer value='2'/>
+     </oid>
+     <sid>
+      <integer value='2'/>
+     </sid>
+     <x>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+      </collection>
+     </x>
+    </item>
+    <item>
+     <oid>
+      <integer value='3'/>
+     </oid>
+     <sid>
+      <integer value='1'/>
+     </sid>
+     <x>
+      <collection>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+      </collection>
+     </x>
+    </item>
+   </collection>
+  </OBJECTS>
+  <SBOXES>
+   <collection>
+    <item>
+     <sid>
+      <integer value='1'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='3'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='3'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+    <item>
+     <sid>
+      <integer value='1'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='3'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+    <item>
+     <sid>
+      <integer value='2'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+    <item>
+     <sid>
+      <integer value='2'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+    <item>
+     <sid>
+      <integer value='3'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+    <item>
+     <sid>
+      <integer value='3'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='2'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+    <item>
+     <sid>
+      <integer value='4'/>
+     </sid>
+     <t>
+      <collection>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='0'/>
+        </v>
+       </item>
+      </collection>
+     </t>
+     <l>
+      <collection>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+       <item>
+        <v>
+         <integer value='1'/>
+        </v>
+       </item>
+      </collection>
+     </l>
+    </item>
+   </collection>
+  </SBOXES>
+ </coveredby_sboxes>
+</constraints>
+</model>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <two_layer_edge_crossing id='c1' name='name1' desc=''>
+  <NCROSS>
+   <integer value='2'/>
+  </NCROSS>
+  <VERTICES_LAYER1>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <pos>
+      <integer value='1'/>
+     </pos>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <pos>
+      <integer value='2'/>
+     </pos>
+    </item>
+   </collection>
+  </VERTICES_LAYER1>
+  <VERTICES_LAYER2>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <pos>
+      <integer value='3'/>
+     </pos>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <pos>
+      <integer value='1'/>
+     </pos>
+    </item>
+    <item>
+     <id>
+      <integer value='3'/>
+     </id>
+     <pos>
+      <integer value='2'/>
+     </pos>
+    </item>
+   </collection>
+  </VERTICES_LAYER2>
+  <EDGES>
+   <collection>
+    <item>
+     <id>
+      <integer value='1'/>
+     </id>
+     <vertex1>
+      <integer value='2'/>
+     </vertex1>
+     <vertex2>
+      <integer value='2'/>
+     </vertex2>
+    </item>
+    <item>
+     <id>
+      <integer value='2'/>
+     </id>
+     <vertex1>
+      <integer value='2'/>
+     </vertex1>
+     <vertex2>
+      <integer value='3'/>
+     </vertex2>
+    </item>
+    <item>
+     <id>
+      <integer value='3'/>
+     </id>
+     <vertex1>
+      <integer value='1'/>
+     </vertex1>
+     <vertex2>
+      <integer value='1'/>
+     </vertex2>
+    </item>
+   </collection>
+  </EDGES>
+ </two_layer_edge_crossing>
+</constraints>
+</model>

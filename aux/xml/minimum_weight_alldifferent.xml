@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <minimum_weight_alldifferent id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <MATRIX>
+   <collection>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='4'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='7'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='1'/>
+     </i>
+     <j>
+      <integer value='4'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='8'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='2'/>
+     </i>
+     <j>
+      <integer value='4'/>
+     </j>
+     <c>
+      <integer value='2'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='3'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='2'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='1'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='3'/>
+     </i>
+     <j>
+      <integer value='4'/>
+     </j>
+     <c>
+      <integer value='6'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='1'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='2'/>
+     </j>
+     <c>
+      <integer value='0'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='3'/>
+     </j>
+     <c>
+      <integer value='6'/>
+     </c>
+    </item>
+    <item>
+     <i>
+      <integer value='4'/>
+     </i>
+     <j>
+      <integer value='4'/>
+     </j>
+     <c>
+      <integer value='5'/>
+     </c>
+    </item>
+   </collection>
+  </MATRIX>
+  <COST>
+   <integer value='17'/>
+  </COST>
+ </minimum_weight_alldifferent>
+</constraints>
+</model>

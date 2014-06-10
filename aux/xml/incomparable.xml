@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <incomparable id='c1' name='name1' desc=''>
+  <VECTOR1>
+   <collection>
+    <item>
+     <var>
+      <integer value='16'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+   </collection>
+  </VECTOR1>
+  <VECTOR2>
+   <collection>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='11'/>
+     </var>
+    </item>
+   </collection>
+  </VECTOR2>
+ </incomparable>
+</constraints>
+</model>

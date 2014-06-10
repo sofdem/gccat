@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <bin_packing id='c1' name='name1' desc=''>
+  <CAPACITY>
+   <integer value='5'/>
+  </CAPACITY>
+  <ITEMS>
+   <collection>
+    <item>
+     <bin>
+      <integer value='3'/>
+     </bin>
+     <weight>
+      <integer value='4'/>
+     </weight>
+    </item>
+    <item>
+     <bin>
+      <integer value='1'/>
+     </bin>
+     <weight>
+      <integer value='3'/>
+     </weight>
+    </item>
+    <item>
+     <bin>
+      <integer value='3'/>
+     </bin>
+     <weight>
+      <integer value='1'/>
+     </weight>
+    </item>
+   </collection>
+  </ITEMS>
+ </bin_packing>
+</constraints>
+</model>

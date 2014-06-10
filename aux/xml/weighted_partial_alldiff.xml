@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <weighted_partial_alldiff id='c1' name='name1' desc=''>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <UNDEFINED>
+   <integer value='0'/>
+  </UNDEFINED>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='0'/>
+     </val>
+     <weight>
+      <integer value='0'/>
+     </weight>
+    </item>
+    <item>
+     <val>
+      <integer value='1'/>
+     </val>
+     <weight>
+      <integer value='2'/>
+     </weight>
+    </item>
+    <item>
+     <val>
+      <integer value='2'/>
+     </val>
+     <weight>
+      <integer value='-1'/>
+     </weight>
+    </item>
+    <item>
+     <val>
+      <integer value='4'/>
+     </val>
+     <weight>
+      <integer value='7'/>
+     </weight>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <weight>
+      <integer value='-8'/>
+     </weight>
+    </item>
+    <item>
+     <val>
+      <integer value='6'/>
+     </val>
+     <weight>
+      <integer value='2'/>
+     </weight>
+    </item>
+   </collection>
+  </VALUES>
+  <COST>
+   <integer value='8'/>
+  </COST>
+ </weighted_partial_alldiff>
+</constraints>
+</model>

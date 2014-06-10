@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <stable_compatibility id='c1' name='name1' desc=''>
+  <NODES>
+   <collection>
+    <item>
+     <index>
+      <integer value='1'/>
+     </index>
+     <father>
+      <integer value='4'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='11'/>
+       <integer value='12'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='2'/>
+     </index>
+     <father>
+      <integer value='3'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='8'/>
+       <integer value='9'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='3'/>
+     </index>
+     <father>
+      <integer value='4'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='2'/>
+       <integer value='10'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='4'/>
+     </index>
+     <father>
+      <integer value='5'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='1'/>
+       <integer value='3'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='5'/>
+     </index>
+     <father>
+      <integer value='7'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='4'/>
+       <integer value='13'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='6'/>
+     </index>
+     <father>
+      <integer value='2'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='8'/>
+       <integer value='14'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='7'/>
+     </index>
+     <father>
+      <integer value='7'/>
+     </father>
+     <prec>
+      <integerset>
+       <integer value='6'/>
+       <integer value='13'/>
+      </integerset>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='8'/>
+     </index>
+     <father>
+      <integer value='6'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset>
+       <integer value='9'/>
+       <integer value='10'/>
+       <integer value='11'/>
+       <integer value='12'/>
+       <integer value='13'/>
+       <integer value='14'/>
+      </integerset>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='9'/>
+     </index>
+     <father>
+      <integer value='2'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset>
+       <integer value='10'/>
+       <integer value='11'/>
+       <integer value='12'/>
+       <integer value='13'/>
+      </integerset>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='10'/>
+     </index>
+     <father>
+      <integer value='3'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset>
+       <integer value='11'/>
+       <integer value='12'/>
+       <integer value='13'/>
+      </integerset>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='11'/>
+     </index>
+     <father>
+      <integer value='1'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset>
+       <integer value='12'/>
+       <integer value='13'/>
+      </integerset>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='12'/>
+     </index>
+     <father>
+      <integer value='1'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset>
+       <integer value='13'/>
+      </integerset>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='13'/>
+     </index>
+     <father>
+      <integer value='5'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset>
+       <integer value='14'/>
+      </integerset>
+     </inc>
+    </item>
+    <item>
+     <index>
+      <integer value='14'/>
+     </index>
+     <father>
+      <integer value='6'/>
+     </father>
+     <prec>
+      <integerset/>
+     </prec>
+     <inc>
+      <integerset/>
+     </inc>
+    </item>
+   </collection>
+  </NODES>
+ </stable_compatibility>
+</constraints>
+</model>

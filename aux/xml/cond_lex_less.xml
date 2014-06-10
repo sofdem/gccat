@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <cond_lex_less id='c1' name='name1' desc=''>
+  <VECTOR1>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VECTOR1>
+  <VECTOR2>
+   <collection>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='0'/>
+     </var>
+    </item>
+   </collection>
+  </VECTOR2>
+  <PREFERENCE_TABLE>
+   <collection>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='1'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='0'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='0'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='1'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='0'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='0'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+    <item>
+     <tuple>
+      <collection>
+       <item>
+        <val>
+         <integer value='1'/>
+        </val>
+       </item>
+       <item>
+        <val>
+         <integer value='1'/>
+        </val>
+       </item>
+      </collection>
+     </tuple>
+    </item>
+   </collection>
+  </PREFERENCE_TABLE>
+ </cond_lex_less>
+</constraints>
+</model>

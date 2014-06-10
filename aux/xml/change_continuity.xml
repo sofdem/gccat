@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <change_continuity id='c1' name='name1' desc=''>
+  <NB_PERIOD_CHANGE>
+   <integer value='3'/>
+  </NB_PERIOD_CHANGE>
+  <NB_PERIOD_CONTINUITY>
+   <integer value='2'/>
+  </NB_PERIOD_CONTINUITY>
+  <MIN_SIZE_CHANGE>
+   <integer value='2'/>
+  </MIN_SIZE_CHANGE>
+  <MAX_SIZE_CHANGE>
+   <integer value='4'/>
+  </MAX_SIZE_CHANGE>
+  <MIN_SIZE_CONTINUITY>
+   <integer value='2'/>
+  </MIN_SIZE_CONTINUITY>
+  <MAX_SIZE_CONTINUITY>
+   <integer value='4'/>
+  </MAX_SIZE_CONTINUITY>
+  <NB_CHANGE>
+   <integer value='6'/>
+  </NB_CHANGE>
+  <NB_CONTINUITY>
+   <integer value='4'/>
+  </NB_CONTINUITY>
+  <VARIABLES>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='3'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='8'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='4'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='7'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES>
+  <CTR>
+   <atom value='NEQ'/>
+  </CTR>
+ </change_continuity>
+</constraints>
+</model>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <k_alldifferent id='c1' name='name1' desc=''>
+  <VARS>
+   <collection>
+    <item>
+     <vars>
+      <collection>
+       <item>
+        <x>
+         <integer value='5'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='6'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='0'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='9'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='3'/>
+        </x>
+       </item>
+      </collection>
+     </vars>
+    </item>
+    <item>
+     <vars>
+      <collection>
+       <item>
+        <x>
+         <integer value='5'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='6'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='1'/>
+        </x>
+       </item>
+       <item>
+        <x>
+         <integer value='2'/>
+        </x>
+       </item>
+      </collection>
+     </vars>
+    </item>
+   </collection>
+  </VARS>
+ </k_alldifferent>
+</constraints>
+</model>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <same_and_global_cardinality_low_up id='c1' name='name1' desc=''>
+  <VARIABLES1>
+   <collection>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES1>
+  <VARIABLES2>
+   <collection>
+    <item>
+     <var>
+      <integer value='9'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='1'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='2'/>
+     </var>
+    </item>
+    <item>
+     <var>
+      <integer value='5'/>
+     </var>
+    </item>
+   </collection>
+  </VARIABLES2>
+  <VALUES>
+   <collection>
+    <item>
+     <val>
+      <integer value='1'/>
+     </val>
+     <omin>
+      <integer value='2'/>
+     </omin>
+     <omax>
+      <integer value='3'/>
+     </omax>
+    </item>
+    <item>
+     <val>
+      <integer value='2'/>
+     </val>
+     <omin>
+      <integer value='1'/>
+     </omin>
+     <omax>
+      <integer value='1'/>
+     </omax>
+    </item>
+    <item>
+     <val>
+      <integer value='5'/>
+     </val>
+     <omin>
+      <integer value='1'/>
+     </omin>
+     <omax>
+      <integer value='1'/>
+     </omax>
+    </item>
+    <item>
+     <val>
+      <integer value='7'/>
+     </val>
+     <omin>
+      <integer value='0'/>
+     </omin>
+     <omax>
+      <integer value='2'/>
+     </omax>
+    </item>
+    <item>
+     <val>
+      <integer value='9'/>
+     </val>
+     <omin>
+      <integer value='1'/>
+     </omin>
+     <omax>
+      <integer value='1'/>
+     </omax>
+    </item>
+   </collection>
+  </VALUES>
+ </same_and_global_cardinality_low_up>
+</constraints>
+</model>

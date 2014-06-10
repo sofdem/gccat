@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <disjunctive_or_same_start id='c1' name='name1' desc=''>
+  <TASKS>
+   <collection>
+    <item>
+     <origin>
+      <integer value='4'/>
+     </origin>
+     <duration>
+      <integer value='3'/>
+     </duration>
+    </item>
+    <item>
+     <origin>
+      <integer value='7'/>
+     </origin>
+     <duration>
+      <integer value='2'/>
+     </duration>
+    </item>
+    <item>
+     <origin>
+      <integer value='4'/>
+     </origin>
+     <duration>
+      <integer value='1'/>
+     </duration>
+    </item>
+   </collection>
+  </TASKS>
+ </disjunctive_or_same_start>
+</constraints>
+</model>

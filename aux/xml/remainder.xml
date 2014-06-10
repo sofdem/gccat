@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<model xsi:noNamespaceSchemaLocation='schema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<constraints>
+ <remainder id='c1' name='name1' desc=''>
+  <Q>
+   <integer value='15'/>
+  </Q>
+  <D>
+   <integer value='2'/>
+  </D>
+  <R>
+   <integer value='1'/>
+  </R>
+ </remainder>
+</constraints>
+</model>
